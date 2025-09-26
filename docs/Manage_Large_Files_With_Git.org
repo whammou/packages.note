@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID: 0838bd36-ab3e-4c82-8bd4-66a73acb00ae
+:END:
+#+TITLE: Manage Large Files With Git
+
+#+OPTIONS: title:nil tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
+#+LATEX_HEADER: \renewcommand\maketitle{} \usepackage[scaled]{helvet} \renewcommand\familydefault{\sfdefault}
+#+TODO: TODO(t) (e) DOING(d) PENDING(p) OUTLINE(o) RESEARCH(s) FEEDBACK(b) WAITING(w) NEXT(n) | IDEA(i) ABORTED(a) PARTIAL(r) REVIEW(v) DONE(f)
+#+FILETAGS: :DOC:META:PACKAGES:GIT:MANAGEMENT:
+#+HTML:<details>
+
+* Manage Large Files With Git :DOC:META:PACKAGES:GIT:MANAGEMENT:
+#+HTML:</details>
+Manage /large files/ with =git= is not practical however it is essential for some =repositories= to content /large files./ Having a way to manage /large-files/ within =repo= is a useful in many cases
+** DONE Managing Large Files with Git-Annex
+CLOSED: [2025-09-17 Wed 06:17]
+
+#+NAME:What is Git-annex
+#+BEGIN_QUOTE
+[!NOTE]
+=Git-annex= is distributed files synchronization system written in =haskel=. It aims to share and synchrone collections of large files independent from commercial services and a central server
+#+END_QUOTE
+git-annex, wikipedia [fn:1]
+
+/Git-annex/ uses =Git= to index files but does not store them in the =git-history=. Instead, a symbolic link representation and linking to the possibly large file is committed
+- Git-annex manages a =content-addressable storage= for the files under its control
+- A separated =git= branch logs the location of every file
+- Thus /user/ con clone a git annex repository and then decide for every file whether to make it locally available
+
+* Footnotes
+[fn:1] [[https://en.wikipedia.org/wiki/Git-annex]]

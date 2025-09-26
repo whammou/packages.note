@@ -1,0 +1,95 @@
+#+TODO: TODO(t) (e) DOING(d) PENDING(p) OUTLINE(o) RESEARCH(s) FEEDBACK(b) WAITING(w) NEXT(n) | IDEA(i) ABORTED(a) PARTIAL(r) REVIEW(v) DONE(f)
+#+LATEX_HEADER: \usepackage[scaled]{helvet} \renewcommand\familydefault{\sfdefault}
+#+OPTIONS: todo:t tags:nil tasks:t ^:nil toc:nil
+#+TITLE: Packages Incidental Tasks
+
+* List of Incidental Tasks :TASK:INCIDENTAL:PACKAGES:META:
+** PENDING Get transcript from Teams :TEAMS:
+- *OBJECTIVE:* Get transcript from Teams meeting
+- *Reference:* [[https://learn.microsoft.com/en-us/microsoftteams/platform/graph-api/meeting-transcripts/overview-transcripts][Get transcript via teams API @Doc-MS_teams]]
+** PENDING Switching to emacs :EMACS:
+- *OBJECTIVE:* Switching from nvim to emacs
+- *Reference:*
+  - [[https://old.reddit.com/r/emacs/comments/qocwo1/from_vim_to_emacs/][From vim to emacs @Reddit]]
+  - [[https://psakalo.substack.com/p/my-take-on-neovim-vs-emacs-vs-vs][Compare vim emacs vs vscode @Blog]]
+*** Checkout Doom-Emacs
+- *OBJECTIVE:* Take a look at =doom-emacs= distribution
+- *Reference:* [[https://github.com/doomemacs/doomemacs][Doom-Emacs Git Host @Github]]
+** PENDING Nvim Citation :NVIM:ZETTELKASTEN:
+- *OBJECTIVE:* Citation with =nvim= and =zettelkasten=
+- [[https://github.com/jghauser/papis.nvim][Papis Citation Manager @Github]]
+** DONE Debug Using Minimal Init :NVIM:DEBUG:ORGMODE:
+CLOSED: [2025-09-08 Mon 03:57] DEADLINE: <2025-09-09 Tue>
+:PROPERTIES:
+:ID:       2da88bc1-47e2-4a81-bedf-758cbdfdafbe
+:END:
+- *OBJECTIVE:* Debug orgmode using minimal config
+  + [X] Run minimal config
+  + [X] Test =org_inser_link= auto-completion
+-----
+- *[NOTE]* taken on [2025-09-06 02:03]: \\
+  Completion bug detect on commit [[https://github.com/nvim-orgmode/orgmode/commit/aaa327a7430df359b336d82ad387f896077ee2d2][Adding fuzzy completion @Commit]]
+-----
+** DONE Conflict nvim-orgmode and blink :NVIM:ORGMODE:
+CLOSED: [2025-09-06 Sat 17:55] DEADLINE: <2025-09-06 Sat>
+:PROPERTIES:
+:ID:       0022f0cf-b051-4752-aa0e-9d5aafe4274e
+:END:
+- *OBJECTIVE:* Analyze the conflicts between blink and orgmode. Determine if it related to current issue with =org_insert_link= completion
+-----
+- *[NOTE]* taken on [2025-09-06 17:55]: \\
+  Issue is none related to current bug, rather it is about =insert= mode =completions=
+-----
+- *Reference:* [[https://github.com/nvim-orgmode/orgmode/pull/1010][fix: fuzzy autocompletion with blink @Github-issue]]
+** DONE Issue on org-store-link :GITHUB:ORGMODE:
+CLOSED: [2025-09-08 Mon 03:57] DEADLINE: <2025-09-09 Tue>
+- *OBJECTIVE:* Create issue on org_store_link completion does not return headlines after latest commit
+-----
+- *[NOTE]* taken on [2025-09-06 18:08]: \\
+  Run =nvim-orgmode= plugin using [[id:2da88bc1-47e2-4a81-bedf-758cbdfdafbe][Minimal Config]] provided on =github=
+-----
+- *Checkout:* [[id:0022f0cf-b051-4752-aa0e-9d5aafe4274e][Conflict nvim-orgmode and blink @Org]] ([[file:/system/packages/tasks/incidental.org#feedback-debug-using-minimal-init][view on Github]])
+** TODO Report Qtile Bug :QTILE:
+DEADLINE: <2025-09-28 Sun>
+- *OBJECTIVE:* Report qtile =dropdown= not in windows id
+-----
+- *[NOTE]* taken on [2025-09-06 17:42]: \\
+  Error stamps missing window window id =wid=
+  + Report to qtile Github [[https://github.com/qtile/qtile][qtile @Github]]
+  #+NAME:qtile.log
+  #+BEGIN_SRC python
+  2025-09-06 14:11:20,123 ERROR libqtile manager.py:process_key_event():L492 KB command error move_to_top: No object window in path 'window'
+  2025-09-06 14:11:20,900 ERROR libqtile manager.py:process_key_event():L492 KB command error move_to_top: No object window in path 'window'
+  2025-09-06 14:11:21,049 ERROR libqtile manager.py:process_key_event():L492 KB command error move_to_top: No object window in path 'window'
+  2025-09-06 14:11:25,085 ERROR libqtile manager.py:process_key_event():L492 KB command error set_opacity: No object window in path 'window'
+  2025-09-06 14:11:25,288 ERROR libqtile hook.py:fire():L196 Error in hook client_new
+  Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/libqtile/hook.py", line 194, in fire
+  i(*args, **kwargs)
+  ~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/libqtile/scratchpad.py", line 292, in on_client_new
+  self.dropdowns[name] = DropDownToggler(client, self.name, self._dropdownconfig[name])
+  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/libqtile/scratchpad.py", line 197, in __init__
+  WindowVisibilityToggler.__init__(
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+  self, scratchpad_name, window, ddconfig.on_focus_lost_hide, ddconfig.warp_pointer
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  )
+  ^
+  File "/usr/lib/python3.13/site-packages/libqtile/scratchpad.py", line 67, in __init__
+  self.show()
+  ~~~~~~~~~^^
+  File "/usr/lib/python3.13/site-packages/libqtile/scratchpad.py", line 227, in show
+  WindowVisibilityToggler.show(self)
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/site-packages/libqtile/scratchpad.py", line 122, in show
+  win.togroup()
+  ~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/site-packages/libqtile/backend/x11/window.py", line 2011, in togroup
+  self.group.remove(self)
+  ~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/site-packages/libqtile/group.py", line 278, in remove
+  index = self.focus_history.index(win)
+  #+END_SRC
+-----

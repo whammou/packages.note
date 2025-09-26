@@ -1,0 +1,54 @@
+:PROPERTIES:
+:ID: a74f83dd-1c45-4530-a7e5-2c7d355e468b
+:END:
+#+TITLE: Fzf Configuration
+
+#+OPTIONS: title:nil tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
+#+LATEX_HEADER: \renewcommand\maketitle{} \usepackage[scaled]{helvet} \renewcommand\familydefault{\sfdefault}
+#+TODO: TODO(t) (e) DOING(d) PENDING(p) OUTLINE(o) RESEARCH(s) FEEDBACK(b) WAITING(w) NEXT(n) | IDEA(i) ABORTED(a) PARTIAL(r) REVIEW(v) DONE(f)
+#+FILETAGS: :DOC:META:PACKAGES:FZF:
+#+HTML:<details>
+
+* Fzf Configuration :DOC:META:PACKAGES:FZF:
+#+HTML:</details>
+- *Objective:* /Config/ ~fzf~ /theme and function//
+** DONE Theming fzf
+CLOSED: [2025-05-29 Thu 22:09]
+- *Objective:* /Change theme to match/ ~nvim-fzf-lua~
+  - *Run:* ~echo $DEFAULT_FZF_OPTS~
+** DONE Config fzf functions [100%]
+CLOSED: [2025-06-01 Sun 09:31]
+:PROPERTIES:
+:ID:       f0e11344-5210-4709-b5df-f6de28e7ee7a
+:END:
+- *Objective:* /Make fzf a working menu like rofi or dmenu/
+- *References:* [[https://www.youtube.com/watch?v=HrY6Gz1UiE0#__preview][Three ways fzf rofi and dmenu @Youtube-DistroTube]]
+*** DONE Manage system clipboard :XCLIP:
+CLOSED: [2025-06-01 Sun 09:31]
+- *Objective:* /Output desired clipboard history/
+- *Visit:* [[id:4ea908dd-2335-4742-b44d-aeb1cad09506][Clipboard config @Orgmode]]
+**** DONE Clipboard config
+CLOSED: [2025-06-01 Sun 09:25]
+:PROPERTIES:
+:ID:       4ea908dd-2335-4742-b44d-aeb1cad09506
+:END:
+- *Objective:* /Manage system clipboard/
+  - *Implemented:* Manage system clipboard using ~rofi~ + ~greenclip~
+  - *Checkout:* [[id:d17ebad8-7524-43b8-b6be-0b3f808a9aaa][Implement clipboard history @Orgmode]]
+- *Visit:* [[https://github.com/xrelkd/clipcat][Clipcat @Github]]
+- *References:*
+  - [[https://mpov.timmorgan.org/super-simple-clipboard-history-for-linux/][Super simple clipboard history @Blog]]
+  - [[https://www.reddit.com/r/archlinux/comments/bg53as/cool_uses_for_dmenurofifzf/][Cool use for rofi/dmenu/fzf @Reddit]]
+  - [[https://github.com/spikegrobstein/fzf-menu][fzf-menu @Github]]
+*** DONE Window switcher :QTILE:ROFI:
+CLOSED: [2025-05-30 Fri 04:33]
+- *Objective:* /Implement rofi like window swticher/
+- *Visit:* [[https://github.com/qtile/qtile/issues/1945][Qtile rofi window swticher @Github-issue]]
+** DONE Adding fzf-nova :FZF:
+CLOSED: [2025-05-30 Fri 07:28]
+:PROPERTIES:
+:ID:       231fff19-ca63-4a20-b02d-c6b48800af9d
+:END:
+- *Objective:* /Check out fzf-nova script library/
+- *Visit:* [[https://github.com/gotbletu/fzf-nova][fzf-nova Github]]
+- *Reference:* [[https://github.com/gotbletu/shownotes?tab=readme-ov-file][Some useful tools from gotbletu @Github]]

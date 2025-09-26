@@ -1,0 +1,50 @@
+:PROPERTIES:
+:ID: ed25e00c-0539-4cda-a657-c99cb4eb107d
+:ROAM_ORIGIN: e1667d79-80b5-4c16-8f1c-c83a60547108
+:END:
+#+TITLE: Orgroam Implementation of Zettelkasten
+
+#+OPTIONS: title:nil tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
+#+LATEX_HEADER: \renewcommand\maketitle{} \usepackage[scaled]{helvet} \renewcommand\familydefault{\sfdefault}
+#+TODO: TODO(t) (e) DOING(d) PENDING(p) OUTLINE(o) RESEARCH(s) FEEDBACK(b) WAITING(w) NEXT(n) | IDEA(i) ABORTED(a) PARTIAL(r) REVIEW(v) DONE(f)
+#+FILETAGS: :DOC:PROJECT:PACKAGES:ZETTELKASTEN:ORGROAM:
+#+HTML:<details>
+
+* Orgroam Implementation of Zettelkasten :DOC:META:PACKAGES:ZETTELKASTEN:ORGROAM:
+:PROPERTIES:
+:ID:       1902d6da-cad7-4fd8-9de5-001ede5334e1
+:END:
+#+HTML:</details>
+- *OBJECTIVE:* Implemment =ZK system= using =orgroam= framwork
+** Zettelkasten Vault
+:PROPERTIES:
+:ID:       e1fba411-956b-4add-b9d9-8882888d76c9
+:END:
+- *OBJECTIVE:* Create a Zettelkasten vault inside a [[id:5ee85686-4255-4634-afbc-c364fa16a025][PARA system]]
+- *[NOTE]* taken on [2025-06-26 05:26]:
+  Why a PARA on top of Zettelkasten? PARA system provide a rigid stucture that allows planning and ease of access information
+  - Zettelkasten is good for developing ideas but managing tasks in not its strong suit due to its chaotic nature
+  - PARA system allows information to be stored in a structured way that is easy in intuitive to access
+  - Both system have pros and cons. Im plementing PARA on top of zettelkasten allow information to accessed and stored with ease
+  - Problems facing when implement both systems:
+** ZK-Orgroam UID and index system
+:PROPERTIES:
+:ID:       9f057f7e-6a65-448a-b19d-784ecb100a46
+:END:
+- *OBJECTIVE:* Implement the ID system to the [[id:e1fba411-956b-4add-b9d9-8882888d76c9][Zettelkasten vault]]
+- *[NOTE]* taken on [2025-06-26 17:12]:
+  - A UID system is the core of zettelkasten and should serve a way to navigate between notes:
+    - The system should have the benefits of the [[id:0ce0544c-320b-4aef-9bad-14564ee61474][original Luhmman's ZK system]]
+    - The system should work in both zettelkasten and orgroam extension
+- *[NOTE]* taken on [2025-06-28 23:27]:
+  - =Orgmode= built-in UID system does not provide any context for each note
+  - Spliting the UID system into two sub-system is more optimal
+      - A built-in =orgroam= UID system
+*** ZK-Orgroam UID sub-system
+- *[NOTE]* taken on [2025-06-28 23:44]:
+  - Provide a unique ID for each note to prevent overlap between notes
+*** ZK-Orgroam Indexing sub-system
+- *[NOTE]* taken on [2025-06-29 01:10]:
+  - Each note has a [[id:242353ef-f564-47bf-985f-8816c09cd780][address]] that provides contexts
+  - Improve search ability by using =address= as =filename=
+  - Address follow Luhmann's [[id:f78fe37b-4ff7-4a73-86e9-16ccf28a4888][Naming convention]] (alphanumeric)

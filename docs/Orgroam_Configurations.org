@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID: 8328aaf4-2e0f-4a31-97f1-bcb53d8bccfa
+:ROAM_ORIGIN: 1902d6da-cad7-4fd8-9de5-001ede5334e1
+:END:
+#+TITLE: Orgroam Configurations
+
+#+OPTIONS: title:nil tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
+#+LATEX_HEADER: \renewcommand\maketitle{} \usepackage[scaled]{helvet} \renewcommand\familydefault{\sfdefault}
+#+TODO: TODO(t) (e) DOING(d) PENDING(p) OUTLINE(o) RESEARCH(s) FEEDBACK(b) WAITING(w) NEXT(n) | IDEA(i) ABORTED(a) PARTIAL(r) REVIEW(v) DONE(f)
+#+FILETAGS: :DOC:PROJECT:PACKAGES:ORGROAM:
+#+HTML:<details>
+
+* Orgroam Configurations :DOC:META:PACKAGES:ORGROAM:
+:PROPERTIES:
+:ID:       4c2571b3-e416-48c0-bf7d-4d93af0ce820
+:END:
+#+HTML:</details>
+- *OBJECTIVE:* Develop a notetaking workflow in orgroam
+- *Reference:* [[https://github.com/chipsenkbeil/org-roam.nvim][Orgroam-nvim @Github]]
+** Orgroam Built-in UID System
+:PROPERTIES:
+:ID:       bc6b5a2e-214b-4e04-a8e7-f6444bebc3c5
+:END:
+- *[NOTE]* taken on [2025-06-28 23:35]:
+  - =Orgroam= built-in UID system provide a unique identifier for each note (e.g. id:e1fba411-956b-4add-b9d9-8882888d76c9)
+  - It solves the problem of having the same =id= on different notes

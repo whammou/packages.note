@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID: e1667d79-80b5-4c16-8f1c-c83a60547108
+:ROAM_ORIGIN: 815965cc-827d-4816-b30d-904399acbcc1
+:END:
+#+TITLE: Kitty Configurations
+
+#+OPTIONS: title:nil tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
+#+LATEX_HEADER: \renewcommand\maketitle{} \usepackage[scaled]{helvet} \renewcommand\familydefault{\sfdefault}
+#+TODO: TODO(t) (e) DOING(d) PENDING(p) OUTLINE(o) RESEARCH(s) FEEDBACK(b) WAITING(w) NEXT(n) | IDEA(i) ABORTED(a) PARTIAL(r) REVIEW(v) DONE(f)
+#+FILETAGS: :DOC:PROJECT:PACKAGES:KITTY:
+#+HTML:<details>
+
+* PARTIAL Kitty Configurations [66%] :DOC:META:PACKAGES:KITTY:
+CLOSED: [2025-06-08 Sun 05:17] DEADLINE: <2025-06-08 Sun>
+#+HTML:</details>
+:PROPERTIES:
+:ID:       19cf96c7-877d-4504-b6fd-1db0310af1a6
+:END:
+1. [X] *OBJECTIVE:* Find solution to kitty hint returns wrong format
+2. [ ] *OBJECTIVE:* Multiple hintting patterns
+- *Complication:* Regex is never 100% accurate. There are either false positive or not enough matching [50%]
+  1. [X] When use ~map <key> kitten hints --type hyperlink --type path --program "program~ kitty returns the wrong format of hinted hyperlink
+  2. [ ] Kitty only hint 1 regex match at a time. Try to make it multiple patterns
+- *Reference:*
+  - [[https://sw.kovidgoyal.net/kitty/kittens/hints/#source-code-for-hints][Kitty hint documentation @Doc-kitty]]
+  - [[https://github.com/kovidgoyal/kitty/issues/2124][Extended regex mode for kitty]]

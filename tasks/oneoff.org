@@ -1,0 +1,412 @@
+#+TODO: TODO(t) (e) DOING(d) PENDING(p) OUTLINE(o) RESEARCH(s) FEEDBACK(b) WAITING(w) NEXT(n) | IDEA(i) ABORTED(a) PARTIAL(r) REVIEW(v) DONE(f)
+#+LATEX_HEADER: \usepackage[scaled]{helvet} \renewcommand\familydefault{\sfdefault}
+#+OPTIONS: todo:t tags:nil tasks:t ^:nil toc:nil
+#+TITLE: Packages Oneoff Tasks
+
+* List of Oneoff Tasks :TASK:ONEOFF:PACKAGES:META:
+** DONE Create qtile widget :QTILE:
+CLOSED: [2025-09-06 Sat 14:31]
+- *OBJECTIVE:* Create a custom qtile widget
+- *Reference:* [[https://docs.qtile.org/en/latest/manual/howto/widget.html][Create a qtile widget @Doc-qtile]]
+** NEXT Implement Zettelkasten [100%] :ZETTELKASTEN:
+:PROPERTIES:
+:ID:       1e76b464-a6af-40b5-98a5-40d7e4ab3c84
+:END:
+- *OBJECTIVE:* Apply [[id:705d42e4-c980-4d53-ad38-029f28d503dc][The Zettelkasten system]] with orgroam
+*** DONE Config Orgroam Extension [100%] :ORGROAM:
+CLOSED: [2025-08-07 Thu 21:01]
+:PROPERTIES:
+:ID:       ca2cbb16-4d86-419e-a1f6-9a48640ce323
+:END:
+- *OBJECTIVE:* [[id:1902d6da-cad7-4fd8-9de5-001ede5334e1][Implementation of orgroam]] to manage zettelkasten vault
+- *Reference:*
+  - [[https://www.youtube.com/watch?v=AyhPmypHDEw#__preview][Getting started with orgroam @Youtube]]
+  - [[https://github.com/chipsenkbeil/org-roam.nvim][Org-roam nvim plugin @Github]]
+  - [[https://l.opnxng.com/r/emacs/comments/u10j69/org_mode_how_do_you_keep_your_daily_agenda_to_a/][How do you keep your daily agenda @Reddit]]
+  - [[https://www.youtube.com/watch?v=-TpWahIzueg#__preview][Orgroam zettelkasten @Youtube]]
+  - [[https://yannherklotz.com/zettelkasten/][Zettelkasten in orgmode @Blog]]
+  - [[https://www.youtube.com/embed/-TpWahIzueg?start=49m16s#__preview][Apply zettelkasten correctly in orgroam @Youtube]]
+**** DONE Config Orgroam UID system
+CLOSED: [2025-07-24 Thu 16:13] DEADLINE: <2025-07-24 Thu>
+:PROPERTIES:
+:ID:       ebb8b3dc-b038-4844-b1e7-025f7d684250
+:END:
+- *OBJECTIVE:* Learn about [[id:bc6b5a2e-214b-4e04-a8e7-f6444bebc3c5][Orgroam Built-in UID System @Org]] and filename
+**** DONE Filename generating
+CLOSED: [2025-08-07 Thu 21:01]
+- *OBJECTIVE:* Genrating filanme for each node
+-----
+- *[NOTE]* taken on <2025-08-07 20:59>:
+  - Filename follows =alphanumerical= method or Luhmann's original method e.g =1.1=, =1.1a=, =1.2=, =1.2b=
+  - Developing a method for auto filename generating
+-----
+*** DONE Implement Zettelkasten-Orgroam ID system
+CLOSED: [2025-07-26 Sat 01:57] DEADLINE: <2025-07-26 Sat>
+:PROPERTIES:
+:ID:       f1360cc5-099f-457d-a2cf-45e4ccedd4e6
+:END:
+- *OBJECTIVE:* Implement an [[id:9f057f7e-6a65-448a-b19d-784ecb100a46][UUID System]] that works with zettelkasten vault and orgroam
+-----
+- *[NOTE]* taken on <2025-07-25 22:56>:
+  - Implemented folgezettel =index system= independent to =orgroam UUID system=
+    a. *Index system* provide context for human to interact with orgroam
+    b. *Orgroam UUID system* provides machine automation and navigate within orgroam
+-----
+- *Reference:* [[https://forum.zettelkasten.de/discussion/2433/id-for-notes-time-stamp-id-is-useless][ID system discussion @Forum-zettelkasten]]
+**** DONE Edit capture filename :ORGMODE:
+CLOSED: [2025-07-04 Fri 05:22] DEADLINE: <2025-06-30 Mon 22:50>
+:LOGBOOK:
+CLOCK: [2025-06-30 Mon 22:49]--[2025-07-01 Tue 00:11] => 1:22
+:END:
+- *OBJECTIVE:* Custom orgroam capture target name
+- *Reference:* [[https://github.com/chipsenkbeil/org-roam.nvim/blob/main/DOCS.org#capture-node][Capture API in nvim-orgroam @Github]]
+** PENDING Qutebrowser multiple mode keybind :QUTEBROWSER:
+- *OBJECTIVE:* How to bind key in different modes
+- *Reference:* [[qute://help/configuring.html][Configurating qutebrowser @Doc-qutebrowser]]
+** PENDING Detect git repos from system :GIT:FZF:
+- /Detect system wise git repos the use fzf to open lazygit at repo location/
+** PENDING Connect to running nvim server :NVIM:
+- *Objective:* /Connect to running/ ~nvim-server~ /apply to/ ~orgmode~
+  - *Visit:* [[https://github.com/neovim/neovim/issues/5035][github.com#\:connect-to-nvim-server @Github]]
+** PENDING Qtile keymap in json :QTILE:
+- *Idea:* /Write key map and run in python/
+*** Encode keymap json :JSON:
+- *Objective:* /Encode [[file:~/.config/qtile/settings/keymaps.py][keymaps.py]] in json/
+- *References:* [[id:27fdd8c2-5435-466b-9856-407ade06d893][Json database @Orgmode]]
+*** Decode json files :PYTHON:
+- *Objective:* /Deocde [[file:~/.config/qtile/settings/keymaps.py][keymaps.py]] using python/
+- *References:* [[https://docs.python.org/3/library/json.html][Json encoder and decoder using python @Python-doc]]
+** PENDING Change floating window size :QTILE:
+- *OBJECTIVE:* Define window size when in floating layout
+** PENDING Change snack.nvim border style :NVIM:
+- *OBJECTIVE:* Replace rounded border style in snack.nvim with static style for more aesthetic
+- *Reference:* 
+  - [[http://www.lazyvim.org/plugins][Lazyvim core plugins @Doc-lazyvim]]
+  - [[https://github.com/LazyVim/LazyVim/issues/1942#issuecomment-1793438952][Changing border with nvim-lspconfig @Github-issue]]
+** PENDING Create scripted tmux session :TMUX:
+- *OBJECTIVE:* Create a persist session for orgmode notes/
+- *Complication:* nvim does not allow edit if multiple session are running
+- *Reference:* [[https://ryan.himmelwright.net/post/scripting-tmux-workspaces/][Scripting tmux workspace @Blog]]
+** PARTIAL Working with rclone [66%] :RCLONE:
+CLOSED: [2025-07-10 Thu 05:50]
+:PROPERTIES:
+:ID:       3700b025-3d42-4516-a17d-0eb37366d087
+:END:
+- *OBJECTIVE:* /Config rclone for optimal workflow/
+*** ABORTED Mount as a systemd service :SYSTEMD:
+CLOSED: [2025-06-03 Tue 07:45]
+- *OBJECTIVE:* /Running rclone mount as a systemd service/
+- *References:* [[https://rclone.org/commands/rclone_mount/][Rclone mount @Doc-rclone]]
+*** PENDING Mount dir menu [0%] :ROFI:
+:PROPERTIES:
+:ID:       657f70b1-56fe-4503-93cb-3a2987f002e8
+:END:
+- [X] *OBJECTIVE:* /Mount directories via rofi menu/
++- [ ] *OBJECTIVE:* /Config mount point dest/+
+- *Checkout:* related files
+  - [[file:=/.config/qtile/settings/widgets.py][widgets.py @Qtile-config]]
+  - [[file:=/dotfiles/scripts/rofi-mount][rofi-mount @Rofi-script]]
+- *References:* [[https://l.opnxng.com/r/archlinux/comments/15mz7rj/bash_script_to_mountunmount_rclone_affiliated/?tl=zh-hant][Script mount/umount rclone mount points @Reddit]]
+**** PENDING Change icons in qtile bar accordingly
+- *Complication:* Icons for mulitple clouds
+*** DONE Workaround rclone cache mode
+CLOSED: [2025-06-03 Tue 07:43]
+:PROPERTIES:
+:ID:       b1c36c41-af26-452e-9bca-002fc835cc5f
+:END:
+- *OBJECTIVE:* /Cache mode takes a lot of space, workaround this issue/
+- *Checkout:* [[https://forum.rclone.org/t/why-arent-cache-rclone-files-being-removed/28948/8][Vfs cache explain @Forum-rclone]]
+- *References:* [[https://l.opnxng.com/r/rclone/comments/xnbhsx/rclone_mount_with_vfs_cache_mode_full_is_using_up/][Cache mode using up space @Reddit]]
+** PENDING Disable blink.cmp for orgroam menu :NVIM:BLINK:ORGROAM:
+- *OBJECTIVE:* Disable completion in orgroam buffer
+- *[NOTE]* taken on [2025-06-25 22:33]:
+  #+NAME: Disable completion nvim-cmp
+  #+BEGIN_SRC lua
+  require('nvim-cmp').setup({
+  enabled = function()
+  local buftype = vim.api.nvim_get_option_value("buftype", { buf = 0 })
+  if buftype == "nofile" then
+  return false
+  end
+  -- ... handling other conditions
+  end
+  })
+  #+END_SRC
+- *Reference:*
+  - [[https://github.com/chipsenkbeil/org-roam.nvim/blob/8369398de7c343732eea89f834b1bc71f1f110da/DOCS.org#disable-nvim-cmp-completion-in-select-buffer][Disable completion in orgroam buffer @Github]]
+  - [[https://cmp.saghen.dev/configuration/general#general][Blink.cmp general options @Doc]]
+** PARTIAL Integrating AI [25%] :AI:
+CLOSED: [2025-07-10 Thu 05:48]
+- *OBJECTIVE:* /Integrate AI to current workflow/
+- *Resource:*
+  - [[https://www.reddit.com/r/ChatGPT/comments/1akynsv/any_free_alternatives_to_open_ai_api/][Google AI Studio @Google-studio]]
+  - [[https://ai.google.dev/docs][Google AI docs @Google-dev]]
+*** DONE Working with Google AI :GEMINI:
+CLOSED: [2025-05-28 Wed 03:24]
+- *Goal(s):* create workspace with [[https://pypi.org/project/google-generativeai/][google-generativeai sdk @Pypi]]
+- *Resources:*
+  - [[https://github.com/google-gemini/cookbook][Cookbook @Github]]
+  - [[https://ai.google.dev][Documentation @Google-dev]]
+**** DONE Requesting API
+CLOSED: [2025-01-10 Fri 02:28]
+- *Goal(s):* successfully obtain working API for Google Gemini
+- *Resource:* [[https://console.cloud.google.com/apis/credentials?pli=1&inv=1&invt=AbmaIA][Google cloud console]]
+  - Obtain working API through google cloud console
+  - NOTE: only 1 API per project
+- *Note:* looking up for platform free tier limitation
+***** DONE Making request via script
+CLOSED: [2025-01-10 Fri 02:27]
+- *Goal(s):* make request from terminal to Gemini
+- *Note:* use the [[https://ai.google.dev/api/generate-content#method:-models.generatecontent][=generateContent=]] to make request to Gemini API
+  #+NAME: Make request to Gemini API
+  #+BEGIN_SRC python
+  import google.generativeai as genai
+  
+  genai.configure(api_key="YOUR_API_KEY")
+  model = genai.GenerativeModel("gemini-1.5-flash")
+  response = model.generate_content("Explain how AI works")
+  print(response.text)
+  #+END_SRC
+** PENDING Specify pandoc convert :PANDOC:
+- *OBJECTIVE:* Convert specific part of a document with =pandoc=
+- *Reference:*
+  - [[https://ao.bloat.cat/exchange/superuser.com/questions/1577299/limit-what-sections-get-exported-processed-in-pandoc-markdown][Limit section to export in pandoc @Overflow]]
+  - [[https://ao.bloat.cat/exchange/tex.stackexchange.com/questions/637047/pandoc-convert-specific-parts-of-document][Pandoc conert specific parts of a document @Overflow]]
+** PARTIAL Open nvim with org-mode API :NVIM:ORGMODE:
+CLOSED: [2025-07-31 Thu 20:54] DEADLINE: <2025-07-31 Thu>
+- *OBJECTIVE:* Open nvim in org-mode =api=
+- *Reference:*
+  - [[https://nvim-orgmode.github.io/#api-docs][Nvim-orgmode API @Doc-nvim-orgmode]]
+  - [[https://github.com/nvim-orgmode/orgmode/discussions/845][How to open nvim in orgmode capture @Github-discussion]]
+*** PENDING Nvim solve loop declare issue :NVIM:
+- *OBJECTIVE:* Solve loop issue when declare BufType nvim
+** PARTIAL Create mpv image profile :MPV:
+CLOSED: [2025-07-26 Sat 18:38] DEADLINE: <2025-07-26 Sat>
+- *OBJECTIVE:*
+  - [X] Use mpv as an image viewer
+  - [X] Create a mpv image viewer profile
+-----
+- *[NOTE]* taken on <2025-07-26 18:33>:
+  - mpv as image viewer changes: [[https://github.com/whammou/dotfiles/commit/6b5dd7f8df063a89acc42a40289e80b8c89c9062][Use mpv as image viewer @Commit]]
+  - Systen handle mpv as image viewer change [[https://github.com/whammou/dotfiles/commit/49a4c8239170eea468ed6fca9611d88efe7de257][hanldr mpv mime type change]]
+-----
+- *Reference:* [[https://github.com/mpv-player/mpv/issues/7983][Use mpv as image viewer @Github-discussion]]
+*** DONE Separate mpv profiles
+CLOSED: [2025-08-12 Tue 12:50] DEADLINE: <2025-08-12 Tue>
+- *OBJECTIVE:* Separate mpv profiles base on filetype
+-----
+- *[NOTE]* taken on [2025-08-12 19:54]: \\
+  Separate mpv profiles and and scripting
+  - *Checkout:* [[https://github.com/whammou/dotfiles/commit/54af259f0909344cf858c0a1b25238d63fa3ff58][Update mpv profiles @Commit]]
+-----
+- *Reference:* [[https://ao.bloat.cat/exchange/unix.stackexchange.com/questions/730927/load-scripts-in-another-folder][Load scripts in another directory @Overflow]]
+** DONE Orgroam zettelkasten template :ORGROAM:ZETTELKASTEN:
+CLOSED: [2025-07-28 Mon 21:17] DEADLINE: <2025-07-28 Mon>
+- *OBJECTIVE:* Create zettelkasten template in orgroam
+-----
+- *[NOTE]* taken on <2025-07-28 21:06>:
+  - Updated zettelkasten =template= in [[https://github.com/whammou/dotfiles/commit/ab9de07c5237919dd04031babb80cef5c4b5b728][Updated zettelkasten templates @Commit]]
+  - Using snippets as headers =generator=
+-----
+** DONE Change image url syntax :OGRMODE:
+CLOSED: [2025-07-28 Mon 16:53] DEADLINE: <2025-07-28 Mon>
+- *OBJECTIVE:* Change images syntax from pure html to org-html
+-----
+- *[NOTE]* taken on <2025-07-27 22:24>:
+  - Each url syntax has pros and cons its really hard to rely on one syntax only
+  - *See also:* [[id:582a05fc-a519-4197-b638-191224c322b3][Pandoc orgmode html image @Org]]
+-----
+- *Reference:* [[https://ao.bloat.cat/exchange/stackoverflow.com/questions/11670654/how-to-resize-images-in-org-mode][Resize image in orgmode @Oveflow]]
+** DONE Image manipulate from terminal :IMAGEMAGICK:
+CLOSED: [2025-07-28 Mon 22:10] DEADLINE: <2025-07-28 Mon>
+:PROPERTIES:
+:ID:       6fff52f0-e06e-4d64-a521-584bb19902fa
+:END:
+- *OBJECTIVE:* Quickly manipulate images from terminal
+- *Reference:* [[https://ao.bloat.cat/exchange/askubuntu.com/questions/271776/how-to-resize-an-image-through-the-terminal][Resize images from terminal @Overflow]]
+** DONE Pandoc orgmode html image :PANDOC:ORGMODE:
+CLOSED: [2025-07-28 Mon 22:12] DEADLINE: <2025-07-28 Mon>
+:PROPERTIES:
+:ID:       582a05fc-a519-4197-b638-191224c322b3
+:END:
+- *OBJECTIVE:* Alternative to embed html in orgmode and export to pdf using pandoc
+-----
+- *[NOTE]* taken on <2025-07-28 22:08>:
+  - Pandoc does not encourage html fragment in markup language
+  - Use native markup =link attribute= for images
+  - Manipulate image size using =imagemagic= [[id:6fff52f0-e06e-4d64-a521-584bb19902fa][Image manipulate from terminal @Org]]
+-----
+- *Reference:*
+  - [[https://www.reddit.com/r/LaTeX/comments/uehyhw/pandoc_is_not_rendering_my_images/][Pandoc html image export @Reddit]]
+  - [[https://github.com/jgm/pandoc/issues/5454][Embed pdf and image pandoc export @Github-issue]]
+** PENDING Open completion in qutebrowser :QUTEBROWSER:
+- *OBJECTIVE:* Implement open =completion= in qutebrowser commands
+** DONE Orgmode template completion :ORGMODE:NVIM:
+CLOSED: [2025-07-29 Tue 17:20] DEADLINE: <2025-07-29 Tue>
+- *OBJECTIVE:* Write script for capture directory completion
+-----
+- *[NOTE]* taken on <2025-07-29 17:23>:
+  - Successfully implemented get path recursively
+  - *Checkout:* [[https://github.com/whammou/dotfiles/commit/0b8b83081d67c076783031d74e22e525336f1fd2][Update org_get_name function @Commit]]
+-----
+- *Reference:* [[file:~/documents/local/ai-output/nvim_get_name.md][Nvim Get Name Recursively @Gemini]]
+** DONE Nvim-orgmode capture menu :NVIM:OGRMODE:
+CLOSED: [2025-09-06 Sat 20:15]
+- *OBJECTIVE:* Create nvim-orgmode capture menu
+-----
+- *[NOTE]* taken on [2025-09-06 20:14]: \\
+  Implementation of capture menu using =vim.ui= natively and provided with =orgmode.nvim=
+-----
+** PENDING Orgroam Custom Node Insert :ORGROAM:
+- *OBJECTIVE:* Orgroam filter node by tags
+- *Reference:*
+  - [[https://github.com/chipsenkbeil/org-roam.nvim/blob/main/DOCS.org#find-nodes-by-tag][Find Node by Tag @Github]]
+  - [[https://github.com/chipsenkbeil/org-roam.nvim/discussions/94][Find note by tags discussion @Github-discussion]]
+** DONE Use neovim as manpager :NVIM:MAN:
+CLOSED: [2025-08-04 Mon 20:37] DEADLINE: <2025-08-04 Mon>
+- *OBJECTIVE:* Set =neovim= main man reader
+-----
+- *[NOTE]* taken on <2025-08-04 20:34>:
+  - To use =neovim= as =manpager=
+    1. Set =$MANPAGER= to ="nvim +Man!"=
+    2. Set shell variable in this =fish-shell= using =set -Ux MANPAGER "nvim +Man!"=
+    3. (optional) Set ~$MANWIDTH=999~ to disable =man= hardwrap
+       * Use nvim =softwrap=: run /nvim +Man! +'set wrap'/
+-----
+- *Reference:* [[https://www.youtube.com/embed/1V5ewUKIM1I?start=6m34s#__preview][Video Man Pages @Youtube]]
+** ABORTED Implement Qutebrowser Prompt :QUTEBROWSER:
+CLOSED: [2025-08-04 Mon 20:18] DEADLINE: <2025-08-04 Mon>
+- *OBJECTIVE:* Implement qutebrowser prompt
+-----
+- *[NOTE]* taken on <2025-08-04 05:31>:
+  - To prompt user input use =read=
+    #+NAME: Bash script to prompt for user input
+    #+BEGIN_SRC bash
+    #!/usr/bin/bash
+    
+    read -p "Input: " query
+    _qtile_spawn_split_x "$query"
+    #+END_SRC
+-----
+- *[NOTE]* taken on <2025-08-04 20:18>:
+  - Using prompt function is counter productive!
+-----
+- *Reference:* [[https://ryanstutorials.net/bash-scripting-tutorial/bash-input.php][Bash input read @Blog]]
+** DONE Completion From Another Command :FISH:
+CLOSED: [2025-08-23 Sat 00:23] DEADLINE: <2025-08-23 Sat>
+- *OBJECTIVE:* Get wrapped command autocompletion
+- *Reference:*
+  - [[https://ao.bloat.cat/exchange/stackoverflow.com/questions/38936716/using-the-bash-autocompletion-of-another-command][Bash wrap command autocompletion @Overflow]]
+  - [[https://fishshell.com/docs/current/cmds/complete.html][Wrapped command autocompletion @Fish-doc]]
+** TODO Shell Integrations :SHELL:FABRIC:FISH:
+DEADLINE: <2025-09-28 Sun>
+:PROPERTIES:
+:ID:       4af0707d-93ed-4689-b971-15c9ebfebdd8
+:END:
+- *Goal(s):* working on integrate AI with =kitty=
+- [IDEA] Run fabric with current hint-url
+  - To implement, run: =fabric -uy <hint-url> | fabric -p <pattern> -o <output>=
+    - +[ ] Query  [[file:=/.config/fabric/patterns/][=<patterns>=]] with =fzf-menu=+
+    - [ ] Create output =hierarchy=
+- *Visit:*
+  - [[id:90a03e2c-edb3-4afd-8252-462b6d912cbe][Improve kitty worflow @Orgmode]]
+  - [[id:f0e11344-5210-4709-b5df-f6de28e7ee7a::*Function fzf][Fzf menu @Orgmode]]
+*** DONE Integrate with fabric and kitty :FABRIC:KITTY:
+CLOSED: [2025-08-07 Thu 05:33]
+- *Idea:* Implement printing outputs for fabric
+- *Visit:*
+  - [[id:90a03e2c-edb3-4afd-8252-462b6d912cbe][Improve kitty worflow @Orgmode]]
+  - [[id:4af0707d-93ed-4689-b971-15c9ebfebdd8][Shell Integrations @Orgmode]]
+** DONE Nvim integration :NVIM:FABRIC:
+CLOSED: [2025-09-06 Sat 17:52]
+- *OBJECTIVE:*
+  - [X] Render response in markdown to take advantage of nvim markdown render
+  - [X] Convert response from markdown to org for better system integration
+-----
+- *[NOTE]* taken on [2025-09-06 17:48]: \\
+  Convert simple =markdown= to org using =pandoc=:
+  #+BEGIN_SRC bash
+  pandoc --wrap=none -f markdown -t org filename # or "-" for stdout
+  #+END_SRC
+-----
+** DONE Qutebrowser Lose Scrolling Bug :QUTEBROWSER:
+CLOSED: [2025-08-12 Tue 00:12] DEADLINE: <2025-08-12 Tue>
+- *OBJECTIVE:* Fixing =qutebrowser= reset layout leads to losing scroll position bug
+- *Reference:* [[https://github.com/qutebrowser/qutebrowser/issues/2236][Qutebrowser status bar bug @Github-issue]]
+** DONE Test Orgroam Capture Sub-headline :ORGROAM:
+CLOSED: [2025-08-23 Sat 21:27] DEADLINE: <2025-08-23 Sat>
++ *OBJECTIVE:* Test orgroam capture to sub-headline format
++ *Reference:* [[https://github.com/chipsenkbeil/org-roam.nvim/blob/main/DOCS.org#templates-1][Orgroam capture template @Github-doc]]
+** PENDING Update Orgmode Notification Parameters :ORGMODE:NOTIFICATION:
++ *OBJECTIVE:* Modify =orgmode.cron_job= parameters by writting a standalone file
+** DONE Nvim Open New Buffer :NVIM:ORGMODE:
+CLOSED: [2025-09-06 Sat 18:06] DEADLINE: <2025-09-06 Sat>
+- *OBJECTIVE:* Open org capture and agenda in =new-buffer=
+-----
+- *[NOTE]* taken on [2025-09-06 18:06]: \\
+  Using ~win_split_mode = "tabnew"~ to open capture buffers in a new tab with neovim
+-----
+*** TODO Manually Open Config File
+DEADLINE: <2025-09-28 Sun>
+- *OBJECTIVE:* Tell nvim to open a =config= file independent to =init= (/manually/)
+** ABORTED Testing Org-Babel :PYTHON:TEST:ORGMODE:
+CLOSED: [2025-08-31 Sun 20:51]
+#+BEGIN_SRC python :RESULTS output
+print("Hello World")
+#+END_SRC
+
+#+HTML:<details>
+** DONE Test Warning Message :GITHUB:ORGMODE:
+CLOSED: [2025-08-31 Sun 22:54]
+#+HTML:</details>
+#+NAME:Warning Message
+#+BEGIN_QUOTE
+[!WARNING]
+Draft items are subjected to refile!
+#+END_QUOTE
+** ABORTED Using Zotero with Qutebrowser :QUTEBROWSER:CITATIONS:ZOTERO:
+CLOSED: [2025-09-07 Sun 17:58] DEADLINE: <2025-09-07 Sun>
+- *OBJECTIVE:* Using =zotero= in conjunction with =qutebrowser=
+-----
+- *[NOTE]* taken on [2025-09-07 17:59]: \\
+  Github does not parse citations format via =.bib=. This is not what I used qutebrowser-zotero for
+  + *Checkout:* [[id:a348064e-f0ba-4aa6-970a-8e63a1aa9dba][Citation Rendering]]
+-----
+- *Reference:* [[https://github.com/parchd-1/qutebrowser-zotero][Qutebrowser-Zotero @Github]]
+** PENDING Overhaul Nvim UI Elements :NVIM:
+- *OBJECTIVE:* Re-config nvim ui elements border from =rounded= to =single= or =none=
+** PENDING Setup Git-Annex :GIT:
+:PROPERTIES:
+:ID:       46113c10-28b3-4477-93f4-d22d50c941ff
+:END:
+- *OBJECTIVE:* Manage /large-file/ with =git-annex=
+-----
+- *[NOTE]* taken on [2025-09-17 07:57]: \\
+  Current repo is running =orgmode= and render =org= file on =github=, this enables the feature of having /images/ render with with /URL/ and /path/ thus having =git-annex= is not a must for this repo as it might complicate things. =Git-annex= is useful in other situation like which a version control of a /large file/ is required
+-----
+- *Reference:*
+  + [[https://www.youtube.com/watch?v=p0eVyhv2rbk#__preview][Manage Large File with Git @Youtube-DT]]
+  + [[https://github.com/emanuele/git-annex_tutorial][Git-annex Tutorial @Github]]
+- *Checkout:* [[id:0838bd36-ab3e-4c82-8bd4-66a73acb00ae][Manage Large Files With Git @Org-doc]]
+** TODO Manage Long Config Files :NVIM:HOUSEKEEPING:
+DEADLINE: <2025-09-28 Sun>
+- *OBJECTIVE:* How to manage long =nvim= /config files/ and /plugin lists/
+- *Reference:*
+  + [[https://old.reddit.com/r/neovim/comments/1g6ls56/how_do_you_manage_very_long_initlua_configs_and/][Manage Very Long Configs @Reddit]]
+  + [[file:/home/whammou/documents/local/ai-output/nvim-long-configs.org][Long Config Files Guide @File]]
+** TODO Remove Filter Config :MPV:
+DEADLINE: <2025-09-28 Sun>
+- *OBJECTIVE:* Remove filter from specific =profile= in =mpv= config
+** PENDING Nvim Plugins Reload :NVIM:
+- *OBJECTIVE:* Reload plugins in nvim before and after =BufRead= / =BufWrite=
+- *Reference:* [[https://dev.to/reobin/reload-init-vim-without-restarting-neovim-1h82][Reload init files without reload nvim @Blog]]
+** PENDING Checkout org-roam-pygraph :ORGROAM:UTILITY:
+- *OBJECTIVE:* Implement this =python= package to =note=
+- *Reference:* [[https://github.com/aatmunbaxi/org-roam-pygraph][org-roam-pygraph @Github]]
+** PENDING Config blink.cmp in Org :ORGMODE:NVIM:
+- *OBJECTIVE:* Config =blink.cmp= to suggest =org-property= in =cmdline=
+** PENDING Sorting Headlines :ORGMODE:SORTING:
+- *OBJECTIVE:* Sorting headlines in =orgmode=
+- *Reference:* [[https://github.com/hoclun-rigsep/org-sort][sorting headlines script @Github]]
+** PENDING Config yazi UI :YAZI:
+- *OBJECTIVE:* Re-config broken yazi UI

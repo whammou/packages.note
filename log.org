@@ -1,0 +1,542 @@
+#+TITLE: Package Logs
+#+DESCRIPTION: Description for archive here
+#+OPTIONS: ^:nil
+
+* Logs :LOG:SYSTEM:PACKAGES:
+- /Store finished tasks/
+** DONE SSH to Github :GITHUB:
+CLOSED: [2025-01-10 Fri 05:51] DEADLINE: <2025-01-09 Thu 05:00>
+- *Objective:* generate ssh key and successfully pull repos from github
+** DONE Qtile toggle fullscreen floating :QTILE:
+CLOSED: [2025-06-24 Tue 22:44] DEADLINE: <2025-06-24 Tue>
+- *OBJECTIVE:* Toggle between fullscreen and floating window
+- *Issue:* Toggle fullscreen to floating causes qtile to crash
+  - *Checkout:* [[https://github.com/whammou/dotfiles/commit/e99f96a1349c58e4954de83477c67dc384b4454d][Fixed toogle fullscreen crash @Commit]]
+** DONE Update yazi plugins :YAZI:
+CLOSED: [2025-03-23 Sun 14:56] DEADLINE: <2025-03-23 Sun 20:00>
+- /Update yazi plugins:/
+  - [X] parent-arrows.lua 
+  - [X] checkout plugsin [[https://yazi-rs.github.io/docs/resources/][list]]
+** DONE Faster navigate files :NVIM:YAZI:
+CLOSED: [2025-06-01 Sun 01:31]
+- *Objective:* /navigate faster with nvim and yazi/
+- *References:* [[https://www.youtube.com/watch?v=xy9sSVx2cfk#__preview][How I navigate my files @Youtube-preview]]
+** DONE Nvim-lsp :NVIM:
+CLOSED: [2025-05-24 Sat 01:19]
+Nvim supports the Language Server Protocol (LSP), which means it acts as a client to LSP servers and includes a Lua framework `vim.lsp` for building enhanced LSP tools
+- *Run:* ~:help lsp~ for nvim-lsp guide
+- Setup [[https://github.com/neovim/nvim-lspconfig][nvim-lspconfig]]
+*** Language sever
+The ~Language Server Protocol~ (LSP) is an open, JSON-RPC-based protocol for use between source code editors or ~integrated development environments~ (IDES) and ~servers~ that provides /language intelligence tools/
+*** Markup language server
+Generally a good markup language server is texlab
+- *Resources:* [[https://github.com/latex-lsp/texlab][texlab]]
+** DONE Nvim optimization [100%] :NVIM:
+CLOSED: [2025-06-06 Fri 11:08]
+- *Objective:* research ways to optimize nvim and manage new packages
+*** DONE Setup LazyVim :NVIM:
+CLOSED: [2025-01-24 Fri 21:31] DEADLINE: <2025-01-25 Sat 18:00>
+- *Goal(s):* convert [[~/dotfiles/nvim/.config/nvim/init.vim][init.vim]] to [[~/dotfiles/nvim-lua/.config/nvim/init.lua][init.lua]]
+  - Run ~nvim +:help lua_guide"~ for built-in conversion guide from vim script to lua
+- *Checkout:* [[http://www.lazyvim.org/]]
+- *Stumble upon:* [[https://github.com/nanotee/nvim-lua-guide][nvim-lua-guide]]
+**** DONE LazyVim modular
+CLOSED: [2025-05-24 Sat 01:20]
+- *Goal(s):* convert singular ~init.vim~ to  [[https://www.kurtpeniket.tech/blog/neovim_lua_transition_vimplug_to_lazy][modular config]] with vim config structure
+  
+  #+NAME: overall stucture
+  #+BEGIN_SRC
+  .
+  ├── init.lua
+  ├── lazy-lock.json
+  ├── lua
+  │   ├── general.lua
+  │   ├── lsp_config.lua
+  │   ├── mappings.lua
+  │   └── plugins.lua
+  ├── old_init.vim
+  └── spell
+      ├── en.utf-8.add
+      └── en.utf-8.add.spl
+  #+END_SRC
+***** LazyVim plugins
+- *Objective:* adding and configuring plugins
+***** LazyVim mappings
+- *Objective:* adding keymaps
+  
+- Source ~kepmaps.lua~ from ~config/init.lua~:
+  - In ~config/init.lua~:
+    
+- *Keymapping syntax:*
+  - Keymappings can be set using command: ~vim.keymap.set()~ method
+  - Set ~map~ variable for clean format: ~local map = vim.keymap.set~
+    - Consult ~:help vim.keymap.set()~ for more parameter information
+**** Convert vim-script to LazyVim
+- *Goal(s):* replace plugin manager to [[https://github.com/folke/lazy.nvim][lazy.nvim]] for seamless integration with lua config
+***** LazvyVim installation
+- *Structured Setup:*
+  #+NAME: /.config/nvim/init.lua
+  #+BEGIN_SRC lua
+  require("config.lazy")
+  #+END_SRC  
+***** LazyVim add plugins
+- Plugins are installed under ~$HOME/.config/nvim/lua/plugins/*.lua~ - every lua files under this dir are auto-merged with the config file
+- Plugin spec example:
+  #+NAME: spec example
+  #+BEGIN_SRC lua
+  return {
+  "folke/neodev.nvim",
+  "folke/which-key.nvim",
+  { "folke/neoconf.nvim", cmd = "Neoconf" },
+  }
+  #+END_SRC
+- More on plugin spec, visit: [[https://lazy.folke.io/spec]]
+*** DONE Switching nvim configs
+CLOSED: [2025-01-15 Wed 21:19] DEADLINE: <2025-01-14 Tue 22:00>
+- *Objective:* successfully switching between different config dir
+- *Resource:* [[https://michaeluloth.com/neovim-switch-configs/][switching config]]
+*** ABORTED Disable when file is large [100%] :NVIM:
+CLOSED: [2025-06-06 Fri 11:08]
+- *Objective:* /Disable some features when dealing with large files/
+- *References:* [[https://l.opnxng.com/r/neovim/comments/1fy7jln/treesitter_slow_on_big_files_yet_am_i_the_only/][Nvim largefile hack @Reddit]]
+- *Local-file:* [[file:~/.config/nvim/lua/plugins/xtras.lua][xtras.lua]]
+**** ABORTED Config bigfile-nvim
+CLOSED: [2025-06-06 Fri 11:08]
+- *Objective:* /Config bigfile-nvim for better typing experience/
+- *References:* [[https://github.com/LunarVim/bigfile.nvim][nvim-bigfile @Github]]
+** DONE Modular Qtile :QTILE:
+CLOSED: [2025-03-20 Thu 22:09]
+- *Objective:* successfully modularize ~qtile~ config
+- Config directory: 
+  - [x] Keymaps config: /create ~keymaps.py~/dot_examples
+  - [x] Colorscheme config: /create ~colorschemes.py~/
+  - [x] Layouts config: /create ~layouts.py~/
+  - [x] Scratepad config: /create ~scratepads.py~/
+  - [x] Options config: /create ~options.py~/
+- Working-tree dir:
+** DONE Config yazi [100%] :YAZI:
+CLOSED: [2025-05-22 Thu 06:25]
+- *Objective:* /Better workflow with yazi/
+*** DONE Integration Lazygit :LAZYGIT:
+CLOSED: [2025-05-22 Thu 06:20]
+- *Objective:* /Successfully integrate ~lazygit~ in ~yazi~/
+  - *References:* [[https://github.com/sxyazi/yazi/discussions/1989][Integrate lazygit with yazi @Github-issue]]
+*** ABORTED Keybinds
+CLOSED: [2025-05-22 Thu 06:21]
+- *Objective:* separate hotkeys into ~EDIT~ and ~VIEW~:
+  - [ ] Bind short-key to open ~EDIT~ such as: images, texts, docs
+  - [ ] Bind short-key to open ~VIEW~ - view only for images and texts/docs
+*** DONE Yazi fish integration [0%] :YAZI:
+CLOSED: [2025-04-19 Sat 17:49] DEADLINE: <2025-04-19 Sat 17:00>
+- /Open yazi at typed dir in fish shell/
+** DONE Config vim completion [100%] :NVIM:
+CLOSED: [2025-05-23 Fri 01:44]
+- *Objective:* successfully replace ~ultil-snip~ with ~blink-nvim~ and ~lua-snip~
+- *Visit:* [[https://a.opnxng.com/exchange/vi.stackexchange.com/questions/41733/how-to-set-up-luasnip-in-neovim-w-lsp-zero][nvim-cmp#external-sources]]
+*** DONE Configure lua-snip
+CLOSED: [2025-04-19 Sat 06:11] DEADLINE: <2025-04-18 Fri 19:00>
+- *Goal(s):* configure and learn ~lua-snip~ syntax
+- *Visit:*
+  - *Youtube:* [[https://youtube.com/watch?v=GxnBIRl9UmA][luasnip setup]]
+  - *Setup:*
+    - [[https://evesdropper.dev/files/luasnip/ultisnips-to-luasnip/][nvim luasnip setup]]
+    - [[https://sbulav.github.io/vim/neovim-setting-up-luasnip/][Neovim setting up snippets with luasnip]]
+*** DONE Configure blink.cmp
+CLOSED: [2025-04-30 Wed 22:05] DEADLINE: <2025-04-30 Wed 18:00>
+- /Successfully source/ ~lua-snip~ /with/ ~blink.cmp~
+- *Visit:* 
+  - [[https://cmp.saghen.dev/configuration/snippets#luasnip][source luasnip guide]]
+  - [[https://cmp.saghen.dev/configuration/snippets#luasnip][blink.cmp documentaion]]
+  - [[https://github.com/Saghen/blink.cmp/discussions/1391][blink.cmp luasnip issue]]
+*** DONE Write friendly-snippets
+CLOSED: [2025-04-30 Wed 22:05] DEADLINE: <2025-04-30 Wed 18:30>
+- /Write snippets in VSCode style or using/ ~luasnip~
+- *Visit:*
+  - [[https://code.visualstudio.com/docs/editor/userdefinedsnippets][Snippets in vscode]]
+  - [[https://github.com/L3MON4D3/LuaSnip/issues/281][Importing custom vscode snippets stopped working]]
+*** ABORTED Configure nvim-lsp
+CLOSED: [2025-03-16 Sun 20:23]
+- *Goal(s):* configure ~nvim-lsp~
+*** ABORTED configure nvim-cmp
+CLOSED: [2025-03-16 Sun 20:23]
+- *Goal(s):* configure ~nvim-cmp~
+** DONE Hacking on with qtile [100%] :QTILE:
+CLOSED: [2025-06-23 Mon 21:23]
+- *OBJECTIVE:* /Assign spawn grouping and layouts/
+*** DONE Hooks and custom functions
+CLOSED: [2025-05-08 Thu 14:27]
+- *OBJECTIVE:* /Checkout hooks and custom functions e.g ~expose command~/
+  - *Visit:* [[https://docs.qtile.org/en/latest/manual/config/hooks.html][Hooks and Commands @Qtile-doc]]
+*** DONE Manage floating windows [100%]
+CLOSED: [2025-06-23 Mon 16:27]
+- *OBJECTIVE:* /Add floating windows for quick preview of media files/
+  - To prevent *focus_stealing_hook* in ~qtile~: [[https://github.com/whammou/dotfiles/commit/56ee9ce8c65ed7b2dba894a5ba294a285c2504f0][Added prevent_focus_stealing hook @Commit]]
+- *References:*
+  - [[https://github.com/qtile/qtile/issues/1260#issuecomment-913327960][floating window focus discussion @Github]]
+  - [[https://github.com/qtile/qtile/wiki/floating-windows][floating windows @Github-wiki]]
+  - [[https://l.opnxng.com/r/qtile/comments/w240e0/is_it_possible_to_move_around_floating_windows/][Resize floating windows @Reddit]]
+  - [[https://l.opnxng.com/r/qtile/comments/tw9apn/spawn_a_terminal_with_command_and_make_it_floating/][Function per custom window(WM_CLASS) @Reddit]]
+  - [[https://github.com/qtile/qtile/discussions/4049][Keep window above all other windows @Github-issue]]
+  - [[https://github.com/qtile/qtile/issues/1145#issuecomment-392771986][App layers @Github-issue]]
+**** DONE Cycle through floating windows
+CLOSED: [2025-06-06 Fri 11:01]
+- [X] *OBJECTIVE:* /Keybind to cycle focus through floating windows/ [100%]
+  - [X] +*Visit:* [[https://github.com/qtile/qtile/issues/794][Keybinds @Github-issue]]+
+  - [X] +*Visit:* [[https://github.com/qtile/qtile/issues?q=is%3Aissue%20multiple%20callbacks&page=1][multiple callbacks keybinding @Gtihub-issue]]+
+  +- [X] [NOTE] taken on [2025-06-03 09:58]:+
+  *IDEA:* ~focus_nth_floating~ by a double hook ~lazy.function~ then bring current window to front via ~lazy.window.bring_to_front~
+  #+NAME: ~/.config/qtile/settings/key/windows.py
+  #+BEGIN_SRC: python
+  @hook.lazy.window
+  @hook.lazy.layout
+  def focus_nth_float():
+  bring_floats_to_front()
+  for range(1, index):
+  if not window.floating:
+  layout.next_window()
+  else
+  window.bring_to_front()
+  window.focus()
+  #+END_SRC
+  - *Solution:* [[https://github.com/whammou/dotfiles/commit/63517e3a5bf6ada9834eb3fc2681596a34b5892c][Win_next/prev now only work with floating windows @Commit]]
+  - [X] [NOTE] taken on [2025-06-06 10:58]:
+    Add ability to jump to ~floating withdows~ with the same keybind as ~titling windows~
+    - *Checkout:* [[https://github.com/whammou/dotfiles/commit/488b0fef5754048087bfb02712cfa34dc480e9a9][Added ability to jump to floating windows @Commit]]
+**** DONE Resize floating windows
+CLOSED: [2025-06-05 Thu 07:09] DEADLINE: <2025-05-22 Thu 21:00>
+- [X] *OBJECTIVE:* /Create keybinds to resize floating windows/ [100%]
+  - [X] Resize xy
+  - [X] Resize keep aspect ratio
+    - *Solution:* [[https://github.com/whammou/dotfiles/commit/8a2ff6a3c8340c22ce68873315b8d551f3f854fe][Added ability to resize and move floating windows @Commit]]
+**** DONE Move floating windows
+CLOSED: [2025-06-05 Thu 07:09]
+- *OBJECTIVE:* /Create move() floating windows keybinds/
+- *References:* [[https://l.opnxng.com/r/qtile/comments/18cjjlo/keybinds_to_resize_and_move_floating_window/][Move floating windows via @lazy.window.function @Reddit]]
+  - *Solution:* [[https://github.com/whammou/dotfiles/commit/8a2ff6a3c8340c22ce68873315b8d551f3f854fe][Added ability to resize and move floating windows @Commit]]
+**** PARTIAL Hide background floating windows [100%]
+CLOSED: [2025-06-10 Tue 15:01]
+- /*Objective:* Hide floating windows/
+***** DONE Using Picom to set transparency [100%]
+CLOSED: [2025-06-08 Sun 00:02]
+- [X] /*Objective:* Hide and unhide floating windows to de-cluster desktop/ [4/4]
+  - [X] Setting up picom for the task
+  - [X] Integrate hide method into related floating funcitons
+  - [X] Bind hide all floating window
+  - [X] Keybind for when toggle ~scratchpad~
+- *Complication:* Qtile does not support hidding windows
+- *Solution:* - Workaround: use a compositor to set opacity to lowest (hide) and highest(unhide)
+***** ABORTED Hide floating window in different group [%]
+CLOSED: [2025-06-23 Mon 16:23]
+- [ ] /*Objective:* Create a hidden group to for floating windows/
+- [ ] /*Objective:* Call hidden windows to current screen/
+**** DONE Qtile notification bug
+CLOSED: [2025-06-23 Mon 16:23]
+- *OBJECTIVE:* Notification disappear when fire/ =hide_floating()=
+- *[NOTE]* taken on [2025-06-23 16:24]:
+  Using =move_to_top= and =move-to_bottom= instead of =keep_above= or =keep_below= solved the issue
+*** ABORTED Windows grouping
+CLOSED: [2025-06-08 Sun 05:07] DEADLINE: <2025-05-09 Fri 18:00>
+- [X] *OBJECTIVE:* /Assign grouping for windows with the same wm_class/
+  - *Visit:* [[https://github.com/aravinda0/qtile-bonsai/discussions/12#discussioncomment-11095207][new window grouping @Github-discussion]]
+- +[ ] *OBJECTIVE:* /Assign goruping for *specific* windows with the same wn_class/+
+*** DONE Spawn window from links [100%]
+CLOSED: [2025-06-23 Mon 21:24]
+- *OBJECTIVE:* /Successfully show window in pre-defined layout/
+**** DONE Determine spawn filetype :HANDLR:KITTY: [100%]
+CLOSED: [2025-06-10 Tue 14:59]
+- *OBJECTIVE:* /Determine which program to open a filetype/
+  1. [X] Write script to open if text file then ~nvim.desktop~ else fall back to ~xdg-open~
+  2. [X] Exclude pattern "[[" "[" with flag --hint path
+- *Complication:*
+  1. ~qtile~ fails to parse ~file path~ for ~handlr~ to open in new-window
+  2. Kitty Return wrong URL/path format
+- *Solution:*
+  1. Replace ~xdg-open~ for ~nvim.desktop~ entry with ~kitty nvim <url/path>~
+     - TIPS: Use ~hanlr get~ to determine entry type
+     - CHECKOUT: [[https://github.com/whammou/dotfiles/commit/8074febb127a7d91e1c8c1704c921e373840944b][Added ability to open dynamically open file from link to split @Commit]]
+  2. [[https://github.com/whammou/dotfiles/commit/8074febb127a7d91e1c8c1704c921e373840944b][Added regex in hint mode to get the correct file @Commit]]
+- *References:*
+  - [[id:670f557e-c6f4-4392-aa0c-be18d7ae49a9][CONSULT Open with handlr @Orgmode]]
+  - [[id:19cf96c7-877d-4504-b6fd-1db0310af1a6][ERROR Kitty hint path error @Orgmode]]
+**** DONE Determine window layout
+CLOSED: [2025-06-08 Sun 05:02]
+- /*Objective:* Tell qtile which layout to spawn the window in/
+- *Reference:* [[id:88bbe7c3-ba9a-4bad-adf8-b523dd0c1c26][Spawn layout commands @Orgmode]]
+** DONE Working with rofi [100%] :ROFI:
+CLOSED: [2025-06-11 Wed 23:45]
+- *OBJECTIVE:* /Implement rofi to workflow/
+- *Visit:* [[https://davatorium.github.io/rofi/][Rofi official page @Doc-rofi]]
+*** DONE Implement rofi scripts [100%]
+CLOSED: [2025-06-11 Wed 23:45]
+- *OBJECTIVE:* /Adding rofi scripts for more optimal workflow/
+**** DONE Implement window switcher
+CLOSED: [2025-05-30 Fri 16:50]
+- *OBJECTIVE:* /Quickly switch to a widow/
+  - To launch rofi window-switcher, run: ~rofi --show window~
+**** DONE Implement power-menu
+CLOSED: [2025-05-31 Sat 07:17]
+- *OBJECTIVE:* /Choose power option quickly with rofi/
+- *References:* [[https://wiki.archlinux.org/title/Rofi][Rofi power management @Archwiki]]
+  - To launch rofi power-menu, run: ~rofi -show power-menu -modi power-menu:/sbin/rofi-power-menu~
+**** DONE Implement clipboard history :GREENCLIP:
+CLOSED: [2025-05-31 Sat 23:57]
+:PROPERTIES:
+:ID:       d17ebad8-7524-43b8-b6be-0b3f808a9aaa
+:END:
+- *OBJECTIVE:* /Quickly choose clipboard history with rofi/
+- *References:* [[https://wiki.archlinux.org/title/Rofi][Rofi clipboard-history @Archwiki]]
+  - To launch rofi clipboard-history, run ~rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'~
+***** DONE Enable clipmenu daemon
+CLOSED: [2025-05-31 Sat 23:57]
+- *OBJECTIVE:* /Enable greenclip daemon/
+- *Reference:* [[https://github.com/erebe/greenclip][Clipmenu @Github]]
+  - To enable clipmenu daemon, run: ~greenclip --daemon &~ in [[file:~/.config/qtile/autostart.sh][autostart.sh]]
+*** DONE Theming rofi [100%]
+CLOSED: [2025-06-01 Sun 00:29]
+- *OBJECTIVE:* /Theme rofi to match system/
+- *References:*
+  - [[https://github.com/davatorium/rofi/blob/next/doc/rofi-theme.5.markdown][Rofi theme @Github]]
+  - [[https://github.com/newmanls/rofi-themes-collection?tab=readme-ov-file][Extra themes @Github]]
+**** DONE Custom theme
+CLOSED: [2025-06-01 Sun 00:29]
+- *OBJECTIVE:* /Make rofi size as small as ~qtile-bar~/
+- *References:* [[https://github.com/davatorium/rofi/blob/next/doc/rofi-theme.5.markdown][Rofi-theme @Github]]
+** DONE Fish shell Configuration [100%] :FISH:
+CLOSED: [2025-06-25 Wed 23:03]
+- /Config/ ~fish~
+*** DONE Fish shell directory preview
+CLOSED: [2025-04-12 Sat 22:34] DEADLINE: <2025-04-12 Sat 20:00>
+- /Set input dir as a parameter/
+- *Visit:* [[https://github.com/fish-shell/fish-shell/issues/6838][preview-shortcuts]]
+  - /commandline help:/ run ~man commandline~
+    
+- [x] *READ!*List contents of current directory under cursor: [[file:/usr/share/fish/functions/__fish_list_current_token.fish][__fish_list_current_token.fish]]
+- [x] Modifiied ~__fish_list_current_token~ to run with ~yazi~ [[file:~/.config/fish/functions/_yazi_current_token.fish][_yazi_current_token.fish]]
+*** DONE Fish edit current token
+CLOSED: [2025-04-24 Thu 16:50] DEADLINE: <2025-04-24 Thu 20:30>
+- /Create function to edit current token/
+- *Run:* ~bat --color always $arg &| less --color~
+** DONE Media Control :ROFI:PLAYERCTL:
+CLOSED: [2025-07-07 Mon 22:22] DEADLINE: <2025-07-07 Mon>
+- *OBJECTIVE:* Pause/playing playing media
+- *[NOTE]* taken on [2025-07-07 22:07]:
+  Using =playerctl= to remotely control playing media client and =rofi= to interact with =playerctl=
+- *Reference:*
+  - [[https://old.reddit.com/r/mpv/comments/sx8o2t/is_there_a_way_to_playpause_multiple_instances_of/][Pause playing media instance @Reddit]]
+  - [[https://github.com/altdesktop/playerctl][Playerctl #Github]]
+  - [[https://wiki.archlinux.org/title/MPRIS#Playerctl][Setup playerctl @Archwiki]]
+** DONE Nvim folding keybinds :NVIM:
+CLOSED: [2025-07-22 Tue 16:18]
+- *OBJECTIVE:* Bind keys to quickly navigate foldings in nvim
+** DONE Nvim indent align :NVIM:
+CLOSED: [2025-07-23 Wed 20:15] DEADLINE: <2025-07-23 Wed>
+- *Objective:* /Manage nvim virtual indentaion alignment in plugins:/
+  - [X] ~nvim-orgmode~ 
+  - [X] ~render-markdown~
+*** DONE Resolve indention conflict :ORGZLY:NVIM:ORGMODE:
+CLOSED: [2025-07-23 Wed 17:17] DEADLINE: <2025-07-23 Wed>
+- *OBJECTIVE:* Resolve mis-match indention between projects
+-----
+- *[NOTE]* taken on <2025-07-23 17:13>:
+  - =Orgzy= does not support *hard indent* but *DO* support *hard wrap* file
+  - Bandage solution is to use =virtual-indentation= on anything that is not code
+-----
+- *Reference:* [[https://old.reddit.com/r/orgmode/comments/igzze6/do_you_hardwrap_lines_in_your_org_files/][Hardwrap vs Softwrap @Reddit]]
+** DONE Media Control :ROFI:
+CLOSED: [2025-07-10 Thu 05:40] DEADLINE: <2025-07-07 Mon>
+- *OBJECTIVE:* Pause/playing playing media
+- *Reference:* [[https://old.reddit.com/r/mpv/comments/sx8o2t/is_there_a_way_to_playpause_multiple_instances_of/][Pause playing media instance @Reddit]]
+** DONE Write fish auto-completion :FISH:FABRIC:
+CLOSED: [2025-07-19 Sat 22:43]
+- *OBJECTIVE:* Write fish completions for fabric-ai
+- *Reference:* [[https://fishshell.com/docs/current/completions.html][Custom completions @Doc-fish]]
+** DONE Changing filtype on open :NVIM:ORGMODE:
+CLOSED: [2025-07-23 Wed 19:40] DEADLINE: <2025-07-23 Wed>
+- *OBJECTIVE:* Change =org-roam-node-buffer= to =org=
+-----
+- *[NOTE]* taken on <2025-07-22 12:42>:
+  - Using nvim =vim.bo.filetype= to detect current filetype
+  - If current ft is =org-roam-node-buffer= change it to =org=
+    #+BEGIN_SRC lua
+    local org_roam_augroup = vim.api.nvim_create_augroup("OrgRoamFileTypeGroup", { clear = true })
+    
+    vim.api.nvim_create_autocmd("BufReadPost", {
+    group = org_roam_augroup,
+    pattern = "*", -- Apply to all files, then filter by filetype in the callback
+    callback = function()
+    if vim.bo.filetype == "org-roam-node-buffer" then
+    vim.bo.filetype = "org"
+    end
+    end,
+    desc = "Change org-roam-node-buffer filetype to org on buffer read"
+    })
+    
+    vim.api.nvim_create_autocmd("BufEnter", {
+    group = org_roam_augroup,
+    pattern = "*", -- Apply to all files, then filter by filetype in the callback
+    callback = function()
+    if vim.bo.filetype == "org-roam-node-buffer" then
+    vim.bo.filetype = "org"
+    end
+    end,
+    desc = "Change org-roam-node-buffer filetype to org on buffer enter"
+    })
+    #+END_SRC
+-----
+- *Reference:* [[https://old.reddit.com/r/neovim/comments/12qzsu1/changing_a_filetype_on_open/][Changing filetype on open @Reddit]]
+*** DONE Run autocmd per filetype
+CLOSED: [2025-07-23 Wed 19:36] DEADLINE: <2025-07-23 Wed>
+- *OBJECTIVE:* Run autocmd for specific filetype
+-----
+- *[NOTE]* taken on <2025-07-23 19:36>:
+  - Use ftplugin e.g
+  #+BEGIN_SRC plain
+ /home/whammou/.config/nvim/after
+└──  ftplugin
+    ├──  markdown.lua
+    └──  org.lua
+  #+END_SRC
+-----
+- *Reference:* [[https://old.reddit.com/r/neovim/comments/xhtr1p/nvim_autocmd_filetype_option/][nvim autocmd per filetype @Reddit]]
+** DONE Insert file section to buffer :NVIM:
+CLOSED: [2025-07-18 Fri 14:52] DEADLINE: <2025-07-18 Fri>
+- *OBJECTIVE:* Pull text from a file to current buffer
+- *[NOTE]* taken on <2025-07-18 14:51>:
+  - Run: =:h :r= inside nvim for more details
+- *Reference:* [[https://ao.bloat.cat/exchange/unix.stackexchange.com/questions/61273/while-in-vi-how-can-i-pull-in-insert-paste-the-contents-of-another-file][Insert to content from another file nvim @Overflow]]
+** DONE Create fabric-ai capture template :FABRIC:AI:
+CLOSED: [2025-07-19 Sat 22:52] DEADLINE: <2025-07-19 Sat>
+- *OBJECTIVE:* Create a capture format for AI workflow with fabric
+- *[NOTE]* taken on <2025-07-19 22:50>:
+  - Template is written in =~/.input.md=
+    #+BEGIN_SRC markdown
+    ## Input
+    How to debug an `nvim` plugin written in `lua`
+    ## Output
+    #+END_SRC
+  
+  - Run command
+    #+BEGIN_SRC fish
+    cat .input.md | fabric | viewmd
+    #+END_SRC
+  
+  - =viewmd= command
+    #+BEGIN_SRC fish
+    function viewmd
+    nvim -c "setfiletype markdown" -c "set wrap" -c "0read ~/.input.md"
+    end
+    #+END_SRC
+
+- *Reference:*
+  - [[file:/home/whammou/documents/local/ai-output/nvim-read-lines.md][Create a template for prompt @AI]]
+  - [[file:/home/whammou/documents/local/ai-output/nvim-chain-command.md][Chain commands in nvim @AI]]
+** DONE Pandoc font settings :PANDOC:
+CLOSED: [2025-07-23 Wed 21:22] DEADLINE: <2025-07-23 Wed>
+:PROPERTIES:
+:ID:       4d35707a-871b-40e3-a7ba-84300fdc102e
+:END:
+- *OBJECTIVE:* Set conversion fonts from =markdown= to =LaTex=
+-----
+- *[NOTE]* taken on <2025-07-21 23:46>:
+  - Font can be defined in latex settings
+  - *Visit:* [[id:dbd5573d-765a-4c2f-b610-daec56c76ac1][Org to pdf format @Org]]
+-----
+- *Reference:*
+  - [[https://ao.bloat.cat/exchange/tex.stackexchange.com/questions/234786/how-to-set-a-font-family-with-pandoc][In-depth pandoc font settings @Overflow]]
+  - [[file:~/documents/local/ai-output/font-org-pdf.md][Pandoc from orgmode to pdf @Gemini]]
+*** DONE Convert from org font settings :ORGMODE:
+CLOSED: [2025-07-23 Wed 21:22]
+- *OBJECTIVE:* Define font-family when converting from =org=
+-----
+- *[NOTE]* taken on <2025-07-23 21:20>:
+  - Currently using this header:
+    #+BEGIN_SRC org
+    #+latex_header: \usepackage[scaled]{helvet} \renewcommand\familydefault{\sfdefault}
+    #+END_SRC
+-----
+- *Reference:* [[https://old.reddit.com/r/orgmode/comments/lwgwfm/export_to_pdf_cannot_change_font_not_an_academic/][Change font using latex header @Reddit]]
+** DONE Org export formatting :ORGMODE:
+CLOSED: [2025-07-23 Wed 21:18]
+- *OBJECTIVE:* Prettify orgmode export format
+*** DONE Org remove tags/state pdf export
+CLOSED: [2025-07-23 Wed 21:03] DEADLINE: <2025-07-23 Wed>
+- *OBJECTIVE:* Improve export format for =orgmode=
+-----
+- *[NOTE]* taken on <2025-07-23 21:00>:
+  - To toggle inclusion of =state= or =tags= use options *todo:* or *tags:*
+    #+BEGIN_SRC org
+    #+OPTIONS: tags:nil
+    #+OPTIONS: todo:nil
+    #+END_SRC
+-----
+- *Reference:*
+  - [[https://github.com/noncog/github-org-mode-hacks#hiding-org-headings-on-github][Hiding section from export @Github]]
+  - [[https://ao.bloat.cat/exchange/stackoverflow.com/questions/50531117/org-mode-how-to-hide-tag-name-when-exporting][Hide tag name when export @Overflow]]
+  - [[https://orgmode.org/manual/Export-Settings.html][Orgmode export settings @Orgmode-doc]]
+*** DONE Orgmode horizontal rule
+CLOSED: [2025-07-21 Mon 16:31] DEADLINE: <2025-07-21 Mon 16:17>
+- *OBJECTIVE:* Test horizontal in nvim-orgmode and github render
+-----
+This is a test body
+
+- This is a test bullet
+- This is also a test bullet
+---
+# Github markdown horizontal line rule
+Horizontal rule using =markdown syntax=
+-----
+- *[NOTE]* taken on <2025-07-21 16:26>:
+  Horizontal rule works but with current custom css it seems to remove the line completely
+-----
+- *Reference:* [[https://orgmode.org/manual/Horizontal-Rules.html][Orgmode horizontal rule @Orgmode-doc]]
+*** DONE Org to pdf format :PANDOC:
+CLOSED: [2025-07-23 Wed 21:18] DEADLINE: <2025-07-23 Wed>
+:PROPERTIES:
+:ID:       dbd5573d-765a-4c2f-b610-daec56c76ac1
+:END:
+- *OBJECTIVE:*
+- [X] Left alignment on pdf export using pandoc
+  - [X] Tell pandoc to use =user templates=
+  - [X] Modify =system templates=
+  -----
+- *[NOTE]* taken on <2025-07-21 21:37>:
+  - Pandoc does not detect user defined templates in =~/.local/share/pandoc/=
+  - System template are stored in =/usr/share/pandoc/=
+  -----
+- *[NOTE]* taken on <2025-07-23 21:16>:
+  - Orgmode has a native export settings and pandoc does respect this options
+  - To use user template with pandoc see =--template= flag
+-----
+- *Reference:* [[https://ao.bloat.cat/exchange/stackoverflow.com/questions/38446618/left-align-text-when-converting-from-md-to-pdf][Convert to pdf left-alignment @Overflow]]
+*** DONE Hiding headings on export
+CLOSED: [2025-07-24 Thu 16:27]
+- *OBJECTIVE:* Hiding heading with specific tag on export
+- *Reference:* [[https://github.com/noncog/github-org-mode-hacks?tab=readme-ov-file#hiding-org-headings-on-github][Hiding headings on github @Github]]
+** ABORTED Realtime transcript :MPV:
+CLOSED: [2025-07-19 Sat 14:21] DEADLINE: <2025-07-20 Sun>
+- *OBJECTIVE:* Install WhisperSubs for realtime transcript in mpv
+- *[NOTE]* taken on <2025-07-19 14:21>:
+  Failed to install =whisper.cpp=
+- *Reference:* [[https://github.com/GhostNaN/whisper-subs][WhisperSubs @Github]]
+** ABORTED Working with fabric :FABRIC:
+CLOSED: [2025-07-19 Sat 22:43]
+- *OBJECTIVE:* /Integrate fabric to current workflow/
+- *References:*
+  - [[https://github.com/danielmiessler/fabric][Fabric @Gtihub]]
+  - [[https://www.reddit.com/r/PromptEngineering/][r/PromptEngineering @Reddit]]
+*** ABORTED Fzf menu script :FZF:
+CLOSED: [2025-07-19 Sat 22:46]
+:PROPERTIES:
+:ID:       36141277-e892-4034-a47e-468c825e188b
+:END:
+- *OBJECTIVE:* /Use fzf menu to quickly output notes from ai/
+- *[NOTE]* taken on <2025-07-19 22:44>:
+  - =Fabric-ai= already provide a completion for =fish-shell=
+  - *Checkout:* [[https://github.com/danielmiessler/Fabric#shell-completions][Fabric-ai fish shell completion @Github]]
+- *Reference:* [[https://www.youtube.com/watch?v=qwpK4rqAZwA&t=57#__preview][notekami @Youtube-gotbletu]]
+** DONE Learn git ignore syntax :GIT:
+CLOSED: [2025-07-26 Sat 20:05] DEADLINE: <2025-07-26 Sat>
+- *OBJECTIVE:* Learn =.gitignore= syntax
+- *Reference:*
+  - [[https://git-scm.com/docs/gitignore][Gitignore documentaion @Git-doc]]
+  - [[https://www.atlassian.com/git/tutorials/saving-changes/gitignore][How to use .gitignore @Atlassian]]
