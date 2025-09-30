@@ -299,7 +299,7 @@ CLOSED: [2025-08-23 Sat 00:23] DEADLINE: <2025-08-23 Sat>
   - [[https://ao.bloat.cat/exchange/stackoverflow.com/questions/38936716/using-the-bash-autocompletion-of-another-command][Bash wrap command autocompletion @Overflow]]
   - [[https://fishshell.com/docs/current/cmds/complete.html][Wrapped command autocompletion @Fish-doc]]
 ** TODO Shell Integrations :SHELL:FABRIC:FISH:
-DEADLINE: <2025-10-01 Wed>
+DEADLINE: <2025-10-02 Thu>
 :PROPERTIES:
 :ID:       4af0707d-93ed-4689-b971-15c9ebfebdd8
 :END:
@@ -347,7 +347,7 @@ CLOSED: [2025-09-06 Sat 18:06] DEADLINE: <2025-09-06 Sat>
   Using ~win_split_mode = "tabnew"~ to open capture buffers in a new tab with neovim
 -----
 *** TODO Manually Open Config File
-DEADLINE: <2025-10-01 Wed>
+DEADLINE: <2025-10-02 Thu>
 - *OBJECTIVE:* Tell nvim to open a =config= file independent to =init= (/manually/)
 ** ABORTED Testing Org-Babel :PYTHON:TEST:ORGMODE:
 CLOSED: [2025-08-31 Sun 20:51]
@@ -389,13 +389,13 @@ CLOSED: [2025-09-07 Sun 17:58] DEADLINE: <2025-09-07 Sun>
   + [[https://github.com/emanuele/git-annex_tutorial][Git-annex Tutorial @Github]]
 - *Checkout:* [[id:0838bd36-ab3e-4c82-8bd4-66a73acb00ae][Manage Large Files With Git @Org-doc]]
 ** TODO Manage Long Config Files :NVIM:HOUSEKEEPING:
-DEADLINE: <2025-10-01 Wed>
+DEADLINE: <2025-10-02 Thu>
 - *OBJECTIVE:* How to manage long =nvim= /config files/ and /plugin lists/
 - *Reference:*
   + [[https://old.reddit.com/r/neovim/comments/1g6ls56/how_do_you_manage_very_long_initlua_configs_and/][Manage Very Long Configs @Reddit]]
   + [[file:/home/whammou/documents/local/ai-output/nvim-long-configs.org][Long Config Files Guide @File]]
 ** TODO Remove Filter Config :MPV:
-DEADLINE: <2025-10-01 Wed>
+DEADLINE: <2025-10-02 Thu>
 - *OBJECTIVE:* Remove filter from specific =profile= in =mpv= config
 ** PENDING Nvim Plugins Reload :NVIM:
 - *OBJECTIVE:* Reload plugins in nvim before and after =BufRead= / =BufWrite=
