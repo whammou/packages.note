@@ -410,3 +410,7 @@ DEADLINE: <2025-10-02 Thu>
 - *Reference:* [[https://github.com/hoclun-rigsep/org-sort][sorting headlines script @Github]]
 ** PENDING Config yazi UI :YAZI:
 - *OBJECTIVE:* Re-config broken yazi UI
+** DOING Config Lazygit Submodules :LAZYGIT:
+DEADLINE: <2025-09-30 Tue>
+- *OBJECTIVE:* Config =lazygit= to work with =git submodules=
+- *Reference:* [[https://github.com/jesseduffield/lazygit/wiki/Custom-Commands-Compendium][Lazygit Custom Commands @Github]]
