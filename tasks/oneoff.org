@@ -414,3 +414,8 @@ DEADLINE: <2025-10-03 Fri>
 DEADLINE: <2025-09-30 Tue> CLOSED: [2025-09-30 Tue 21:26]
 - *OBJECTIVE:* Config =lazygit= to work with =git submodules=
 - *Reference:* [[https://github.com/jesseduffield/lazygit/wiki/Custom-Commands-Compendium][Lazygit Custom Commands @Github]]
+** Running git foreach in Parallel :GIT:
+- *OBJECTIVE:* Running =git submodule foreach= in /parallel/ in stead of /serial/ to reduce time effort
+- *Reference:* [[https://software.codidact.com/posts/289156][Running git submodule in parallel @Codidact]]
+** PENDING Config zathura Visibility :ZATHURA:
+- *OBJECTIVE:* Config zathura menu highlight for better visibility
