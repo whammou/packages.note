@@ -414,8 +414,20 @@ DEADLINE: <2025-10-03 Fri>
 DEADLINE: <2025-09-30 Tue> CLOSED: [2025-09-30 Tue 21:26]
 - *OBJECTIVE:* Config =lazygit= to work with =git submodules=
 - *Reference:* [[https://github.com/jesseduffield/lazygit/wiki/Custom-Commands-Compendium][Lazygit Custom Commands @Github]]
-** Running git foreach in Parallel :GIT:
+** DOING Running git foreach in Parallel :GIT:
 - *OBJECTIVE:* Running =git submodule foreach= in /parallel/ in stead of /serial/ to reduce time effort
+-----
+- *[NOTE]* taken on [2025-10-01 15:35]: \\
+  /fetching/, /pulling/, /pushing/ in parallel may not save the resources or time. With that said, combine git =commands= with =xargs= to launch many instances of git in parallel
+  #+BEGIN_SRC bash
+  git submodule foreach pwd \
+    | xargs -I{} --max-procs=8 git -C {} pull
+  #+END_SRC
+    + Replace =git submodule foreach= with =ls= or =find= to speed up the process even more
+      #+BEGIN_SRC bash
+      find .modules/ -maxdepth 1 -mindepth 1 -type d | xargs -I{} --max-procs=16 git -C {} fetch --verbose
+      #+END_SRC
+-----
 - *Reference:* [[https://software.codidact.com/posts/289156][Running git submodule in parallel @Codidact]]
 ** PENDING Config zathura Visibility :ZATHURA:
 - *OBJECTIVE:* Config zathura menu highlight for better visibility
