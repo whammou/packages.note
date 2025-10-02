@@ -411,7 +411,7 @@ DEADLINE: <2025-10-03 Fri>
 ** PENDING Config yazi UI :YAZI:
 - *OBJECTIVE:* Re-config broken yazi UI
 ** DONE Config Lazygit Submodules :LAZYGIT:
-DEADLINE: <2025-09-30 Tue> CLOSED: [2025-09-30 Tue 21:26]
+CLOSED: [2025-09-30 Tue 21:26] DEADLINE: <2025-09-30 Tue>
 - *OBJECTIVE:* Config =lazygit= to work with =git submodules=
 - *Reference:* [[https://github.com/jesseduffield/lazygit/wiki/Custom-Commands-Compendium][Lazygit Custom Commands @Github]]
 ** DOING Running git foreach in Parallel :GIT:
@@ -429,5 +429,10 @@ DEADLINE: <2025-09-30 Tue> CLOSED: [2025-09-30 Tue 21:26]
       #+END_SRC
 -----
 - *Reference:* [[https://software.codidact.com/posts/289156][Running git submodule in parallel @Codidact]]
-** PENDING Config zathura Visibility :ZATHURA:
+** DONE Config zathura Visibility :ZATHURA:
+CLOSED: [2025-10-02 Thu 07:54]
 - *OBJECTIVE:* Config zathura menu highlight for better visibility
+** TODO Laygit Menu and Keybinds :LAZYGIT:
+DEADLINE: <2025-10-02 Thu>
+- *OBJECTIVE:* Design a lazygit menu with keybinds with to read output from commands
+- *Reference:* [[https://github.com/jesseduffield/lazygit/blob/master/docs/Custom_Command_Keybindings.md][Lazygit Custom Commands Keybinds @Github]]
