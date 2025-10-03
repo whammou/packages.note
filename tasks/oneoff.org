@@ -432,7 +432,7 @@ CLOSED: [2025-09-30 Tue 21:26] DEADLINE: <2025-09-30 Tue>
 ** DONE Config zathura Visibility :ZATHURA:
 CLOSED: [2025-10-02 Thu 07:54]
 - *OBJECTIVE:* Config zathura menu highlight for better visibility
-** DOING Laygit Menu and Keybinds :LAZYGIT:
-DEADLINE: <2025-10-03 Fri>
+** DONE Laygit Menu and Keybinds :LAZYGIT:
+CLOSED: [2025-10-03 Fri 22:05] DEADLINE: <2025-10-03 Fri>
 - *OBJECTIVE:* Design a lazygit menu with keybinds with to read output from commands
 - *Reference:* [[https://github.com/jesseduffield/lazygit/blob/master/docs/Custom_Command_Keybindings.md][Lazygit Custom Commands Keybinds @Github]]
