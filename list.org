@@ -1,6 +1,0 @@
-#+TITLE: Package Lists
-#+DESCRIPTION: Description for archive here
-#+OPTIONS: ^:nil
-
-* Lists :LIST:SYSTEM:PACKAGES:
-- /Stores system lists/
