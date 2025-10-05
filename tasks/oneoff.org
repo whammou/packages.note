@@ -414,7 +414,8 @@ DEADLINE: <2025-10-07 Tue>
 CLOSED: [2025-09-30 Tue 21:26] DEADLINE: <2025-09-30 Tue>
 - *OBJECTIVE:* Config =lazygit= to work with =git submodules=
 - *Reference:* [[https://github.com/jesseduffield/lazygit/wiki/Custom-Commands-Compendium][Lazygit Custom Commands @Github]]
-** DOING Running git foreach in Parallel :GIT:
+** DONE Running git foreach in Parallel :GIT:
+CLOSED: [2025-10-05 Sun 21:36]
 - *OBJECTIVE:* Running =git submodule foreach= in /parallel/ in stead of /serial/ to reduce time effort
 -----
 - *[NOTE]* taken on [2025-10-01 15:35]: \\
