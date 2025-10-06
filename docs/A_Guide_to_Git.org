@@ -2,7 +2,7 @@
 :ID: 2d5fffc1-20cd-45f8-994b-638481352951
 :ROAM_ORIGIN: 4c2571b3-e416-48c0-bf7d-4d93af0ce820
 :END:
-#+TITLE: Git Configurations
+#+TITLE: A Guide to Git
 
 #+OPTIONS: title:nil tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
 #+LATEX_HEADER: \renewcommand\maketitle{} \usepackage[scaled]{helvet} \renewcommand\familydefault{\sfdefault}
@@ -10,7 +10,7 @@
 #+FILETAGS: :DOC:PROJECT:PACKAGES:GIT:
 #+HTML:<details>
 
-* Git Configurations :DOC:META:PACKAGES:GIT:
+* A Guide to Git :DOC:META:PACKAGES:GIT:
 #+HTML:</details>
 - *OBJECTIVE:* /Improve workflow with nvim, fugitive, lazygit/
 - *References:*
