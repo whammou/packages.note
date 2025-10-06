@@ -22,6 +22,9 @@ Draft items are subjected to change and refile!
 *Checkout:*
 + [[https://seb.jambor.dev/posts/improving-shell-workflows-with-fzf/https://seb.jambor.dev/posts/improving-shell-workflows-with-fzf/][Immproving workflow with fzf @Blog]]
 + [[https://github.com/beauwilliams/awesome-fzf][A semi-complete List of Fzf @Github]]
-** Git Revert a pushed commit
+** OUTLINE Git Revert a pushed commit
 /How to revert a pushed commit on public or private branch/
 + *Visit:* [[https://www.youtube.com/watch?v=H2DuJNWbqLw][How to revert a pushed commit @Youtube]]
+** OUTLINE Command Multiple Git Repositories :GIT:
+/Run git commands in parallel in multiple repositories/
+- *Goes-to:* [[id:0d065ce6-e02a-4dce-b7a5-29a1910d0e9c][Make Changes to Submodules @Org]]
