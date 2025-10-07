@@ -440,3 +440,10 @@ CLOSED: [2025-10-03 Fri 22:05] DEADLINE: <2025-10-03 Fri>
 ** PENDING Config Rustdesk :RUSTDESK:
 - *OBJECTIVE:* Config =rustdesk= for every desktop
 - *Reference:* [[https://github.com/rustdesk/rustdesk][Rustdesk main repo @Github]]
+** DOING Search and Replace with Grep :GREP:
+DEADLINE: <2025-10-07 Tue>
+:PROPERTIES:
+:ID: cd6ce3f7-b41e-485f-a4f8-b4263929b2b8
+:END:
+- *OBJECTIVE:* Replace /patterns/ using =grep= and =sed=
+- *Reference:* [[https://github.com/BurntSushi/ripgrep/blob/master/FAQ.md#search-and-replace][Ripgrep - Search and Replace @Github]]
