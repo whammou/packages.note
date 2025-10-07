@@ -95,12 +95,12 @@ CLOSED: [2025-05-24 Sat 01:20]
 CLOSED: [2025-01-15 Wed 21:19] DEADLINE: <2025-01-14 Tue 22:00>
 - *Objective:* successfully switching between different config dir
 - *Resource:* [[https://michaeluloth.com/neovim-switch-configs/][switching config]]
-*** ABORTED Disable when file is large [100%] :NVIM:
+*** ABRT Disable when file is large [100%] :NVIM:
 CLOSED: [2025-06-06 Fri 11:08]
 - *Objective:* /Disable some features when dealing with large files/
 - *References:* [[https://l.opnxng.com/r/neovim/comments/1fy7jln/treesitter_slow_on_big_files_yet_am_i_the_only/][Nvim largefile hack @Reddit]]
 - *Local-file:* [[file:~/.config/nvim/lua/plugins/xtras.lua][xtras.lua]]
-**** ABORTED Config bigfile-nvim
+**** ABRT Config bigfile-nvim
 CLOSED: [2025-06-06 Fri 11:08]
 - *Objective:* /Config bigfile-nvim for better typing experience/
 - *References:* [[https://github.com/LunarVim/bigfile.nvim][nvim-bigfile @Github]]
@@ -121,7 +121,7 @@ CLOSED: [2025-05-22 Thu 06:25]
 CLOSED: [2025-05-22 Thu 06:20]
 - *Objective:* /Successfully integrate ~lazygit~ in ~yazi~/
   - *References:* [[https://github.com/sxyazi/yazi/discussions/1989][Integrate lazygit with yazi @Github-issue]]
-*** ABORTED Keybinds
+*** ABRT Keybinds
 CLOSED: [2025-05-22 Thu 06:21]
 - *Objective:* separate hotkeys into ~EDIT~ and ~VIEW~:
   - [ ] Bind short-key to open ~EDIT~ such as: images, texts, docs
@@ -154,10 +154,10 @@ CLOSED: [2025-04-30 Wed 22:05] DEADLINE: <2025-04-30 Wed 18:30>
 - *Visit:*
   - [[https://code.visualstudio.com/docs/editor/userdefinedsnippets][Snippets in vscode]]
   - [[https://github.com/L3MON4D3/LuaSnip/issues/281][Importing custom vscode snippets stopped working]]
-*** ABORTED Configure nvim-lsp
+*** ABRT Configure nvim-lsp
 CLOSED: [2025-03-16 Sun 20:23]
 - *Goal(s):* configure ~nvim-lsp~
-*** ABORTED configure nvim-cmp
+*** ABRT configure nvim-cmp
 CLOSED: [2025-03-16 Sun 20:23]
 - *Goal(s):* configure ~nvim-cmp~
 ** DONE Hacking on with qtile [100%] :QTILE:
@@ -213,7 +213,7 @@ CLOSED: [2025-06-05 Thu 07:09]
 - *OBJECTIVE:* /Create move() floating windows keybinds/
 - *References:* [[https://l.opnxng.com/r/qtile/comments/18cjjlo/keybinds_to_resize_and_move_floating_window/][Move floating windows via @lazy.window.function @Reddit]]
   - *Solution:* [[https://github.com/whammou/dotfiles/commit/8a2ff6a3c8340c22ce68873315b8d551f3f854fe][Added ability to resize and move floating windows @Commit]]
-**** PARTIAL Hide background floating windows [100%]
+**** PRTL Hide background floating windows [100%]
 CLOSED: [2025-06-10 Tue 15:01]
 - /*Objective:* Hide floating windows/
 ***** DONE Using Picom to set transparency [100%]
@@ -225,7 +225,7 @@ CLOSED: [2025-06-08 Sun 00:02]
   - [X] Keybind for when toggle ~scratchpad~
 - *Complication:* Qtile does not support hidding windows
 - *Solution:* - Workaround: use a compositor to set opacity to lowest (hide) and highest(unhide)
-***** ABORTED Hide floating window in different group [%]
+***** ABRT Hide floating window in different group [%]
 CLOSED: [2025-06-23 Mon 16:23]
 - [ ] /*Objective:* Create a hidden group to for floating windows/
 - [ ] /*Objective:* Call hidden windows to current screen/
@@ -234,7 +234,7 @@ CLOSED: [2025-06-23 Mon 16:23]
 - *OBJECTIVE:* Notification disappear when fire/ =hide_floating()=
 - *[NOTE]* taken on [2025-06-23 16:24]:
   Using =move_to_top= and =move-to_bottom= instead of =keep_above= or =keep_below= solved the issue
-*** ABORTED Windows grouping
+*** ABRT Windows grouping
 CLOSED: [2025-06-08 Sun 05:07] DEADLINE: <2025-05-09 Fri 18:00>
 - [X] *OBJECTIVE:* /Assign grouping for windows with the same wm_class/
   - *Visit:* [[https://github.com/aravinda0/qtile-bonsai/discussions/12#discussioncomment-11095207][new window grouping @Github-discussion]]
@@ -512,19 +512,19 @@ CLOSED: [2025-07-23 Wed 21:18] DEADLINE: <2025-07-23 Wed>
 CLOSED: [2025-07-24 Thu 16:27]
 - *OBJECTIVE:* Hiding heading with specific tag on export
 - *Reference:* [[https://github.com/noncog/github-org-mode-hacks?tab=readme-ov-file#hiding-org-headings-on-github][Hiding headings on github @Github]]
-** ABORTED Realtime transcript :MPV:
+** ABRT Realtime transcript :MPV:
 CLOSED: [2025-07-19 Sat 14:21] DEADLINE: <2025-07-20 Sun>
 - *OBJECTIVE:* Install WhisperSubs for realtime transcript in mpv
 - *[NOTE]* taken on <2025-07-19 14:21>:
   Failed to install =whisper.cpp=
 - *Reference:* [[https://github.com/GhostNaN/whisper-subs][WhisperSubs @Github]]
-** ABORTED Working with fabric :FABRIC:
+** ABRT Working with fabric :FABRIC:
 CLOSED: [2025-07-19 Sat 22:43]
 - *OBJECTIVE:* /Integrate fabric to current workflow/
 - *References:*
   - [[https://github.com/danielmiessler/fabric][Fabric @Gtihub]]
   - [[https://www.reddit.com/r/PromptEngineering/][r/PromptEngineering @Reddit]]
-*** ABORTED Fzf menu script :FZF:
+*** ABRT Fzf menu script :FZF:
 CLOSED: [2025-07-19 Sat 22:46]
 :PROPERTIES:
 :ID:       36141277-e892-4034-a47e-468c825e188b

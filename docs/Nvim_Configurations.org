@@ -28,5 +28,5 @@ CLOSED: [2025-07-12 Sat 22:20] DEADLINE: <2025-07-12 Sat 22:30>
   - [[https://l.opnxng.com/r/neovim/comments/wi4uf3/how_do_i_insert_current_date_or_time/][Insert today date in friendly snippet @Reddit]]
   - [[https://www.deepanseeralan.com/tech/insert-datetime-vscode-using-snippets/][Insert date and time in vscode @Blog]]
   - [[https://mybyways.com/blog/vs-code-snippet-to-insert-formatted-date-and-time][VScode snippet for date time @Blog]]
-** PENDING Luasnip syntax :LUASNIP:
+** PEND Luasnip syntax :LUASNIP:
 - *OBJECTIVE:* Writing custom snippet using lua

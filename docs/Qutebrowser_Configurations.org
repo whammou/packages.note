@@ -10,7 +10,7 @@
 #+FILETAGS: :DOC:PROJECT:PACKAGES:QUTEBROWSER:
 #+HTML:<details>
 
-* PARTIAL Qutebrowser Configurations [77%] :DOC:META:PACKAGES:QUTEBROWSER:
+* PRTL Qutebrowser Configurations [77%] :DOC:META:PACKAGES:QUTEBROWSER:
 CLOSED: [2025-06-10 Tue 01:04]
 #+HTML:</details>
 - *OBJECTIVE:* implement text to speech to qutebrowser
@@ -28,7 +28,7 @@ CLOSED: [2025-01-28 Tue 03:19]
 CLOSED: [2025-05-04 Sun 08:44]
 - *OBJECTIVE:* /Add qutebrowser start-page/
   - *Visit:* [[https://nimplex.github.io/Minimal-StartPage/][start-page @ Search]]
-** PARTIAL Qutebrowser with Qtile [100%] :QTILE:
+** PRTL Qutebrowser with Qtile [100%] :QTILE:
 CLOSED: [2025-05-22 Thu 06:03]
 - *OBJECTIVE:* /Integrate qutebrowser to qtile window manager/
 *** DONE Workaround window-bg
@@ -70,7 +70,7 @@ CLOSED: [2025-08-01 Fri 05:24] DEADLINE: <2025-04-21 Mon 22:00>
 -----
 - *Visit:* [[https://gist.github.com/knatsakis/8cf329853330893cd2d7fa3dbd5692b0][Qutebrowse-daemon script @ Github]]
 - *Checkout:* [[Workaround window-bg][[BUG] Workaround daemon next window focus bug @ Org]]
-*** PARTIAL Spawn layout commands
+*** PRTL Spawn layout commands
 CLOSED: [2025-05-21 Wed 23:28] DEADLINE: <2025-05-21 Wed 22:15>
 :PROPERTIES:
 :ID:       88bbe7c3-ba9a-4bad-adf8-b523dd0c1c26
@@ -103,7 +103,7 @@ CLOSED: [2025-06-10 Tue 01:04]
 - /*Objective:* Launch yazi as qutebrowser file chooser/
 - *Checkout:* [[https://github.com/whammou/dotfiles/commit/30eabb566bf99855b962062abb685109482f9ef7][Set yazi as default file picker @Commit]]
 - *Reference:* [[https://www.youtube.com/watch?v=ce2NOmTBWfo#__preview][Ranger as qutebrowser file chooser @Youtube]]
-** PENDING Userscripts
+** PEND Userscripts
 CLOSED: [2025-05-30 Fri 06:06]
 - *OBJECTIVE:* /Learn to write userscripts in qutebrowser/
   - *References:*
@@ -116,6 +116,6 @@ CLOSED: [2025-06-28 Sat 22:38]
   - *File:* [[file:~/.config/qutebrowser/][config @Directory]]
   - *Checkout:* [[https://github.com/whammou/dotfiles/commit/8f1d1a0c68f3c7f3de95d91896047db420495bfa][Modularize qutebrowser config @Commit]]
 - *References:* [[https://qutebrowser.org/doc/help/commands.html][Documentation @Qutebrowser]]
-** PENDING Change highlight colors using patch
+** PEND Change highlight colors using patch
 - /*Objective:* Change chromium default highlight colors/
 - *Reference:* [[https://github.com/qutebrowser/qutebrowser/discussions/5978][Change highlight colors with system patch @Github-issue]]

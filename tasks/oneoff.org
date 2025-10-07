@@ -60,15 +60,15 @@ CLOCK: [2025-06-30 Mon 22:49]--[2025-07-01 Tue 00:11] => 1:22
 :END:
 - *OBJECTIVE:* Custom orgroam capture target name
 - *Reference:* [[https://github.com/chipsenkbeil/org-roam.nvim/blob/main/DOCS.org#capture-node][Capture API in nvim-orgroam @Github]]
-** PENDING Qutebrowser multiple mode keybind :QUTEBROWSER:
+** PEND Qutebrowser multiple mode keybind :QUTEBROWSER:
 - *OBJECTIVE:* How to bind key in different modes
 - *Reference:* [[qute://help/configuring.html][Configurating qutebrowser @Doc-qutebrowser]]
-** PENDING Detect git repos from system :GIT:FZF:
+** PEND Detect git repos from system :GIT:FZF:
 - /Detect system wise git repos the use fzf to open lazygit at repo location/
-** PENDING Connect to running nvim server :NVIM:
+** PEND Connect to running nvim server :NVIM:
 - *Objective:* /Connect to running/ ~nvim-server~ /apply to/ ~orgmode~
   - *Visit:* [[https://github.com/neovim/neovim/issues/5035][github.com#\:connect-to-nvim-server @Github]]
-** PENDING Qtile keymap in json :QTILE:
+** PEND Qtile keymap in json :QTILE:
 - *Idea:* /Write key map and run in python/
 *** Encode keymap json :JSON:
 - *Objective:* /Encode [[file:~/.config/qtile/settings/keymaps.py][keymaps.py]] in json/
@@ -76,28 +76,28 @@ CLOCK: [2025-06-30 Mon 22:49]--[2025-07-01 Tue 00:11] => 1:22
 *** Decode json files :PYTHON:
 - *Objective:* /Deocde [[file:~/.config/qtile/settings/keymaps.py][keymaps.py]] using python/
 - *References:* [[https://docs.python.org/3/library/json.html][Json encoder and decoder using python @Python-doc]]
-** PENDING Change floating window size :QTILE:
+** PEND Change floating window size :QTILE:
 - *OBJECTIVE:* Define window size when in floating layout
-** PENDING Change snack.nvim border style :NVIM:
+** PEND Change snack.nvim border style :NVIM:
 - *OBJECTIVE:* Replace rounded border style in snack.nvim with static style for more aesthetic
 - *Reference:* 
   - [[http://www.lazyvim.org/plugins][Lazyvim core plugins @Doc-lazyvim]]
   - [[https://github.com/LazyVim/LazyVim/issues/1942#issuecomment-1793438952][Changing border with nvim-lspconfig @Github-issue]]
-** PENDING Create scripted tmux session :TMUX:
+** PEND Create scripted tmux session :TMUX:
 - *OBJECTIVE:* Create a persist session for orgmode notes/
 - *Complication:* nvim does not allow edit if multiple session are running
 - *Reference:* [[https://ryan.himmelwright.net/post/scripting-tmux-workspaces/][Scripting tmux workspace @Blog]]
-** PARTIAL Working with rclone [66%] :RCLONE:
+** PRTL Working with rclone [66%] :RCLONE:
 CLOSED: [2025-07-10 Thu 05:50]
 :PROPERTIES:
 :ID:       3700b025-3d42-4516-a17d-0eb37366d087
 :END:
 - *OBJECTIVE:* /Config rclone for optimal workflow/
-*** ABORTED Mount as a systemd service :SYSTEMD:
+*** ABRT Mount as a systemd service :SYSTEMD:
 CLOSED: [2025-06-03 Tue 07:45]
 - *OBJECTIVE:* /Running rclone mount as a systemd service/
 - *References:* [[https://rclone.org/commands/rclone_mount/][Rclone mount @Doc-rclone]]
-*** PENDING Mount dir menu [0%] :ROFI:
+*** PEND Mount dir menu [0%] :ROFI:
 :PROPERTIES:
 :ID:       657f70b1-56fe-4503-93cb-3a2987f002e8
 :END:
@@ -107,7 +107,7 @@ CLOSED: [2025-06-03 Tue 07:45]
   - [[file:=/.config/qtile/settings/widgets.py][widgets.py @Qtile-config]]
   - [[file:=/dotfiles/scripts/rofi-mount][rofi-mount @Rofi-script]]
 - *References:* [[https://l.opnxng.com/r/archlinux/comments/15mz7rj/bash_script_to_mountunmount_rclone_affiliated/?tl=zh-hant][Script mount/umount rclone mount points @Reddit]]
-**** PENDING Change icons in qtile bar accordingly
+**** PEND Change icons in qtile bar accordingly
 - *Complication:* Icons for mulitple clouds
 *** DONE Workaround rclone cache mode
 CLOSED: [2025-06-03 Tue 07:43]
@@ -117,7 +117,7 @@ CLOSED: [2025-06-03 Tue 07:43]
 - *OBJECTIVE:* /Cache mode takes a lot of space, workaround this issue/
 - *Checkout:* [[https://forum.rclone.org/t/why-arent-cache-rclone-files-being-removed/28948/8][Vfs cache explain @Forum-rclone]]
 - *References:* [[https://l.opnxng.com/r/rclone/comments/xnbhsx/rclone_mount_with_vfs_cache_mode_full_is_using_up/][Cache mode using up space @Reddit]]
-** PENDING Disable blink.cmp for orgroam menu :NVIM:BLINK:ORGROAM:
+** PEND Disable blink.cmp for orgroam menu :NVIM:BLINK:ORGROAM:
 - *OBJECTIVE:* Disable completion in orgroam buffer
 - *[NOTE]* taken on [2025-06-25 22:33]:
   #+NAME: Disable completion nvim-cmp
@@ -135,7 +135,7 @@ CLOSED: [2025-06-03 Tue 07:43]
 - *Reference:*
   - [[https://github.com/chipsenkbeil/org-roam.nvim/blob/8369398de7c343732eea89f834b1bc71f1f110da/DOCS.org#disable-nvim-cmp-completion-in-select-buffer][Disable completion in orgroam buffer @Github]]
   - [[https://cmp.saghen.dev/configuration/general#general][Blink.cmp general options @Doc]]
-** PARTIAL Integrating AI [25%] :AI:
+** PRTL Integrating AI [25%] :AI:
 CLOSED: [2025-07-10 Thu 05:48]
 - *OBJECTIVE:* /Integrate AI to current workflow/
 - *Resource:*
@@ -167,20 +167,20 @@ CLOSED: [2025-01-10 Fri 02:27]
   response = model.generate_content("Explain how AI works")
   print(response.text)
   #+END_SRC
-** PENDING Specify pandoc convert :PANDOC:
+** PEND Specify pandoc convert :PANDOC:
 - *OBJECTIVE:* Convert specific part of a document with =pandoc=
 - *Reference:*
   - [[https://ao.bloat.cat/exchange/superuser.com/questions/1577299/limit-what-sections-get-exported-processed-in-pandoc-markdown][Limit section to export in pandoc @Overflow]]
   - [[https://ao.bloat.cat/exchange/tex.stackexchange.com/questions/637047/pandoc-convert-specific-parts-of-document][Pandoc conert specific parts of a document @Overflow]]
-** PARTIAL Open nvim with org-mode API :NVIM:ORGMODE:
+** PRTL Open nvim with org-mode API :NVIM:ORGMODE:
 CLOSED: [2025-07-31 Thu 20:54] DEADLINE: <2025-07-31 Thu>
 - *OBJECTIVE:* Open nvim in org-mode =api=
 - *Reference:*
   - [[https://nvim-orgmode.github.io/#api-docs][Nvim-orgmode API @Doc-nvim-orgmode]]
   - [[https://github.com/nvim-orgmode/orgmode/discussions/845][How to open nvim in orgmode capture @Github-discussion]]
-*** PENDING Nvim solve loop declare issue :NVIM:
+*** PEND Nvim solve loop declare issue :NVIM:
 - *OBJECTIVE:* Solve loop issue when declare BufType nvim
-** PARTIAL Create mpv image profile :MPV:
+** PRTL Create mpv image profile :MPV:
 CLOSED: [2025-07-26 Sat 18:38] DEADLINE: <2025-07-26 Sat>
 - *OBJECTIVE:*
   - [X] Use mpv as an image viewer
@@ -239,7 +239,7 @@ CLOSED: [2025-07-28 Mon 22:12] DEADLINE: <2025-07-28 Mon>
 - *Reference:*
   - [[https://www.reddit.com/r/LaTeX/comments/uehyhw/pandoc_is_not_rendering_my_images/][Pandoc html image export @Reddit]]
   - [[https://github.com/jgm/pandoc/issues/5454][Embed pdf and image pandoc export @Github-issue]]
-** PENDING Open completion in qutebrowser :QUTEBROWSER:
+** PEND Open completion in qutebrowser :QUTEBROWSER:
 - *OBJECTIVE:* Implement open =completion= in qutebrowser commands
 ** DONE Orgmode template completion :ORGMODE:NVIM:
 CLOSED: [2025-07-29 Tue 17:20] DEADLINE: <2025-07-29 Tue>
@@ -257,7 +257,7 @@ CLOSED: [2025-09-06 Sat 20:15]
 - *[NOTE]* taken on [2025-09-06 20:14]: \\
   Implementation of capture menu using =vim.ui= natively and provided with =orgmode.nvim=
 -----
-** PENDING Orgroam Custom Node Insert :ORGROAM:
+** PEND Orgroam Custom Node Insert :ORGROAM:
 - *OBJECTIVE:* Orgroam filter node by tags
 - *Reference:*
   - [[https://github.com/chipsenkbeil/org-roam.nvim/blob/main/DOCS.org#find-nodes-by-tag][Find Node by Tag @Github]]
@@ -274,7 +274,7 @@ CLOSED: [2025-08-04 Mon 20:37] DEADLINE: <2025-08-04 Mon>
        * Use nvim =softwrap=: run /nvim +Man! +'set wrap'/
 -----
 - *Reference:* [[https://www.youtube.com/embed/1V5ewUKIM1I?start=6m34s#__preview][Video Man Pages @Youtube]]
-** ABORTED Implement Qutebrowser Prompt :QUTEBROWSER:
+** ABRT Implement Qutebrowser Prompt :QUTEBROWSER:
 CLOSED: [2025-08-04 Mon 20:18] DEADLINE: <2025-08-04 Mon>
 - *OBJECTIVE:* Implement qutebrowser prompt
 -----
@@ -337,7 +337,7 @@ CLOSED: [2025-08-12 Tue 00:12] DEADLINE: <2025-08-12 Tue>
 CLOSED: [2025-08-23 Sat 21:27] DEADLINE: <2025-08-23 Sat>
 + *OBJECTIVE:* Test orgroam capture to sub-headline format
 + *Reference:* [[https://github.com/chipsenkbeil/org-roam.nvim/blob/main/DOCS.org#templates-1][Orgroam capture template @Github-doc]]
-** PENDING Update Orgmode Notification Parameters :ORGMODE:NOTIFICATION:
+** PEND Update Orgmode Notification Parameters :ORGMODE:NOTIFICATION:
 + *OBJECTIVE:* Modify =orgmode.cron_job= parameters by writting a standalone file
 ** DONE Nvim Open New Buffer :NVIM:ORGMODE:
 CLOSED: [2025-09-06 Sat 18:06] DEADLINE: <2025-09-06 Sat>
@@ -349,7 +349,7 @@ CLOSED: [2025-09-06 Sat 18:06] DEADLINE: <2025-09-06 Sat>
 *** TODO Manually Open Config File
 DEADLINE: <2025-10-09 Thu>
 - *OBJECTIVE:* Tell nvim to open a =config= file independent to =init= (/manually/)
-** ABORTED Testing Org-Babel :PYTHON:TEST:ORGMODE:
+** ABRT Testing Org-Babel :PYTHON:TEST:ORGMODE:
 CLOSED: [2025-08-31 Sun 20:51]
 #+BEGIN_SRC python :RESULTS output
 print("Hello World")
@@ -364,7 +364,7 @@ CLOSED: [2025-08-31 Sun 22:54]
 [!WARNING]
 Draft items are subjected to refile!
 #+END_QUOTE
-** ABORTED Using Zotero with Qutebrowser :QUTEBROWSER:CITATIONS:ZOTERO:
+** ABRT Using Zotero with Qutebrowser :QUTEBROWSER:CITATIONS:ZOTERO:
 CLOSED: [2025-09-07 Sun 17:58] DEADLINE: <2025-09-07 Sun>
 - *OBJECTIVE:* Using =zotero= in conjunction with =qutebrowser=
 -----
@@ -373,9 +373,9 @@ CLOSED: [2025-09-07 Sun 17:58] DEADLINE: <2025-09-07 Sun>
   + *Checkout:* [[id:a348064e-f0ba-4aa6-970a-8e63a1aa9dba][Citation Rendering]]
 -----
 - *Reference:* [[https://github.com/parchd-1/qutebrowser-zotero][Qutebrowser-Zotero @Github]]
-** PENDING Overhaul Nvim UI Elements :NVIM:
+** PEND Overhaul Nvim UI Elements :NVIM:
 - *OBJECTIVE:* Re-config nvim ui elements border from =rounded= to =single= or =none=
-** PENDING Setup Git-Annex :GIT:
+** PEND Setup Git-Annex :GIT:
 :PROPERTIES:
 :ID:       46113c10-28b3-4477-93f4-d22d50c941ff
 :END:
@@ -397,18 +397,18 @@ DEADLINE: <2025-10-09 Thu>
 ** TODO Remove Filter Config :MPV:
 DEADLINE: <2025-10-09 Thu>
 - *OBJECTIVE:* Remove filter from specific =profile= in =mpv= config
-** PENDING Nvim Plugins Reload :NVIM:
+** PEND Nvim Plugins Reload :NVIM:
 - *OBJECTIVE:* Reload plugins in nvim before and after =BufRead= / =BufWrite=
 - *Reference:* [[https://dev.to/reobin/reload-init-vim-without-restarting-neovim-1h82][Reload init files without reload nvim @Blog]]
-** PENDING Checkout org-roam-pygraph :ORGROAM:UTILITY:
+** PEND Checkout org-roam-pygraph :ORGROAM:UTILITY:
 - *OBJECTIVE:* Implement this =python= package to =note=
 - *Reference:* [[https://github.com/aatmunbaxi/org-roam-pygraph][org-roam-pygraph @Github]]
-** PENDING Config blink.cmp in Org :ORGMODE:NVIM:
+** PEND Config blink.cmp in Org :ORGMODE:NVIM:
 - *OBJECTIVE:* Config =blink.cmp= to suggest =org-property= in =cmdline=
-** PENDING Sorting Headlines :ORGMODE:SORTING:
+** PEND Sorting Headlines :ORGMODE:SORTING:
 - *OBJECTIVE:* Sorting headlines in =orgmode=
 - *Reference:* [[https://github.com/hoclun-rigsep/org-sort][sorting headlines script @Github]]
-** PENDING Config yazi UI :YAZI:
+** PEND Config yazi UI :YAZI:
 - *OBJECTIVE:* Re-config broken yazi UI
 ** DONE Config Lazygit Submodules :LAZYGIT:
 CLOSED: [2025-09-30 Tue 21:26] DEADLINE: <2025-09-30 Tue>
@@ -437,10 +437,10 @@ CLOSED: [2025-10-02 Thu 07:54]
 CLOSED: [2025-10-03 Fri 22:05] DEADLINE: <2025-10-03 Fri>
 - *OBJECTIVE:* Design a lazygit menu with keybinds with to read output from commands
 - *Reference:* [[https://github.com/jesseduffield/lazygit/blob/master/docs/Custom_Command_Keybindings.md][Lazygit Custom Commands Keybinds @Github]]
-** PENDING Config Rustdesk :RUSTDESK:
+** PEND Config Rustdesk :RUSTDESK:
 - *OBJECTIVE:* Config =rustdesk= for every desktop
 - *Reference:* [[https://github.com/rustdesk/rustdesk][Rustdesk main repo @Github]]
-** DOING Search and Replace with Grep :GREP:
+** DOIN Search and Replace with Grep :GREP:
 DEADLINE: <2025-10-07 Tue>
 :PROPERTIES:
 :ID: cd6ce3f7-b41e-485f-a4f8-b4263929b2b8

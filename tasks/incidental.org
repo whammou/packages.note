@@ -4,10 +4,10 @@
 #+TITLE: Packages Incidental Tasks
 
 * List of Incidental Tasks :TASK:INCIDENTAL:PACKAGES:META:
-** PENDING Get transcript from Teams :TEAMS:
+** PEND Get transcript from Teams :TEAMS:
 - *OBJECTIVE:* Get transcript from Teams meeting
 - *Reference:* [[https://learn.microsoft.com/en-us/microsoftteams/platform/graph-api/meeting-transcripts/overview-transcripts][Get transcript via teams API @Doc-MS_teams]]
-** PENDING Switching to emacs :EMACS:
+** PEND Switching to emacs :EMACS:
 - *OBJECTIVE:* Switching from nvim to emacs
 - *Reference:*
   - [[https://old.reddit.com/r/emacs/comments/qocwo1/from_vim_to_emacs/][From vim to emacs @Reddit]]
@@ -15,7 +15,7 @@
 *** Checkout Doom-Emacs
 - *OBJECTIVE:* Take a look at =doom-emacs= distribution
 - *Reference:* [[https://github.com/doomemacs/doomemacs][Doom-Emacs Git Host @Github]]
-** PENDING Nvim Citation :NVIM:ZETTELKASTEN:
+** PEND Nvim Citation :NVIM:ZETTELKASTEN:
 - *OBJECTIVE:* Citation with =nvim= and =zettelkasten=
 - [[https://github.com/jghauser/papis.nvim][Papis Citation Manager @Github]]
 ** DONE Debug Using Minimal Init :NVIM:DEBUG:ORGMODE:
