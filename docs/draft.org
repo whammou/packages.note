@@ -31,9 +31,3 @@ DEADLINE: <2025-10-08 Wed>
 DEADLINE: <2025-10-08 Wed>
 /Run git commands in parallel in multiple repositories/
 - *Goes-to:* [[id:0d065ce6-e02a-4dce-b7a5-29a1910d0e9c][Make Changes to Submodules @Org]]
-** OUTL Search and Replace Files :GREP:SED:
-DEADLINE: <2025-10-08 Wed>
-/Using =grep= to search and =sed= to replace matching file content/
-*** OUTL Filter Out Results
-DEADLINE: <2025-10-08 Wed>
-/Filter out desired files to make changes to/
