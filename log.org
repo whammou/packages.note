@@ -2,7 +2,7 @@
 #+DESCRIPTION: Description for archive here
 #+OPTIONS: ^:nil
 
-* Logs :LOG:SYSTEM:PACKAGES:
+* Logs :LOG:OPSYS:PACKAGES:
 - /Store finished tasks/
 ** DONE SSH to Github :GITHUB:
 CLOSED: [2025-01-10 Fri 05:51] DEADLINE: <2025-01-09 Thu 05:00>
