@@ -4,3 +4,6 @@
 #+TITLE: Packages Planned Tasks
 
 * List of Planned Tasks :TASK:PLANNED:PACKAGES:META:
+** Coding with Nvim vs Emacs :NVIM:EMACS:EDITOR:
+- *OBJECTIVE:* Coding experience in =nvim= vs =emacs=
+- *Reference:* [[https://www.reddit.com/r/vim/comments/q3nnrh/convince_me_to_use_vim_over_emacs_and_nano/][nvim vs emacs @Github]]
