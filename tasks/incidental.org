@@ -93,7 +93,14 @@ DEADLINE: <2025-10-23 Thu>
   index = self.focus_history.index(win)
   #+END_SRC
 -----
-** TODO Conflict ssh tmux nerdfont :SSH:TMUX:
-DEADLINE: <2025-10-20 Mon>
+** DONE Conflict ssh tmux nerdfont :SSH:TMUX:
+DEADLINE: <2025-10-20 Mon> CLOSED: [2025-10-20 Mon 00:15]
 - *OBJECTIVE:* Solve conflicting packages when =ssh= with =tmux= and =nerdfont=
+- -----
+- Note taken on [2025-10-20 00:13]: \\
+  Running this =scrip= solved the problem
+  #+BEGIN_SRC bash
+  ssh whammou@homelab -o RemoteCommand=none exec $SHELL -lc 'tmux new -A -s $1'
+  #+END_SRC
+-----
 - *Reference:* [[https://bbs.archlinux.org/viewtopic.php?id=286286][ssh tmux and nerdfont conflicting @Archforum]]
