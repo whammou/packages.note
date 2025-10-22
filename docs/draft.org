@@ -31,3 +31,32 @@ DEADLINE: <2025-10-20 Mon>
 DEADLINE: <2025-10-20 Mon>
 /Run git commands in parallel in multiple repositories/
 - *Goes-to:* [[id:0d065ce6-e02a-4dce-b7a5-29a1910d0e9c][Make Changes to Submodules @Org]]
+** DONE Initiate tmux on Homelab :SERVER:TMUX:SSH:
+DEADLINE: <2025-10-23 Thu> CLOSED: [2025-10-23 Thu 02:01]
+:PROPERTIES:
+:ID: 36fece3a-2c38-48ec-bc23-73f11ddb5e13
+:END:
+To achieve seamless workflow between multiple devices, use =tmux= to attach to currently running =tmux-session= on =homelab=. To achieve this there are a few problems to look out for.
+- *SSH* =RemoteCommand= does not launch terminal through a login shell and thus does not play well with =nerdfont= which depends on =varibales= on log
+- *SSH* =RemoteCommand= and =ExecuteCommand= do not come hand in hand. Therefore, set =option= on run
+- *Tmux* syntax =commands= are read in =whole string= this means in order to create script for =tmux= one must use layers of =substrings= in the script
+  
+#+NAME: Working command
+#+BEGIN_SRC bash
+ssh homelab -o RemoteCommand=none "exec $SHELL -lc 'tmux new -A -s 1'"
+#+END_SRC
+
+#+NAME: qtile keybind script
+#+BEGIN_SRC python
+def ssh_session(session_range):
+    session_bind = []
+    for i in session_range:
+        session_bind.append(
+            [
+                str(i),
+                f"kitty -e ssh homelab -o RemoteCommand=none \"exec $SHELL -lc 'tmux new -A -s {i}'\"",
+                "pad_large",
+            ]
+        )
+    return session_bind
+#+END_SRC
