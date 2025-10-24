@@ -50,7 +50,7 @@ CLOSED: [2025-09-08 Mon 03:57] DEADLINE: <2025-09-09 Tue>
 -----
 - *Checkout:* [[id:0022f0cf-b051-4752-aa0e-9d5aafe4274e][Conflict nvim-orgmode and blink @Org]] ([[file:/system/packages/tasks/incidental.org#feedback-debug-using-minimal-init][view on Github]])
 ** TODO Report Qtile Bug :QTILE:
-DEADLINE: <2025-10-25 Sat>
+DEADLINE: <2025-10-26 Sun>
 - *OBJECTIVE:* Report qtile =dropdown= not in windows id
 -----
 - *[NOTE]* taken on [2025-09-06 17:42]: \\
