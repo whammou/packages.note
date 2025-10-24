@@ -8,6 +8,9 @@
 - *OBJECTIVE:* Coding experience in =nvim= vs =emacs=
 - *Reference:* [[https://www.reddit.com/r/vim/comments/q3nnrh/convince_me_to_use_vim_over_emacs_and_nano/][nvim vs emacs @Github]]
 ** DONE Run tmux on Homelab :SERVER:TMUX:
-DEADLINE: <2025-10-23 Thu> CLOSED: [2025-10-23 Thu 01:55]
+CLOSED: [2025-10-23 Thu 01:55] DEADLINE: <2025-10-23 Thu>
 - *OBJECTIVE:* Seamless workflow with =tmux= on =homelab=
 - *Visit:* [[id:36fece3a-2c38-48ec-bc23-73f11ddb5e13][Initiate tmux on Homelab @Org]]
+* TODO Get gdrive sharable link :RCLONE:GDRIVE:
+DEADLINE: <2025-10-24 Fri>
+- *OBJECTIVE:* Get =sharable-link= of an gdrive =item=
