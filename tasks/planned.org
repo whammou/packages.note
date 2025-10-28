@@ -11,6 +11,9 @@
 CLOSED: [2025-10-23 Thu 01:55] DEADLINE: <2025-10-23 Thu>
 - *OBJECTIVE:* Seamless workflow with =tmux= on =homelab=
 - *Visit:* [[id:36fece3a-2c38-48ec-bc23-73f11ddb5e13][Initiate tmux on Homelab @Org]]
-* TODO Get gdrive sharable link :RCLONE:GDRIVE:
-DEADLINE: <2025-10-24 Fri>
+** TODO Get gdrive shareable link :RCLONE:GDRIVE:
+DEADLINE: <2025-10-29 Wed>
+:PROPERTIES:
+:ID: d429546e-1ada-4fff-b364-4a8743a4643c
+:END:
 - *OBJECTIVE:* Get =sharable-link= of an gdrive =item=
