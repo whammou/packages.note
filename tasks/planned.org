@@ -12,8 +12,11 @@ CLOSED: [2025-10-23 Thu 01:55] DEADLINE: <2025-10-23 Thu>
 - *OBJECTIVE:* Seamless workflow with =tmux= on =homelab=
 - *Visit:* [[id:36fece3a-2c38-48ec-bc23-73f11ddb5e13][Initiate tmux on Homelab @Org]]
 ** TODO Get gdrive shareable link :RCLONE:GDRIVE:
-DEADLINE: <2025-10-29 Wed>
+DEADLINE: <2025-10-31 Fri>
 :PROPERTIES:
 :ID: d429546e-1ada-4fff-b364-4a8743a4643c
 :END:
 - *OBJECTIVE:* Get =sharable-link= of an gdrive =item=
+** PEND Pass Environment Variable ssh :SSH:
+- *OBJECTIVE:* Pass environment variable through =ssh= session
+- *Reference:* [[https://superuser.com/questions/48783/how-can-i-pass-an-environment-variable-through-an-ssh-command][Pass environment variable @Overflow]]
