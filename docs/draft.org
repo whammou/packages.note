@@ -64,3 +64,6 @@ def ssh_session(session_range):
 DEADLINE: <2025-11-01 Sat>
 /How to establish =reverse tunneling=/
 - *Visit:* [[https://stackoverflow.com/a/76549625/25585364][Auto restart background ssh tunnel @Overflow]]
+** OUTL Git Rebase vs Merge :GIT:
+/Difference between git rebasing and merging/ //
+/*checkout:*/ [[https://www.geeksforgeeks.org/git/git-difference-between-merging-and-rebasing/][Git rebasing vs merging @G4g]]
