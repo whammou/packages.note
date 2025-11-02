@@ -24,3 +24,13 @@ DEADLINE: <2025-11-02 Sun>
 DEADLINE: <2025-11-02 Sun>
 - *OBJECTIVE:* Check out git remote grouping
 - *Reference:* [[https://stackoverflow.com/questions/3946723/setting-the-right-group-rights-on-a-git-remote-repo][Git remote grouping @Overflow]]
+** PEND Config ntfy Server :NTFY:notificationsync:
+:PROPERTIES:
+:ID: 9a7dbd81-b9e2-44ff-83f9-d8cdcc123767
+:END:
+- *OBJECTIVE:* Self-host the =ntfy= server
+- *Reference:* [[https://docs.ntfy.sh/install/][Ntfy.sh install @Blog]]
+** PEND Script for ntfy :NTFY:notificationsync:
+- *OBJECTIVE:* Some cool =scripts= for =ntfy= server
+- *Reference:* [[https://docs.ntfy.sh/examples/][Cool ntfy example @Blog]]
+  
