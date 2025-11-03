@@ -12,7 +12,7 @@ CLOSED: [2025-10-23 Thu 01:55] DEADLINE: <2025-10-23 Thu>
 - *OBJECTIVE:* Seamless workflow with =tmux= on =homelab=
 - *Visit:* [[id:36fece3a-2c38-48ec-bc23-73f11ddb5e13][Initiate tmux on Homelab @Org]]
 ** TODO Get gdrive shareable link :RCLONE:GDRIVE:
-DEADLINE: <2025-11-02 Sun>
+DEADLINE: <2025-11-03 Mon>
 :PROPERTIES:
 :ID: d429546e-1ada-4fff-b364-4a8743a4643c
 :END:
@@ -21,7 +21,7 @@ DEADLINE: <2025-11-02 Sun>
 - *OBJECTIVE:* Pass environment variable through =ssh= session
 - *Reference:* [[https://superuser.com/questions/48783/how-can-i-pass-an-environment-variable-through-an-ssh-command][Pass environment variable @Overflow]]
 ** TODO Git Remote Group :GIT:gitsubmodule:
-DEADLINE: <2025-11-02 Sun>
+DEADLINE: <2025-11-03 Mon>
 - *OBJECTIVE:* Check out git remote grouping
 - *Reference:* [[https://stackoverflow.com/questions/3946723/setting-the-right-group-rights-on-a-git-remote-repo][Git remote grouping @Overflow]]
 ** PEND Config ntfy Server :NTFY:notificationsync:
