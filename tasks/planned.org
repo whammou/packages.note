@@ -12,7 +12,7 @@ CLOSED: [2025-10-23 Thu 01:55] DEADLINE: <2025-10-23 Thu>
 - *OBJECTIVE:* Seamless workflow with =tmux= on =homelab=
 - *Visit:* [[id:36fece3a-2c38-48ec-bc23-73f11ddb5e13][Initiate tmux on Homelab @Org]]
 ** TODO Get gdrive shareable link :RCLONE:GDRIVE:
-DEADLINE: <2025-11-03 Mon>
+DEADLINE: <2025-11-05 Wed>
 :PROPERTIES:
 :ID: d429546e-1ada-4fff-b364-4a8743a4643c
 :END:
@@ -21,7 +21,7 @@ DEADLINE: <2025-11-03 Mon>
 - *OBJECTIVE:* Pass environment variable through =ssh= session
 - *Reference:* [[https://superuser.com/questions/48783/how-can-i-pass-an-environment-variable-through-an-ssh-command][Pass environment variable @Overflow]]
 ** TODO Git Remote Group :GIT:gitsubmodule:
-DEADLINE: <2025-11-03 Mon>
+DEADLINE: <2025-11-05 Wed>
 - *OBJECTIVE:* Check out git remote grouping
 - *Reference:* [[https://stackoverflow.com/questions/3946723/setting-the-right-group-rights-on-a-git-remote-repo][Git remote grouping @Overflow]]
 ** PEND Config ntfy Server :NTFY:notificationsync:
@@ -30,7 +30,24 @@ DEADLINE: <2025-11-03 Mon>
 :END:
 - *OBJECTIVE:* Self-host the =ntfy= server
 - *Reference:* [[https://docs.ntfy.sh/install/][Ntfy.sh install @Blog]]
-** PEND Script for ntfy :NTFY:notificationsync:
+** TODO Script for ntfy :NTFY:notificationsync:
 - *OBJECTIVE:* Some cool =scripts= for =ntfy= server
 - *Reference:* [[https://docs.ntfy.sh/examples/][Cool ntfy example @Blog]]
-  
+*** NEXT Clipboard Forward with ntfy
+- *OBJECTIVE:* Forward =clipboard= between machines
+*** DONE Ssh Login Alert :SSH:
+DEADLINE: <2025-11-05 Wed> CLOSED: [2025-11-05 Wed 01:35]
+- *OBJECTIVE:* Alert notification when login =ssh=
+#+name:LOGBOOK
+#+html:<details><summary>LOGBOOK</summary>
+:LOGBOOK:
+- Note taken on [2025-11-05 Wed 01:40] \\
+  - *Check-out:* [[https://github.com/whammou/dotfiles/commit/ee882edbf1d3d13d71958aa72ad2a9af98911607][Ssh login attempt notification @Commit]]
+:END:
+#+html:</details>
+- *Reference:* [[https://docs.ntfy.sh/examples/#ssh-login-alerts][Shh login Alert @Ntfy-doc]]
+*** DONE Notification for Long Running Tasks
+DEADLINE: <2025-11-05 Wed> CLOSED: [2025-11-05 Wed 00:28]
+- *OBJECTIVE:* Send a notification indicate task has completed through =ntfy=
+- *Reference:* [[https://github.com/fish-shell/fish-shell/issues/7786][Notification on completion of long running task @Githu-issue]]
+
