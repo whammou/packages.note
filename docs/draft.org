@@ -23,12 +23,12 @@ Draft items are subjected to change and refile!
 + [[https://seb.jambor.dev/posts/improving-shell-workflows-with-fzf/https://seb.jambor.dev/posts/improving-shell-workflows-with-fzf/][Improving workflow with fzf @Blog]]
 + [[https://github.com/beauwilliams/awesome-fzf][A semi-complete List of Fzf @Github]]
 ** OUTL Git Revert a pushed commit
-DEADLINE: <2025-11-05 Wed>
+DEADLINE: <2025-11-06 Thu>
 /How to revert a pushed commit on public or private branch/
 - *Visit:* [[https://www.youtube.com/watch?v=H2DuJNWbqLw][How to revert a pushed commit @Youtube]]
 - *Goes-to:* [[id:0d065ce6-e02a-4dce-b7a5-29a1910d0e9c][Make Changes to Submodules @Org]]
 ** OUTL Command Multiple Git Repositories :GIT:
-DEADLINE: <2025-11-05 Wed>
+DEADLINE: <2025-11-06 Thu>
 /Run git commands in parallel in multiple repositories/
 - *Goes-to:* [[id:0d065ce6-e02a-4dce-b7a5-29a1910d0e9c][Make Changes to Submodules @Org]]
 ** DONE Initiate tmux on Homelab :SERVER:TMUX:SSH:
@@ -61,7 +61,7 @@ def ssh_session(session_range):
     return session_bind
 #+END_SRC
 ** OUTL Reverse Tunneling :PROTOCOL:SSH:reversetunneling:
-DEADLINE: <2025-11-05 Wed>
+DEADLINE: <2025-11-06 Thu>
 /How to establish =reverse tunneling=/
 - *Visit:* [[https://stackoverflow.com/a/76549625/25585364][Auto restart background ssh tunnel @Overflow]]
 ** OUTL Git Rebase vs Merge :GIT:
@@ -73,7 +73,7 @@ DEADLINE: <2025-11-05 Wed>
 /How to receive =ntfy-notification= on =archlinux=/ \\
 /*Check-out:*/ [[https://github.com/ronilaukkarinen/ntfy-linux-receiver-service/][ntfy-listener systemd service @Github]]
 ** OUTL Pull ntfy notifications :NTFY:notificationsync:
-DEADLINE: <2025-11-05 Wed>
+DEADLINE: <2025-11-06 Thu>
 - *OBJECTIVE:* Pull =ntfy= notifications when system connection went down
 - *Check-out:* [[id:b6113f7d-9ec6-49df-80ff-2c0d7546475f][Run Service on Network Change @Org]]
 - *Reference:* [[https://docs.ntfy.sh/subscribe/api/#advanced-features][Pull cached messages @Ntfy-doc]]
