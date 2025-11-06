@@ -36,6 +36,7 @@ DEADLINE: <2025-11-06 Thu>
 *** DOIN Clipboard Forward with ntfy
 DEADLINE: <2025-11-06 Thu>
 - *OBJECTIVE:* Forward =clipboard= between machines
+- *Check-out:* [[id:4ea4c71e-c2c7-47c5-9e4d-65e203aaf725][Learn Dunst Scripting @Org]]
 *** DONE Ssh Login Alert :SSH:
 DEADLINE: <2025-11-05 Wed> CLOSED: [2025-11-05 Wed 01:35]
 - *OBJECTIVE:* Alert notification when login =ssh=
@@ -51,8 +52,12 @@ DEADLINE: <2025-11-05 Wed> CLOSED: [2025-11-05 Wed 01:35]
 DEADLINE: <2025-11-05 Wed> CLOSED: [2025-11-05 Wed 00:28]
 - *OBJECTIVE:* Send a notification indicate task has completed through =ntfy=
 - *Reference:* [[https://github.com/fish-shell/fish-shell/issues/7786][Notification on completion of long running task @Githu-issue]]
-** TODO Learn Dunst Scripting :DUNST:
+** DOIN Learn Dunst Scripting :DUNST:
 DEADLINE: <2025-11-06 Thu>
+:PROPERTIES:
+:ID: 4ea4c71e-c2c7-47c5-9e4d-65e203aaf725
+:END:
 - *OBJECTIVE:* Learn dunst scripting
-- *Reference:* [[https://github.com/dunst-project/dunst/issues/163][Action on click notification @Github-issue]]
-  
+- *Reference:*
+  + [[https://github.com/dunst-project/dunst/issues/163][Action on click notification @Github-issue]]
+  + [[https://github.com/dunst-project/dunst/discussions/1251][Run Script on Mouse Click @Github-issue]]
