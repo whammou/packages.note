@@ -12,7 +12,7 @@ CLOSED: [2025-10-23 Thu 01:55] DEADLINE: <2025-10-23 Thu>
 - *OBJECTIVE:* Seamless workflow with =tmux= on =homelab=
 - *Visit:* [[id:36fece3a-2c38-48ec-bc23-73f11ddb5e13][Initiate tmux on Homelab @Org]]
 ** TODO Get gdrive shareable link :RCLONE:GDRIVE:
-DEADLINE: <2025-11-06 Thu>
+DEADLINE: <2025-11-09 Sun>
 :PROPERTIES:
 :ID: d429546e-1ada-4fff-b364-4a8743a4643c
 :END:
@@ -21,7 +21,7 @@ DEADLINE: <2025-11-06 Thu>
 - *OBJECTIVE:* Pass environment variable through =ssh= session
 - *Reference:* [[https://superuser.com/questions/48783/how-can-i-pass-an-environment-variable-through-an-ssh-command][Pass environment variable @Overflow]]
 ** TODO Git Remote Group :GIT:gitsubmodule:
-DEADLINE: <2025-11-06 Thu>
+DEADLINE: <2025-11-09 Sun>
 - *OBJECTIVE:* Check out git remote grouping
 - *Reference:* [[https://stackoverflow.com/questions/3946723/setting-the-right-group-rights-on-a-git-remote-repo][Git remote grouping @Overflow]]
 ** PEND Config ntfy Server :NTFY:notificationsync:
@@ -30,13 +30,28 @@ DEADLINE: <2025-11-06 Thu>
 :END:
 - *OBJECTIVE:* Self-host the =ntfy= server
 - *Reference:* [[https://docs.ntfy.sh/install/][Ntfy.sh install @Blog]]
-** TODO Script for ntfy :NTFY:notificationsync:
+** DONE Script for ntfy :NTFY:DUNST:notificationsync:
+DEADLINE: <2025-11-07 Fri> CLOSED: [2025-11-07 Fri 21:28]
 - *OBJECTIVE:* Some cool =scripts= for =ntfy= server
 - *Reference:* [[https://docs.ntfy.sh/examples/][Cool ntfy example @Blog]]
-*** DOIN Clipboard Forward with ntfy
-DEADLINE: <2025-11-06 Thu>
+*** DONE Clipboard Forward with ntfy
+DEADLINE: <2025-11-07 Fri> CLOSED: [2025-11-07 Fri 05:01]
 - *OBJECTIVE:* Forward =clipboard= between machines
 - *Check-out:* [[id:4ea4c71e-c2c7-47c5-9e4d-65e203aaf725][Learn Dunst Scripting @Org]]
+**** DONE Clipboard Content Filter
+DEADLINE: <2025-11-09 Sun> CLOSED: [2025-11-09 Sun 01:28]
+#+name:LOGBOOK
+#+html:<details><summary>LOGBOOK</summary>
+:LOGBOOK:
+- Note taken on [2025-11-09 Sun 01:27] \\
+  Broad cast =clipboard= to =topic= and let =hosts= choose to whether to sync with it
+:END:
+#+html:</details>
+- *OBJECTIVE:* Add content filter on both =linux= and =android= for fine-tune purpose
+*** DONE Call Interaction With Ntfy :MACRODROID:
+DEADLINE: <2025-11-08 Sat> CLOSED: [2025-11-08 Sat 16:25]
+- *OBJECTIVE:* Call interaction between =linux= and =android= using =dunst script= and =macrodroid=
+- *Check-out:* [[https://github.com/whammou/dotfiles/commit/4e95cdd8bd9434977d0d6d1b5164ce31e1641cb3][Dunst call forwarding @Commit]]
 *** DONE Ssh Login Alert :SSH:
 DEADLINE: <2025-11-05 Wed> CLOSED: [2025-11-05 Wed 01:35]
 - *OBJECTIVE:* Alert notification when login =ssh=
@@ -52,8 +67,8 @@ DEADLINE: <2025-11-05 Wed> CLOSED: [2025-11-05 Wed 01:35]
 DEADLINE: <2025-11-05 Wed> CLOSED: [2025-11-05 Wed 00:28]
 - *OBJECTIVE:* Send a notification indicate task has completed through =ntfy=
 - *Reference:* [[https://github.com/fish-shell/fish-shell/issues/7786][Notification on completion of long running task @Githu-issue]]
-** DOIN Learn Dunst Scripting :DUNST:
-DEADLINE: <2025-11-06 Thu>
+** DONE Learn Dunst Scripting :DUNST:
+DEADLINE: <2025-11-07 Fri> CLOSED: [2025-11-07 Fri 05:01]
 :PROPERTIES:
 :ID: 4ea4c71e-c2c7-47c5-9e4d-65e203aaf725
 :END:
@@ -61,3 +76,9 @@ DEADLINE: <2025-11-06 Thu>
 - *Reference:*
   + [[https://github.com/dunst-project/dunst/issues/163][Action on click notification @Github-issue]]
   + [[https://github.com/dunst-project/dunst/discussions/1251][Run Script on Mouse Click @Github-issue]]
+  + [[https://wiki.archlinux.org/title/Dunst#Actions][Dunst Actions @Archwiki]]
+** PEND Qutebrowser High Memory Usage :QUTEBROWSER:MEMORY:
+- *OBJECTIVE:* Debug =qutebrowser= use too much memory
+- *Reference:*
+  + [[https://github.com/qutebrowser/qutebrowser/issues/1204][High memory usage @Github]]
+  + [[https://github.com/qutebrowser/qutebrowser/issues/1476][Qutebrowser high memory usge @Github]]
