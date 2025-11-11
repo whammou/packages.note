@@ -12,7 +12,7 @@ CLOSED: [2025-10-23 Thu 01:55] DEADLINE: <2025-10-23 Thu>
 - *OBJECTIVE:* Seamless workflow with =tmux= on =homelab=
 - *Visit:* [[id:36fece3a-2c38-48ec-bc23-73f11ddb5e13][Initiate tmux on Homelab @Org]]
 ** TODO Get gdrive shareable link :RCLONE:GDRIVE:
-DEADLINE: <2025-11-10 Mon>
+DEADLINE: <2025-11-12 Wed>
 :PROPERTIES:
 :ID: d429546e-1ada-4fff-b364-4a8743a4643c
 :END:
@@ -20,8 +20,7 @@ DEADLINE: <2025-11-10 Mon>
 ** PEND Pass Environment Variable ssh :SSH:
 - *OBJECTIVE:* Pass environment variable through =ssh= session
 - *Reference:* [[https://superuser.com/questions/48783/how-can-i-pass-an-environment-variable-through-an-ssh-command][Pass environment variable @Overflow]]
-** TODO Git Remote Group :GIT:gitsubmodule:
-DEADLINE: <2025-11-10 Mon>
+** PEND Git Remote Group :GIT:gitsubmodule:
 - *OBJECTIVE:* Check out git remote grouping
 - *Reference:* [[https://stackoverflow.com/questions/3946723/setting-the-right-group-rights-on-a-git-remote-repo][Git remote grouping @Overflow]]
 ** PEND Config ntfy Server :NTFY:notificationsync:
@@ -83,7 +82,7 @@ DEADLINE: <2025-11-07 Fri> CLOSED: [2025-11-07 Fri 05:01]
   + [[https://github.com/qutebrowser/qutebrowser/issues/1204][High memory usage @Github]]
   + [[https://github.com/qutebrowser/qutebrowser/issues/1476][Qutebrowser high memory usge @Github]]
 ** EXPL Local Repos Sync :GIT:notesync:
-DEADLINE: <2025-11-10 Mon>
+DEADLINE: <2025-11-12 Wed>
 :PROPERTIES:
 :ID: 038b7433-7aa0-425f-a718-0b1ef8fbc11f
 :END:
