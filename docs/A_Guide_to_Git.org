@@ -104,9 +104,6 @@ Closes D2IQ-12345
 
 - *NOTE*
   The ensure that these committing conventions remain consistent across developers, commit message linting can be configured before changes are able to be pushed up. [[https://commitizen-tools.github.io/commitizen/][Commitizen]] is a great tool to enforce standards, sync up semantic versioning, along with other helpful features
-** Git automation
-- *OBJECTIVE:* /Automate tasks with git/
-- *References:* [[https://www.reddit.com/r/git/comments/xvz4he/automating_git_tasks_best_practices/][Automation with git @Reddit]]
 ** Clean commit history
 - *OBJECTIVE:* Clean up git commit history
 - *Reference:* [[https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History][Git tools rewrite history @Doc-git]]

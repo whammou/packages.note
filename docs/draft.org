@@ -80,3 +80,5 @@ DEADLINE: <2025-11-12 Wed>
 ** OUTL Dunst Write and Run Script :DUNST:notificationsync:
 DEADLINE: <2025-11-12 Wed>
 /How to write and run script in =dunst=/
+** OUTL Git Automation :GIT:filesync:
+/Automate sync process with head repo/
