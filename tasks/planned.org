@@ -4,7 +4,7 @@
 #+TITLE: Packages Planned Tasks
 
 * List of Planned Tasks :TASK:PLANNED:PACKAGES:META:
-** Coding with Nvim vs Emacs :NVIM:EMACS:EDITOR:
+** PEND Coding with Nvim vs Emacs :NVIM:EMACS:EDITOR:
 - *OBJECTIVE:* Coding experience in =nvim= vs =emacs=
 - *Reference:* [[https://www.reddit.com/r/vim/comments/q3nnrh/convince_me_to_use_vim_over_emacs_and_nano/][nvim vs emacs @Github]]
 ** DONE Run tmux on Homelab :SERVER:TMUX:
@@ -14,7 +14,7 @@ CLOSED: [2025-10-23 Thu 01:55] DEADLINE: <2025-10-23 Thu>
 ** TODO Get gdrive shareable link :RCLONE:GDRIVE:
 DEADLINE: <2025-11-12 Wed>
 :PROPERTIES:
-:ID: d429546e-1ada-4fff-b364-4a8743a4643c
+:ID:       d429546e-1ada-4fff-b364-4a8743a4643c
 :END:
 - *OBJECTIVE:* Get =sharable-link= of an gdrive =item=
 ** PEND Pass Environment Variable ssh :SSH:
@@ -25,20 +25,20 @@ DEADLINE: <2025-11-12 Wed>
 - *Reference:* [[https://stackoverflow.com/questions/3946723/setting-the-right-group-rights-on-a-git-remote-repo][Git remote grouping @Overflow]]
 ** PEND Config ntfy Server :NTFY:notificationsync:
 :PROPERTIES:
-:ID: 9a7dbd81-b9e2-44ff-83f9-d8cdcc123767
+:ID:       9a7dbd81-b9e2-44ff-83f9-d8cdcc123767
 :END:
 - *OBJECTIVE:* Self-host the =ntfy= server
 - *Reference:* [[https://docs.ntfy.sh/install/][Ntfy.sh install @Blog]]
 ** DONE Script for ntfy :NTFY:DUNST:notificationsync:
-DEADLINE: <2025-11-07 Fri> CLOSED: [2025-11-07 Fri 21:28]
+CLOSED: [2025-11-07 Fri 21:28] DEADLINE: <2025-11-07 Fri>
 - *OBJECTIVE:* Some cool =scripts= for =ntfy= server
 - *Reference:* [[https://docs.ntfy.sh/examples/][Cool ntfy example @Blog]]
 *** DONE Clipboard Forward with ntfy
-DEADLINE: <2025-11-07 Fri> CLOSED: [2025-11-07 Fri 05:01]
+CLOSED: [2025-11-07 Fri 05:01] DEADLINE: <2025-11-07 Fri>
 - *OBJECTIVE:* Forward =clipboard= between machines
 - *Check-out:* [[id:4ea4c71e-c2c7-47c5-9e4d-65e203aaf725][Learn Dunst Scripting @Org]]
 **** DONE Clipboard Content Filter
-DEADLINE: <2025-11-09 Sun> CLOSED: [2025-11-09 Sun 01:28]
+CLOSED: [2025-11-09 Sun 01:28] DEADLINE: <2025-11-09 Sun>
 #+name:LOGBOOK
 #+html:<details><summary>LOGBOOK</summary>
 :LOGBOOK:
@@ -48,11 +48,11 @@ DEADLINE: <2025-11-09 Sun> CLOSED: [2025-11-09 Sun 01:28]
 #+html:</details>
 - *OBJECTIVE:* Add content filter on both =linux= and =android= for fine-tune purpose
 *** DONE Call Interaction With Ntfy :MACRODROID:
-DEADLINE: <2025-11-08 Sat> CLOSED: [2025-11-08 Sat 16:25]
+CLOSED: [2025-11-08 Sat 16:25] DEADLINE: <2025-11-08 Sat>
 - *OBJECTIVE:* Call interaction between =linux= and =android= using =dunst script= and =macrodroid=
 - *Check-out:* [[https://github.com/whammou/dotfiles/commit/4e95cdd8bd9434977d0d6d1b5164ce31e1641cb3][Dunst call forwarding @Commit]]
 *** DONE Ssh Login Alert :SSH:
-DEADLINE: <2025-11-05 Wed> CLOSED: [2025-11-05 Wed 01:35]
+CLOSED: [2025-11-05 Wed 01:35] DEADLINE: <2025-11-05 Wed>
 - *OBJECTIVE:* Alert notification when login =ssh=
 #+name:LOGBOOK
 #+html:<details><summary>LOGBOOK</summary>
@@ -63,13 +63,13 @@ DEADLINE: <2025-11-05 Wed> CLOSED: [2025-11-05 Wed 01:35]
 #+html:</details>
 - *Reference:* [[https://docs.ntfy.sh/examples/#ssh-login-alerts][Shh login Alert @Ntfy-doc]]
 *** DONE Notification for Long Running Tasks
-DEADLINE: <2025-11-05 Wed> CLOSED: [2025-11-05 Wed 00:28]
+CLOSED: [2025-11-05 Wed 00:28] DEADLINE: <2025-11-05 Wed>
 - *OBJECTIVE:* Send a notification indicate task has completed through =ntfy=
 - *Reference:* [[https://github.com/fish-shell/fish-shell/issues/7786][Notification on completion of long running task @Githu-issue]]
 ** DONE Learn Dunst Scripting :DUNST:
-DEADLINE: <2025-11-07 Fri> CLOSED: [2025-11-07 Fri 05:01]
+CLOSED: [2025-11-07 Fri 05:01] DEADLINE: <2025-11-07 Fri>
 :PROPERTIES:
-:ID: 4ea4c71e-c2c7-47c5-9e4d-65e203aaf725
+:ID:       4ea4c71e-c2c7-47c5-9e4d-65e203aaf725
 :END:
 - *OBJECTIVE:* Learn dunst scripting
 - *Reference:*
@@ -84,11 +84,19 @@ DEADLINE: <2025-11-07 Fri> CLOSED: [2025-11-07 Fri 05:01]
 ** EXPL Local Repos Sync :GIT:notesync:filesync:
 DEADLINE: <2025-11-12 Wed>
 :PROPERTIES:
-:ID: 038b7433-7aa0-425f-a718-0b1ef8fbc11f
+:ID:       038b7433-7aa0-425f-a718-0b1ef8fbc11f
 :END:
 - *OBJECTIVE:* Keep =repo= on different =machines= up-to-date on changes
 - *Reference:* [[https://linuxize.com/post/how-to-use-rsync-for-local-and-remote-data-transfer-and-synchronization/][Rsync command on linux @Bloc]]
-** DOIN Git automation :GIT:notesync:
-DEADLINE: <2025-11-12 Wed 20:40>
+** WAIT Git automation :GIT:notesync:
+DEADLINE: <2025-11-12 Wed>
 - *OBJECTIVE:* /Automate tasks with git/
-- *References:* [[https://www.reddit.com/r/git/comments/xvz4he/automating_git_tasks_best_practices/][Automation with git @Reddit]]
+- *References:*
+  + [[https://www.reddit.com/r/git/comments/xvz4he/automating_git_tasks_best_practices/][Automation with git @Reddit]]
+  + [[https://stackoverflow.com/questions/56851561/how-to-automate-git-history-squash-by-date][Squash commit by date @Overflow]]
+*** DOIN Git Commit Hourly
+DEADLINE: <2025-11-12 Wed 23:45>
+- *OBJECTIVE:* Git auto commit hourly /(optional: git push hourly)/
+*** TODO Git Conclude Daily Commits
+DEADLINE: <2025-11-13 Thu 00:30>
+- *OBJECTIVE:* Squash every commit done today down to the first commit of the day
