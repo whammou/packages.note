@@ -90,3 +90,7 @@ optimal way to place your plugins in =lazyvim=
 *** Nvim Reload
 How to reload =nvim= without restarting or spawning new instances
 - /Reference:/ [[file:/home/whammou/Workspace/nvim-restart/nvim-restart.ai.org][Restart Nvim Function @Gemini]]
+** OUTL Running Script File Event :filesync:
+DEADLINE: <2025-11-19 Wed>
+/Run custom script on file modification event/ \\
+/Check-out:/ [[id:c4b5759c-1794-4797-b1ae-adc28bb1aa2a][Nvim Multiple Instances @Org]]
