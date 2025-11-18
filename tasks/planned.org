@@ -126,7 +126,7 @@ DEADLINE: <2025-11-18 Tue 21:15> CLOSED: [2025-11-18 Tue 08:14]
 :LOGBOOK:
 :END:
 #+html:</details>
-** NEXT Nvim Multiple Instances :NVIM:
+** NEXT Nvim Multiple Instances :NVIM:filesync:
 DEADLINE: <2025-11-19 Wed 19:00>
 - *Objective:* /Connect to running/ ~nvim-server~ /apply to/ ~orgmode~
 - *Reference:*

@@ -391,9 +391,9 @@ CLOSED: [2025-09-07 Sun 17:58] DEADLINE: <2025-09-07 Sun>
 ** PEND Remove Filter Config :MPV:
 - *OBJECTIVE:* Remove filter from specific =profile= in =mpv= config
 ** PRTL Nvim Reload :NVIM:
-DEADLINE: <2025-11-19 Wed 18:00> CLOSED: [2025-11-19 Wed 00:47]
+CLOSED: [2025-11-19 Wed 00:47] DEADLINE: <2025-11-19 Wed 18:00>
 :PROPERTIES:
-:ID: f8dca098-428b-4c75-aacb-e8ded7a50c51
+:ID:       f8dca098-428b-4c75-aacb-e8ded7a50c51
 :END:
 - *OBJECTIVE:* Reload plugins in nvim before and after =BufRead= / =BufWrite=
 - *Visit:* [[id:62b8fb19-df46-4e5b-8bef-dde3dba80329][Re-structuring Nvim Config @Org]]
@@ -446,5 +446,5 @@ CLOSED: [2025-10-07 Tue 23:27] DEADLINE: <2025-10-07 Tue>
 - *OBJECTIVE:* Replace /patterns/ using =grep= and =sed=
 - *Reference:* [[https://github.com/BurntSushi/ripgrep/blob/master/FAQ.md#search-and-replace][Ripgrep - Search and Replace @Github]]
 ** DONE Update Qtile Colorscheme :QTILE:
-DEADLINE: <2025-11-16 Sun 21:00> CLOSED: [2025-11-16 Sun 21:13]
+CLOSED: [2025-11-16 Sun 21:13] DEADLINE: <2025-11-16 Sun 21:00>
 - *OBJECTIVE:* Update colorscheme of =qtile= to match =nvim= and =kitty=
