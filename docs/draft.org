@@ -16,25 +16,25 @@ Draft items are subjected to change and refile!
 #+END_QUOTE
 ** OUTL Fzf Scripting :SCRIPTING:FZF:
 :PROPERTIES:
-:ID: 0635a10c-d33b-457f-b2eb-8d91480684bd
+:ID:       0635a10c-d33b-457f-b2eb-8d91480684bd
 :END:
 /Scripting with fzf/
 *Checkout:*
 + [[https://seb.jambor.dev/posts/improving-shell-workflows-with-fzf/https://seb.jambor.dev/posts/improving-shell-workflows-with-fzf/][Improving workflow with fzf @Blog]]
 + [[https://github.com/beauwilliams/awesome-fzf][A semi-complete List of Fzf @Github]]
 ** OUTL Git Revert a pushed commit
-DEADLINE: <2025-11-12 Wed>
+DEADLINE: <2025-11-18 Tue>
 /How to revert a pushed commit on public or private branch/
 - *Visit:* [[https://www.youtube.com/watch?v=H2DuJNWbqLw][How to revert a pushed commit @Youtube]]
 - *Goes-to:* [[id:0d065ce6-e02a-4dce-b7a5-29a1910d0e9c][Make Changes to Submodules @Org]]
 ** OUTL Command Multiple Git Repositories :GIT:
-DEADLINE: <2025-11-12 Wed>
+DEADLINE: <2025-11-18 Tue>
 /Run git commands in parallel in multiple repositories/
 - *Goes-to:* [[id:0d065ce6-e02a-4dce-b7a5-29a1910d0e9c][Make Changes to Submodules @Org]]
 ** DONE Initiate tmux on Homelab :SERVER:TMUX:SSH:
-DEADLINE: <2025-10-23 Thu> CLOSED: [2025-10-23 Thu 02:01]
+CLOSED: [2025-10-23 Thu 02:01] DEADLINE: <2025-10-23 Thu>
 :PROPERTIES:
-:ID: 36fece3a-2c38-48ec-bc23-73f11ddb5e13
+:ID:       36fece3a-2c38-48ec-bc23-73f11ddb5e13
 :END:
 To achieve seamless workflow between multiple devices, use =tmux= to attach to currently running =tmux-session= on =homelab=. To achieve this there are a few problems to look out for.
 - *SSH* =RemoteCommand= does not launch terminal through a login shell and thus does not play well with =nerdfont= which depends on =varibales= on log
@@ -61,7 +61,7 @@ def ssh_session(session_range):
     return session_bind
 #+END_SRC
 ** OUTL Reverse Tunneling :PROTOCOL:SSH:reversetunneling:
-DEADLINE: <2025-11-12 Wed>
+DEADLINE: <2025-11-18 Tue>
 /How to establish =reverse tunneling=/
 - *Visit:* [[https://stackoverflow.com/a/76549625/25585364][Auto restart background ssh tunnel @Overflow]]
 ** OUTL Git Rebase vs Merge :GIT:
@@ -73,12 +73,20 @@ DEADLINE: <2025-11-12 Wed>
 /How to receive =ntfy-notification= on =archlinux=/ \\
 /*Check-out:*/ [[https://github.com/ronilaukkarinen/ntfy-linux-receiver-service/][ntfy-listener systemd service @Github]]
 ** OUTL Pull ntfy notifications :NTFY:notificationsync:
-DEADLINE: <2025-11-12 Wed>
+DEADLINE: <2025-11-18 Tue>
 - *OBJECTIVE:* Pull =ntfy= notifications when system connection went down
 - *Check-out:* [[id:b6113f7d-9ec6-49df-80ff-2c0d7546475f][Run Service on Network Change @Org]]
 - *Reference:* [[https://docs.ntfy.sh/subscribe/api/#advanced-features][Pull cached messages @Ntfy-doc]]
 ** OUTL Dunst Write and Run Script :DUNST:notificationsync:
-DEADLINE: <2025-11-12 Wed>
+DEADLINE: <2025-11-18 Tue>
 /How to write and run script in =dunst=/
 ** OUTL Git Automation :GIT:filesync:
 /Automate sync process with head repo/
+** OUTL Nvim Advanced Configuration :NVIM:nvimconfig:
+=neovim= advanced implementations using lua and =lazyvim= configurations structure
+*** Lazyvim Plugin Structure
+optimal way to place your plugins in =lazyvim=
+- /Reference:/ [[https://lazy.folke.io/usage/structuring][Lazyvim Plugin Structure @Lazyvim-blog]]
+*** Nvim Reload
+How to reload =nvim= without restarting or spawning new instances
+- /Reference:/ [[file:/home/whammou/Workspace/nvim-restart/nvim-restart.ai.org][Restart Nvim Function @Gemini]]

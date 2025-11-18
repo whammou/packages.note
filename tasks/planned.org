@@ -12,7 +12,6 @@ CLOSED: [2025-10-23 Thu 01:55] DEADLINE: <2025-10-23 Thu>
 - *OBJECTIVE:* Seamless workflow with =tmux= on =homelab=
 - *Visit:* [[id:36fece3a-2c38-48ec-bc23-73f11ddb5e13][Initiate tmux on Homelab @Org]]
 ** TODO Get gdrive shareable link :RCLONE:GDRIVE:
-DEADLINE: <2025-11-12 Wed>
 :PROPERTIES:
 :ID:       d429546e-1ada-4fff-b364-4a8743a4643c
 :END:
@@ -82,21 +81,54 @@ CLOSED: [2025-11-07 Fri 05:01] DEADLINE: <2025-11-07 Fri>
   + [[https://github.com/qutebrowser/qutebrowser/issues/1204][High memory usage @Github]]
   + [[https://github.com/qutebrowser/qutebrowser/issues/1476][Qutebrowser high memory usge @Github]]
 ** EXPL Local Repos Sync :GIT:notesync:filesync:
-DEADLINE: <2025-11-12 Wed>
 :PROPERTIES:
 :ID:       038b7433-7aa0-425f-a718-0b1ef8fbc11f
 :END:
 - *OBJECTIVE:* Keep =repo= on different =machines= up-to-date on changes
 - *Reference:* [[https://linuxize.com/post/how-to-use-rsync-for-local-and-remote-data-transfer-and-synchronization/][Rsync command on linux @Bloc]]
 ** WAIT Git automation :GIT:notesync:
-DEADLINE: <2025-11-12 Wed>
 - *OBJECTIVE:* /Automate tasks with git/
 - *References:*
   + [[https://www.reddit.com/r/git/comments/xvz4he/automating_git_tasks_best_practices/][Automation with git @Reddit]]
   + [[https://stackoverflow.com/questions/56851561/how-to-automate-git-history-squash-by-date][Squash commit by date @Overflow]]
 *** DOIN Git Commit Hourly
-DEADLINE: <2025-11-12 Wed 23:45>
 - *OBJECTIVE:* Git auto commit hourly /(optional: git push hourly)/
 *** TODO Git Conclude Daily Commits
-DEADLINE: <2025-11-13 Thu 00:30>
+DEADLINE: <2025-11-18 Tue 21:30>
 - *OBJECTIVE:* Squash every commit done today down to the first commit of the day
+** ABRT Nvim Reload :NVIM:
+CLOSED: [2025-11-14 Fri 08:58] DEADLINE: <2025-11-13 Thu 22:40>
+- *OBJECTIVE:* Reload nvim along with plugins
+- *Reference:* [[https://www.reddit.com/r/neovim/comments/15gihnd/neat_trick_for_restarting_neovim_fast_when_using/][Restart nvim @Reddit]]
+** DONE Re-structuring Nvim-orgmode Configuration :NVIM:ORGMODE:nvimconfig:
+DEADLINE: <2025-11-18 Tue 23:45> CLOSED: [2025-11-18 Tue 08:14]
+:PROPERTIES:
+:ID: 62b8fb19-df46-4e5b-8bef-dde3dba80329
+:END:
+- *OBJECTIVE:* Restructuring nvim =config/= and =plugin/=
+- *Reference:* [[https://www.lazyvim.org/configuration][Lazyvim Configuration @Lazyvim-doc]]
+*** DONE Structuring Orgmode Config
+DEADLINE: <2025-11-18 Tue 21:15> CLOSED: [2025-11-18 Tue 08:14]
+- *OBJECTIVE:* Structuring plugin config
+#+name:LOGBOOK
+#+html:<details><summary>LOGBOOK</summary>
+:LOGBOOK:
+:END:
+#+html:</details>
+**** DONE Create Orgmode Environment
+DEADLINE: <2025-11-18 Tue 22:20> CLOSED: [2025-11-18 Tue 08:13]
+- *OBJECTIVE:* Create an =shared= orgmode =environment=
+*** DONE Structuring Orgmode Plugin
+DEADLINE: <2025-11-18 Tue 21:15> CLOSED: [2025-11-18 Tue 08:14]
+- *OBJECTIVE:* Structuring plugin =spec=
+#+name:LOGBOOK
+#+html:<details><summary>LOGBOOK</summary>
+:LOGBOOK:
+:END:
+#+html:</details>
+** DOIN Nvim Multiple Instances :NVIM:
+DEADLINE: <2025-11-18 Tue 19:00>
+- *Objective:* /Connect to running/ ~nvim-server~ /apply to/ ~orgmode~
+- *Reference:*
+  + [[https://github.com/neovim/neovim/issues/5035][github.com#\:connect-to-nvim-server @Github]]
+  + [[https://vi.stackexchange.com/questions/14015/how-to-share-the-same-buffer-between-multiple-vim-instances][Share =nvim= instances @Overflow]]

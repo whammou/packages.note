@@ -22,12 +22,13 @@
 There are two locations a git config file can exist:
 - *Local* git repo: in the repo itself (and ignored by ~.gitignore~)
 - *Global* exist outside of the repo e.g. [[file:/home/whammou/.gitconfig][gitconfig]]
-*** Git merge vs re-base vs squashing
+*** Git merge vs re-base vs squashing :gitmerge:gitrebase:gtsquash:
 There are different strategies to merge two ~branches~:
-- *Merging:* Merge and ties together the ~history~ of both ~branches~
-- *Re-basing:* Merge the ~commits~ of a branch to the *tip* of ~main~ and then performs a ~fast-forward-merge~
-- *Squashing:* Squeeze all the ~commits~ of ~feature branch~ into one single ~commit~ and merge it with ~main~
-*** Git commit vs stash
+- *Merging -* Merge and ties together the ~history~ of both ~branches~
+- *Re-basing -* Merge the ~commits~ of a branch to the *tip* of ~main~ and then performs a ~fast-forward-merge~
+  + *Fast-forward -* =merge= and move the pointer of the target branch forward to the latest commit of the course branch /avoiding the need to create a merge commit/
+- *Squashing -* Squeeze all the ~commits~ of ~feature branch~ into one single ~commit~ and merge it with ~main~
+*** Git commit vs stash :gitcommit:gitstash:
 Visit:* [[https://paulapivat.com/technical_notes/example_tech/git_stash/][Git Stash vs Git Commit]]
 ** Write better commit messages
 - *Goal(s):* Write better and more comprehensive commit messages

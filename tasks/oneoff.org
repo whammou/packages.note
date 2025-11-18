@@ -65,9 +65,6 @@ CLOCK: [2025-06-30 Mon 22:49]--[2025-07-01 Tue 00:11] => 1:22
 - *Reference:* [[qute://help/configuring.html][Configurating qutebrowser @Doc-qutebrowser]]
 ** PEND Detect git repos from system :GIT:FZF:
 - /Detect system wise git repos the use fzf to open lazygit at repo location/
-** PEND Connect to running nvim server :NVIM:
-- *Objective:* /Connect to running/ ~nvim-server~ /apply to/ ~orgmode~
-  - *Visit:* [[https://github.com/neovim/neovim/issues/5035][github.com#\:connect-to-nvim-server @Github]]
 ** PEND Qtile keymap in json :QTILE:
 - *Idea:* /Write key map and run in python/
 *** PEND Encode keymap json :JSON:
@@ -393,8 +390,13 @@ CLOSED: [2025-09-07 Sun 17:58] DEADLINE: <2025-09-07 Sun>
   + [[file:/home/whammou/documents/local/ai-output/nvim-long-configs.org][Long Config Files Guide @File]]
 ** PEND Remove Filter Config :MPV:
 - *OBJECTIVE:* Remove filter from specific =profile= in =mpv= config
-** PEND Nvim Plugins Reload :NVIM:
+** NEXT Nvim Reload :NVIM:
+DEADLINE: <2025-11-18 Tue 18:00>
+:PROPERTIES:
+:ID: f8dca098-428b-4c75-aacb-e8ded7a50c51
+:END:
 - *OBJECTIVE:* Reload plugins in nvim before and after =BufRead= / =BufWrite=
+- *Visit:* [[id:62b8fb19-df46-4e5b-8bef-dde3dba80329][Re-structuring Nvim Config @Org]]
 - *Reference:* [[https://dev.to/reobin/reload-init-vim-without-restarting-neovim-1h82][Reload init files without reload nvim @Blog]]
 ** PEND Checkout org-roam-pygraph :ORGROAM:UTILITY:
 - *OBJECTIVE:* Implement this =python= package to =note=
@@ -437,9 +439,12 @@ CLOSED: [2025-10-03 Fri 22:05] DEADLINE: <2025-10-03 Fri>
 - *OBJECTIVE:* Config =rustdesk= for every desktop
 - *Reference:* [[https://github.com/rustdesk/rustdesk][Rustdesk main repo @Github]]
 ** DONE Search and Replace with Grep :GREP:
-DEADLINE: <2025-10-07 Tue> CLOSED: [2025-10-07 Tue 23:27]
+CLOSED: [2025-10-07 Tue 23:27] DEADLINE: <2025-10-07 Tue>
 :PROPERTIES:
-:ID: cd6ce3f7-b41e-485f-a4f8-b4263929b2b8
+:ID:       cd6ce3f7-b41e-485f-a4f8-b4263929b2b8
 :END:
 - *OBJECTIVE:* Replace /patterns/ using =grep= and =sed=
 - *Reference:* [[https://github.com/BurntSushi/ripgrep/blob/master/FAQ.md#search-and-replace][Ripgrep - Search and Replace @Github]]
+** DONE Update Qtile Colorscheme :QTILE:
+DEADLINE: <2025-11-16 Sun 21:00> CLOSED: [2025-11-16 Sun 21:13]
+- *OBJECTIVE:* Update colorscheme of =qtile= to match =nvim= and =kitty=
