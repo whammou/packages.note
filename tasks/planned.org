@@ -126,9 +126,45 @@ DEADLINE: <2025-11-18 Tue 21:15> CLOSED: [2025-11-18 Tue 08:14]
 :LOGBOOK:
 :END:
 #+html:</details>
-** DOIN Nvim Multiple Instances :NVIM:
+** NEXT Nvim Multiple Instances :NVIM:
 DEADLINE: <2025-11-19 Wed 19:00>
 - *Objective:* /Connect to running/ ~nvim-server~ /apply to/ ~orgmode~
 - *Reference:*
-  + [[https://github.com/neovim/neovim/issues/5035][github.com#\:connect-to-nvim-server @Github]]
+  + [[https://github.com/neovim/neovim/issues/5035][Connect-to-nvim-server @Github]]
   + [[https://vi.stackexchange.com/questions/14015/how-to-share-the-same-buffer-between-multiple-vim-instances][Share =nvim= instances @Overflow]]
+*** DONE Running Nvim Remote
+DEADLINE: <2025-11-19 Wed 01:05> CLOSED: [2025-11-19 Wed 01:13]
+:PROPERTIES:
+:ID: 5509db0e-9222-45d8-9155-33f70bb9facc
+:END:
+#+name:LOGBOOK
+#+html:<details><summary>LOGBOOK</summary>
+:LOGBOOK:
+- Note taken on [2025-11-19 Wed 00:50] \\
+  To establish an nvim =server= run =nvim --listen /path/to/socket=
+  - =socket= can be any /empty/ file
+:END:
+#+html:</details>
+- *OBJECTIVE:* Establish connection from  =client= to =server= using =nvim --remote=
+*** DONE Running Nvim Server
+DEADLINE: <2025-11-19 Wed 01:05> CLOSED: [2025-11-19 Wed 01:13]
+:PROPERTIES:
+:ID: ec0dd744-b94a-4403-8045-7c695693bb7b
+:END:
+- *OBJECTIVE:* Successfully establish connection between =server= and =client=
+*** DONE Nvim Auto Connect
+DEADLINE: <2025-11-19 Wed 01:10> CLOSED: [2025-11-19 Wed 01:18]
+:PROPERTIES:
+:ID: f27a4dad-0408-48b7-80bb-5e2667f9e3c2
+:END:
+#+name:LOGBOOK
+#+html:<details><summary>LOGBOOK</summary>
+:LOGBOOK:
+- Note taken on [2025-11-19 Wed 01:14] \\
+  Each =nvim-tui= should listen to a new =socket= as nvim does not support multiple =listener= per socket
+  - Send command as ={keys}= using =nvim --remote-send {keys}= 
+  - Using =inotifywait= to create timed *update-event* /on file modification/
+  
+:END:
+#+html:</details>
+- *OBJECTIVE:* Auto establish which =socket= /server/ to connect to

@@ -390,8 +390,8 @@ CLOSED: [2025-09-07 Sun 17:58] DEADLINE: <2025-09-07 Sun>
   + [[file:/home/whammou/documents/local/ai-output/nvim-long-configs.org][Long Config Files Guide @File]]
 ** PEND Remove Filter Config :MPV:
 - *OBJECTIVE:* Remove filter from specific =profile= in =mpv= config
-** NEXT Nvim Reload :NVIM:
-DEADLINE: <2025-11-19 Wed 18:00>
+** PRTL Nvim Reload :NVIM:
+DEADLINE: <2025-11-19 Wed 18:00> CLOSED: [2025-11-19 Wed 00:47]
 :PROPERTIES:
 :ID: f8dca098-428b-4c75-aacb-e8ded7a50c51
 :END:
