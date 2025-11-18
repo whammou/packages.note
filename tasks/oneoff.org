@@ -391,7 +391,7 @@ CLOSED: [2025-09-07 Sun 17:58] DEADLINE: <2025-09-07 Sun>
 ** PEND Remove Filter Config :MPV:
 - *OBJECTIVE:* Remove filter from specific =profile= in =mpv= config
 ** NEXT Nvim Reload :NVIM:
-DEADLINE: <2025-11-18 Tue 18:00>
+DEADLINE: <2025-11-19 Wed 18:00>
 :PROPERTIES:
 :ID: f8dca098-428b-4c75-aacb-e8ded7a50c51
 :END:
