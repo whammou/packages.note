@@ -75,7 +75,8 @@ CLOCK: [2025-06-30 Mon 22:49]--[2025-07-01 Tue 00:11] => 1:22
 - *References:* [[https://docs.python.org/3/library/json.html][Json encoder and decoder using python @Python-doc]]
 ** PEND Change floating window size :QTILE:
 - *OBJECTIVE:* Define window size when in floating layout
-** PEND Change snack.nvim border style :NVIM:
+** DONE Change snack.nvim border style :NVIM:
+CLOSED: [2025-11-19 Wed 08:31]
 - *OBJECTIVE:* Replace rounded border style in snack.nvim with static style for more aesthetic
 - *Reference:* 
   - [[http://www.lazyvim.org/plugins][Lazyvim core plugins @Doc-lazyvim]]
@@ -114,7 +115,8 @@ CLOSED: [2025-06-03 Tue 07:43]
 - *OBJECTIVE:* /Cache mode takes a lot of space, workaround this issue/
 - *Checkout:* [[https://forum.rclone.org/t/why-arent-cache-rclone-files-being-removed/28948/8][Vfs cache explain @Forum-rclone]]
 - *References:* [[https://l.opnxng.com/r/rclone/comments/xnbhsx/rclone_mount_with_vfs_cache_mode_full_is_using_up/][Cache mode using up space @Reddit]]
-** PEND Disable blink.cmp for orgroam menu :NVIM:BLINK:ORGROAM:
+** DONE Disable blink.cmp for orgroam menu :NVIM:BLINK:ORGROAM:
+CLOSED: [2025-11-19 Wed 08:31]
 - *OBJECTIVE:* Disable completion in orgroam buffer
 - *[NOTE]* taken on [2025-06-25 22:33]:
   #+NAME: Disable completion nvim-cmp
@@ -175,7 +177,8 @@ CLOSED: [2025-07-31 Thu 20:54] DEADLINE: <2025-07-31 Thu>
 - *Reference:*
   - [[https://nvim-orgmode.github.io/#api-docs][Nvim-orgmode API @Doc-nvim-orgmode]]
   - [[https://github.com/nvim-orgmode/orgmode/discussions/845][How to open nvim in orgmode capture @Github-discussion]]
-*** PEND Nvim solve loop declare issue :NVIM:
+*** DONE Nvim solve loop declare issue :NVIM:
+CLOSED: [2025-11-19 Wed 08:32]
 - *OBJECTIVE:* Solve loop issue when declare BufType nvim
 ** PRTL Create mpv image profile :MPV:
 CLOSED: [2025-07-26 Sat 18:38] DEADLINE: <2025-07-26 Sat>
@@ -342,8 +345,17 @@ CLOSED: [2025-09-06 Sat 18:06] DEADLINE: <2025-09-06 Sat>
 - *[NOTE]* taken on [2025-09-06 18:06]: \\
   Using ~win_split_mode = "tabnew"~ to open capture buffers in a new tab with neovim
 -----
-*** PEND Manually Open Config File
+*** DONE Manually Open Config File
+CLOSED: [2025-11-19 Wed 08:35]
+#+name:LOGBOOK
+#+html:<details><summary>LOGBOOK</summary>
+:LOGBOOK:
+- Note taken on [2025-11-19 Wed 08:32] \\
+  Update /set-up/ by calling part of =setup= function in =partials/=
+:END:
+#+html:</details>
 - *OBJECTIVE:* Tell nvim to open a =config= file independent to =init= (/manually/)
+- *Check-out:* [[id:62b8fb19-df46-4e5b-8bef-dde3dba80329][Re-structuring Nvim-orgmode Configuration @Org]] 
 ** ABRT Testing Org-Babel :PYTHON:TEST:ORGMODE:
 CLOSED: [2025-08-31 Sun 20:51]
 #+BEGIN_SRC python :RESULTS output
@@ -368,7 +380,8 @@ CLOSED: [2025-09-07 Sun 17:58] DEADLINE: <2025-09-07 Sun>
   + *Checkout:* [[id:a348064e-f0ba-4aa6-970a-8e63a1aa9dba][Citation Rendering]]
 -----
 - *Reference:* [[https://github.com/parchd-1/qutebrowser-zotero][Qutebrowser-Zotero @Github]]
-** PEND Overhaul Nvim UI Elements :NVIM:
+** DONE Overhaul Nvim UI Elements :NVIM:
+CLOSED: [2025-11-19 Wed 08:35]
 - *OBJECTIVE:* Re-config nvim ui elements border from =rounded= to =single= or =none=
 ** PEND Setup Git-Annex :GIT:
 :PROPERTIES:
@@ -383,7 +396,8 @@ CLOSED: [2025-09-07 Sun 17:58] DEADLINE: <2025-09-07 Sun>
   + [[https://www.youtube.com/watch?v=p0eVyhv2rbk#__preview][Manage Large File with Git @Youtube-DT]]
   + [[https://github.com/emanuele/git-annex_tutorial][Git-annex Tutorial @Github]]
 - *Checkout:* [[id:0838bd36-ab3e-4c82-8bd4-66a73acb00ae][Manage Large Files With Git @Org-doc]]
-** PEND Manage Long Config Files :NVIM:HOUSEKEEPING:
+** DONE Manage Long Config Files :NVIM:HOUSEKEEPING:
+CLOSED: [2025-11-19 Wed 08:31]
 - *OBJECTIVE:* How to manage long =nvim= /config files/ and /plugin lists/
 - *Reference:*
   + [[https://old.reddit.com/r/neovim/comments/1g6ls56/how_do_you_manage_very_long_initlua_configs_and/][Manage Very Long Configs @Reddit]]
@@ -401,7 +415,7 @@ CLOSED: [2025-11-19 Wed 00:47] DEADLINE: <2025-11-19 Wed 18:00>
 ** PEND Checkout org-roam-pygraph :ORGROAM:UTILITY:
 - *OBJECTIVE:* Implement this =python= package to =note=
 - *Reference:* [[https://github.com/aatmunbaxi/org-roam-pygraph][org-roam-pygraph @Github]]
-** PEND Config blink.cmp in Org :ORGMODE:NVIM:
+** PEND Config blink.cmp for Org :ORGMODE:NVIM:
 - *OBJECTIVE:* Config =blink.cmp= to suggest =org-property= in =cmdline=
 ** PEND Sorting Headlines :ORGMODE:SORTING:
 - *OBJECTIVE:* Sorting headlines in =orgmode=
@@ -448,3 +462,6 @@ CLOSED: [2025-10-07 Tue 23:27] DEADLINE: <2025-10-07 Tue>
 ** DONE Update Qtile Colorscheme :QTILE:
 CLOSED: [2025-11-16 Sun 21:13] DEADLINE: <2025-11-16 Sun 21:00>
 - *OBJECTIVE:* Update colorscheme of =qtile= to match =nvim= and =kitty=
+** TODO Orgmode Uniform Keybinds :NVIM:ORGMODE:QTILE:
+DEADLINE: <2025-11-19 Wed 16:15>
+- *OBJECTIVE:* Create a passable keybinds between =nvim= =orgmode= and =qtile=

@@ -101,14 +101,14 @@ CLOSED: [2025-11-14 Fri 08:58] DEADLINE: <2025-11-13 Thu 22:40>
 - *OBJECTIVE:* Reload nvim along with plugins
 - *Reference:* [[https://www.reddit.com/r/neovim/comments/15gihnd/neat_trick_for_restarting_neovim_fast_when_using/][Restart nvim @Reddit]]
 ** DONE Re-structuring Nvim-orgmode Configuration :NVIM:ORGMODE:nvimconfig:
-DEADLINE: <2025-11-18 Tue 23:45> CLOSED: [2025-11-18 Tue 08:14]
+CLOSED: [2025-11-18 Tue 08:14] DEADLINE: <2025-11-18 Tue 23:45>
 :PROPERTIES:
-:ID: 62b8fb19-df46-4e5b-8bef-dde3dba80329
+:ID:       62b8fb19-df46-4e5b-8bef-dde3dba80329
 :END:
 - *OBJECTIVE:* Restructuring nvim =config/= and =plugin/=
 - *Reference:* [[https://www.lazyvim.org/configuration][Lazyvim Configuration @Lazyvim-doc]]
 *** DONE Structuring Orgmode Config
-DEADLINE: <2025-11-18 Tue 21:15> CLOSED: [2025-11-18 Tue 08:14]
+CLOSED: [2025-11-18 Tue 08:14] DEADLINE: <2025-11-18 Tue 21:15>
 - *OBJECTIVE:* Structuring plugin config
 #+name:LOGBOOK
 #+html:<details><summary>LOGBOOK</summary>
@@ -116,26 +116,26 @@ DEADLINE: <2025-11-18 Tue 21:15> CLOSED: [2025-11-18 Tue 08:14]
 :END:
 #+html:</details>
 **** DONE Create Orgmode Environment
-DEADLINE: <2025-11-18 Tue 22:20> CLOSED: [2025-11-18 Tue 08:13]
+CLOSED: [2025-11-18 Tue 08:13] DEADLINE: <2025-11-18 Tue 22:20>
 - *OBJECTIVE:* Create an =shared= orgmode =environment=
 *** DONE Structuring Orgmode Plugin
-DEADLINE: <2025-11-18 Tue 21:15> CLOSED: [2025-11-18 Tue 08:14]
+CLOSED: [2025-11-18 Tue 08:14] DEADLINE: <2025-11-18 Tue 21:15>
 - *OBJECTIVE:* Structuring plugin =spec=
 #+name:LOGBOOK
 #+html:<details><summary>LOGBOOK</summary>
 :LOGBOOK:
 :END:
 #+html:</details>
-** NEXT Nvim Multiple Instances :NVIM:filesync:
-DEADLINE: <2025-11-19 Wed 19:00>
+** DONE Nvim Multiple Instances :NVIM:filesync:
+CLOSED: [2025-11-19 Wed 05:45] DEADLINE: <2025-11-19 Wed 19:00>
 - *Objective:* /Connect to running/ ~nvim-server~ /apply to/ ~orgmode~
 - *Reference:*
   + [[https://github.com/neovim/neovim/issues/5035][Connect-to-nvim-server @Github]]
   + [[https://vi.stackexchange.com/questions/14015/how-to-share-the-same-buffer-between-multiple-vim-instances][Share =nvim= instances @Overflow]]
 *** DONE Running Nvim Remote
-DEADLINE: <2025-11-19 Wed 01:05> CLOSED: [2025-11-19 Wed 01:13]
+CLOSED: [2025-11-19 Wed 01:13] DEADLINE: <2025-11-19 Wed 01:05>
 :PROPERTIES:
-:ID: 5509db0e-9222-45d8-9155-33f70bb9facc
+:ID:       5509db0e-9222-45d8-9155-33f70bb9facc
 :END:
 #+name:LOGBOOK
 #+html:<details><summary>LOGBOOK</summary>
@@ -147,15 +147,15 @@ DEADLINE: <2025-11-19 Wed 01:05> CLOSED: [2025-11-19 Wed 01:13]
 #+html:</details>
 - *OBJECTIVE:* Establish connection from  =client= to =server= using =nvim --remote=
 *** DONE Running Nvim Server
-DEADLINE: <2025-11-19 Wed 01:05> CLOSED: [2025-11-19 Wed 01:13]
+CLOSED: [2025-11-19 Wed 01:13] DEADLINE: <2025-11-19 Wed 01:05>
 :PROPERTIES:
-:ID: ec0dd744-b94a-4403-8045-7c695693bb7b
+:ID:       ec0dd744-b94a-4403-8045-7c695693bb7b
 :END:
 - *OBJECTIVE:* Successfully establish connection between =server= and =client=
 *** DONE Nvim Auto Connect
-DEADLINE: <2025-11-19 Wed 01:10> CLOSED: [2025-11-19 Wed 01:18]
+CLOSED: [2025-11-19 Wed 01:18] DEADLINE: <2025-11-19 Wed 01:10>
 :PROPERTIES:
-:ID: f27a4dad-0408-48b7-80bb-5e2667f9e3c2
+:ID:       f27a4dad-0408-48b7-80bb-5e2667f9e3c2
 :END:
 #+name:LOGBOOK
 #+html:<details><summary>LOGBOOK</summary>
@@ -168,3 +168,6 @@ DEADLINE: <2025-11-19 Wed 01:10> CLOSED: [2025-11-19 Wed 01:18]
 :END:
 #+html:</details>
 - *OBJECTIVE:* Auto establish which =socket= /server/ to connect to
+** TODO Create Issue on Org Reload :NVIM:ORGMODE:
+DEADLINE: <2025-11-19 Wed 16:45>
+- *OBJECTIVE:* Create a =nvim-orgmode.git= issue on =org reload= does not include new /changes/ made by another =nvim= instance
