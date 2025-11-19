@@ -94,7 +94,7 @@ CLOSED: [2025-11-07 Fri 05:01] DEADLINE: <2025-11-07 Fri>
 *** DOIN Git Commit Hourly
 - *OBJECTIVE:* Git auto commit hourly /(optional: git push hourly)/
 *** TODO Git Conclude Daily Commits
-DEADLINE: <2025-11-19 Wed 21:30>
+DEADLINE: <2025-11-20 Thu 21:30>
 - *OBJECTIVE:* Squash every commit done today down to the first commit of the day
 ** ABRT Nvim Reload :NVIM:
 CLOSED: [2025-11-14 Fri 08:58] DEADLINE: <2025-11-13 Thu 22:40>
@@ -169,5 +169,5 @@ CLOSED: [2025-11-19 Wed 01:18] DEADLINE: <2025-11-19 Wed 01:10>
 #+html:</details>
 - *OBJECTIVE:* Auto establish which =socket= /server/ to connect to
 ** TODO Create Issue on Org Reload :NVIM:ORGMODE:
-DEADLINE: <2025-11-19 Wed 16:45>
+DEADLINE: <2025-11-20 Thu 16:45>
 - *OBJECTIVE:* Create a =nvim-orgmode.git= issue on =org reload= does not include new /changes/ made by another =nvim= instance
