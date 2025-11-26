@@ -336,7 +336,8 @@ CLOSED: [2025-08-12 Tue 00:12] DEADLINE: <2025-08-12 Tue>
 CLOSED: [2025-08-23 Sat 21:27] DEADLINE: <2025-08-23 Sat>
 + *OBJECTIVE:* Test orgroam capture to sub-headline format
 + *Reference:* [[https://github.com/chipsenkbeil/org-roam.nvim/blob/main/DOCS.org#templates-1][Orgroam capture template @Github-doc]]
-** PEND Update Orgmode Notification Parameters :ORGMODE:NOTIFICATION:
+** RVIW Update Orgmode Notification Parameters :ORGMODE:NOTIFICATION:
+CLOSED: [2025-11-20 Thu 08:26]
 + *OBJECTIVE:* Modify =orgmode.cron_job= parameters by writting a standalone file
 ** DONE Nvim Open New Buffer :NVIM:ORGMODE:
 CLOSED: [2025-09-06 Sat 18:06] DEADLINE: <2025-09-06 Sat>
@@ -462,6 +463,23 @@ CLOSED: [2025-10-07 Tue 23:27] DEADLINE: <2025-10-07 Tue>
 ** DONE Update Qtile Colorscheme :QTILE:
 CLOSED: [2025-11-16 Sun 21:13] DEADLINE: <2025-11-16 Sun 21:00>
 - *OBJECTIVE:* Update colorscheme of =qtile= to match =nvim= and =kitty=
-** DOIN Orgmode Uniform Keybinds :NVIM:ORGMODE:QTILE:
-DEADLINE: <2025-11-20 Thu 16:15>
+** TODO Orgmode Uniform Keybinds :NVIM:ORGMODE:QTILE:
+DEADLINE: <2025-11-26 Wed 23:50>
+#+name:LOGBOOK
+#+html:<details><summary>LOGBOOK</summary>
+:LOGBOOK:
+:END:
+#+html:</details>
 - *OBJECTIVE:* Create a passable keybinds between =nvim= =orgmode= and =qtile=
+** DONE Orgmode Agenda Format :NVIM:ORGMODE:
+CLOSED: [2025-11-20 Thu 11:08] DEADLINE: <2025-11-20 Thu 18:00>
+- *OBJECTIVE:* Modify agenda format
+** DONE Update rofi theme :ROFI:
+DEADLINE: <2025-11-26 Wed 19:45> CLOSED: [2025-11-26 Wed 03:16]
+:LOGBOOK:
+CLOCK: [2025-11-25 Tue 19:45]--[2025-11-26 Wed 03:15] => 7:30
+:END:
+- *OBJECTIVE:* Re-config =rofi= theme to match =nvim=
+** DONE Nvim Toggle Zoom Mode :NVIM:ORGMODE:
+CLOSED: [2025-11-25 Tue 19:21] DEADLINE: <2025-11-25 Tue 19:21>
+- *OBJECTIVE:* Toggle =zoom= mode when entering =orgagenda= buffer

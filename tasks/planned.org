@@ -94,7 +94,7 @@ CLOSED: [2025-11-07 Fri 05:01] DEADLINE: <2025-11-07 Fri>
 *** DOIN Git Commit Hourly
 - *OBJECTIVE:* Git auto commit hourly /(optional: git push hourly)/
 *** TODO Git Conclude Daily Commits
-DEADLINE: <2025-11-20 Thu 21:30>
+DEADLINE: <2025-11-26 Wed 00:15>
 - *OBJECTIVE:* Squash every commit done today down to the first commit of the day
 ** ABRT Nvim Reload :NVIM:
 CLOSED: [2025-11-14 Fri 08:58] DEADLINE: <2025-11-13 Thu 22:40>
@@ -169,5 +169,38 @@ CLOSED: [2025-11-19 Wed 01:18] DEADLINE: <2025-11-19 Wed 01:10>
 #+html:</details>
 - *OBJECTIVE:* Auto establish which =socket= /server/ to connect to
 ** TODO Create Issue on Org Reload :NVIM:ORGMODE:
-DEADLINE: <2025-11-20 Thu 16:45>
+DEADLINE: <2025-11-26 Wed 00:45>
 - *OBJECTIVE:* Create a =nvim-orgmode.git= issue on =org reload= does not include new /changes/ made by another =nvim= instance
+** DONE Setting Multiple Handlers :HANDLR:universalfileopener:
+CLOSED: [2025-11-20 Thu 21:23] DEADLINE: <2025-11-20 Thu 21:05>
+:LOGBOOK:
+CLOCK: [2025-11-20 Thu 21:05]--[2025-11-20 Thu 21:22] => 0:17
+:END:
+- *OBJECTIVE:* Setting up =open with= multiple handlers
+- *Reference:* [[https://github.com/Anomalocaridid/handlr-regex?tab=readme-ov-file#setting-multiple-handlers][Setting up multiple handlers @Github]]
+*** ABRT Rofi Menu For Handlr-regex :ROFI:
+CLOSED: [2025-11-20 Thu 21:22] DEADLINE: <2025-11-20 Thu 21:30>
+#+name:LOGBOOK
+#+html:<details><summary>LOGBOOK</summary>
+:LOGBOOK:
+- Note taken on [2025-11-20 Thu 21:24] \\
+  Instead of writing a standalone =script= use =handlr launch <mimetype> <URI>= to open =mime= in configured =mimetype=, e.g.
+  - #+NAME: mime-list
+    #+BEGIN_SRC dosini
+    video/x-matroska=mpv-float.desktop;mpv.desktop;
+    #+END_SRC
+  - When running =handlr .mkv <URI>= you will be prompted to choose the application to launch with just like when you launch =.mkv=
+  
+:END:
+#+html:</details>
+- *OBJECTIVE:* Setting up =rofi= script for multiple =open= options
+- *Reference:* [[https://davatorium.github.io/rofi/current/rofi-script.5/][rofi-script(5) @Man]]
+** TODO Notification Format :DUNST:NOTIFICATION:
+DEADLINE: <2025-11-26 Wed 20:30>
+- *OBJECTIVE:* Format plain-text notifications with =pango= markup
+*** TODO Format Orgmode Notification :ORGMODE:
+DEADLINE: <2025-11-26 Wed 21:00>
+- *OBJECTIVE:* Format =orgmode-notification= base on =todo-keyword=
+** PEND Tmux URL Hint :TMUX:
+- *OBJECTIVE:* Hint and open =URL= with =tmux=
+- *Reference:* [[https://dev.to/tomoviktor/best-way-to-open-urls-in-your-terminal-via-tmux-595b][Hint and open URL with Tmux @Blog]]
