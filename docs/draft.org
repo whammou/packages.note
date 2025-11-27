@@ -107,6 +107,12 @@ To establish a connection between the =remote= and =local= machine run:
 #+BEGIN_SRC sh
 ssh -o ControlMaster=auto -o ControlPath=/tmp/ssh-tunnel.socket -NR 2200:localhost:22 user@remote-ip
 #+END_SRC
+- =-o= defines extra parameters for this =ssh= session /same as defining in =config= file/
+  + =ControlMaster= set control mode to =auto=
+  + =ControlPath= define path for =control socket=. /Requires for turning "off" an ssh connection/
+- =-N= Don't execute remote command
+- =-R= Tells =ssh= that the new SSH session must be created on the remote computer /this is a reverse session/
+- =2200:localhost:22= Tells =ssh= to open a listen port =2200= on the =remote= computer and if there is a request forward it to this =localhost= on port =22=
 ** OUTL Git Rebase vs Merge :GIT:
 /Difference between git rebasing and merging/ \\
 /*checkout:*/ [[https://www.geeksforgeeks.org/git/git-difference-between-merging-and-rebasing/][Git rebasing vs merging @G4g]]
