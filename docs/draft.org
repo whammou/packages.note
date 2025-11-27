@@ -63,31 +63,33 @@ def ssh_session(session_range):
 ** OUTL Reverse Tunneling :PROTOCOL:SSH:reversetunneling:
 DEADLINE: <2025-11-27 Thu>
 /How to establish =reverse tunneling=/
-- #+NAME: reverse ssh representation
-  #+BEGIN_SRC plain
-                                                                      +-------------------+
-                                                                      |  Local Machine    |
-                                                                      | (Your Computer)   |
-                                                                      |                   |
-    Any SSH Client                                                   | +---------------+ |
-          |                                                          | | SSH Server    | |
-          |                                                          | | (Port 22)     | |
-          |                                                          | +---------------+ |
-          |                                                          +--------^----------+
-          |                                                                   |
-          | 1. Connects to remote server's port 2200                          | 4. The SSH client on your
-          |    (e.g., ssh user@whamlab.sytes.net -p 2200)                     |    local machine forwards the
-          v                                                                   |    connection to its own
-  +---------------------------+                                                |    localhost:22.
-  |      Remote Server        |                                                |
-  |   (whamlab.sytes.net)     |      2. SSH Tunnel established by your command |
-  |                           | <--------------------------------------------> |
-  | +-----------------------+ |                                                |
-  | | SSHD listens on 2200  | |         3. Traffic arriving on port 2200 is    |
-  | +-----------------------+ |            sent back through the tunnel.       |
-  |                           | ---------------------------------------------> |
-  +---------------------------+
-  #+END_SRC
+To establish a con
+#+html:<details><summary>Reverse ssh graph</summary>
+#+BEGIN_SRC plain
+                                                                    +-------------------+
+                                                                    |  Local Machine    |
+                                                                    | (Your Computer)   |
+                                                                    |                   |
+  Any SSH Client                                                    | +---------------+ |
+        |                                                           | | SSH Server    | |
+        |                                                           | | (Port 22)     | |
+        |                                                           | +---------------+ |
+        |                                                           +--------^----------+
+        |                                                                    |
+        | 1. Connects to remote server's port 2200                           | 4. The SSH client on your
+        |    (e.g., ssh user@remote-ip -p 2200)                              |    local machine forwards the
+        v                                                                    |    connection to its own
++---------------------------+                                                |    localhost:22.
+|      Remote Server        |                                                |
+|    (Remote Server IP)     |      2. SSH Tunnel established by your command |
+|                           | <--------------------------------------------> |
+| +-----------------------+ |                                                |
+| | SSHD listens on 2200  | |         3. Traffic arriving on port 2200 is    |
+| +-----------------------+ |            sent back through the tunnel.       |
+|                           | ---------------------------------------------> |
++---------------------------+
+#+END_SRC
+#+html:</details>
 - *Visit:* [[https://stackoverflow.com/a/76549625/25585364][Auto restart background ssh tunnel @Overflow]]
 ** OUTL Git Rebase vs Merge :GIT:
 /Difference between git rebasing and merging/ \\
