@@ -49,7 +49,8 @@ CLOSED: [2025-09-08 Mon 03:57] DEADLINE: <2025-09-09 Tue>
   Run =nvim-orgmode= plugin using [[id:2da88bc1-47e2-4a81-bedf-758cbdfdafbe][Minimal Config]] provided on =github=
 -----
 - *Checkout:* [[id:0022f0cf-b051-4752-aa0e-9d5aafe4274e][Conflict nvim-orgmode and blink @Org]] ([[file:/system/packages/tasks/incidental.org#feedback-debug-using-minimal-init][view on Github]])
-** PEND Report Qtile Bug :QTILE:
+** ABRT Report Qtile Bug :QTILE:
+CLOSED: [2025-11-28 Fri 04:24]
 - *OBJECTIVE:* Report qtile =dropdown= not in windows id
 -----
 - *[NOTE]* taken on [2025-09-06 17:42]: \\
@@ -93,7 +94,7 @@ CLOSED: [2025-09-08 Mon 03:57] DEADLINE: <2025-09-09 Tue>
   #+END_SRC
 -----
 ** DONE Conflict ssh tmux nerdfont :SSH:TMUX:
-DEADLINE: <2025-10-20 Mon> CLOSED: [2025-10-20 Mon 00:15]
+CLOSED: [2025-10-20 Mon 00:15] DEADLINE: <2025-10-20 Mon>
 - *OBJECTIVE:* Solve conflicting packages when =ssh= with =tmux= and =nerdfont=
 - -----
 - Note taken on [2025-10-20 00:13]: \\
