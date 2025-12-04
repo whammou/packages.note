@@ -464,7 +464,7 @@ CLOSED: [2025-10-07 Tue 23:27] DEADLINE: <2025-10-07 Tue>
 CLOSED: [2025-11-16 Sun 21:13] DEADLINE: <2025-11-16 Sun 21:00>
 - *OBJECTIVE:* Update colorscheme of =qtile= to match =nvim= and =kitty=
 ** TODO Orgmode Uniform Keybinds :NVIM:ORGMODE:QTILE:
-DEADLINE: <2025-12-03 Wed 23:50>
+DEADLINE: <2025-12-04 Thu 23:50>
 #+name:LOGBOOK
 #+html:<details><summary>LOGBOOK</summary>
 :LOGBOOK:
@@ -490,3 +490,6 @@ DEADLINE: <2025-12-01 Mon 15:50> CLOSED: [2025-12-01 Mon 16:01]
 :END:
 - *OBJECTIVE:* Fix ly-dm displays incorrect background color
 - *Visit:* [[id:e8bec13e-f010-46c8-bee9-321002486290][Ly-dm background color @Org]]
+** ABRT Bug Fix Orgroam :ORGROAM:
+DEADLINE: <2025-12-04 Thu 18:15> CLOSED: [2025-12-04 Thu 20:46]
+- *OBJECTIVE:* Fix =variable= prints incorrect value

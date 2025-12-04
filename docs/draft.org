@@ -23,12 +23,12 @@ Draft items are subjected to change and refile!
 + [[https://seb.jambor.dev/posts/improving-shell-workflows-with-fzf/https://seb.jambor.dev/posts/improving-shell-workflows-with-fzf/][Improving workflow with fzf @Blog]]
 + [[https://github.com/beauwilliams/awesome-fzf][A semi-complete List of Fzf @Github]]
 ** OUTL Git Revert a pushed commit
-DEADLINE: <2025-12-03 Wed>
+DEADLINE: <2025-12-04 Thu>
 /How to revert a pushed commit on public or private branch/
 - *Visit:* [[https://www.youtube.com/watch?v=H2DuJNWbqLw][How to revert a pushed commit @Youtube]]
 - *Goes-to:* [[id:0d065ce6-e02a-4dce-b7a5-29a1910d0e9c][Make Changes to Submodules @Org]]
 ** OUTL Command Multiple Git Repositories :GIT:
-DEADLINE: <2025-12-03 Wed>
+DEADLINE: <2025-12-04 Thu>
 /Run git commands in parallel in multiple repositories/
 - *Goes-to:* [[id:0d065ce6-e02a-4dce-b7a5-29a1910d0e9c][Make Changes to Submodules @Org]]
 ** DONE Initiate tmux on Homelab :SERVER:TMUX:SSH:
@@ -82,12 +82,12 @@ def ssh_session(session_range):
 /How to receive =ntfy-notification= on =archlinux=/ \\
 /*Check-out:*/ [[https://github.com/ronilaukkarinen/ntfy-linux-receiver-service/][ntfy-listener systemd service @Github]]
 ** OUTL Pull ntfy notifications :NTFY:notificationsync:
-DEADLINE: <2025-12-03 Wed>
+DEADLINE: <2025-12-04 Thu>
 /Pull =ntfy= notifications when system connection went down/
 - *Check-out:* [[id:b6113f7d-9ec6-49df-80ff-2c0d7546475f][Run Service on Network Change @Org]]
 - *Reference:* [[https://docs.ntfy.sh/subscribe/api/#advanced-features][Pull cached messages @Ntfy-doc]]
 ** OUTL Dunst Write and Run Script :DUNST:notificationsync:
-DEADLINE: <2025-12-03 Wed>
+DEADLINE: <2025-12-04 Thu>
 /How to write and run script in =dunst=/
 ** OUTL Git Automation :GIT:filesync:
 /Automate sync process with head repo/
@@ -100,11 +100,11 @@ optimal way to place your plugins in =lazyvim=
 How to reload =nvim= without restarting or spawning new instances
 - /Reference:/ [[file:/home/whammou/Workspace/nvim-restart/nvim-restart.ai.org][Restart Nvim Function @Gemini]]
 ** OUTL Running Script File Event :filesync:
-DEADLINE: <2025-12-03 Wed>
+DEADLINE: <2025-12-04 Thu>
 /Run custom script on file modification event/ \\
 /Check-out:/ [[id:c4b5759c-1794-4797-b1ae-adc28bb1aa2a][Nvim Multiple Instances @Org]]
 ** OUTL Scripting with Rofi :ROFI:
-DEADLINE: <2025-12-03 Wed>
+DEADLINE: <2025-12-04 Thu>
 :PROPERTIES:
 :ID: e88ddffd-71b2-41c2-b1e7-6309f8600812
 :END:
