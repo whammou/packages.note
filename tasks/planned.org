@@ -180,8 +180,8 @@ CLOSED: [2025-11-19 Wed 01:18] DEADLINE: <2025-11-19 Wed 01:10>
 :END:
 #+html:</details>
 - *OBJECTIVE:* Auto establish which =socket= /server/ to connect to
-** TODO Create Issue on Org Reload :NVIM:ORGMODE:
-DEADLINE: <2025-12-05 Fri 00:45>
+** ABRT Create Issue on Org Reload :NVIM:ORGMODE:
+DEADLINE: <2025-12-05 Fri 00:45> CLOSED: [2025-12-05 Fri 20:31]
 - *OBJECTIVE:* Create a =nvim-orgmode.git= issue on =org reload= does not include new /changes/ made by another =nvim= instance
 ** DONE Setting Multiple Handlers :HANDLR:universalfileopener:
 CLOSED: [2025-11-20 Thu 21:23] DEADLINE: <2025-11-20 Thu 21:05>
@@ -207,8 +207,7 @@ CLOSED: [2025-11-20 Thu 21:22] DEADLINE: <2025-11-20 Thu 21:30>
 #+html:</details>
 - *OBJECTIVE:* Setting up =rofi= script for multiple =open= options
 - *Reference:* [[https://davatorium.github.io/rofi/current/rofi-script.5/][rofi-script(5) @Man]]
-** TODO Notification Format :DUNST:NOTIFICATION:
-DEADLINE: <2025-12-05 Fri 20:30>
+** PEND Notification Format :DUNST:NOTIFICATION:
 - *OBJECTIVE:* Format plain-text notifications with =pango= markup
 *** PEND Format Orgmode Notification :ORGMODE:
 - *OBJECTIVE:* Format =orgmode-notification= base on =todo-keyword=
