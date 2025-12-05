@@ -106,7 +106,7 @@ CLOSED: [2025-11-27 Thu 02:53] DEADLINE: <2025-11-27 Thu>
 #+html:</details>
 - *OBJECTIVE:* Git auto commit hourly /(optional: git push hourly)/
 *** TODO Git Squash Weekly Commits
-DEADLINE: <2025-12-04 Thu 00:15>
+DEADLINE: <2025-12-05 Fri 00:15>
 - *OBJECTIVE:* Squash every commit done within the week into a =weekly-commit=
 ** ABRT Nvim Reload :NVIM:
 CLOSED: [2025-11-14 Fri 08:58] DEADLINE: <2025-11-13 Thu 22:40>
@@ -181,7 +181,7 @@ CLOSED: [2025-11-19 Wed 01:18] DEADLINE: <2025-11-19 Wed 01:10>
 #+html:</details>
 - *OBJECTIVE:* Auto establish which =socket= /server/ to connect to
 ** TODO Create Issue on Org Reload :NVIM:ORGMODE:
-DEADLINE: <2025-12-04 Thu 00:45>
+DEADLINE: <2025-12-05 Fri 00:45>
 - *OBJECTIVE:* Create a =nvim-orgmode.git= issue on =org reload= does not include new /changes/ made by another =nvim= instance
 ** DONE Setting Multiple Handlers :HANDLR:universalfileopener:
 CLOSED: [2025-11-20 Thu 21:23] DEADLINE: <2025-11-20 Thu 21:05>
@@ -208,7 +208,7 @@ CLOSED: [2025-11-20 Thu 21:22] DEADLINE: <2025-11-20 Thu 21:30>
 - *OBJECTIVE:* Setting up =rofi= script for multiple =open= options
 - *Reference:* [[https://davatorium.github.io/rofi/current/rofi-script.5/][rofi-script(5) @Man]]
 ** TODO Notification Format :DUNST:NOTIFICATION:
-DEADLINE: <2025-12-04 Thu 20:30>
+DEADLINE: <2025-12-05 Fri 20:30>
 - *OBJECTIVE:* Format plain-text notifications with =pango= markup
 *** PEND Format Orgmode Notification :ORGMODE:
 - *OBJECTIVE:* Format =orgmode-notification= base on =todo-keyword=
@@ -216,7 +216,7 @@ DEADLINE: <2025-12-04 Thu 20:30>
 - *OBJECTIVE:* Hint and open =URL= with =tmux=
 - *Reference:* [[https://dev.to/tomoviktor/best-way-to-open-urls-in-your-terminal-via-tmux-595b][Hint and open URL with Tmux @Blog]]
 ** TODO Learn Scripting with Rofi :ROFI:
-DEADLINE: <2025-12-04 Thu>
+DEADLINE: <2025-12-05 Fri>
 :PROPERTIES:
 :ID:       b4d95356-ad0b-4d28-8d01-efe6a2262752
 :END:
