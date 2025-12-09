@@ -464,7 +464,7 @@ CLOSED: [2025-10-07 Tue 23:27] DEADLINE: <2025-10-07 Tue>
 CLOSED: [2025-11-16 Sun 21:13] DEADLINE: <2025-11-16 Sun 21:00>
 - *OBJECTIVE:* Update colorscheme of =qtile= to match =nvim= and =kitty=
 ** TODO Orgmode Uniform Keybinds :NVIM:ORGMODE:QTILE:
-DEADLINE: <2025-12-08 Mon 23:50>
+DEADLINE: <2025-12-09 Tue 23:50>
 #+name:LOGBOOK
 #+html:<details><summary>LOGBOOK</summary>
 :LOGBOOK:
@@ -475,7 +475,7 @@ DEADLINE: <2025-12-08 Mon 23:50>
 CLOSED: [2025-11-20 Thu 11:08] DEADLINE: <2025-11-20 Thu 18:00>
 - *OBJECTIVE:* Modify agenda format
 ** DONE Update rofi theme :ROFI:
-DEADLINE: <2025-11-26 Wed 19:45> CLOSED: [2025-11-26 Wed 03:16]
+CLOSED: [2025-11-26 Wed 03:16] DEADLINE: <2025-11-26 Wed 19:45>
 :LOGBOOK:
 CLOCK: [2025-11-25 Tue 19:45]--[2025-11-26 Wed 03:15] => 7:30
 :END:
@@ -484,12 +484,12 @@ CLOCK: [2025-11-25 Tue 19:45]--[2025-11-26 Wed 03:15] => 7:30
 CLOSED: [2025-11-25 Tue 19:21] DEADLINE: <2025-11-25 Tue 19:21>
 - *OBJECTIVE:* Toggle =zoom= mode when entering =orgagenda= buffer
 ** DONE Fix ly-dm Color Incorrect :LYDM:
-DEADLINE: <2025-12-01 Mon 15:50> CLOSED: [2025-12-01 Mon 16:01]
+CLOSED: [2025-12-01 Mon 16:01] DEADLINE: <2025-12-01 Mon 15:50>
 :PROPERTIES:
-:ID: 06e6bf89-1415-4112-be3e-b2e12fad13d1
+:ID:       06e6bf89-1415-4112-be3e-b2e12fad13d1
 :END:
 - *OBJECTIVE:* Fix ly-dm displays incorrect background color
 - *Visit:* [[id:e8bec13e-f010-46c8-bee9-321002486290][Ly-dm background color @Org]]
 ** ABRT Bug Fix Orgroam :ORGROAM:
-DEADLINE: <2025-12-04 Thu 18:15> CLOSED: [2025-12-04 Thu 20:46]
+CLOSED: [2025-12-04 Thu 20:46] DEADLINE: <2025-12-04 Thu 18:15>
 - *OBJECTIVE:* Fix =variable= prints incorrect value
