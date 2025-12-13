@@ -119,7 +119,7 @@ For an open-source organization, it can be tricky to achieve single-source =docu
 
 #+html:<details>
 #+html:<summary>git subtree</summary>
-[[https://opensource.com/article/20/5/git-submodules-subtrees][https://opensource.com/sites/default/files/subtree_0.png]]
+[[https://opensource.com/article/20/5/git-submodules-subtrees]]
 #+html:</details>
 - *Reference:* [[https://ao.bloat.cat/exchange/stackoverflow.com/questions/35534766/how-to-create-submodule-in-existing-repo][How to create a nested project @Overflow]]
 *** DONE Git Submodules Approach
