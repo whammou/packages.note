@@ -493,3 +493,9 @@ CLOSED: [2025-12-01 Mon 16:01] DEADLINE: <2025-12-01 Mon 15:50>
 ** ABRT Bug Fix Orgroam :ORGROAM:
 CLOSED: [2025-12-04 Thu 20:46] DEADLINE: <2025-12-04 Thu 18:15>
 - *OBJECTIVE:* Fix =variable= prints incorrect value
+** TODO Create a Ntfy Subscription List :NTFY:
+DEADLINE: <2025-12-14 Sun>
+- *OBJECTIVE:* Create an =ntfy= subscription list
+  + [ ] Create =ntfy= directories
+  + [ ] Create =systemd-service= that subscribe to a list of =ntfy= instances
+- *Visit:* [[id:1ede1aea-dda4-47c0-9c68-04c5b1ed88dc][Looping Through Content of a File in Bash @Org]]
