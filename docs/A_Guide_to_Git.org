@@ -108,8 +108,12 @@ Closes D2IQ-12345
 ** Clean commit history
 - *OBJECTIVE:* Clean up git commit history
 - *Reference:* [[https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History][Git tools rewrite history @Doc-git]]
-** Securely storing secrets in git
+** OUTL Storing secrets in git
+:PROPERTIES:
+:ID: ccac12ba-197b-4bfc-a022-fdc074922ee2
+:END:
 - *OBJECTIVE:* Learn how to securely store secrets in git
+- *Reference:* [[https://dev.to/wiresurfer/manage-sensitive-api-keys-in-public-dotfiles-using-pgp-and-sops-5mn][Manage Crendential in Public Dotfiles @Blog-dev]]
 ** DONE Managing A Nested Git Project :GIT:MANAGEMENT:
 DEADLINE: <2025-10-06 Mon> CLOSED: [2025-10-06 Mon 17:42]
 :PROPERTIES:
