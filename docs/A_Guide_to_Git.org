@@ -114,6 +114,12 @@ Closes D2IQ-12345
 :END:
 - *OBJECTIVE:* Learn how to securely store secrets in git
 - *Reference:* [[https://dev.to/wiresurfer/manage-sensitive-api-keys-in-public-dotfiles-using-pgp-and-sops-5mn][Manage Crendential in Public Dotfiles @Blog-dev]]
+*** Encryption System
+/What is an encryption system/ \\
+/=gpg= explain/
+*** Encryption Manager
+/What is an encryption manager/ \\
+/Check-out:/ [[https://github.com/getsops/sops][Getsops @Github-repo]]
 ** DONE Managing A Nested Git Project :GIT:MANAGEMENT:
 DEADLINE: <2025-10-06 Mon> CLOSED: [2025-10-06 Mon 17:42]
 :PROPERTIES:
