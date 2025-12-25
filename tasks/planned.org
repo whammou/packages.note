@@ -233,3 +233,9 @@ DEADLINE: <2025-12-25 Thu>
 ** PEND Config Opencode Agents :OPENCODE:aiagent:
 - *OBJECTIVE:* Create an agent on =opencode=
 - *Reference:* [[https://opencode.ai/docs/agents/][Opencode AI agent @Doc-agent]]
+** DONE Orgmode Run Shell Command :ORGMODE:
+DEADLINE: <2025-12-25 Thu> CLOSED: [2025-12-25 Thu 18:12]
+- *OBJECTIVE:* Hyperlink type to run shell command
+  + Invoke with =<leaer>oo=
+  + [[shell:lazygit -p ~/dotfiles]]
+- *Reference:* [[https://nvim-orgmode.github.io/configuration#custom-hyperlink-types][Nvim-orgmode custom hyperlinks @Github]]
