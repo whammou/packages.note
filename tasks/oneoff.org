@@ -464,7 +464,7 @@ CLOSED: [2025-10-07 Tue 23:27] DEADLINE: <2025-10-07 Tue>
 CLOSED: [2025-11-16 Sun 21:13] DEADLINE: <2025-11-16 Sun 21:00>
 - *OBJECTIVE:* Update colorscheme of =qtile= to match =nvim= and =kitty=
 ** TODO Orgmode Uniform Keybinds :NVIM:ORGMODE:QTILE:
-DEADLINE: <2026-01-11 Sun 23:50>
+DEADLINE: <2026-01-12 Mon 23:50>
 #+name:LOGBOOK
 #+html:<details><summary>LOGBOOK</summary>
 :LOGBOOK:
@@ -494,11 +494,11 @@ CLOSED: [2025-12-01 Mon 16:01] DEADLINE: <2025-12-01 Mon 15:50>
 CLOSED: [2025-12-04 Thu 20:46] DEADLINE: <2025-12-04 Thu 18:15>
 - *OBJECTIVE:* Fix =variable= prints incorrect value
 ** TODO Create a Ntfy Subscription List :NTFY:
-DEADLINE: <2026-01-11 Sun>
+DEADLINE: <2026-01-12 Mon>
 - *OBJECTIVE:* Create an =ntfy= subscription list
   + [ ] Create =ntfy= directories
   + [ ] Create =systemd-service= that subscribe to a list of =ntfy= instances
 - *Visit:* [[id:1ede1aea-dda4-47c0-9c68-04c5b1ed88dc][Looping Through Content of a File in Bash @Org]]
 ** TODO Optimize Rclone Performance :RCLONE:DRIVE:filesync:
-DEADLINE: <2026-01-11 Sun>
+DEADLINE: <2026-01-12 Mon>
 - *OBJECTIVE:* Optimizing =rclone= performance when syncing with cloud-drives
