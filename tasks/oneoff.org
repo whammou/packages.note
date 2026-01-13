@@ -468,6 +468,8 @@ DEADLINE: <2026-01-13 Tue 23:50>
 #+name:LOGBOOK
 #+html:<details><summary>LOGBOOK</summary>
 :LOGBOOK:
+- Note taken on [2026-01-13 Tue 17:22] \\
+  Uniform keybind as in =desktop= vs inside =neovim=
 :END:
 #+html:</details>
 - *OBJECTIVE:* Create a passable keybinds between =nvim= =orgmode= and =qtile=
