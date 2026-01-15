@@ -242,7 +242,6 @@ DEADLINE: <2025-12-25 Thu> CLOSED: [2025-12-25 Thu 18:12]
 ** PEND Custom Orgmode Agenda :ORGMODE:productivity:
 - *OBJECTIVE:* Custom =orgmode-agenda= for productivity
 - [[https://www.youtube.com/embed/-9rpQA6O3aM][Customize orgmode agenda for productivity @Youtube]]
-** TODO Learn Hyprland-WM :HYPRLAND:WAYLAND:
-DEADLINE: <2026-01-15 Thu>
+** PEND Learn Hyprland-WM :HYPRLAND:WAYLAND:
 - *OBJECTIVE:* learn to config the =hyprland= window manager
 - *Reference:* [[https://wiki.hypr.land/Configuring/Monitors/][Hyprland Wiki @Blog]]
