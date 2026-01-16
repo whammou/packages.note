@@ -104,12 +104,18 @@ CLOSED: [2025-10-20 Mon 00:15] DEADLINE: <2025-10-20 Mon>
   #+END_SRC
 -----
 - *Reference:* [[https://bbs.archlinux.org/viewtopic.php?id=286286][ssh tmux and nerdfont conflicting @Archforum]]
-** TODO Workaround yt-dlp Forbidden Error :YTDLP:
+** DONE Workaround yt-dlp Forbidden Error :YTDLP:
+DEADLINE: <2026-01-16 Fri> CLOSED: [2026-01-16 Fri 22:01]
 #+name:LOGBOOK
 #+html:<details><summary>LOGBOOK</summary>
 :LOGBOOK:
+- Note taken on [2026-01-16 Fri 21:57] \\
+  As off to day [2026-01-16 Fri] =yt-dlp= stopped working and through error htttp 403 forbidden
+  - Workaround involves installing =deno=
+  - Remove =--cookie= flag
+  Check this issue again next week <2026-01-23 Fri>
+  
 :END:
 #+html:</details>
 - *OBJECTIVE:*  Workaround =yt-dlp= not downloading video with arg =--cookie=
 - *Reference:*  [[https://github.com/yt-dlp/yt-dlp/issues/15569][ytdlp stopped working through error 403 @Github-issue]]
-  
