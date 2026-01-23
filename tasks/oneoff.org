@@ -224,21 +224,25 @@ CLOSED: [2025-07-28 Mon 22:10] DEADLINE: <2025-07-28 Mon>
 :END:
 - *OBJECTIVE:* Quickly manipulate images from terminal
 - *Reference:* [[https://ao.bloat.cat/exchange/askubuntu.com/questions/271776/how-to-resize-an-image-through-the-terminal][Resize images from terminal @Overflow]]
-** DONE Pandoc orgmode html image :PANDOC:ORGMODE:
-CLOSED: [2025-07-28 Mon 22:12] DEADLINE: <2025-07-28 Mon>
+** EXPL Pandoc orgmode html image :PANDOC:ORGMODE:
+ DEADLINE: <2026-01-24 Sat>
 :PROPERTIES:
 :ID:       582a05fc-a519-4197-b638-191224c322b3
 :END:
-- *OBJECTIVE:* Alternative to embed html in orgmode and export to pdf using pandoc
------
+#+name:LOGBOOK
+#+html:<details><summary>LOGBOOK</summary>
+:LOGBOOK:
 - *[NOTE]* taken on <2025-07-28 22:08>:
   - Pandoc does not encourage html fragment in markup language
   - Use native markup =link attribute= for images
   - Manipulate image size using =imagemagic= [[id:6fff52f0-e06e-4d64-a521-584bb19902fa][Image manipulate from terminal @Org]]
------
+:END:
+#+html:</details>
+- *OBJECTIVE:* Alternative to embed html in orgmode and export to pdf using pandoc
 - *Reference:*
   - [[https://www.reddit.com/r/LaTeX/comments/uehyhw/pandoc_is_not_rendering_my_images/][Pandoc html image export @Reddit]]
   - [[https://github.com/jgm/pandoc/issues/5454][Embed pdf and image pandoc export @Github-issue]]
+  - [[https://www.reddit.com/r/pandoc/comments/17tsijd/render_htmlsyntax_images_in_pdf_from_markdown/][Embedded html image to pdf example @Reddit]]
 ** PEND Open completion in qutebrowser :QUTEBROWSER:
 - *OBJECTIVE:* Implement open =completion= in qutebrowser commands
 ** DONE Orgmode template completion :ORGMODE:NVIM:
