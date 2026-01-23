@@ -87,7 +87,7 @@ DEADLINE: <2026-01-24 Sat>
 - *Check-out:* [[id:b6113f7d-9ec6-49df-80ff-2c0d7546475f][Run Service on Network Change @Org]]
 - *Reference:* [[https://docs.ntfy.sh/subscribe/api/#advanced-features][Pull cached messages @Ntfy-doc]]
 ** OUTL Dunst Write and Run Script :DUNST:notificationsync:
-DEADLINE: <2026-01-22 Thu>
+DEADLINE: <2026-01-24 Sat>
 /How to write and run script in =dunst=/
 ** OUTL Git Automation :GIT:filesync:
 /Automate sync process with head repo/
@@ -100,11 +100,11 @@ optimal way to place your plugins in =lazyvim=
 How to reload =nvim= without restarting or spawning new instances
 - /Reference:/ [[file:/home/whammou/Workspace/nvim-restart/nvim-restart.ai.org][Restart Nvim Function @Gemini]]
 ** OUTL Running Script File Event :filesync:
-DEADLINE: <2026-01-22 Thu>
+DEADLINE: <2026-01-24 Sat>
 /Run custom script on file modification event/ \\
 /Check-out:/ [[id:c4b5759c-1794-4797-b1ae-adc28bb1aa2a][Nvim Multiple Instances @Org]]
 ** OUTL Scripting with Rofi :ROFI:
-DEADLINE: <2026-01-22 Thu>
+DEADLINE: <2026-01-24 Sat>
 :PROPERTIES:
 :ID:       e88ddffd-71b2-41c2-b1e7-6309f8600812
 :END:
