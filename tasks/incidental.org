@@ -121,6 +121,22 @@ DEADLINE: <2026-01-16 Fri> CLOSED: [2026-01-16 Fri 22:01]
 - *Reference:*  [[https://github.com/yt-dlp/yt-dlp/issues/15569][ytdlp stopped working through error 403 @Github-issue]]
 ** DONE Nvim Terminal Scroll :NVIM:
 DEADLINE: <2026-01-24 Sat> CLOSED: [2026-01-24 Sat 17:15]
+- *OBJECTIVE:*  How to scroll in =neovim= terminal
+- *Reference:*  [[https://neovim.io/doc/user/terminal.html][Terminal Normal Mode @Nvim-doc]]
+*** DONE Nvim Terminal Normal Mode
+DEADLINE: <2026-01-24 Sat> CLOSED: [2026-01-24 Sat 20:33]
+:PROPERTIES:
+:ID: 6d88cb50-f38e-4a72-a621-571238bd11a7
+:END:
+-----
+- Note taken on [2026-01-24 20:34]: \\
+  To Enter =normal= mode in =neovim=, input =<C-\><C-r>=
+-----
+- *OBJECTIVE:*  Return to =normal= mode in =neovim=
+- *Reference:*  [[https://neovim.io/doc/user/terminal.html#terminal-input][Neovim Terminal Input @Nvim-doc]]
+
+**** DONE Nvim Execute Command in Normal Mode
+DEADLINE: <2026-01-24 Sat> CLOSED: [2026-01-24 Sat 20:33]
 -----
 - Note taken on [2026-01-24 17:14]: \\
   To run a command in =terminal= mode simple add =t= in the =mode= param \\
@@ -133,5 +149,5 @@ DEADLINE: <2026-01-24 Sat> CLOSED: [2026-01-24 Sat 17:15]
   end
   #+END_SRC
 -----
-- *OBJECTIVE:*  How to scroll in =neovim= terminal
-- *Reference:*  [[https://neovim.io/doc/user/terminal.html][Terminal Normal Mode @Nvim-doc]]
+- *OBJECTIVE:*  Execute commands in =normal= mode /(e.g., Exit nvim terminal)/
+- *Reference:*  [[https://neovim.io/doc/user/terminal.html#terminal-input][Nvim Terminal @Nvim-doc]]

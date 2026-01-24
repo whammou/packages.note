@@ -125,6 +125,15 @@ DEADLINE: <2026-01-24 Sat>
 :PROPERTIES:
 :ID: f396b1ce-b2ba-466f-adf4-469395d94117
 :END:
+
+#+BEGIN_QUOTE org
+*Pandoc's Architecture* \\
+
+Pandoc is structured as a set of /readers/, which translates various input formats into an abstract syntax tree /(The Pandoc AST)/ representing a structured document, and a set of /writers/, which render this AST into various output formats \\
+
+=[input format] ==reader==> [Pandoc AST] ==writer==> [output format]=
+#+END_QUOTE
+
 /Documentation on learning pandoc-lua-filter/ \\
 /Reference:/  [[https://pandoc.org/lua-filters.html][Pandoc lua filter @Pandoc-documentation]]
 *** Pandoc Lua Logging :LUA:
