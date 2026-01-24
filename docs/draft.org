@@ -121,3 +121,12 @@ DEADLINE: <2026-01-24 Sat>
 :END:
 /How to change background of ly-dm/
 /Check-out:/ [[https://gist.github.com/jessedavidd/dd3b3a6a4b922d611006d194e82e7103][How to change background color of lydm @Github]]
+** EXPL Pandoc Lua Filters :PANDOC:
+:PROPERTIES:
+:ID: f396b1ce-b2ba-466f-adf4-469395d94117
+:END:
+/Documentation on learning pandoc-lua-filter/ \\
+/Reference:/  [[https://pandoc.org/lua-filters.html][Pandoc lua filter @Pandoc-documentation]]
+*** Pandoc Lua Logging :LUA:
+/This library provides pandoc-aware functions for dumping and logging lua objects/ \\
+/Reference:/  [[https://github.com/pandoc-ext/logging][Pandoc Lua Logging @Github]]
