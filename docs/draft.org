@@ -136,6 +136,20 @@ Pandoc is structured as a set of /readers/, which translates various input forma
 
 /Documentation on learning pandoc-lua-filter/ \\
 /Reference:/  [[https://pandoc.org/lua-filters.html][Pandoc lua filter @Pandoc-documentation]]
-*** Pandoc Lua Logging :LUA:
+*** OUTL Pandoc Lua Logging :LUA:
+Pandoc does provide option =pandoc -t native= as a way to explore pandoc AST \\
+#+BEGIN_SRC sh
+echo -e "1. *foo*\n2. bar" | pandoc -t native #input
+#+END_SRC
+
+#+BEGIN_SRC stdout
+[ OrderedList
+    ( 1 , Decimal , Period )
+    [ [ Plain [ Emph [ Str "foo" ] ] ]
+    , [ Plain [ Str "bar" ] ]
+    ]
+]
+#+END_SRC
+
 /This library provides pandoc-aware functions for dumping and logging lua objects/ \\
 /Reference:/  [[https://github.com/pandoc-ext/logging][Pandoc Lua Logging @Github]]
