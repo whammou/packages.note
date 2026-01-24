@@ -119,3 +119,19 @@ DEADLINE: <2026-01-16 Fri> CLOSED: [2026-01-16 Fri 22:01]
 #+html:</details>
 - *OBJECTIVE:*  Workaround =yt-dlp= not downloading video with arg =--cookie=
 - *Reference:*  [[https://github.com/yt-dlp/yt-dlp/issues/15569][ytdlp stopped working through error 403 @Github-issue]]
+** DONE Nvim Terminal Scroll :NVIM:
+DEADLINE: <2026-01-24 Sat> CLOSED: [2026-01-24 Sat 17:15]
+-----
+- Note taken on [2026-01-24 17:14]: \\
+  To run a command in =terminal= mode simple add =t= in the =mode= param \\
+  #+BEGIN_SRC lua
+  -- Custom keybindings for window navigation
+  for i = 1, 9 do
+    vim.keymap.set({ "n", "t" }, "<leader>" .. i, function()
+      vim.api.nvim_set_current_win(vim.api.nvim_list_wins()[i])
+    end, { desc = "which_key_ignore" })
+  end
+  #+END_SRC
+-----
+- *OBJECTIVE:*  How to scroll in =neovim= terminal
+- *Reference:*  [[https://neovim.io/doc/user/terminal.html][Terminal Normal Mode @Nvim-doc]]

@@ -224,7 +224,7 @@ CLOSED: [2025-07-28 Mon 22:10] DEADLINE: <2025-07-28 Mon>
 :END:
 - *OBJECTIVE:* Quickly manipulate images from terminal
 - *Reference:* [[https://ao.bloat.cat/exchange/askubuntu.com/questions/271776/how-to-resize-an-image-through-the-terminal][Resize images from terminal @Overflow]]
-** EXPL Pandoc orgmode html image :PANDOC:ORGMODE:
+** EXPL [#A] Pandoc orgmode html image :PANDOC:ORGMODE:
  DEADLINE: <2026-01-24 Sat>
 :PROPERTIES:
 :ID:       582a05fc-a519-4197-b638-191224c322b3
