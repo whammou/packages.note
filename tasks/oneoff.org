@@ -240,10 +240,11 @@ CLOSED: [2025-07-28 Mon 22:10] DEADLINE: <2025-07-28 Mon>
 #+html:</details>
 - *OBJECTIVE:*  Alternative to embed html in orgmode and export to pdf using pandoc
 - *Reference:*
-  - [[https://www.reddit.com/r/LaTeX/comments/uehyhw/pandoc_is_not_rendering_my_images/][Pandoc html image export @Reddit]]
-  - [[https://github.com/jgm/pandoc/issues/5454][Embed pdf and image pandoc export @Github-issue]]
-  - [[https://www.reddit.com/r/pandoc/comments/17tsijd/render_htmlsyntax_images_in_pdf_from_markdown/][Embedded html image to pdf example @Reddit]]
-- *Visit:*      [[id:f396b1ce-b2ba-466f-adf4-469395d94117][Pandoc Lua Filters @Org]]
+  + [[https://www.reddit.com/r/LaTeX/comments/uehyhw/pandoc_is_not_rendering_my_images/][Pandoc html image export @Reddit]]
+  + [[https://github.com/jgm/pandoc/issues/5454][Embed pdf and image pandoc export @Github-issue]]
+  + [[https://www.reddit.com/r/pandoc/comments/17tsijd/render_htmlsyntax_images_in_pdf_from_markdown/][Embedded html image to pdf example @Reddit]]
+- *Visit*
+  + [[id:f396b1ce-b2ba-466f-adf4-469395d94117][Pandoc Lua Filters @Org]]
 ** PEND Open completion in qutebrowser :QUTEBROWSER:
 - *OBJECTIVE:* Implement open =completion= in qutebrowser commands
 ** DONE Orgmode template completion :ORGMODE:NVIM:
