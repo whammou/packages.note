@@ -224,8 +224,8 @@ CLOSED: [2025-07-28 Mon 22:10] DEADLINE: <2025-07-28 Mon>
 :END:
 - *OBJECTIVE:* Quickly manipulate images from terminal
 - *Reference:* [[https://ao.bloat.cat/exchange/askubuntu.com/questions/271776/how-to-resize-an-image-through-the-terminal][Resize images from terminal @Overflow]]
-** EXPL [#A] Pandoc orgmode html image :PANDOC:ORGMODE:
- DEADLINE: <2026-01-28 Wed>
+** PRTL [#A] Pandoc Embedded html Image :PANDOC:ORGMODE:
+ DEADLINE: <2026-01-28 Wed> CLOSED: [2026-01-28 Wed 03:47]
 :PROPERTIES:
 :ID:       582a05fc-a519-4197-b638-191224c322b3
 :END:
@@ -245,6 +245,29 @@ CLOSED: [2025-07-28 Mon 22:10] DEADLINE: <2025-07-28 Mon>
   + [[https://www.reddit.com/r/pandoc/comments/17tsijd/render_htmlsyntax_images_in_pdf_from_markdown/][Embedded html image to pdf example @Reddit]]
 - *Visit*
   + [[id:f396b1ce-b2ba-466f-adf4-469395d94117][Pandoc Lua Filters @Org]]
+  + [[id:1abf84ee-8c47-4c60-bdca-99627c2a7908][Pandoc conversion @Org]]
+*** DONE Pandoc Orgmode with Embedded html :HTML:
+DEADLINE: <2026-01-28 Wed> CLOSED: [2026-01-28 Wed 03:52]
+- *OBJECTIVE:*  Converting embedded =html= image similar to =wallyqs/org-ruby= parser
+  #+NAME:Convert html to image
+  #+BEGIN_SRC lua
+  function RawBlock(rawblock)
+    if rawblock.format:match("html") then
+      local srcPattern = '<img%ssrc="([^"]+)".*/>'
+      local scalePattern = "<img.*:%s?(%d+%%).*/>"
+      local src = string.match(rawblock.text, srcPattern)
+      local scale = string.match(rawblock.text, scalePattern)
+      if src then
+        return pandoc.Para(pandoc.Image({}, src, nil, { width = scale }))
+      end
+    end
+  end
+  #+END_SRC
+*** PEND Pandoc Custom Block
+- *OBJECTIVE:*  Getting custom blocks to work with =eisvogel= pandoc template
+- *Reference:*
+  + [[https://pandoc-templates.org/template/eisvogel/][Pandoc Eisvogel Template @Pandoc-doc]]
+  + [[https://github.com/Wandmalfarbe/pandoc-latex-template/blob/master/examples/boxes-with-pandoc-latex-environment-and-awesomebox/document.md][Boxes with pandoc latex environment @Github]]
 ** PEND Open completion in qutebrowser :QUTEBROWSER:
 - *OBJECTIVE:* Implement open =completion= in qutebrowser commands
 ** DONE Orgmode template completion :ORGMODE:NVIM:
