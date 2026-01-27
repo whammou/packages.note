@@ -155,4 +155,7 @@ echo -e "1. *foo*\n2. bar" | pandoc -t native #input
 /Reference:/  [[https://github.com/pandoc-ext/logging][Pandoc Lua Logging @Github]]
 *** OUTL Pandoc Lua Filter :LUA:
 DEADLINE: <2026-01-28 Wed>
+:PROPERTIES:
+:ID: 6cc07ef1-36d7-40b4-9087-77ef7674096b
+:END:
 /Learn lua scripting with pandoc-filter/ \\
