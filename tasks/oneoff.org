@@ -263,7 +263,7 @@ DEADLINE: <2026-01-28 Wed> CLOSED: [2026-01-28 Wed 03:52]
     end
   end
   #+END_SRC
-**** NEXT Center html Image :GITHUB:
+**** NEXT [#B] Center html Image :GITHUB:
 DEADLINE: <2026-01-28 Wed>
 - *OBJECTIVE:*  Center image on =github= and =pandoc=
 - *Reference:*  [[https://stackoverflow.com/questions/54701123/image-centering-with-pandoc-markdown][Centering image in pandoc markdown @Overflow]]
