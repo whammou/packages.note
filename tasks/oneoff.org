@@ -263,8 +263,16 @@ DEADLINE: <2026-01-28 Wed> CLOSED: [2026-01-28 Wed 03:52]
     end
   end
   #+END_SRC
-**** NEXT [#B] Center html Image :GITHUB:
-DEADLINE: <2026-01-28 Wed>
+**** ABRT [#B] Center html Image :GITHUB:
+DEADLINE: <2026-01-29 Thu> CLOSED: [2026-01-29 Thu 01:45]
+#+name:LOGBOOK
+#+html:<details><summary>LOGBOOK</summary>
+:LOGBOOK:
+- Note taken on [2026-01-29 Thu 01:45] \\
+  =pandoc= built-in image module =pandoc.image= has not supported ~align=center~ param
+  + *Visit:*  [[https://github.com/Wandmalfarbe/pandoc-latex-template/issues/173][How do I center Image @Github-issue]]
+:END:
+#+html:</details>
 - *OBJECTIVE:*  Center image on =github= and =pandoc=
 - *Reference:*  [[https://stackoverflow.com/questions/54701123/image-centering-with-pandoc-markdown][Centering image in pandoc markdown @Overflow]]
 - *Visit:*      [[id:6cc07ef1-36d7-40b4-9087-77ef7674096b][Pandoc Lua Filter @Org]]
@@ -498,7 +506,7 @@ CLOSED: [2025-10-07 Tue 23:27] DEADLINE: <2025-10-07 Tue>
 CLOSED: [2025-11-16 Sun 21:13] DEADLINE: <2025-11-16 Sun 21:00>
 - *OBJECTIVE:* Update colorscheme of =qtile= to match =nvim= and =kitty=
 ** TODO Orgmode Uniform Keybinds :NVIM:ORGMODE:QTILE:
-DEADLINE: <2026-01-28 Wed 23:50>
+DEADLINE: <2026-01-29 Thu 23:50>
 #+name:LOGBOOK
 #+html:<details><summary>LOGBOOK</summary>
 :LOGBOOK:
@@ -530,11 +538,11 @@ CLOSED: [2025-12-01 Mon 16:01] DEADLINE: <2025-12-01 Mon 15:50>
 CLOSED: [2025-12-04 Thu 20:46] DEADLINE: <2025-12-04 Thu 18:15>
 - *OBJECTIVE:* Fix =variable= prints incorrect value
 ** TODO Create a Ntfy Subscription List :NTFY:
-DEADLINE: <2026-01-28 Wed>
+DEADLINE: <2026-01-29 Thu>
 - *OBJECTIVE:* Create an =ntfy= subscription list
   + [ ] Create =ntfy= directories
   + [ ] Create =systemd-service= that subscribe to a list of =ntfy= instances
 - *Visit:* [[id:1ede1aea-dda4-47c0-9c68-04c5b1ed88dc][Looping Through Content of a File in Bash @Org]]
 ** TODO Optimize Rclone Performance :RCLONE:DRIVE:filesync:
-DEADLINE: <2026-01-28 Wed>
+DEADLINE: <2026-01-29 Thu>
 - *OBJECTIVE:*  Optimizing =rclone= performance when syncing with cloud-drives
