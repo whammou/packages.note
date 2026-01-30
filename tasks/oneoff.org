@@ -225,7 +225,7 @@ CLOSED: [2025-07-28 Mon 22:10] DEADLINE: <2025-07-28 Mon>
 - *OBJECTIVE:* Quickly manipulate images from terminal
 - *Reference:* [[https://ao.bloat.cat/exchange/askubuntu.com/questions/271776/how-to-resize-an-image-through-the-terminal][Resize images from terminal @Overflow]]
 ** PRTL [#A] Pandoc Embedded html Image :PANDOC:ORGMODE:
- DEADLINE: <2026-01-28 Wed> CLOSED: [2026-01-28 Wed 03:47]
+CLOSED: [2026-01-28 Wed 03:47] DEADLINE: <2026-01-28 Wed>
 :PROPERTIES:
 :ID:       582a05fc-a519-4197-b638-191224c322b3
 :END:
@@ -247,7 +247,7 @@ CLOSED: [2025-07-28 Mon 22:10] DEADLINE: <2025-07-28 Mon>
   + [[id:f396b1ce-b2ba-466f-adf4-469395d94117][Pandoc Lua Filters @Org]]
   + [[id:1abf84ee-8c47-4c60-bdca-99627c2a7908][Pandoc conversion @Org]]
 *** DONE Pandoc Orgmode with Embedded html Image :HTML:
-DEADLINE: <2026-01-28 Wed> CLOSED: [2026-01-28 Wed 03:52]
+CLOSED: [2026-01-28 Wed 03:52] DEADLINE: <2026-01-28 Wed>
 - *OBJECTIVE:*  Converting embedded =html= image similar to =wallyqs/org-ruby= parser
   #+NAME:Convert html to image
   #+BEGIN_SRC lua
@@ -264,7 +264,7 @@ DEADLINE: <2026-01-28 Wed> CLOSED: [2026-01-28 Wed 03:52]
   end
   #+END_SRC
 **** ABRT [#B] Center html Image :GITHUB:
-DEADLINE: <2026-01-29 Thu> CLOSED: [2026-01-29 Thu 01:45]
+CLOSED: [2026-01-29 Thu 01:45] DEADLINE: <2026-01-29 Thu>
 #+name:LOGBOOK
 #+html:<details><summary>LOGBOOK</summary>
 :LOGBOOK:
@@ -506,7 +506,7 @@ CLOSED: [2025-10-07 Tue 23:27] DEADLINE: <2025-10-07 Tue>
 CLOSED: [2025-11-16 Sun 21:13] DEADLINE: <2025-11-16 Sun 21:00>
 - *OBJECTIVE:* Update colorscheme of =qtile= to match =nvim= and =kitty=
 ** TODO Orgmode Uniform Keybinds :NVIM:ORGMODE:QTILE:
-DEADLINE: <2026-01-30 Fri 23:50>
+DEADLINE: <2026-01-31 Sat 23:50>
 #+name:LOGBOOK
 #+html:<details><summary>LOGBOOK</summary>
 :LOGBOOK:
@@ -538,11 +538,11 @@ CLOSED: [2025-12-01 Mon 16:01] DEADLINE: <2025-12-01 Mon 15:50>
 CLOSED: [2025-12-04 Thu 20:46] DEADLINE: <2025-12-04 Thu 18:15>
 - *OBJECTIVE:* Fix =variable= prints incorrect value
 ** TODO Create a Ntfy Subscription List :NTFY:
-DEADLINE: <2026-01-30 Fri>
+DEADLINE: <2026-01-31 Sat>
 - *OBJECTIVE:* Create an =ntfy= subscription list
   + [ ] Create =ntfy= directories
   + [ ] Create =systemd-service= that subscribe to a list of =ntfy= instances
 - *Visit:* [[id:1ede1aea-dda4-47c0-9c68-04c5b1ed88dc][Looping Through Content of a File in Bash @Org]]
 ** TODO Optimize Rclone Performance :RCLONE:DRIVE:filesync:
-DEADLINE: <2026-01-30 Fri>
+DEADLINE: <2026-01-31 Sat>
 - *OBJECTIVE:*  Optimizing =rclone= performance when syncing with cloud-drives
