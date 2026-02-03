@@ -162,7 +162,7 @@ Pandoc is structured as a set of /readers/, which translates various input forma
 /Reference:/  [[https://pandoc.org/lua-filters.html][Pandoc lua filter @Pandoc-documentation]]
 *** OUTL Pandoc Logging
 Pandoc does provide option =pandoc -t native= as a way to explore pandoc AST \\
-#+BEGIN_SRC sh
+#+BEGIN_SRC bash
 echo -e "1. *foo*\n2. bar" | pandoc -t native #input
 #+END_SRC
 
@@ -183,6 +183,7 @@ DEADLINE: <2026-02-03 Tue>
 :ID:       6cc07ef1-36d7-40b4-9087-77ef7674096b
 :END:
 /Learn lua scripting with pandoc-filter/ \\
+
 ** OUTL Managing Dotfiles with Chezmoi :CHEZMOI:
 DEADLINE: <2026-02-03 Tue>
 :PROPERTIES:
