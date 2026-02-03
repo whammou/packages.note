@@ -23,12 +23,12 @@ Draft items are subjected to change and refile!
 + [[https://seb.jambor.dev/posts/improving-shell-workflows-with-fzf/https://seb.jambor.dev/posts/improving-shell-workflows-with-fzf/][Improving workflow with fzf @Blog]]
 + [[https://github.com/beauwilliams/awesome-fzf][A semi-complete List of Fzf @Github]]
 ** OUTL Git Revert a pushed commit
-DEADLINE: <2026-02-03 Tue>
+DEADLINE: <2026-02-04 Wed>
 /How to revert a pushed commit on public or private branch/
 - *Visit:* [[https://www.youtube.com/watch?v=H2DuJNWbqLw][How to revert a pushed commit @Youtube]]
 - *Goes-to:* [[id:0d065ce6-e02a-4dce-b7a5-29a1910d0e9c][Make Changes to Submodules @Org]]
 ** OUTL Command Multiple Git Repositories :GIT:
-DEADLINE: <2026-02-03 Tue>
+DEADLINE: <2026-02-04 Wed>
 /Run git commands in parallel in multiple repositories/
 - *Goes-to:* [[id:0d065ce6-e02a-4dce-b7a5-29a1910d0e9c][Make Changes to Submodules @Org]]
 ** DONE Initiate tmux on Homelab :SERVER:TMUX:SSH:
@@ -82,12 +82,12 @@ def ssh_session(session_range):
 /How to receive =ntfy-notification= on =archlinux=/ \\
 /*Check-out:*/ [[https://github.com/ronilaukkarinen/ntfy-linux-receiver-service/][ntfy-listener systemd service @Github]]
 ** OUTL Pull ntfy notifications :NTFY:notificationsync:
-DEADLINE: <2026-02-03 Tue>
+DEADLINE: <2026-02-04 Wed>
 /Pull =ntfy= notifications when system connection went down/
 - *Check-out:* [[id:b6113f7d-9ec6-49df-80ff-2c0d7546475f][Run Service on Network Change @Org]]
 - *Reference:* [[https://docs.ntfy.sh/subscribe/api/#advanced-features][Pull cached messages @Ntfy-doc]]
 ** OUTL Dunst Write and Run Script :DUNST:notificationsync:
-DEADLINE: <2026-02-03 Tue>
+DEADLINE: <2026-02-04 Wed>
 /How to write and run script in =dunst=/
 ** OUTL Git Automation :GIT:filesync:
 /Automate sync process with head repo/
@@ -100,11 +100,11 @@ optimal way to place your plugins in =lazyvim=
 How to reload =nvim= without restarting or spawning new instances
 - /Reference:/ [[file:/home/whammou/Workspace/nvim-restart/nvim-restart.ai.org][Restart Nvim Function @Gemini]]
 ** OUTL Running Script File Event :filesync:
-DEADLINE: <2026-02-03 Tue>
+DEADLINE: <2026-02-04 Wed>
 /Run custom script on file modification event/ \\
 /Check-out:/ [[id:c4b5759c-1794-4797-b1ae-adc28bb1aa2a][Nvim Multiple Instances @Org]]
 ** OUTL Scripting with Rofi :ROFI:
-DEADLINE: <2026-02-03 Tue>
+DEADLINE: <2026-02-04 Wed>
 :PROPERTIES:
 :ID:       e88ddffd-71b2-41c2-b1e7-6309f8600812
 :END:
@@ -178,14 +178,14 @@ echo -e "1. *foo*\n2. bar" | pandoc -t native #input
 /This library provides pandoc-aware functions for dumping and logging lua objects/ \\
 /Reference:/  [[https://github.com/pandoc-ext/logging][Pandoc Lua Logging @Github]]
 *** OUTL Pandoc Lua Filter :LUA:
-DEADLINE: <2026-02-03 Tue>
+DEADLINE: <2026-02-04 Wed>
 :PROPERTIES:
 :ID:       6cc07ef1-36d7-40b4-9087-77ef7674096b
 :END:
 /Learn lua scripting with pandoc-filter/ \\
 
 ** OUTL Managing Dotfiles with Chezmoi :CHEZMOI:
-DEADLINE: <2026-02-03 Tue>
+DEADLINE: <2026-02-04 Wed>
 :PROPERTIES:
 :ID: 58910689-be05-4304-8b9b-7d2c03fee002
 :END:
@@ -203,3 +203,13 @@ Chezmoi computes the target state for the current machine and then updates the d
 - The /config file/ contains machine specific data. By default it is =~/.config/chezmoi/chezmoi.toml=
 - The /target state/ is the desired state of the destination directory. It is computed from the source state, the config file, and the destination state. The target state includes regular files and directories, and may also include symbolic links, script to be run, and targets to be removed
 - The /working tree/ is the git working tree. Normally it is the same as the source directory, but an be a parent of the source directory
+**** Chezmoi Templating
+#+BEGIN_QUOTE
+Templates are used to change the contents of a file depending on the environment. For Example, using hostname of the machine to create different configuations of different machines
+#+END_QUOTE
+
+When reading files from the /source state/, =chezmoi= interprets them as a template if either the following is true:
+- The file name has =.tmpl= suffix
+- The file is in the =.chezmoitemplate= directory, or sub-directory \\
+
+/Reference:/  [[https://www.chezmoi.io/user-guide/templating/#template-data][Chezmoi templating @Doc]]
