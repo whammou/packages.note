@@ -246,12 +246,13 @@ CLOSED: [2025-12-25 Thu 18:12] DEADLINE: <2025-12-25 Thu>
 ** PEND Learn Hyprland-WM :HYPRLAND:WAYLAND:
 - *OBJECTIVE:* learn to config the =hyprland= window manager
 - *Reference:* [[https://wiki.hypr.land/Configuring/Monitors/][Hyprland Wiki @Blog]]
-** TODO Configuring Chezmoi :CHEZMOI:
+** DOIN Configuring Chezmoi :CHEZMOI:
 DEADLINE: <2026-02-04 Wed>
 - *OBJECTIVE:*  Backing up my =dotfiles= with =chezmoi= /(moving on from stow)/
 - *Reference:*  [[https://www.chezmoi.io/#what-does-chezmoi-do][Chezmoi Documentation @Blog]]
 - *Visit:*      [[id:58910689-be05-4304-8b9b-7d2c03fee002][Managing Dotfiles with Chezmoi @Org]]
-*** TODO Chezmoi Integrations
+*** WAIT Chezmoi Integrations
+DEADLINE: <2026-02-04 Wed>
 - *OBJECTIVE:*  Integrate =chezmoi= to current workflow /(including =nvim= and =yazi=)/
 **** DONE Chezmoi Neovim Integration
 DEADLINE: <2026-02-04 Wed> CLOSED: [2026-02-04 Wed 02:01]
@@ -259,12 +260,28 @@ DEADLINE: <2026-02-04 Wed> CLOSED: [2026-02-04 Wed 02:01]
 - *Reference:*
   + [[https://github.com/xvzc/chezmoi.nvim][Chezmoi.nvim @Github]]
   + [[https://github.com/xvzc/chezmoi.nvim/blob/main/lua/chezmoi/commands/init.lua][Chezmoi.nvim api @Github]]
-**** NEXT Chezmoi Yazi Integration
+**** TODO [#B] Chezmoi Yazi Integration
 DEADLINE: <2026-02-04 Wed>
 - *OBJECTIVE:*  Integrate =chezmoi= into yazi and vice-versa
 - *Reference:*  [[https://github.com/sxyazi/yazi/discussions/1872#discussioncomment-11112852][Yazi chezmoi discussion @Github]]
 
-*** Switching To Chezmoi :STOW:
+*** NEXT Switching To Chezmoi :STOW:
+DEADLINE: <2026-02-04 Wed>
 - *OBJECTIVE:*  Moving =dotfiles= from =gnu-stow= to =chezmoi=
-**** Create Chezmoi Dest-Dir
+**** TODO [#A] Create Chezmoi Dest-Dir
+DEADLINE: <2026-02-04 Wed>
+#+name:LOGBOOK
+#+html:<details><summary>LOGBOOK</summary>
+:LOGBOOK:
+- Note taken on [2026-02-04 Wed 03:36] \\
+  #+BEGIN_QUOTE markdown
+  [!WARNING]
+  =~/.config= is directly affecting current config
+  - Moving files from =~/dotfiles= will affect the config dir
+  - Best solution is to isolate =.config= =dotfiles=
+  - Create a repo independent on config and dotfiles
+  #+END_QUOTE
+:END:
+#+html:</details>
 - *OBJECTIVE:*  Create a manageable repo for adding =chezmoi= files
+- *Reference:*  [[https://github.com/twpayne/chezmoi/issues/180][Stow-to-chezmoi @Github-issue]]
