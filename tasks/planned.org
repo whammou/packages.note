@@ -250,4 +250,4 @@ CLOSED: [2025-12-25 Thu 18:12] DEADLINE: <2025-12-25 Thu>
 DEADLINE: <2026-02-03 Tue>
 - *OBJECTIVE:*  Backing up my =dotfiles= with =chezmoi= /(moving on from stow)/
 - *Reference:*  [[https://www.chezmoi.io/#what-does-chezmoi-do][Chezmoi Documentaion @Blog]]
-  
+- *Visit:*      [[id:58910689-be05-4304-8b9b-7d2c03fee002][Configuring Chezmoi @Org]]

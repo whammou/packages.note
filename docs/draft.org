@@ -183,10 +183,22 @@ DEADLINE: <2026-02-03 Tue>
 :ID:       6cc07ef1-36d7-40b4-9087-77ef7674096b
 :END:
 /Learn lua scripting with pandoc-filter/ \\
-** OUTL Configuring Chezmoi :CHEZMOI:
+** OUTL Managing Dotfiles with Chezmoi :CHEZMOI:
 DEADLINE: <2026-02-03 Tue>
 :PROPERTIES:
 :ID: 58910689-be05-4304-8b9b-7d2c03fee002
 :END:
 /Configuring dotfiles manager with chezmoi/ \\
 /Reference:/  [[https://www.chezmoi.io/user-guide/frequently-asked-questions/usage/][Chezmoi]]
+*** Chezmoi Concepts
+#+BEGIN_QUOTE
+Chezmoi computes the target state for the current machine and then updates the destination directory
+#+END_QUOTE
+
+- The /destination directory/ is the directory that =chezmoi= manages, usually the home directory, =~=
+- The /destination state/ is the current state of all the targets in the destination directory
+- The /Source state/ declares the desired state of your home directory, including templates that use machine-specific data. It contains only regular files and directories
+- The /source directory/ is where =chezmoi= stores the source state. By default it is =~/.local/share/chezmoi=
+- The /config file/ contains machine specific data. By default it is =~/.config/chezmoi/chezmoi.toml=
+- The /target state/ is the desired state of the destination directory. It is computed from the source state, the config file, and the destination state. The target state includes regular files and directories, and may also include symbolic links, script to be run, and targets to be removed
+- The /working tree/ is the git working tree. Normally it is the same as the source directory, but an be a parent of the source directory
