@@ -274,13 +274,11 @@ DEADLINE: <2026-02-04 Wed>
 #+html:<details><summary>LOGBOOK</summary>
 :LOGBOOK:
 - Note taken on [2026-02-04 Wed 03:36] \\
-  #+BEGIN_QUOTE markdown
-  [!WARNING]
-  =~/.config= is directly affecting current config
-  - Moving files from =~/dotfiles= will affect the config dir
-  - Best solution is to isolate =.config= =dotfiles=
-  - Create a repo independent on config and dotfiles
-  #+END_QUOTE
+#+BEGIN_QUOTE markdown
+[!WARNING]
+=~/.config= is directly affecting current config
+Moving files from =~/dotfiles= will affect the config dir. Best solution is to isolate =.config= =dotfiles=. Create a repo independent on config and dotfiles
+#+END_QUOTE
 :END:
 #+html:</details>
 - *OBJECTIVE:*  Create a manageable repo for adding =chezmoi= files
