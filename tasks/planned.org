@@ -243,7 +243,15 @@ CLOSED: [2025-12-25 Thu 18:12] DEADLINE: <2025-12-25 Thu>
 ** PEND Custom Orgmode Agenda :ORGMODE:productivity:
 - *OBJECTIVE:* Custom =orgmode-agenda= for productivity
 - [[https://www.youtube.com/embed/-9rpQA6O3aM][Customize orgmode agenda for productivity @Youtube]]
-** PEND Learn Hyprland-WM :HYPRLAND:WAYLAND:
+** ABRT Learn Hyprland-WM :HYPRLAND:WAYLAND:
+CLOSED: [2026-02-04 Wed 05:51]
+#+name:LOGBOOK
+#+html:<details><summary>LOGBOOK</summary>
+:LOGBOOK:
+- Note taken on [2026-02-04 Wed 05:51] \\
+  =qtile= is more hackable in my case
+:END:
+#+html:</details>
 - *OBJECTIVE:* learn to config the =hyprland= window manager
 - *Reference:* [[https://wiki.hypr.land/Configuring/Monitors/][Hyprland Wiki @Blog]]
 ** DOIN Configuring Chezmoi :CHEZMOI:
@@ -283,3 +291,9 @@ Moving files from =~/dotfiles= will affect the config dir. Best solution is to i
 #+html:</details>
 - *OBJECTIVE:*  Create a manageable repo for adding =chezmoi= files
 - *Reference:*  [[https://github.com/twpayne/chezmoi/issues/180][Stow-to-chezmoi @Github-issue]]
+** PEND Integrate Edgy Nvim :NVIM:nvimEdgy:
+- *OBJECTIVE:*  Managing custom windows position with =edgy.nvim=
+- *Reference:*
+  + [[https://github.com/folke/snacks.nvim/blob/main/docs/terminal.md#edgy-integration][Edgy nvim integrate with Snacks terminal @Github]]
+  + [[https://github.com/folke/edgy.nvim][Edgy.nvim @Github]]
+    
