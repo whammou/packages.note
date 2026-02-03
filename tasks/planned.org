@@ -246,3 +246,8 @@ CLOSED: [2025-12-25 Thu 18:12] DEADLINE: <2025-12-25 Thu>
 ** PEND Learn Hyprland-WM :HYPRLAND:WAYLAND:
 - *OBJECTIVE:* learn to config the =hyprland= window manager
 - *Reference:* [[https://wiki.hypr.land/Configuring/Monitors/][Hyprland Wiki @Blog]]
+** TODO Managing Dotfiles with Chezmoi :CHEZMOI:
+DEADLINE: <2026-02-03 Tue>
+- *OBJECTIVE:*  Backing up my =dotfiles= with =chezmoi= /(moving on from stow)/
+- *Reference:*  [[https://www.chezmoi.io/#what-does-chezmoi-do][Chezmoi Documentaion @Blog]]
+  
