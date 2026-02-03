@@ -249,13 +249,14 @@ CLOSED: [2025-12-25 Thu 18:12] DEADLINE: <2025-12-25 Thu>
 ** TODO Configuring Chezmoi :CHEZMOI:
 DEADLINE: <2026-02-03 Tue>
 - *OBJECTIVE:*  Backing up my =dotfiles= with =chezmoi= /(moving on from stow)/
-- *Reference:*  [[https://www.chezmoi.io/#what-does-chezmoi-do][Chezmoi Documentaion @Blog]]
+- *Reference:*  [[https://www.chezmoi.io/#what-does-chezmoi-do][Chezmoi Documentation @Blog]]
 - *Visit:*      [[id:58910689-be05-4304-8b9b-7d2c03fee002][Managing Dotfiles with Chezmoi @Org]]
 *** WAIT Chezmoi Integrations
 - *OBJECTIVE:*  Integrate =chezmoi= to current workflow /(including =nvim= and =yazi=)/
 **** NEXT Chezmoi Neovim Integration
 DEADLINE: <2026-02-04 Wed>
-- *OBJECTIVE:* Integrate =chezmoi= into =neovim= /(For faster config edition)/
+- *OBJECTIVE:*  Integrate =chezmoi= into =neovim= /(For faster config edition)/
+- *Reference:*  [[https://github.com/xvzc/chezmoi.nvim][Chezmoi.nvim @Github]]
 **** NEXT Chezmoi Yazi Integration
 DEADLINE: <2026-02-04 Wed>
 - *OBJECTIVE:*  Integrate =chezmoi= into yazi and vice-versa
