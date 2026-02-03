@@ -183,3 +183,10 @@ DEADLINE: <2026-02-03 Tue>
 :ID:       6cc07ef1-36d7-40b4-9087-77ef7674096b
 :END:
 /Learn lua scripting with pandoc-filter/ \\
+** OUTL Configuring Chezmoi :CHEZMOI:
+DEADLINE: <2026-02-03 Tue>
+:PROPERTIES:
+:ID: 58910689-be05-4304-8b9b-7d2c03fee002
+:END:
+/Configuring dotfiles manager with chezmoi/ \\
+/Reference:/  [[https://www.chezmoi.io/user-guide/frequently-asked-questions/usage/][Chezmoi]]
