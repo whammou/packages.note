@@ -155,4 +155,15 @@ DEADLINE: <2026-01-24 Sat> CLOSED: [2026-01-24 Sat 20:33]
 DEADLINE: <2026-02-04 Wed>
 - *OBJECTIVE:*  Experiment with free models on =openrouter=
 - *Reference:*  [[https://openrouter.ai/collections/free-models][OpenRouter Free models collection @Blog]]
+** DONE Nvim yazi split window :NVIM:YAZI:
+DEADLINE: <2026-02-04 Wed> CLOSED: [2026-02-04 Wed 07:20]
+#+name:LOGBOOK
+#+html:<details><summary>LOGBOOK</summary>
+:LOGBOOK:
+- Note taken on [2026-02-04 Wed 07:20] \\
+  Currently =yazi.nvim= window still has to be a floating window according to /reference/
+:END:
+#+html:</details>
+- *OBJECTIVE:*  Change =yazi.nvim= window into split window
+- *Reference:*  [[https://github.com/mikavilpas/yazi.nvim/pull/1410][Allow settings window properites with hook @Github-issue]]
   
