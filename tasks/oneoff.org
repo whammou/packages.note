@@ -544,6 +544,9 @@ DEADLINE: <2026-02-04 Wed>
   + [ ] Create =ntfy= directories
   + [ ] Create =systemd-service= that subscribe to a list of =ntfy= instances
 - *Visit:* [[id:1ede1aea-dda4-47c0-9c68-04c5b1ed88dc][Looping Through Content of a File in Bash @Org]]
-** TODO Optimize Rclone Performance :RCLONE:DRIVE:filesync:
+** NEXT Optimize Rclone Performance :RCLONE:DRIVE:filesync:
 DEADLINE: <2026-02-04 Wed>
 - *OBJECTIVE:*  Optimizing =rclone= performance when syncing with cloud-drives
+*** TODO Rclone Systemd Service :SYSTEMD:
+DEADLINE: <2026-02-04 Wed>
+- *OBJECTIVE:*  Mount drives using systemd services
