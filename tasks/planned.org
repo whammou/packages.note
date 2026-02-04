@@ -296,4 +296,8 @@ Moving files from =~/dotfiles= will affect the config dir. Best solution is to i
 - *Reference:*
   + [[https://github.com/folke/snacks.nvim/blob/main/docs/terminal.md#edgy-integration][Edgy nvim integrate with Snacks terminal @Github]]
   + [[https://github.com/folke/edgy.nvim][Edgy.nvim @Github]]
-    
+** ABRT Integrate Yazelix :YAZI:NVIM:
+CLOSED: [2026-02-04 Wed 06:32]
+- *OBJECTIVE:*  Integrate =yazi= as =nvim= file manager
+- *Reference:*  [[https://github.com/luccahuguet/yazelix][Yazelix upstream @Github]]
+  
