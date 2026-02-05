@@ -12,7 +12,7 @@
 * Managing Dotfiles Across Machines :DOC:META:DOTFILES:
 #+HTML:</details>
 ** DOIN Managing Dotfiles with Chezmoi :CHEZMOI:
-DEADLINE: <2026-02-05 Thu>
+DEADLINE: <2026-02-06 Fri>
 :PROPERTIES:
 :ID: 58910689-be05-4304-8b9b-7d2c03fee002
 :END:
