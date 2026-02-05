@@ -205,7 +205,12 @@ Chezmoi computes the target state for the current machine and then updates the d
 - The /config file/ contains machine specific data. By default it is =~/.config/chezmoi/chezmoi.toml=
 - The /target state/ is the desired state of the destination directory. It is computed from the source state, the config file, and the destination state. The target state includes regular files and directories, and may also include symbolic links, script to be run, and targets to be removed
 - The /working tree/ is the git working tree. Normally it is the same as the source directory, but an be a parent of the source directory
-**** Chezmoi Templating
+**** Managing Outside of HOME
+/Managing files that live outside of the/ =HOME= /dir/ \\
+/Reference:/  [[https://www.chezmoi.io/user-guide/frequently-asked-questions/design/#can-i-use-chezmoi-to-manage-files-outside-my-home-directory][Manage Files outside of HOME @Doc]]
+**** Manage Machine-to-Machine Differences
+***** Chezmoi Template
+
 #+BEGIN_QUOTE
 Templates are used to change the contents of a file depending on the environment. For Example, using hostname of the machine to create different configuations of different machines
 #+END_QUOTE
@@ -214,11 +219,63 @@ When reading files from the /source state/, =chezmoi= interprets them as a templ
 - The file name has =.tmpl= suffix
 - The file is in the =.chezmoitemplate= directory, or sub-directory \\
 
+For example, Home =~/.gitconfig= on the personal machine might look like:
+#+BEGIN_SRC toml
+[user]
+  email = "me@home.org"
+#+END_SRC
+
+Whereas on a work machine, it might be:
+#+BEGIN_SRC toml
+[user]
+  email = "firstname.lastname@company.com"
+#+END_SRC
+
 /Reference:/  [[https://www.chezmoi.io/user-guide/templating/#template-data][Chezmoi templating @Doc]]
-**** Managing Outside of HOME
-/Managing files that live outside of the/ =HOME= /dir/ \\
-/Reference:/  [[https://www.chezmoi.io/user-guide/frequently-asked-questions/design/#can-i-use-chezmoi-to-manage-files-outside-my-home-directory][Manage Files outside of HOME @Doc]]
-**** Ignore Files on Different Machines
+****** Create a Template
+To handle this, on each machine create a configuration file called =~/.config/chezmoi.toml= defining variables that might vary from machine to machine e.g. the home machine
+#+NAME:~/.config/chezmoi/chezmoi.toml
+#+BEGIN_SRC toml
+[data]
+  email = "me@home.org"
+#+END_SRC
+
+#+BEGIN_QUOTE markdown
+[!TIP]
+If you intended to store private data /(e.g. access token)/ in =~/.config/chezmoi/chezmoi.toml=, make sure it has permission =0600=. Variable names must start a letter and be followed by zero or more letters or digits
+#+END_QUOTE
+
+Then, add =~/.gitconfig= to chezmoi using the =--template= flag to turn it into a template:
+#+BEGIN_SRC sh
+chezmoi add --template ~/.config/
+#+END_SRC
+****** Edit a Template
+Open the template /(which will be saved in the/ =~/.local/share/chezmoi/dot_gitconfig.tmp= /)/:
+#+BEGIN_SRC bash
+chezmoi edit ~/.gitconfig
+#+END_LANG
+
+Edit the file so it looks like:
+#+NAME:~/.local/share/chezmoi/dot_gitconfig.tmpl
+#+BEGIN_SRC toml
+[user]
+  email = {{.email | quote}}
+#+END_SRC
+
+#+BEGIN_QUOTE markdown
+[!TIP]
+For a full list of variable, run: =chezmoi data=
+#+END_QUOTE
+
+***** Interacting with Password-Managers
+
+#+BEGIN_QUOTE markdown
+[!NOTE]
+Chezmoi support functions to interact with password managers
+#+END_QUOTE
+
+
+***** Ignore Files on Different Machines
 #+BEGIN_QUOTE
 For coarser-gained control of files and entire directories managed on different machines, or to exclide certain files completely, you can create =.chezmoiignore= files in the source director.
 #+END_QUOTE
@@ -238,4 +295,4 @@ README.md
 The use of =ne= /(not equal)/ is deliberate. What we want to achieve is "only install =.work= if hostname is =work-laptop=. But chezmoi installs everything by default, so we have to turn the logic around an instead write "ignore =.work= unless the hostname is =work-laptop="
 #+END_QUOTE
 
-*Reference:*  [[https://www.chezmoi.io/user-guide/manage-machine-to-machine-differences/#use-templates][Ignore files on different machines @Doc]]
+**Reference:*  [[https://www.chezmoi.io/user-guide/manage-machine-to-machine-differences/#use-templates][Ignore files on different machines @Doc]]
