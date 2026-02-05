@@ -86,7 +86,7 @@ chezmoi edit ~/.gitconfig
 #+END_SRC
 
 Edit the file so it looks like:
-#+BEGIN_SRC toml
+#+BEGIN_SRC tmpl
 [user]
   email = {{.email | quote}}
 #+END_SRC
@@ -111,7 +111,7 @@ For coarser-gained control of files and entire directories managed on different 
 
 Specify a list of pattern that chezmoi should ignore, and are interpreted as templates
 
-#+BEGIN_SRC gitignore
+#+BEGIN_SRC tmpl
 README.md
 {{- if ne .chezmoi.hostname "work-laptop" }}
 .work # only manage .work on work-laptop
@@ -124,3 +124,7 @@ The use of =ne= /(not equal)/ is deliberate. What we want to achieve is "only in
 #+END_QUOTE
 
 /Reference:/  [[https://www.chezmoi.io/user-guide/manage-machine-to-machine-differences/#use-templates][Ignore files on different machines @Doc]]
+**** Password Manager Integration
+:PROPERTIES:
+:ID: 0f64b514-3287-45bc-af26-363516cb076e
+:END:
