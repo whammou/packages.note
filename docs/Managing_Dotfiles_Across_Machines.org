@@ -112,7 +112,7 @@ Some password managers allow you to store complete files. The files can be retri
 The =-= inside the brackets remove any whitespace before or after the template expression, which is useful if your editor has added any newlines \\
 
 #+BEGIN_QUOTE markdown
-[!NOTE]
+[!WARNING]
 If, after executing the template, the file contents are empty, the target file will be removed. This can be used to ensure that files are only present on certain machines. If you want an empty file to be created anyway, you will need to five an =empty_= prefix
 #+END_QUOTE
 

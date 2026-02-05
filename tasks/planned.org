@@ -276,7 +276,7 @@ DEADLINE: <2026-02-05 Thu>
 *** NEXT Switching To Chezmoi :STOW:
 DEADLINE: <2026-02-05 Thu>
 - *OBJECTIVE:*  Moving =dotfiles= from =gnu-stow= to =chezmoi=
-**** TODO [#B] Create Chezmoi Dest-Dir
+**** TODO [#A] Create Chezmoi Dest-Dir
 DEADLINE: <2026-02-05 Thu>
 #+name:LOGBOOK
 #+html:<details><summary>LOGBOOK</summary>
