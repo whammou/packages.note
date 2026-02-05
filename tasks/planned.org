@@ -268,7 +268,7 @@ DEADLINE: <2026-02-04 Wed> CLOSED: [2026-02-04 Wed 02:01]
 - *Reference:*
   + [[https://github.com/xvzc/chezmoi.nvim][Chezmoi.nvim @Github]]
   + [[https://github.com/xvzc/chezmoi.nvim/blob/main/lua/chezmoi/commands/init.lua][Chezmoi.nvim api @Github]]
-**** TODO [#B] Chezmoi Yazi Integration
+**** TODO [#C] Chezmoi Yazi Integration
 DEADLINE: <2026-02-05 Thu>
 - *OBJECTIVE:*  Integrate =chezmoi= into yazi and vice-versa
 - *Reference:*  [[https://github.com/sxyazi/yazi/discussions/1872#discussioncomment-11112852][Yazi chezmoi discussion @Github]]

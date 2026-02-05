@@ -547,6 +547,6 @@ DEADLINE: <2026-02-05 Thu>
 ** NEXT Optimize Rclone Performance :RCLONE:DRIVE:filesync:
 DEADLINE: <2026-02-05 Thu>
 - *OBJECTIVE:*  Optimizing =rclone= performance when syncing with cloud-drives
-*** TODO [#B] Rclone Systemd Service :SYSTEMD:
+*** TODO [#C] Rclone Systemd Service :SYSTEMD:
 DEADLINE: <2026-02-05 Thu>
 - *OBJECTIVE:*  Mount drives using systemd services
