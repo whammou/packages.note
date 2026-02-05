@@ -218,3 +218,24 @@ When reading files from the /source state/, =chezmoi= interprets them as a templ
 **** Managing Outside of HOME
 /Managing files that live outside of the/ =HOME= /dir/ \\
 /Reference:/  [[https://www.chezmoi.io/user-guide/frequently-asked-questions/design/#can-i-use-chezmoi-to-manage-files-outside-my-home-directory][Manage Files outside of HOME @Doc]]
+**** Ignore Files on Different Machines
+#+BEGIN_QUOTE
+For coarser-gained control of files and entire directories managed on different machines, or to exclide certain files completely, you can create =.chezmoiignore= files in the source director.
+#+END_QUOTE
+
+Specify a list of pattern that chezmoi should ignore, and are interpreted as templates
+
+#+NAME:~/.local/share/chezmoi/.chezmoiignore
+#+BEGIN_SRC gitignore
+README.md
+{{- if ne .chezmoi.hostname "work-laptop" }}
+.work # only manage .work on work-laptop
+{{- end }}
+#+END_SRC
+
+#+BEGIN_QUOTE markdown
+[!NOTE]
+The use of =ne= /(not equal)/ is deliberate. What we want to achieve is "only install =.work= if hostname is =work-laptop=. But chezmoi installs everything by default, so we have to turn the logic around an instead write "ignore =.work= unless the hostname is =work-laptop="
+#+END_QUOTE
+
+*Reference:*  [[https://www.chezmoi.io/user-guide/manage-machine-to-machine-differences/#use-templates][Ignore files on different machines @Doc]]
