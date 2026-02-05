@@ -184,8 +184,6 @@ DEADLINE: <2026-02-05 Thu>
 :END:
 /Learn lua scripting with pandoc-filter/ \\
 
------
-
 ** OUTL Managing Dotfiles with Chezmoi :CHEZMOI:
 DEADLINE: <2026-02-05 Thu>
 :PROPERTIES:
@@ -217,4 +215,6 @@ When reading files from the /source state/, =chezmoi= interprets them as a templ
 - The file is in the =.chezmoitemplate= directory, or sub-directory \\
 
 /Reference:/  [[https://www.chezmoi.io/user-guide/templating/#template-data][Chezmoi templating @Doc]]
------
+**** Managing Outside of HOME
+/Managing files that live outside of the/ =HOME= /dir/ \\
+/Reference:/  [[https://www.chezmoi.io/user-guide/frequently-asked-questions/design/#can-i-use-chezmoi-to-manage-files-outside-my-home-directory][Manage Files outside of HOME @Doc]]
