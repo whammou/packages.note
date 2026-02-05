@@ -192,7 +192,9 @@ DEADLINE: <2026-02-05 Thu>
 :ID: 58910689-be05-4304-8b9b-7d2c03fee002
 :END:
 /Configuring dotfiles manager with chezmoi/ \\
-/Reference:/  [[https://www.chezmoi.io/user-guide/frequently-asked-questions/usage/][Chezmoi]]
+/Reference:/
+- [[https://www.chezmoi.io/user-guide/frequently-asked-questions/usage/][Chezmoi]]
+- [[https://natelandau.com/managing-dotfiles-with-chezmoi/][Managing dotfiles with chezmoi @Blog]]
 *** Chezmoi Concepts
 #+BEGIN_QUOTE
 Chezmoi computes the target state for the current machine and then updates the destination directory
