@@ -96,14 +96,27 @@ Edit the file so it looks like:
 For a full list of variable, run: =chezmoi data=
 #+END_QUOTE
 
-***** OUTL Interacting with Password-Managers
+***** Interacting with Password-Managers
 
 #+BEGIN_QUOTE markdown
 [!NOTE]
 Chezmoi support functions to interact with password managers
 #+END_QUOTE
 
+Some password managers allow you to store complete files. The files can be retrieved with chezmoi's template functions. For example, if you have a file stored in =1Password= with the UUID =uuid= then you can retrieve it with the template
 
+#+BEGIN_SRC tmpl
+{{- onepasswordDocument "uuid" -}}
+#+END_SRC
+
+The =-= inside the brackets remove any whitespace before or after the template expression, which is useful if your editor has added any newlines \\
+
+#+BEGIN_QUOTE markdown
+[!NOTE]
+If, after executing the template, the file contents are empty, the target file will be removed. This can be used to ensure that files are only present on certain machines. If you want an empty file to be created anyway, you will need to five an =empty_= prefix
+#+END_QUOTE
+
+/Visit:/  [[id:0f64b514-3287-45bc-af26-363516cb076e][Password Manager Integration @Org]]
 ***** Ignore Files on Different Machines
 #+BEGIN_QUOTE
 For coarser-gained control of files and entire directories managed on different machines, or to exclide certain files completely, you can create =.chezmoiignore= files in the source director.
@@ -111,7 +124,7 @@ For coarser-gained control of files and entire directories managed on different 
 
 Specify a list of pattern that chezmoi should ignore, and are interpreted as templates
 
-#+BEGIN_SRC tmpl
+#+BEGIN_SRC gitignore
 README.md
 {{- if ne .chezmoi.hostname "work-laptop" }}
 .work # only manage .work on work-laptop
@@ -124,7 +137,8 @@ The use of =ne= /(not equal)/ is deliberate. What we want to achieve is "only in
 #+END_QUOTE
 
 /Reference:/  [[https://www.chezmoi.io/user-guide/manage-machine-to-machine-differences/#use-templates][Ignore files on different machines @Doc]]
-**** Password Manager Integration
+**** OUTL Password Manager Integration
 :PROPERTIES:
 :ID: 0f64b514-3287-45bc-af26-363516cb076e
 :END:
+/Reference:/  [[https://www.chezmoi.io/user-guide/password-managers/][Chezmoi password manager integration @Doc]]
