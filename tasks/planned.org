@@ -300,4 +300,8 @@ Moving files from =~/dotfiles= will affect the config dir. Best solution is to i
 CLOSED: [2026-02-04 Wed 06:32]
 - *OBJECTIVE:*  Integrate =yazi= as =nvim= file manager
 - *Reference:*  [[https://github.com/luccahuguet/yazelix][Yazelix upstream @Github]]
-  
+** PEND Convert Latex Inline syntax :ORGMODE:PANDOC:mathrender:
+:PROPERTIES:
+:ID: 5b0b8051-94bb-4202-9261-b3c33d9f53bd
+:END:
+- *OBJECTIVE:*  Convert =double-dollar-sign= to =single-dollar-sign= using script before piping into =pandoc=
