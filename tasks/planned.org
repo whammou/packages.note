@@ -305,3 +305,9 @@ CLOSED: [2026-02-04 Wed 06:32]
 :ID: 5b0b8051-94bb-4202-9261-b3c33d9f53bd
 :END:
 - *OBJECTIVE:*  Convert =double-dollar-sign= to =single-dollar-sign= using script before piping into =pandoc=
+** PEND Change Default SearXNG Instance :QUTEBROWSER:
+DEADLINE: <2026-02-08 Sun>
+:PROPERTIES:
+:ID: ec1db4c5-1de3-43db-b5d6-952c30c8817f
+:END:
+- *OBJECTIVE:*  Change default =searxng= search with on =qutebrowser=
