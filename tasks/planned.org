@@ -314,3 +314,9 @@ DEADLINE: <2026-02-10 Tue>
 :ID: 23608767-82be-4f32-b244-b2aab9e23f3e
 :END:
 - *OBJECTIVE:*  Make kitty =config= modular instead of single-file
+** TODO Nvim-orgmode Multiple Agenda :NVIM:ORGMODE:
+DEADLINE: <2026-02-13 Fri>
+:PROPERTIES:
+:ID: 7981ea28-2765-4574-a79a-d48b54d262c8
+:END:
+- *OBJECTIVE:*  Allow opening multiple =nvim-orgmode.agenda= sessions
