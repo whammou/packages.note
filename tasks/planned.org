@@ -308,8 +308,8 @@ DEADLINE: <2026-02-08 Sun> CLOSED: [2026-02-08 Sun 19:02]
 :ID: ec1db4c5-1de3-43db-b5d6-952c30c8817f
 :END:
 - *OBJECTIVE:*  Change default =searxng= search with on =qutebrowser=
-** TODO Modularize Kitty Config :KITTY:
-DEADLINE: <2026-02-10 Tue>
+** DONE Modularize Kitty Config :KITTY:
+DEADLINE: <2026-02-10 Tue> CLOSED: [2026-02-11 Wed 19:21]
 :PROPERTIES:
 :ID: 23608767-82be-4f32-b244-b2aab9e23f3e
 :END:
