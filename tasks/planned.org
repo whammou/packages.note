@@ -320,3 +320,11 @@ DEADLINE: <2026-02-13 Fri>
 :ID: 7981ea28-2765-4574-a79a-d48b54d262c8
 :END:
 - *OBJECTIVE:*  Allow opening multiple =nvim-orgmode.agenda= sessions
+** TODO Initiate Project Org-Notebook :ORGMODE:NVIM:KITTY:
+DEADLINE: <2026-02-12 Thu>
+:PROPERTIES:
+:ID: cc2c2273-21dd-4ac9-8523-e6e6ffbb77e6
+:END:
+- *OBJECTIVE:*  Create a =note-book= like session with =kitty=
+- *Reference:*  [[https://sw.kovidgoyal.net/kitty/sessions/][Kitty Session @Doc]]
+  
