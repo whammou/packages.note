@@ -166,4 +166,12 @@ DEADLINE: <2026-02-04 Wed> CLOSED: [2026-02-04 Wed 07:20]
 #+html:</details>
 - *OBJECTIVE:*  Change =yazi.nvim= window into split window
 - *Reference:*  [[https://github.com/mikavilpas/yazi.nvim/pull/1410][Allow settings window properites with hook @Github-issue]]
+** TODO Fix Roam Config :ORGMODE:ORGROAM:
+DEADLINE: <2026-02-15 Sun>
+:PROPERTIES:
+:ID: 6c13dbc5-9371-41d0-9dd0-b934ccdd4fe6
+:END:
+- *OBJECTIVE:*  Fixing =orgroam= does not recognize some notes
+- *Tracker:*    [[id:94eaf3ce-0865-4161-ac3b-1cba44b480d8][Orgroam does not recognize nodes @Tracker]]
+- *Reference:*  [[https://github.com/chipsenkbeil/org-roam.nvim][Orgroam.nvim @Github]]
   

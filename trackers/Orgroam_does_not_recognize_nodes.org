@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID: 94eaf3ce-0865-4161-ac3b-1cba44b480d8
+:END:
+#+TITLE: Orgroam does not recognize nodes
+
+#+OPTIONS: todo:t tags:nil tasks:t ^:nil toc:nil
+#+LATEX_HEADER: \renewcommand\maketitle{} \usepackage[scaled]{helvet} \renewcommand\familydefault{\sfdefault}
+#+TODO: OPEN(y) (e) PROG(g) INTR(q) NEXT(n) | ABRT(a) DONE(f) CLSD(c)
+#+FILETAGS: :TRACKER:META:ORGMODE:ORGROAM:
+#+HTML:<details>
+
+* Orgroam does not recognize nodes :TRACKER:META:ORGMODE:ORGROAM:
+#+HTML:</details>
+Fixing =org-roam= issue that sometimes does not recognize some nodes \\
+*Check-out:*  [[file:/home/whammou/dotfiles/nvim-lazy/.config/nvim/lua/config/orgmode/roam.lua][roam config]]
