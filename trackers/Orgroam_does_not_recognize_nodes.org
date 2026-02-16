@@ -9,7 +9,29 @@
 #+FILETAGS: :TRACKER:META:ORGMODE:ORGROAM:
 #+HTML:<details>
 
-* Orgroam does not recognize nodes :TRACKER:META:ORGMODE:ORGROAM:
+* DONE Orgroam does not recognize nodes :TRACKER:META:ORGMODE:ORGROAM:
+CLOSED: [2026-02-17 Tue 02:44]
 #+HTML:</details>
 Fixing =org-roam= issue that sometimes does not recognize some nodes \\
 *Check-out:*  [[file:/home/whammou/dotfiles/nvim-lazy/.config/nvim/lua/config/orgmode/roam.lua][roam config]]
+- *Fix:*  adding =org_files= to roam config
+  #+BEGIN_SRC lua
+  require("org-roam").setup({
+    directory = base_dir,
+    org_files = { base_dir .. "/topics/**/*.org" },
+    extensions = { dailies = { directory = zettel_dir .. "/" .. ".daily" } },
+    database = {
+      path = vim.fn.expand("~/.roamdb.json"),
+      persist = true,
+      update_on_save = false,
+    },
+    ui = {
+      node_buffer = {
+        show_keybindings = false,
+        focus_on_toggle = false,
+        highlight_previews = true,
+      },
+    },
+    templates = capture.roam,
+  })
+  #+END_SRC
