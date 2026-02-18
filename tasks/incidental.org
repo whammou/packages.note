@@ -174,8 +174,8 @@ DEADLINE: <2026-02-15 Sun>
 - *OBJECTIVE:*  Fixing =orgroam= does not recognize some notes
 - *Tracker:*    [[id:94eaf3ce-0865-4161-ac3b-1cba44b480d8][Orgroam does not recognize nodes @Tracker]]
 - *Reference:*  [[https://github.com/chipsenkbeil/org-roam.nvim][Orgroam.nvim @Github]]
-** TODO Create Issue on Latest nvim-orgmode Bug
-DEADLINE: <2026-02-18 Wed>
+** DONE Create Issue on Latest nvim-orgmode Bug
+DEADLINE: <2026-02-18 Wed> CLOSED: [2026-02-18 Wed 19:47]
 :PROPERTIES:
 :ID: 43c3fa26-b2a3-44ba-9a1d-4c91c84c4da0
 :END:
@@ -188,4 +188,19 @@ DEADLINE: <2026-02-18 Wed>
         ...share/nvim/lazy/orgmode/lua/orgmode/objects/calendar.lua:621: in function <...share/nvim/lazy/orgmode/lua/orgmode/objects/calendar.lua:603>
     #+END_SRC
 - *Reference:*  [[https://github.com/nvim-orgmode/orgmode/issues][Nvim-orgmode issue @Github]]
-  
+-----
+- Note taken on [2026-02-18 19:45]: \\
+  Solved with changing autocmd =event= from =BufEnter= to =BufWinEnter=
+  #+BEGIN_SRC lua
+  local Snacks = require("snacks")
+
+  vim.api.nvim_create_autocmd("BufWinEnter", {
+    pattern = "orgagenda",
+    callback = function()
+      --Snacks.zen.zoom()
+      Snacks.bufdelete.other()
+      vim.cmd.only()
+      --vim.opt.spell = false
+    end,
+  #+END_SRC
+-----
