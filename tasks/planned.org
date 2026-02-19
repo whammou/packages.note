@@ -327,4 +327,5 @@ DEADLINE: <2026-02-12 Thu>
 :END:
 - *OBJECTIVE:*  Create a =note-book= like session with =kitty=
 - *Reference:*  [[https://sw.kovidgoyal.net/kitty/sessions/][Kitty Session @Doc]]
+- *Tracker:*    [[id:495bb16e-db11-4ee3-b754-2fb9db54dfc8][Executing Tracker Note via Kitty @Tracker]]
   
