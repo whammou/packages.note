@@ -204,3 +204,9 @@ DEADLINE: <2026-02-18 Wed> CLOSED: [2026-02-18 Wed 19:47]
     end,
   #+END_SRC
 -----
+** TODO Adjust Nvim Notification Timeout :NVIM:
+DEADLINE: <2026-02-20 Fri>
+:PROPERTIES:
+:ID: a6d4011c-1d83-4d23-8205-bbde8054dbfd
+:END:
+- *OBJECTIVE:*  Adjust nvim =notification= timeout
