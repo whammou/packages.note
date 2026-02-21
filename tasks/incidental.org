@@ -166,8 +166,8 @@ DEADLINE: <2026-02-04 Wed> CLOSED: [2026-02-04 Wed 07:20]
 #+html:</details>
 - *OBJECTIVE:*  Change =yazi.nvim= window into split window
 - *Reference:*  [[https://github.com/mikavilpas/yazi.nvim/pull/1410][Allow settings window properites with hook @Github-issue]]
-** TODO Fix Roam Config :ORGMODE:ORGROAM:
-DEADLINE: <2026-02-15 Sun>
+** DONE Fix Roam Config :ORGMODE:ORGROAM:
+DEADLINE: <2026-02-15 Sun> CLOSED: [2026-02-21 Sat 20:37]
 :PROPERTIES:
 :ID: 6c13dbc5-9371-41d0-9dd0-b934ccdd4fe6
 :END:
@@ -205,7 +205,7 @@ DEADLINE: <2026-02-18 Wed> CLOSED: [2026-02-18 Wed 19:47]
   #+END_SRC
 -----
 ** TODO Adjust Nvim Notification Timeout :NVIM:
-DEADLINE: <2026-02-20 Fri>
+DEADLINE: <2026-02-21 Sat>
 :PROPERTIES:
 :ID: a6d4011c-1d83-4d23-8205-bbde8054dbfd
 :END:

@@ -253,11 +253,11 @@ CLOSED: [2026-02-04 Wed 05:51]
 #+html:</details>
 - *OBJECTIVE:* learn to config the =hyprland= window manager
 - *Reference:* [[https://wiki.hypr.land/Configuring/Monitors/][Hyprland Wiki @Blog]]
-** NEXT Configuring Chezmoi :CHEZMOI:
+** TODO Configuring Chezmoi :CHEZMOI:
 - *OBJECTIVE:*  Backing up my =dotfiles= with =chezmoi= /(moving on from stow)/
 - *Reference:*  [[https://www.chezmoi.io/#what-does-chezmoi-do][Chezmoi Documentation @Blog]]
 - *Visit:*      [[id:58910689-be05-4304-8b9b-7d2c03fee002][Managing Dotfiles with Chezmoi @Org]]
-*** NEXT Chezmoi Integrations
+*** TODO Chezmoi Integrations
 - *OBJECTIVE:*  Integrate =chezmoi= to current workflow /(including =nvim= and =yazi=)/
 **** DONE Chezmoi Neovim Integration
 DEADLINE: <2026-02-04 Wed> CLOSED: [2026-02-04 Wed 02:01]
@@ -270,7 +270,7 @@ DEADLINE: <2026-02-11 Wed>
 - *OBJECTIVE:*  Integrate =chezmoi= into yazi and vice-versa
 - *Reference:*  [[https://github.com/sxyazi/yazi/discussions/1872#discussioncomment-11112852][Yazi chezmoi discussion @Github]]
 
-*** NEXT Switching To Chezmoi :STOW:
+*** TODO Switching To Chezmoi :STOW:
 - *OBJECTIVE:*  Moving =dotfiles= from =gnu-stow= to =chezmoi=
 **** TODO Create Chezmoi Dest-Dir
 DEADLINE: <2026-02-10 Tue>
@@ -321,7 +321,7 @@ DEADLINE: <2026-02-13 Fri>
 :END:
 - *OBJECTIVE:*  Allow opening multiple =nvim-orgmode.agenda= sessions
 ** DOIN Initiate Project Org-Notebook :ORGMODE:NVIM:KITTY:
-DEADLINE: <2026-02-12 Thu>
+DEADLINE: <2026-02-21 Sat>
 :PROPERTIES:
 :ID: cc2c2273-21dd-4ac9-8523-e6e6ffbb77e6
 :END:
