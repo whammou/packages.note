@@ -154,7 +154,9 @@ DEADLINE: <2026-01-24 Sat> CLOSED: [2026-01-24 Sat 20:33]
 ** TODO Get Free Model with OpenRouter :OPENCODE:
 DEADLINE: <2026-02-13 Fri>
 - *OBJECTIVE:*  Experiment with free models on =openrouter=
-- *Reference:*  [[https://openrouter.ai/collections/free-models][OpenRouter Free models collection @Blog]]
+- *Reference:*
+  + [[https://openrouter.ai/collections/free-models][OpenRouter Free models collection @Blog]]
+  + [[https://github.com/cheahjs/free-llm-api-resources][Free LLM API resources @Github]]
 ** DONE Nvim yazi split window :NVIM:YAZI:
 DEADLINE: <2026-02-04 Wed> CLOSED: [2026-02-04 Wed 07:20]
 #+name:LOGBOOK
