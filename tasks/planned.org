@@ -320,8 +320,8 @@ DEADLINE: <2026-02-13 Fri>
 :ID: 7981ea28-2765-4574-a79a-d48b54d262c8
 :END:
 - *OBJECTIVE:*  Allow opening multiple =nvim-orgmode.agenda= sessions
-** DOIN Initiate Project Org-Notebook :ORGMODE:NVIM:KITTY:
-DEADLINE: <2026-02-21 Sat>
+** ABRT Initiate Project Org-Notebook :ORGMODE:NVIM:KITTY:
+DEADLINE: <2026-02-21 Sat> CLOSED: [2026-02-26 Thu 18:56]
 :PROPERTIES:
 :ID: cc2c2273-21dd-4ac9-8523-e6e6ffbb77e6
 :END:
