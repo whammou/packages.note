@@ -1,0 +1,214 @@
+#+TODO: TODO(t) (e) DOIN(d) PEND(p) OUTL(o) EXPL(x) FDBK(b) WAIT(w) NEXT(n) IDEA(i) | ABRT(a) PRTL(r) RVIW(v) DONE(f)
+#+LATEX_HEADER: \usepackage[scaled]{helvet} \renewcommand\familydefault{\sfdefault}
+#+OPTIONS: todo:t tags:nil tasks:t ^:nil toc:nil
+#+TITLE: Packages Incidental Tasks
+
+* List of Incidental Tasks :TASK:INCIDENTAL:PACKAGES:META:
+** PEND Get transcript from Teams :TEAMS:
+- *OBJECTIVE:* Get transcript from Teams meeting
+- *Reference:* [[https://learn.microsoft.com/en-us/microsoftteams/platform/graph-api/meeting-transcripts/overview-transcripts][Get transcript via teams API @Doc-MS_teams]]
+** PEND Switching to emacs :EMACS:
+- *OBJECTIVE:* Switching from nvim to emacs
+- *Reference:*
+  - [[https://old.reddit.com/r/emacs/comments/qocwo1/from_vim_to_emacs/][From vim to emacs @Reddit]]
+  - [[https://psakalo.substack.com/p/my-take-on-neovim-vs-emacs-vs-vs][Compare vim emacs vs vscode @Blog]]
+*** Checkout Doom-Emacs
+- *OBJECTIVE:* Take a look at =doom-emacs= distribution
+- *Reference:* [[https://github.com/doomemacs/doomemacs][Doom-Emacs Git Host @Github]]
+** PEND Nvim Citation :NVIM:ZETTELKASTEN:
+- *OBJECTIVE:* Citation with =nvim= and =zettelkasten=
+- [[https://github.com/jghauser/papis.nvim][Papis Citation Manager @Github]]
+** DONE Debug Using Minimal Init :NVIM:DEBUG:ORGMODE:
+CLOSED: [2025-09-08 Mon 03:57] DEADLINE: <2025-09-09 Tue>
+:PROPERTIES:
+:ID:       2da88bc1-47e2-4a81-bedf-758cbdfdafbe
+:END:
+- *OBJECTIVE:* Debug orgmode using minimal config
+  + [X] Run minimal config
+  + [X] Test =org_inser_link= auto-completion
+-----
+- *[NOTE]* taken on [2025-09-06 02:03]: \\
+  Completion bug detect on commit [[https://github.com/nvim-orgmode/orgmode/commit/aaa327a7430df359b336d82ad387f896077ee2d2][Adding fuzzy completion @Commit]]
+-----
+** DONE Conflict nvim-orgmode and blink :NVIM:ORGMODE:
+CLOSED: [2025-09-06 Sat 17:55] DEADLINE: <2025-09-06 Sat>
+:PROPERTIES:
+:ID:       0022f0cf-b051-4752-aa0e-9d5aafe4274e
+:END:
+- *OBJECTIVE:* Analyze the conflicts between blink and orgmode. Determine if it related to current issue with =org_insert_link= completion
+-----
+- *[NOTE]* taken on [2025-09-06 17:55]: \\
+  Issue is none related to current bug, rather it is about =insert= mode =completions=
+-----
+- *Reference:* [[https://github.com/nvim-orgmode/orgmode/pull/1010][fix: fuzzy autocompletion with blink @Github-issue]]
+** DONE Issue on org-store-link :GITHUB:ORGMODE:
+CLOSED: [2025-09-08 Mon 03:57] DEADLINE: <2025-09-09 Tue>
+- *OBJECTIVE:* Create issue on org_store_link completion does not return headlines after latest commit
+-----
+- *[NOTE]* taken on [2025-09-06 18:08]: \\
+  Run =nvim-orgmode= plugin using [[id:2da88bc1-47e2-4a81-bedf-758cbdfdafbe][Minimal Config]] provided on =github=
+-----
+- *Checkout:* [[id:0022f0cf-b051-4752-aa0e-9d5aafe4274e][Conflict nvim-orgmode and blink @Org]] ([[file:/system/packages/tasks/incidental.org#feedback-debug-using-minimal-init][view on Github]])
+** ABRT Report Qtile Bug :QTILE:
+CLOSED: [2025-11-28 Fri 04:24]
+- *OBJECTIVE:* Report qtile =dropdown= not in windows id
+-----
+- *[NOTE]* taken on [2025-09-06 17:42]: \\
+  Error stamps missing window window id =wid=
+  + Report to qtile Github [[https://github.com/qtile/qtile][qtile @Github]]
+  #+NAME:qtile.log
+  #+BEGIN_SRC python
+  2025-09-06 14:11:20,123 ERROR libqtile manager.py:process_key_event():L492 KB command error move_to_top: No object window in path 'window'
+  2025-09-06 14:11:20,900 ERROR libqtile manager.py:process_key_event():L492 KB command error move_to_top: No object window in path 'window'
+  2025-09-06 14:11:21,049 ERROR libqtile manager.py:process_key_event():L492 KB command error move_to_top: No object window in path 'window'
+  2025-09-06 14:11:25,085 ERROR libqtile manager.py:process_key_event():L492 KB command error set_opacity: No object window in path 'window'
+  2025-09-06 14:11:25,288 ERROR libqtile hook.py:fire():L196 Error in hook client_new
+  Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/libqtile/hook.py", line 194, in fire
+  i(*args, **kwargs)
+  ~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/libqtile/scratchpad.py", line 292, in on_client_new
+  self.dropdowns[name] = DropDownToggler(client, self.name, self._dropdownconfig[name])
+  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/libqtile/scratchpad.py", line 197, in __init__
+  WindowVisibilityToggler.__init__(
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+  self, scratchpad_name, window, ddconfig.on_focus_lost_hide, ddconfig.warp_pointer
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  )
+  ^
+  File "/usr/lib/python3.13/site-packages/libqtile/scratchpad.py", line 67, in __init__
+  self.show()
+  ~~~~~~~~~^^
+  File "/usr/lib/python3.13/site-packages/libqtile/scratchpad.py", line 227, in show
+  WindowVisibilityToggler.show(self)
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/site-packages/libqtile/scratchpad.py", line 122, in show
+  win.togroup()
+  ~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/site-packages/libqtile/backend/x11/window.py", line 2011, in togroup
+  self.group.remove(self)
+  ~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/site-packages/libqtile/group.py", line 278, in remove
+  index = self.focus_history.index(win)
+  #+END_SRC
+-----
+** DONE Conflict ssh tmux nerdfont :SSH:TMUX:
+CLOSED: [2025-10-20 Mon 00:15] DEADLINE: <2025-10-20 Mon>
+- *OBJECTIVE:* Solve conflicting packages when =ssh= with =tmux= and =nerdfont=
+- -----
+- Note taken on [2025-10-20 00:13]: \\
+  Running this =scrip= solved the problem
+  #+BEGIN_SRC bash
+  ssh whammou@homelab -o RemoteCommand=none exec $SHELL -lc 'tmux new -A -s $1'
+  #+END_SRC
+-----
+- *Reference:* [[https://bbs.archlinux.org/viewtopic.php?id=286286][ssh tmux and nerdfont conflicting @Archforum]]
+** DONE Workaround yt-dlp Forbidden Error :YTDLP:
+DEADLINE: <2026-01-16 Fri> CLOSED: [2026-01-16 Fri 22:01]
+#+name:LOGBOOK
+#+html:<details><summary>LOGBOOK</summary>
+:LOGBOOK:
+- Note taken on [2026-01-16 Fri 21:57] \\
+  As off to day [2026-01-16 Fri] =yt-dlp= stopped working and through error htttp 403 forbidden
+  - Workaround involves installing =deno=
+  - Remove =--cookie= flag
+  Check this issue again next week <2026-01-23 Fri>
+  
+:END:
+#+html:</details>
+- *OBJECTIVE:*  Workaround =yt-dlp= not downloading video with arg =--cookie=
+- *Reference:*  [[https://github.com/yt-dlp/yt-dlp/issues/15569][ytdlp stopped working through error 403 @Github-issue]]
+** DONE Nvim Terminal Scroll :NVIM:
+DEADLINE: <2026-01-24 Sat> CLOSED: [2026-01-24 Sat 17:15]
+- *OBJECTIVE:*  How to scroll in =neovim= terminal
+- *Reference:*  [[https://neovim.io/doc/user/terminal.html][Terminal Normal Mode @Nvim-doc]]
+*** DONE Nvim Terminal Normal Mode
+DEADLINE: <2026-01-24 Sat> CLOSED: [2026-01-24 Sat 20:33]
+:PROPERTIES:
+:ID: 6d88cb50-f38e-4a72-a621-571238bd11a7
+:END:
+-----
+- Note taken on [2026-01-24 20:34]: \\
+  To Enter =normal= mode in =neovim=, input =<C-\><C-r>=
+-----
+- *OBJECTIVE:*  Return to =normal= mode in =neovim=
+- *Reference:*  [[https://neovim.io/doc/user/terminal.html#terminal-input][Neovim Terminal Input @Nvim-doc]]
+
+**** DONE Nvim Execute Command in Normal Mode
+DEADLINE: <2026-01-24 Sat> CLOSED: [2026-01-24 Sat 20:33]
+-----
+- Note taken on [2026-01-24 17:14]: \\
+  To run a command in =terminal= mode simple add =t= in the =mode= param \\
+  #+BEGIN_SRC lua
+  -- Custom keybindings for window navigation
+  for i = 1, 9 do
+    vim.keymap.set({ "n", "t" }, "<leader>" .. i, function()
+      vim.api.nvim_set_current_win(vim.api.nvim_list_wins()[i])
+    end, { desc = "which_key_ignore" })
+  end
+  #+END_SRC
+-----
+- *OBJECTIVE:*  Execute commands in =normal= mode /(e.g., Exit nvim terminal)/
+- *Reference:*  [[https://neovim.io/doc/user/terminal.html#terminal-input][Nvim Terminal @Nvim-doc]]
+** TODO Get Free Model with OpenRouter :OPENCODE:
+DEADLINE: <2026-02-13 Fri>
+- *OBJECTIVE:*  Experiment with free models on =openrouter=
+- *Reference:*
+  + [[https://openrouter.ai/collections/free-models][OpenRouter Free models collection @Blog]]
+  + [[https://github.com/cheahjs/free-llm-api-resources][Free LLM API resources @Github]]
+** DONE Nvim yazi split window :NVIM:YAZI:
+DEADLINE: <2026-02-04 Wed> CLOSED: [2026-02-04 Wed 07:20]
+#+name:LOGBOOK
+#+html:<details><summary>LOGBOOK</summary>
+:LOGBOOK:
+- Note taken on [2026-02-04 Wed 07:20] \\
+  Currently =yazi.nvim= window still has to be a floating window according to /reference/
+:END:
+#+html:</details>
+- *OBJECTIVE:*  Change =yazi.nvim= window into split window
+- *Reference:*  [[https://github.com/mikavilpas/yazi.nvim/pull/1410][Allow settings window properites with hook @Github-issue]]
+** DONE Fix Roam Config :ORGMODE:ORGROAM:
+DEADLINE: <2026-02-15 Sun> CLOSED: [2026-02-21 Sat 20:37]
+:PROPERTIES:
+:ID: 6c13dbc5-9371-41d0-9dd0-b934ccdd4fe6
+:END:
+- *OBJECTIVE:*  Fixing =orgroam= does not recognize some notes
+- *Tracker:*    [[id:94eaf3ce-0865-4161-ac3b-1cba44b480d8][Orgroam does not recognize nodes @Tracker]]
+- *Reference:*  [[https://github.com/chipsenkbeil/org-roam.nvim][Orgroam.nvim @Github]]
+** DONE Create Issue on Latest nvim-orgmode Bug
+DEADLINE: <2026-02-18 Wed> CLOSED: [2026-02-18 Wed 19:47]
+:PROPERTIES:
+:ID: 43c3fa26-b2a3-44ba-9a1d-4c91c84c4da0
+:END:
+- *OBJECTIVE:*  =nvim-orgmode= exhibits bugs on latest update along with =nvim-update=
+  + Track back message:
+    #+BEGIN_SRC lua
+        E5108: Error executing lua: ...share/nvim/lazy/orgmode/lua/orgmode/objects/calendar.lua:621: Invalid window id: 1005
+    stack traceback:
+        [C]: in function 'nvim_set_current_win'
+        ...share/nvim/lazy/orgmode/lua/orgmode/objects/calendar.lua:621: in function <...share/nvim/lazy/orgmode/lua/orgmode/objects/calendar.lua:603>
+    #+END_SRC
+- *Reference:*  [[https://github.com/nvim-orgmode/orgmode/issues][Nvim-orgmode issue @Github]]
+-----
+- Note taken on [2026-02-18 19:45]: \\
+  Solved with changing autocmd =event= from =BufEnter= to =BufWinEnter=
+  #+BEGIN_SRC lua
+  local Snacks = require("snacks")
+
+  vim.api.nvim_create_autocmd("BufWinEnter", {
+    pattern = "orgagenda",
+    callback = function()
+      --Snacks.zen.zoom()
+      Snacks.bufdelete.other()
+      vim.cmd.only()
+      --vim.opt.spell = false
+    end,
+  #+END_SRC
+-----
+** TODO Adjust Nvim Notification Timeout :NVIM:
+DEADLINE: <2026-02-21 Sat>
+:PROPERTIES:
+:ID: a6d4011c-1d83-4d23-8205-bbde8054dbfd
+:END:
+- *OBJECTIVE:*  Adjust nvim =notification= timeout
