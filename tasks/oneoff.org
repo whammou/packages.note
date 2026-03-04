@@ -560,7 +560,7 @@ DEADLINE: <2026-02-11 Wed>
   + [ ]  Adding extra =function=
 - *Reference:*  [[https://github.com/nickjvandyke/opencode.nvim][Opencode.nvim @Github]]
 ** TODO Testing Orgmode Ntfy Notification :NVIM:ORGMODE:
-DEADLINE: <2026-03-04 Wed 17:56>
+DEADLINE: <2026-03-04 Wed 18:20>
 :PROPERTIES:
 :ID: 7c6738e6-7bd9-42f8-bb1e-23c529dfb057
 :END:
