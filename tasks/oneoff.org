@@ -559,9 +559,10 @@ DEADLINE: <2026-02-11 Wed>
   + [ ]  Modify keybindings
   + [ ]  Adding extra =function=
 - *Reference:*  [[https://github.com/nickjvandyke/opencode.nvim][Opencode.nvim @Github]]
-** DOIN Testing Orgmode Ntfy Notification :NVIM:ORGMODE:
-DEADLINE: <2026-03-04 Wed 21:48>
+** DONE Testing Orgmode Ntfy Notification :NVIM:ORGMODE:
+DEADLINE: <2026-03-04 Wed 22:17> CLOSED: [2026-03-04 Wed 22:58]
 :PROPERTIES:
 :ID:       7c6738e6-7bd9-42f8-bb1e-23c529dfb057
 :END:
 - *OBJECTIVE:*  Sending =orgmode= notification to =ntfy= server instead of using =dunst=
+
