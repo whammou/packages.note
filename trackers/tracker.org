@@ -24,7 +24,3 @@ print("Headline2")
 #+BEGIN_SRC lua :tangle no
 print("Headline3")
 #+END_SRC
-
-#+begin_src lua :tangle yes :noweb yes
-<<headline2block>> print('Headline1')
-#+end_src
