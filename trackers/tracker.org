@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID: 3461b0ef-e2f7-456f-aaa1-77ecb7cb9685
+:END:
+
+#+OPTIONS: todo:t tags:nil tasks:t ^:nil toc:nil
+#+TODO: OPEN(y) (e) PROG(g) INTR(q) NEXT(n) | ABRT(a) DONE(f) CLSD(c)
+* Trackers List :PACKAGES:TRACKER:META:
+** OPEN Nvim-orgmode Babel Tangle :NVIM:ORGMODE:
+:PROPERTIES:
+:ID: cbf6f577-5700-4e40-88bc-3b6160c732b4
+:END:
+An example of using =nvim-orgmode= babel and tangle feature
+
+#+BEGIN_SRC lua :tangle yes :noweb yes
+<<headline2block>> print("Headline1")
+#+END_SRC
+
+#+name: headline2block
+#+BEGIN_SRC lua :tangle yes
+print("Headline2")
+#+END_SRC
+
+#+name: headline3block
+#+BEGIN_SRC lua :tangle no
+print("Headline3")
+#+END_SRC
+
+#+begin_src lua :tangle yes :noweb yes
+<<headline2block>> print('Headline1')
+#+end_src
