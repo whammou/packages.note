@@ -151,9 +151,24 @@ DEADLINE: <2026-01-24 Sat> CLOSED: [2026-01-24 Sat 20:33]
 -----
 - *OBJECTIVE:*  Execute commands in =normal= mode /(e.g., Exit nvim terminal)/
 - *Reference:*  [[https://neovim.io/doc/user/terminal.html#terminal-input][Nvim Terminal @Nvim-doc]]
-** TODO Get Free Model with OpenRouter :OPENCODE:
-DEADLINE: <2026-02-13 Fri>
+** DONE Get Free Model with OpenRouter :OPENCODE:
+DEADLINE: <2026-03-07 Sat> CLOSED: [2026-03-07 Sat 12:11]
+:PROPERTIES:
+:ID: e76564d2-8079-44aa-8cd4-d1741e6a73f7
+:END:
+#+name:LOGBOOK
+#+html:<details><summary>LOGBOOK</summary>
+:LOGBOOK:
+- Note taken on [2026-03-07 Sat 12:07] \\
+  =openrouter= is actually an "unified interface" for =LLMs=
+  - There are other "providers" that also offer an =interface=
+  - e.g. *Cerebras*, *Google AI Studio*, *HuggingFace*, *Vercel AI Gateway*, ...
+  - =opencode= offer an API to connect to other provider platforms
+  
+:END:
+#+html:</details>
 - *OBJECTIVE:*  Experiment with free models on =openrouter=
+- *Document:*   [[id:1d233750-6262-4534-ab1e-ecbb62b94334][A Guide to AI @Doc]]
 - *Reference:*
   + [[https://openrouter.ai/collections/free-models][OpenRouter Free models collection @Blog]]
   + [[https://github.com/cheahjs/free-llm-api-resources][Free LLM API resources @Github]]
