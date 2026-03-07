@@ -168,7 +168,7 @@ DEADLINE: <2026-03-07 Sat> CLOSED: [2026-03-07 Sat 12:11]
 :END:
 #+html:</details>
 - *OBJECTIVE:*  Experiment with free models on =openrouter=
-- *Document:*   [[id:1d233750-6262-4534-ab1e-ecbb62b94334][A Guide to AI @Doc]]
+- *Documents:*  [[id:1d233750-6262-4534-ab1e-ecbb62b94334][A Guide to AI @Doc]]
 - *Reference:*
   + [[https://openrouter.ai/collections/free-models][OpenRouter Free models collection @Blog]]
   + [[https://github.com/cheahjs/free-llm-api-resources][Free LLM API resources @Github]]
