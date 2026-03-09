@@ -35,8 +35,22 @@ Create a zen workflow for =opencode=
 :ID: 3634010e-f2b1-4bc1-b34d-e97de27c935d
 :END:
 Session that exists even after the =opencode= client detached
+- Self-host and forward an =opencode= session using =homeserver=
+- Use =--dir= flag to launch opencode =client= in a "correct directory
+  + Sync work directory between =homeserver= and =client= to correctly use =dir= flag
+  + =HOME= directory sync
 *** Seamless File Sync
 :PROPERTIES:
 :ID: 9fdb721a-3639-4c5a-bdb6-a69e518a52dc
 :END:
-=opencode= does not support local file upload thus the process has to managed by a other process - /unison/
+=opencode= does not support local file upload thus the operation has to managed by a other process - /unison/
+- Create synced =HOME=
+**** Sync HOME of Current User
+:PROPERTIES:
+:ID: 76762bf1-576d-4904-a0cc-abbede2e9ed3
+:END:
+- [ ] Change =HOME= of current user - /Resolve hardcoded old =HOME=/
+  + [ ] [[shell:sudo grep -r "/home/whammou" /home/whammou/.config/ 2>/dev/null | grep -v ".pacnew &| bat"][Check .config]]
+  + [ ] [[shell:sudo grep -r "/home/whammou" /home/whammou/.local/bin 2>/dev/null | grep -v ".pacnew &| bat"][Check .local/bin]]
+  + [ ] [[shell:sudo grep -r "/home/whammou" /etc/ 2>/dev/null | grep -v ".pacnew &| bat"][Check /etc/]]
+- [ ] Manage second =HOME= via =unision=
