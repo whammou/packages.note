@@ -24,13 +24,14 @@ print("Headline2")
 #+BEGIN_SRC lua :tangle no
 print("Headline3")
 #+END_SRC
-** OPEN Opencode Zen Workflow :OPENCODE:AI:
-DEADLINE: <2026-03-09 Mon>
+** DONE Opencode Workflow :OPENCODE:AI:
+DEADLINE: <2026-03-09 Mon> CLOSED: [2026-03-11 Wed 16:29]
 :PROPERTIES:
 :ID: 407ddfe2-b174-4e4d-a080-16e17867dd23
 :END:
 Create a zen workflow for =opencode=
-*** Session Persistence
+*** DONE Session Persistence
+CLOSED: [2026-03-11 Wed 16:29]
 :PROPERTIES:
 :ID: 3634010e-f2b1-4bc1-b34d-e97de27c935d
 :END:
@@ -39,13 +40,14 @@ Session that exists even after the =opencode= client detached
 - Use =--dir= flag to launch opencode =client= in a "correct directory
   + Sync work directory between =homeserver= and =client= to correctly use =dir= flag
   + =HOME= directory sync
-*** Seamless File Sync
+*** DONE Seamless File Sync
+CLOSED: [2026-03-11 Wed 16:29]
 :PROPERTIES:
 :ID: 9fdb721a-3639-4c5a-bdb6-a69e518a52dc
 :END:
 =opencode= does not support local file upload thus the operation has to managed by a other process - /unison/
 - Create synced =HOME=
-**** CLSD Sync HOME of Current User
+**** DONE Sync HOME of Current User
 CLOSED: [2026-03-10 Tue 11:09]
 :PROPERTIES:
 :ID: 76762bf1-576d-4904-a0cc-abbede2e9ed3
