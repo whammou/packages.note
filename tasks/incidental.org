@@ -226,10 +226,11 @@ DEADLINE: <2026-02-21 Sat> CLOSED: [2026-03-09 Mon 04:25]
 :ID: a6d4011c-1d83-4d23-8205-bbde8054dbfd
 :END:
 - *OBJECTIVE:*  Adjust nvim =notification= timeout
-** TODO Ntfy Receive Order :NTFY:
+** DONE Ntfy Receive Order :NTFY:
+CLOSED: [2026-03-15 Sun 21:25]
 :PROPERTIES:
 :ID: a8669211-e8f7-47f7-98f3-7ce16237d1a8
 :END:
 - *OBJECTIVE:*  Receiving =ntfy= notification following specific order default/reverse
-- *Tracker:*    [[id:80c594f7-22ee-4fe7-b758-6474d80f0f94][Ntfy Notification Receiving Order @Tracker]]
+- *Tracker:*    [[id:80c594f7-22ee-4fe7-b758-6474d80f0f94][Notification Receiving Order @Tracker]]
 - *Reference:*  [[https://docs.ntfy.sh/subscribe/api/#fetch-cached-messages][Fetch cached message @Ntfy-doc]]
