@@ -57,3 +57,8 @@ CLOSED: [2026-03-10 Tue 11:09]
   + [X] [[shell:sudo grep -r "/home/whammou" /home/whammou/.local/bin 2>/dev/null | grep -v ".pacnew &| bat"][Check .local/bin]]
   + [X] [[shell:sudo grep -r "/home/whammou" /etc/ 2>/dev/null | grep -v ".pacnew &| bat"][Check /etc/]]
 - [X] Manage second =HOME= via =unision=
+** OPEN Ntfy Notification Receiving Order :NTFY:
+:PROPERTIES:
+:ID: 80c594f7-22ee-4fe7-b758-6474d80f0f94
+:END:
+/Reverse notification receiving order oldest-latest/
