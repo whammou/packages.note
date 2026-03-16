@@ -215,7 +215,6 @@ CLOSED: [2025-11-20 Thu 21:22] DEADLINE: <2025-11-20 Thu 21:30>
 - *OBJECTIVE:* Hint and open =URL= with =tmux=
 - *Reference:* [[https://dev.to/tomoviktor/best-way-to-open-urls-in-your-terminal-via-tmux-595b][Hint and open URL with Tmux @Blog]]
 ** TODO Learn Scripting with Rofi :ROFI:
-DEADLINE: <2026-02-11 Wed>
 :PROPERTIES:
 :ID:       b4d95356-ad0b-4d28-8d01-efe6a2262752
 :END:
@@ -266,14 +265,12 @@ DEADLINE: <2026-02-04 Wed> CLOSED: [2026-02-04 Wed 02:01]
   + [[https://github.com/xvzc/chezmoi.nvim][Chezmoi.nvim @Github]]
   + [[https://github.com/xvzc/chezmoi.nvim/blob/main/lua/chezmoi/commands/init.lua][Chezmoi.nvim api @Github]]
 **** TODO Chezmoi Yazi Integration
-DEADLINE: <2026-02-11 Wed>
 - *OBJECTIVE:*  Integrate =chezmoi= into yazi and vice-versa
 - *Reference:*  [[https://github.com/sxyazi/yazi/discussions/1872#discussioncomment-11112852][Yazi chezmoi discussion @Github]]
 
 *** TODO Switching To Chezmoi :STOW:
 - *OBJECTIVE:*  Moving =dotfiles= from =gnu-stow= to =chezmoi=
 **** TODO Create Chezmoi Dest-Dir
-DEADLINE: <2026-02-10 Tue>
 #+name:LOGBOOK
 #+html:<details><summary>LOGBOOK</summary>
 :LOGBOOK:
@@ -315,7 +312,6 @@ DEADLINE: <2026-02-10 Tue> CLOSED: [2026-02-11 Wed 19:21]
 :END:
 - *OBJECTIVE:*  Make kitty =config= modular instead of single-file
 ** TODO Nvim-orgmode Multiple Agenda :NVIM:ORGMODE:
-DEADLINE: <2026-02-13 Fri>
 :PROPERTIES:
 :ID: 7981ea28-2765-4574-a79a-d48b54d262c8
 :END:

@@ -542,19 +542,18 @@ CLOSED: [2025-12-01 Mon 16:01] DEADLINE: <2025-12-01 Mon 15:50>
 CLOSED: [2025-12-04 Thu 20:46] DEADLINE: <2025-12-04 Thu 18:15>
 - *OBJECTIVE:* Fix =variable= prints incorrect value
 ** TODO Create a Ntfy Subscription List :NTFY:
-DEADLINE: <2026-02-13 Fri>
 - *OBJECTIVE:* Create an =ntfy= subscription list
   + [ ] Create =ntfy= directories
   + [ ] Create =systemd-service= that subscribe to a list of =ntfy= instances
 - *Visit:* [[id:1ede1aea-dda4-47c0-9c68-04c5b1ed88dc][Looping Through Content of a File in Bash @Org]]
-** TODO Optimize Rclone Performance :RCLONE:DRIVE:filesync:
-DEADLINE: <2026-02-12 Thu>
+** DONE Optimize Rclone Performance :RCLONE:DRIVE:filesync:
+DEADLINE: <2026-02-12 Thu> CLOSED: [2026-03-17 Tue 04:16]
 - *OBJECTIVE:*  Optimizing =rclone= performance when syncing with cloud-drives
-*** TODO Rclone Systemd Service :SYSTEMD:
-DEADLINE: <2026-02-12 Thu>
+*** ABRT Rclone Systemd Service :SYSTEMD:
+DEADLINE: <2026-02-12 Thu> CLOSED: [2026-03-17 Tue 04:16]
 - *OBJECTIVE:*  Mount drives using systemd services
-** TODO Config Opencode.nvim
-DEADLINE: <2026-02-11 Wed>
+** DONE Config Opencode.nvim
+DEADLINE: <2026-02-11 Wed> CLOSED: [2026-03-17 Tue 04:16]
 :PROPERTIES:
 :ID:       6f2f9641-6482-4a34-a6e9-18901984a901
 :END:
