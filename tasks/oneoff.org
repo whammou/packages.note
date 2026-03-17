@@ -3,7 +3,7 @@
 #+OPTIONS: todo:t tags:nil tasks:t ^:nil toc:nil
 #+TITLE: Packages Oneoff Tasks
 
-* List of Oneoff Tasks :%Task:ONEOFF:@Packages:#Meta:
+* List of Oneoff Tasks :%Task:_Oneoff:@Packages:#Meta:
 ** DONE Create qtile widget :QTILE:
 CLOSED: [2025-09-06 Sat 14:31]
 - *OBJECTIVE:* Create a custom qtile widget

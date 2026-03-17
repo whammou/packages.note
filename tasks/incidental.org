@@ -3,7 +3,7 @@
 #+OPTIONS: todo:t tags:nil tasks:t ^:nil toc:nil
 #+TITLE: Packages Incidental Tasks
 
-* List of Incidental Tasks :%Task:INCIDENTAL:@Packages:#Meta:
+* List of Incidental Tasks :%Task:_Incidental:@Packages:#Meta:
 ** PEND Get transcript from Teams :TEAMS:
 - *OBJECTIVE:* Get transcript from Teams meeting
 - *Reference:* [[https://learn.microsoft.com/en-us/microsoftteams/platform/graph-api/meeting-transcripts/overview-transcripts][Get transcript via teams API @Doc-MS_teams]]
