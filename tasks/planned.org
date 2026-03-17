@@ -3,7 +3,7 @@
 #+OPTIONS: todo:t tags:nil tasks:t ^:nil toc:nil
 #+TITLE: Packages Planned Tasks
 
-* List of Planned Tasks :TASK:PLANNED:@Packages:#Meta:
+* List of Planned Tasks :%Task:PLANNED:@Packages:#Meta:
 ** PEND Coding with Nvim vs Emacs :NVIM:EMACS:EDITOR:
 - *OBJECTIVE:* Coding experience in =nvim= vs =emacs=
 - *Reference:* [[https://www.reddit.com/r/vim/comments/q3nnrh/convince_me_to_use_vim_over_emacs_and_nano/][nvim vs emacs @Github]]

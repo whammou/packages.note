@@ -7,10 +7,10 @@
 #+OPTIONS: title:nil tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
 #+LATEX_HEADER: \renewcommand\maketitle{} \usepackage[scaled]{helvet} \renewcommand\familydefault{\sfdefault}
 #+TODO: TODO(t) (e) DOIN(d) PEND(p) OUTL(o) EXPL(x) FDBK(b) WAIT(w) NEXT(n) IDEA(i) | ABRT(a) PRTL(r) RVIW(v) DONE(f)
-#+FILETAGS: :DOC:PROJECT:@Packages:NVIM:SNIPPET:
+#+FILETAGS: :%Doc:@Project:@Packages:NVIM:SNIPPET:
 #+HTML:<details>
 
-* NEXT Nvim Configurations :DOC:#Meta:@Packages:NVIM:SNIPPET:
+* NEXT Nvim Configurations :%Doc:#Meta:@Packages:NVIM:SNIPPET:
 #+HTML:</details>
 - *OBJECTIVE:* Custom snippets to boost productivity
 ** DONE Friendly snippet insert date :FRIENDLYSNIP:
