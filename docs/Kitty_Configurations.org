@@ -7,10 +7,10 @@
 #+OPTIONS: title:nil tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
 #+LATEX_HEADER: \renewcommand\maketitle{} \usepackage[scaled]{helvet} \renewcommand\familydefault{\sfdefault}
 #+TODO: TODO(t) (e) DOIN(d) PEND(p) OUTL(o) EXPL(x) FDBK(b) WAIT(w) NEXT(n) IDEA(i) | ABRT(a) PRTL(r) RVIW(v) DONE(f)
-#+FILETAGS: :%Doc:@Project:@Packages:KITTY:
+#+FILETAGS: :%Doc:@Project:PACKAGES:KITTY:
 #+HTML:<details>
 
-* PRTL Kitty Configurations [66%] :%Doc:#Meta:@Packages:KITTY:
+* PRTL Kitty Configurations [66%] :%Doc:meta:PACKAGES:KITTY:
 CLOSED: [2025-06-08 Sun 05:17] DEADLINE: <2025-06-08 Sun>
 #+HTML:</details>
 :PROPERTIES:

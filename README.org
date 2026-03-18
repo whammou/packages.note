@@ -1,6 +1,6 @@
 #+TITLE: Packages – Overview
 #+DESCRIPTION: Software and package management.
-#+FILETAGS: :@Packages:
+#+FILETAGS: :PACKAGES:
 
 * Overview
   Software and package management: installation, updates, and configuration across systems.
@@ -19,8 +19,8 @@
 * Tag & State Conventions (inherited from the main repo)
   - *States* – TODO, PEND, GOING, DONE, ARCHIVED, etc. (see main README).
   - *Tags* – Use the hierarchical tag format:
-    :@Packages:<CATEGORY>:<TYPE>:<DETAIL>:
-    Example: =:@Packages:INSTALL:NPM:=
+    :PACKAGES:<CATEGORY>:<TYPE>:<DETAIL>:
+    Example: =:PACKAGES:INSTALL:NPM:=
 
 * Typical Files
   - =docs/<something>.org= – package installation notes, configuration guides.

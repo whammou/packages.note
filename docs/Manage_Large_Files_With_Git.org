@@ -6,10 +6,10 @@
 #+OPTIONS: title:nil tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
 #+LATEX_HEADER: \renewcommand\maketitle{} \usepackage[scaled]{helvet} \renewcommand\familydefault{\sfdefault}
 #+TODO: TODO(t) (e) DOIN(d) PEND(p) OUTL(o) EXPL(x) FDBK(b) WAIT(w) NEXT(n) IDEA(i) | ABRT(a) PRTL(r) RVIW(v) DONE(f)
-#+FILETAGS: :%Doc:#Meta:@Packages:GIT:MANAGEMENT:
+#+FILETAGS: :%Doc:meta:PACKAGES:GIT:MANAGEMENT:
 #+HTML:<details>
 
-* Manage Large Files With Git :%Doc:#Meta:@Packages:GIT:MANAGEMENT:
+* Manage Large Files With Git :%Doc:meta:PACKAGES:GIT:MANAGEMENT:
 #+HTML:</details>
 Manage /large files/ with =git= is not practical however it is essential for some =repositories= to content /large files./ Having a way to manage /large-files/ within =repo= is a useful in many cases
 ** DONE Managing Large Files with Git-Annex

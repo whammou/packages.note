@@ -4,7 +4,7 @@
 
 #+OPTIONS: todo:t tags:nil tasks:t ^:nil toc:nil
 #+TODO: OPEN(y) (e) PROG(g) INTR(q) NEXT(n) | ABRT(a) DONE(f) CLSD(c)
-* Trackers List :@Packages:%Tracker:#Meta:
+* Trackers List :PACKAGES:%Tracker:meta:
 ** OPEN Nvim-orgmode Babel Tangle :NVIM:ORGMODE:
 :PROPERTIES:
 :ID: cbf6f577-5700-4e40-88bc-3b6160c732b4

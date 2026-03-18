@@ -3,7 +3,7 @@
 #+OPTIONS: todo:t tags:nil tasks:t ^:nil toc:nil
 #+TITLE: Packages Oneoff Tasks
 
-* List of Oneoff Tasks :%Task:_Oneoff:@Packages:#Meta:
+* List of Oneoff Tasks :%Task:_Oneoff:PACKAGES:meta:
 ** DONE Create qtile widget :QTILE:
 CLOSED: [2025-09-06 Sat 14:31]
 - *OBJECTIVE:* Create a custom qtile widget
@@ -351,7 +351,7 @@ CLOSED: [2025-08-23 Sat 00:23] DEADLINE: <2025-08-23 Sat>
     - [ ] Create output =hierarchy=
 - *Visit:*
   - [[id:90a03e2c-edb3-4afd-8252-462b6d912cbe][Improve kitty worflow @Orgmode]]
-  - [[id:f0e11344-5210-4709-b5df-f6de28e7ee7a:@Note:*Function fzf][Fzf menu @Orgmode]]
+  - [[id:f0e11344-5210-4709-b5df-f6de28e7ee7a:NOTE:*Function fzf][Fzf menu @Orgmode]]
 *** DONE Integrate with fabric and kitty :FABRIC:KITTY:
 CLOSED: [2025-08-07 Thu 05:33]
 - *Idea:* Implement printing outputs for fabric
