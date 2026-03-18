@@ -3,4 +3,4 @@
 #+OPTIONS: todo:t tags:nil tasks:t ^:nil toc:nil
 #+TITLE: Packages Coordinated Tasks
 
-* List of Coordinated Tasks :%Task:_Coordinated:PACKAGES:meta:
+* List of Coordinated Tasks :typTask:catCoordinated:PACKAGES:meta:

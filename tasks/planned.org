@@ -3,32 +3,32 @@
 #+OPTIONS: todo:t tags:nil tasks:t ^:nil toc:nil
 #+TITLE: Packages Planned Tasks
 
-* List of Planned Tasks :%Task:_Planned:PACKAGES:meta:
-** PEND Coding with Nvim vs Emacs :NVIM:EMACS:EDITOR:
+* List of Planned Tasks :typTask:catPlanned:PACKAGES:meta:
+** PEND Coding with Nvim vs Emacs :@Nvim:@Emacs:@Editor:
 - *OBJECTIVE:* Coding experience in =nvim= vs =emacs=
 - *Reference:* [[https://www.reddit.com/r/vim/comments/q3nnrh/convince_me_to_use_vim_over_emacs_and_nano/][nvim vs emacs @Github]]
-** DONE Run tmux on Homelab :SERVER:TMUX:
+** DONE Run tmux on Homelab :@Server:@Tmux:
 CLOSED: [2025-10-23 Thu 01:55] DEADLINE: <2025-10-23 Thu>
 - *OBJECTIVE:* Seamless workflow with =tmux= on =homelab=
 - *Visit:* [[id:36fece3a-2c38-48ec-bc23-73f11ddb5e13][Initiate tmux on Homelab @Org]]
-** TODO Get gdrive shareable link :RCLONE:GDRIVE:
+** TODO Get gdrive shareable link :@Rclone:_Drive:
 :PROPERTIES:
 :ID:       d429546e-1ada-4fff-b364-4a8743a4643c
 :END:
 - *OBJECTIVE:* Get =sharable-link= of an gdrive =item=
-** PEND Pass Environment Variable ssh :SSH:
+** PEND Pass Environment Variable ssh :@Ssh:
 - *OBJECTIVE:* Pass environment variable through =ssh= session
 - *Reference:* [[https://superuser.com/questions/48783/how-can-i-pass-an-environment-variable-through-an-ssh-command][Pass environment variable @Overflow]]
-** PEND Git Remote Group :GIT:gitsubmodule:
+** PEND Git Remote Group :@Git:gitsubmodule:
 - *OBJECTIVE:* Check out git remote grouping
 - *Reference:* [[https://stackoverflow.com/questions/3946723/setting-the-right-group-rights-on-a-git-remote-repo][Git remote grouping @Overflow]]
-** PEND Config ntfy Server :NTFY:notificationsync:
+** PEND Config ntfy Server :@Ntfy:NotificationSync:
 :PROPERTIES:
 :ID:       9a7dbd81-b9e2-44ff-83f9-d8cdcc123767
 :END:
 - *OBJECTIVE:* Self-host the =ntfy= server
 - *Reference:* [[https://docs.ntfy.sh/install/][Ntfy.sh install @Blog]]
-** DONE Script for ntfy :NTFY:DUNST:notificationsync:
+** DONE Script for ntfy :@Ntfy:@Dunst:NotificationSync:
 CLOSED: [2025-11-07 Fri 21:28] DEADLINE: <2025-11-07 Fri>
 - *OBJECTIVE:* Some cool =scripts= for =ntfy= server
 - *Reference:* [[https://docs.ntfy.sh/examples/][Cool ntfy example @Blog]]
@@ -50,7 +50,7 @@ CLOSED: [2025-11-09 Sun 01:28] DEADLINE: <2025-11-09 Sun>
 CLOSED: [2025-11-08 Sat 16:25] DEADLINE: <2025-11-08 Sat>
 - *OBJECTIVE:* Call interaction between =linux= and =android= using =dunst script= and =macrodroid=
 - *Check-out:* [[https://github.com/whammou/dotfiles/commit/4e95cdd8bd9434977d0d6d1b5164ce31e1641cb3][Dunst call forwarding @Commit]]
-*** DONE Ssh Login Alert :SSH:
+*** DONE Ssh Login Alert :@Ssh:
 CLOSED: [2025-11-05 Wed 01:35] DEADLINE: <2025-11-05 Wed>
 - *OBJECTIVE:* Alert notification when login =ssh=
 #+name:LOGBOOK
@@ -65,7 +65,7 @@ CLOSED: [2025-11-05 Wed 01:35] DEADLINE: <2025-11-05 Wed>
 CLOSED: [2025-11-05 Wed 00:28] DEADLINE: <2025-11-05 Wed>
 - *OBJECTIVE:* Send a notification indicate task has completed through =ntfy=
 - *Reference:* [[https://github.com/fish-shell/fish-shell/issues/7786][Notification on completion of long running task @Githu-issue]]
-** DONE Learn Dunst Scripting :DUNST:
+** DONE Learn Dunst Scripting :@Dunst:
 CLOSED: [2025-11-07 Fri 05:01] DEADLINE: <2025-11-07 Fri>
 :PROPERTIES:
 :ID:       4ea4c71e-c2c7-47c5-9e4d-65e203aaf725
@@ -75,19 +75,19 @@ CLOSED: [2025-11-07 Fri 05:01] DEADLINE: <2025-11-07 Fri>
   + [[https://github.com/dunst-project/dunst/issues/163][Action on click notification @Github-issue]]
   + [[https://github.com/dunst-project/dunst/discussions/1251][Run Script on Mouse Click @Github-issue]]
   + [[https://wiki.archlinux.org/title/Dunst#Actions][Dunst Actions @Archwiki]]
-** ABRT Qutebrowser High Memory Usage :QUTEBROWSER:MEMORY:
+** ABRT Qutebrowser High Memory Usage :@Qutebrowser:_Memory:
 CLOSED: [2026-01-17 Sat 12:45]
 - *OBJECTIVE:* Debug =qutebrowser= use too much memory
 - *Reference:*
   + [[https://github.com/qutebrowser/qutebrowser/issues/1204][High memory usage @Github]]
   + [[https://github.com/qutebrowser/qutebrowser/issues/1476][Qutebrowser high memory usge @Github]]
-** EXPL Local Repos Sync :GIT:notesync:filesync:
+** EXPL Local Repos Sync :@Git:FileSync:FileSync:
 :PROPERTIES:
 :ID:       038b7433-7aa0-425f-a718-0b1ef8fbc11f
 :END:
 - *OBJECTIVE:* Keep =repo= on different =machines= up-to-date on changes
 - *Reference:* [[https://linuxize.com/post/how-to-use-rsync-for-local-and-remote-data-transfer-and-synchronization/][Rsync command on linux @Bloc]]
-** WAIT Git automation :GIT:notesync:
+** WAIT Git automation :@Git:FileSync:
 - *OBJECTIVE:* /Automate tasks with git/
 - *References:*
   + [[https://www.reddit.com/r/git/comments/xvz4he/automating_git_tasks_best_practices/][Automation with git @Reddit]]
@@ -108,11 +108,11 @@ CLOSED: [2025-11-27 Thu 02:53] DEADLINE: <2025-11-27 Thu>
 - *OBJECTIVE:* Git auto commit hourly /(optional: git push hourly)/
 *** PEND Git Squash Weekly Commits
 - *OBJECTIVE:* Squash every commit done within the week into a =weekly-commit=
-** ABRT Nvim Reload :NVIM:
+** ABRT Nvim Reload :@Nvim:
 CLOSED: [2025-11-14 Fri 08:58] DEADLINE: <2025-11-13 Thu 22:40>
 - *OBJECTIVE:* Reload nvim along with plugins
 - *Reference:* [[https://www.reddit.com/r/neovim/comments/15gihnd/neat_trick_for_restarting_neovim_fast_when_using/][Restart nvim @Reddit]]
-** DONE Re-structuring Nvim-orgmode Configuration :NVIM:ORGMODE:nvimconfig:
+** DONE Re-structuring Nvim-orgmode Configuration :@Nvim:@Orgmode:NvimConfig:
 CLOSED: [2025-11-18 Tue 08:14] DEADLINE: <2025-11-18 Tue 23:45>
 :PROPERTIES:
 :ID:       62b8fb19-df46-4e5b-8bef-dde3dba80329
@@ -138,7 +138,7 @@ CLOSED: [2025-11-18 Tue 08:14] DEADLINE: <2025-11-18 Tue 21:15>
 :LOGBOOK:
 :END:
 #+html:</details>
-** DONE Nvim Multiple Instances :NVIM:filesync:
+** DONE Nvim Multiple Instances :@Nvim:FileSync:
 CLOSED: [2025-11-19 Wed 05:45] DEADLINE: <2025-11-19 Wed 19:00>
 - *Objective:* /Connect to running/ ~nvim-server~ /apply to/ ~orgmode~
 - *Reference:*
@@ -180,17 +180,17 @@ CLOSED: [2025-11-19 Wed 01:18] DEADLINE: <2025-11-19 Wed 01:10>
 :END:
 #+html:</details>
 - *OBJECTIVE:* Auto establish which =socket= /server/ to connect to
-** ABRT Create Issue on Org Reload :NVIM:ORGMODE:
+** ABRT Create Issue on Org Reload :@Nvim:@Orgmode:
 CLOSED: [2025-12-05 Fri 20:31] DEADLINE: <2025-12-05 Fri 00:45>
 - *OBJECTIVE:* Create a =nvim-orgmode.git= issue on =org reload= does not include new /changes/ made by another =nvim= instance
-** DONE Setting Multiple Handlers :HANDLR:universalfileopener:
+** DONE Setting Multiple Handlers :@Handlr:UniversalFileOpener:
 CLOSED: [2025-11-20 Thu 21:23] DEADLINE: <2025-11-20 Thu 21:05>
 :LOGBOOK:
 CLOCK: [2025-11-20 Thu 21:05]--[2025-11-20 Thu 21:22] => 0:17
 :END:
 - *OBJECTIVE:* Setting up =open with= multiple handlers
 - *Reference:* [[https://github.com/Anomalocaridid/handlr-regex?tab=readme-ov-file#setting-multiple-handlers][Setting up multiple handlers @Github]]
-*** ABRT Rofi Menu For Handlr-regex :ROFI:
+*** ABRT Rofi Menu For Handlr-regex :@Rofi:
 CLOSED: [2025-11-20 Thu 21:22] DEADLINE: <2025-11-20 Thu 21:30>
 #+name:LOGBOOK
 #+html:<details><summary>LOGBOOK</summary>
@@ -207,41 +207,41 @@ CLOSED: [2025-11-20 Thu 21:22] DEADLINE: <2025-11-20 Thu 21:30>
 #+html:</details>
 - *OBJECTIVE:* Setting up =rofi= script for multiple =open= options
 - *Reference:* [[https://davatorium.github.io/rofi/current/rofi-script.5/][rofi-script(5) @Man]]
-** PEND Notification Format :DUNST:NOTIFICATION:
+** PEND Notification Format :@Dunst:@Notification:
 - *OBJECTIVE:* Format plain-text notifications with =pango= markup
-*** PEND Format Orgmode Notification :ORGMODE:
+*** PEND Format Orgmode Notification :@Orgmode:
 - *OBJECTIVE:* Format =orgmode-notification= base on =todo-keyword=
-** PEND Tmux URL Hint :TMUX:
+** PEND Tmux URL Hint :@Tmux:
 - *OBJECTIVE:* Hint and open =URL= with =tmux=
 - *Reference:* [[https://dev.to/tomoviktor/best-way-to-open-urls-in-your-terminal-via-tmux-595b][Hint and open URL with Tmux @Blog]]
-** TODO Learn Scripting with Rofi :ROFI:
+** TODO Learn Scripting with Rofi :@Rofi:
 :PROPERTIES:
 :ID:       b4d95356-ad0b-4d28-8d01-efe6a2262752
 :END:
 - *OBJECTIVE:*  Learn how to write scripts for =rofi=
 - *Reference:*  [[https://davatorium.github.io/rofi/current/rofi-script.5/][Rofi Scripting documentation @Blog]]
 - *Check-out:*  [[id:e88ddffd-71b2-41c2-b1e7-6309f8600812][Scripting with Rofi @Org]]
-** PEND Learn qutebrowser Scripting :QUTEBROWSER:
+** PEND Learn qutebrowser Scripting :@Qutebrowser:
 - *OBJECTIVE:* Learn =qutebrowser= scripting for better automation
 - *Visit:* [[id:1939461d-8332-40a0-95a4-0e725465ad94][Qutebrowser Scripting @Org]]
-** PEND Re-config Qtile :QTILE:
+** PEND Re-config Qtile :@Qtile:
 - *OBJECTIVE:* Fix the new update bug in config
 - *Reference:* [[https://docs.qtile.org/en/v0.34.0/manual/stacking.html][Stacking priority @Doc]]
 *** Get WM Priority on X11
 - *OBJECTIVE:* How to get WM stacking =priority= property on X11
-** PEND Config Opencode Agents :OPENCODE:aiagent:
+** PEND Config Opencode Agents :@OpenCode:aiagent:
 - *OBJECTIVE:* Create an agent on =opencode=
 - *Reference:* [[https://opencode.ai/docs/agents/][Opencode AI agent @Doc-agent]]
-** DONE Orgmode Run Shell Command :ORGMODE:
+** DONE Orgmode Run Shell Command :@Orgmode:
 CLOSED: [2025-12-25 Thu 18:12] DEADLINE: <2025-12-25 Thu>
 - *OBJECTIVE:* Hyperlink type to run shell command
   + Invoke with =<leaer>oo=
   + [[shell:lazygit -p ~/dotfiles]]
 - *Reference:* [[https://nvim-orgmode.github.io/configuration#custom-hyperlink-types][Nvim-orgmode custom hyperlinks @Github]]
-** PEND Custom Orgmode Agenda :ORGMODE:productivity:
+** PEND Custom Orgmode Agenda :@Orgmode:_Productivity:
 - *OBJECTIVE:* Custom =orgmode-agenda= for productivity
 - [[https://www.youtube.com/embed/-9rpQA6O3aM][Customize orgmode agenda for productivity @Youtube]]
-** ABRT Learn Hyprland-WM :HYPRLAND:WAYLAND:
+** ABRT Learn Hyprland-WM :@Hyprland:@Wayland:
 CLOSED: [2026-02-04 Wed 05:51]
 #+name:LOGBOOK
 #+html:<details><summary>LOGBOOK</summary>
@@ -252,7 +252,7 @@ CLOSED: [2026-02-04 Wed 05:51]
 #+html:</details>
 - *OBJECTIVE:* learn to config the =hyprland= window manager
 - *Reference:* [[https://wiki.hypr.land/Configuring/Monitors/][Hyprland Wiki @Blog]]
-** TODO Configuring Chezmoi :CHEZMOI:
+** TODO Configuring Chezmoi :@Chezmoi:
 - *OBJECTIVE:*  Backing up my =dotfiles= with =chezmoi= /(moving on from stow)/
 - *Reference:*  [[https://www.chezmoi.io/#what-does-chezmoi-do][Chezmoi Documentation @Blog]]
 - *Visit:*      [[id:58910689-be05-4304-8b9b-7d2c03fee002][Managing Dotfiles with Chezmoi @Org]]
@@ -284,39 +284,39 @@ Moving files from =~/dotfiles= will affect the config dir. Best solution is to i
 #+html:</details>
 - *OBJECTIVE:*  Create a manageable repo for adding =chezmoi= files
 - *Reference:*  [[https://github.com/twpayne/chezmoi/issues/180][Stow-to-chezmoi @Github-issue]]
-** PEND Integrate Edgy Nvim :NVIM:nvimEdgy:
+** PEND Integrate Edgy Nvim :@Nvim:@NvimEdgy:
 - *OBJECTIVE:*  Managing custom windows position with =edgy.nvim=
 - *Reference:*
   + [[https://github.com/folke/snacks.nvim/blob/main/docs/terminal.md#edgy-integration][Edgy nvim integrate with Snacks terminal @Github]]
   + [[https://github.com/folke/edgy.nvim][Edgy.nvim @Github]]
-** ABRT Integrate Yazelix :YAZI:NVIM:
+** ABRT Integrate Yazelix :@Yazi:@Nvim:
 CLOSED: [2026-02-04 Wed 06:32]
 - *OBJECTIVE:*  Integrate =yazi= as =nvim= file manager
 - *Reference:*  [[https://github.com/luccahuguet/yazelix][Yazelix upstream @Github]]
-** DONE Convert Latex Inline syntax :ORGMODE:PANDOC:mathrender:
+** DONE Convert Latex Inline syntax :@Orgmode:@Pandoc:MathRender:
 DEADLINE: <2026-02-08 Sun> CLOSED: [2026-02-08 Sun 19:02]
 :PROPERTIES:
 :ID: 5b0b8051-94bb-4202-9261-b3c33d9f53bd
 :END:
 - *OBJECTIVE:*  Convert =double-dollar-sign= to =single-dollar-sign= using script before piping into =pandoc=
 - *Visit:*  [[id:6281ae01-c59e-4476-9c9d-d81d0c14b4e0][Testing Inline Math Render @Org]]
-** PEND Change Default SearXNG Instance :QUTEBROWSER:
+** PEND Change Default SearXNG Instance :@Qutebrowser:
 :PROPERTIES:
 :ID: ec1db4c5-1de3-43db-b5d6-952c30c8817f
 :END:
 - *OBJECTIVE:*  Change default =searxng= search with on =qutebrowser=
-** DONE Modularize Kitty Config :KITTY:
+** DONE Modularize Kitty Config :@Kitty:
 DEADLINE: <2026-02-10 Tue> CLOSED: [2026-02-11 Wed 19:21]
 :PROPERTIES:
 :ID: 23608767-82be-4f32-b244-b2aab9e23f3e
 :END:
 - *OBJECTIVE:*  Make kitty =config= modular instead of single-file
-** TODO Nvim-orgmode Multiple Agenda :NVIM:ORGMODE:
+** TODO Nvim-orgmode Multiple Agenda :@Nvim:@Orgmode:
 :PROPERTIES:
 :ID: 7981ea28-2765-4574-a79a-d48b54d262c8
 :END:
 - *OBJECTIVE:*  Allow opening multiple =nvim-orgmode.agenda= sessions
-** ABRT Initiate Project Org-Notebook :ORGMODE:NVIM:KITTY:
+** ABRT Initiate Project Org-Notebook :@Orgmode:@Nvim:@Kitty:
 DEADLINE: <2026-02-21 Sat> CLOSED: [2026-02-26 Thu 18:56]
 :PROPERTIES:
 :ID: cc2c2273-21dd-4ac9-8523-e6e6ffbb77e6

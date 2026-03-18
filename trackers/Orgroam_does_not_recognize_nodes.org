@@ -6,10 +6,10 @@
 #+OPTIONS: todo:t tags:nil tasks:t ^:nil toc:nil
 #+LATEX_HEADER: \renewcommand\maketitle{} \usepackage[scaled]{helvet} \renewcommand\familydefault{\sfdefault}
 #+TODO: OPEN(y) (e) PROG(g) INTR(q) NEXT(n) | ABRT(a) DONE(f) CLSD(c)
-#+FILETAGS: :%Tracker:meta:ORGMODE:ORGROAM:
+#+FILETAGS: :typTracker:meta:@Orgmode:ORGROAM:
 #+HTML:<details>
 
-* DONE Orgroam does not recognize nodes :%Tracker:meta:ORGMODE:ORGROAM:
+* DONE Orgroam does not recognize nodes :typTracker:meta:@Orgmode:ORGROAM:
 CLOSED: [2026-02-17 Tue 02:44]
 #+HTML:</details>
 Fixing =org-roam= issue that sometimes does not recognize some nodes \\

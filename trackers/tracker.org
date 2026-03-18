@@ -4,8 +4,8 @@
 
 #+OPTIONS: todo:t tags:nil tasks:t ^:nil toc:nil
 #+TODO: OPEN(y) (e) PROG(g) INTR(q) NEXT(n) | ABRT(a) DONE(f) CLSD(c)
-* Trackers List :PACKAGES:%Tracker:meta:
-** OPEN Nvim-orgmode Babel Tangle :NVIM:ORGMODE:
+* Trackers List :PACKAGES:typTracker:meta:
+** OPEN Nvim-orgmode Babel Tangle :@Nvim:@Orgmode:
 :PROPERTIES:
 :ID: cbf6f577-5700-4e40-88bc-3b6160c732b4
 :END:
@@ -24,7 +24,7 @@ print("Headline2")
 #+BEGIN_SRC lua :tangle no
 print("Headline3")
 #+END_SRC
-** DONE Opencode Workflow :OPENCODE:AI:
+** DONE Opencode Workflow :@OpenCode:AI:
 DEADLINE: <2026-03-09 Mon> CLOSED: [2026-03-11 Wed 16:29]
 :PROPERTIES:
 :ID: 407ddfe2-b174-4e4d-a080-16e17867dd23
@@ -57,7 +57,7 @@ CLOSED: [2026-03-10 Tue 11:09]
   + [X] [[shell:sudo grep -r "/home/whammou" /home/whammou/.local/bin 2>/dev/null | grep -v ".pacnew &| bat"][Check .local/bin]]
   + [X] [[shell:sudo grep -r "/home/whammou" /etc/ 2>/dev/null | grep -v ".pacnew &| bat"][Check /etc/]]
 - [X] Manage second =HOME= via =unision=
-** CLSD Notification Receiving Order :NTFY:
+** CLSD Notification Receiving Order :@Ntfy:
 CLOSED: [2026-03-15 Sun 21:23]
 :PROPERTIES:
 :ID: 80c594f7-22ee-4fe7-b758-6474d80f0f94

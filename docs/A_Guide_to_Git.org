@@ -7,10 +7,10 @@
 #+OPTIONS: title:nil tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
 #+LATEX_HEADER: \renewcommand\maketitle{} \usepackage[scaled]{helvet} \renewcommand\familydefault{\sfdefault}
 #+TODO: TODO(t) (e) DOIN(d) PEND(p) OUTL(o) EXPL(x) FDBK(b) WAIT(w) NEXT(n) IDEA(i) | ABRT(a) PRTL(r) RVIW(v) DONE(f)
-#+FILETAGS: :%Doc:@Project:PACKAGES:GIT:
+#+FILETAGS: :typDoc:@Project:PACKAGES:@Git:
 #+HTML:<details>
 
-* A Guide to Git :%Doc:meta:PACKAGES:GIT:
+* A Guide to Git :typDoc:meta:PACKAGES:@Git:
 #+HTML:</details>
 - *OBJECTIVE:* /Improve workflow with nvim, fugitive, lazygit/
 - *References:*
@@ -120,7 +120,7 @@ Closes D2IQ-12345
 *** Encryption Manager
 /What is an encryption manager/ \\
 /Check-out:/ [[https://github.com/getsops/sops][Getsops @Github-repo]]
-** DONE Managing A Nested Git Project :GIT:MANAGEMENT:
+** DONE Managing A Nested Git Project :@Git:MANAGEMENT:
 DEADLINE: <2025-10-06 Mon> CLOSED: [2025-10-06 Mon 17:42]
 :PROPERTIES:
 :ID: 0ac3ce98-9f59-468f-acfd-c494c879986b
