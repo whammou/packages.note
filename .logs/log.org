@@ -524,7 +524,7 @@ CLOSED: [2025-07-19 Sat 22:43]
 - *References:*
   - [[https://github.com/danielmiessler/fabric][Fabric @Gtihub]]
   - [[https://www.reddit.com/r/PromptEngineering/][r/PromptEngineering @Reddit]]
-*** ABRT Fzf menu script :FZF:
+*** ABRT Fzf menu script :@Fzf:
 CLOSED: [2025-07-19 Sat 22:46]
 :PROPERTIES:
 :ID:       36141277-e892-4034-a47e-468c825e188b

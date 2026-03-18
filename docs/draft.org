@@ -14,7 +14,7 @@
 [!WARNING]
 Draft items are subjected to change and refile!
 #+END_QUOTE
-** OUTL Fzf Scripting :SCRIPTING:FZF:
+** OUTL Fzf Scripting :SCRIPTING:@Fzf:
 :PROPERTIES:
 :ID:       0635a10c-d33b-457f-b2eb-8d91480684bd
 :END:

@@ -63,7 +63,7 @@ CLOCK: [2025-06-30 Mon 22:49]--[2025-07-01 Tue 00:11] => 1:22
 ** PEND Qutebrowser multiple mode keybind :@Qutebrowser:
 - *OBJECTIVE:* How to bind key in different modes
 - *Reference:* [[qute://help/configuring.html][Configurating qutebrowser @Doc-qutebrowser]]
-** PEND Detect git repos from system :@Git:FZF:
+** PEND Detect git repos from system :@Git:@Fzf:
 - /Detect system wise git repos the use fzf to open lazygit at repo location/
 ** PEND Qtile keymap in json :@Qtile:
 - *Idea:* /Write key map and run in python/
