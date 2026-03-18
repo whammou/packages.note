@@ -461,7 +461,7 @@ CLOSED: [2025-11-19 Wed 00:47] DEADLINE: <2025-11-19 Wed 18:00>
 ** ABRT Config blink.cmp for Org :@Orgmode:@Nvim:
 CLOSED: [2026-02-03 Tue 07:33]
 - *OBJECTIVE:* Config =blink.cmp= to suggest =org-property= in =cmdline=
-** PEND Sorting Headlines :@Orgmode:SORTING:
+** PEND Sorting Headlines :@Orgmode:_Sort:
 - *OBJECTIVE:* Sorting headlines in =orgmode=
 - *Reference:* [[https://github.com/hoclun-rigsep/org-sort][sorting headlines script @Github]]
 ** PEND Config yazi UI :@Yazi:
