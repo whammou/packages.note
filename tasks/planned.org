@@ -324,7 +324,6 @@ DEADLINE: <2026-02-21 Sat> CLOSED: [2026-02-26 Thu 18:56]
 - *Reference:*  [[https://sw.kovidgoyal.net/kitty/sessions/][Kitty Session @Doc]]
 - *Tracker:*    [[id:495bb16e-db11-4ee3-b754-2fb9db54dfc8][Executing Tracker Note via Kitty @Issue]]
 ** DOIN Nvim Buffer Options :@Nvim:@Orgmode:_Config:
-DEADLINE: <2026-03-21 Sat>
 :PROPERTIES:
 :ID: 31d99693-afe8-4a41-b1e3-c6016d8d99e2
 :END:
