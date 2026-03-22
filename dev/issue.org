@@ -70,9 +70,52 @@ Reverse notification receiving order oldest-latest
 
 This is not an =ntfy= problem but rather a misconfigure from =dunstrc=
 - Use ~sort=id~ in stead of /sort=update/ in =~/.config/dunst/dunstrc=
-** OPEN Nvim Opencode Condition :@OpenCode:@Nvim:
-DEADLINE: <2026-03-22 Sun>
+** DONE Nvim Opencode Condition :@OpenCode:@Nvim:
+DEADLINE: <2026-03-22 Sun> CLOSED: [2026-03-23 Mon 02:30]
 :PROPERTIES:
 :ID: d4aaa9cb-c153-40f9-80ac-5707a985116e
 :END:
-/Open or attach to an =opencode= session depends on server status/
+/Open or attach to an =opencode= session depends on server status/ \\
+Divide instance into 2 mode:
+- Launch new =opencode= instance (local)
+- Re-attach to a =opencode= if the service is up (remote)
+#+name: sidekick setup
+#+begin_src lua
+require("sidekick").setup({
+	-- add any options here
+	cli = {
+		win = {
+			layout = "bottom",
+			split = {
+				width = 0,
+				height = 0,
+			},
+			config = function(terminal)
+				local dir = vim.b.sidekick_cwd or vim.loop.cwd()
+				terminal.tool.cmd[#terminal.tool.cmd] = dir
+			end,
+		},
+		mux = {
+			backend = "tmux",
+			enabled = false,
+		},
+		tools = {
+			opencode = {
+				cmd = { "opencode", "/tmp/placeholder" },
+			},
+			opencode_attach = {
+				cmd = {
+					"opencode",
+					"attach",
+					"-p",
+					opencode_project_id,
+					opencode_server,
+					"--continue",
+					"--dir",
+					"/tmp/placeholder",
+				},
+			},
+		},
+	},
+})
+#+end_src
