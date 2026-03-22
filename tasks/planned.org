@@ -332,4 +332,3 @@ DEADLINE: <2026-03-21 Sat>
   + [ ] Set specific buffer options in nvim
   + [ ] Orgmode spellings option
 - *Reference:*  [[https://opncd.ai/share/ZnYkdnu2][Set local buffer option @Session]]
-  
