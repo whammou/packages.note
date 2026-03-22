@@ -233,3 +233,10 @@ CLOSED: [2026-03-15 Sun 21:25]
 - *OBJECTIVE:*  Receiving =ntfy= notification following specific order default/reverse
 - *Tracker:*    [[id:80c594f7-22ee-4fe7-b758-6474d80f0f94][Notification Receiving Order @Issue]]
 - *Reference:*  [[https://docs.ntfy.sh/subscribe/api/#fetch-cached-messages][Fetch cached message @Ntfy-doc]]
+** TODO Refactor ntfy-listener Service :@Ntfy:_Refactor:
+DEADLINE: <2026-03-22 Sun>
+:PROPERTIES:
+:ID: 752eb881-6f48-4de1-9670-866ecb50a63a
+:END:
+- *OBJECTIVE:*  Simplify the =ntfy-listener= service with =ntfy-client=
+- *Reference:*  [[https://docs.ntfy.sh/subscribe/cli/][Ntfy cli @Doc]]
