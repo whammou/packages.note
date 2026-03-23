@@ -258,7 +258,7 @@ CLOSED: [2026-02-04 Wed 05:51]
 *** TODO Chezmoi Integrations
 - *OBJECTIVE:*  Integrate =chezmoi= to current workflow /(including =nvim= and =yazi=)/
 **** DONE Chezmoi Neovim Integration
-DEADLINE: <2026-02-04 Wed> CLOSED: [2026-02-04 Wed 02:01]
+CLOSED: [2026-02-04 Wed 02:01] DEADLINE: <2026-02-04 Wed>
 - *OBJECTIVE:*  Integrate =chezmoi= into =neovim= /(For faster config edition)/
 - *Reference:*
   + [[https://github.com/xvzc/chezmoi.nvim][Chezmoi.nvim @Github]]
@@ -266,7 +266,6 @@ DEADLINE: <2026-02-04 Wed> CLOSED: [2026-02-04 Wed 02:01]
 **** TODO Chezmoi Yazi Integration
 - *OBJECTIVE:*  Integrate =chezmoi= into yazi and vice-versa
 - *Reference:*  [[https://github.com/sxyazi/yazi/discussions/1872#discussioncomment-11112852][Yazi chezmoi discussion @Github]]
-
 *** TODO Switching To Chezmoi :@Stow:
 - *OBJECTIVE:*  Moving =dotfiles= from =gnu-stow= to =chezmoi=
 **** TODO Create Chezmoi Dest-Dir
@@ -293,40 +292,40 @@ CLOSED: [2026-02-04 Wed 06:32]
 - *OBJECTIVE:*  Integrate =yazi= as =nvim= file manager
 - *Reference:*  [[https://github.com/luccahuguet/yazelix][Yazelix upstream @Github]]
 ** DONE Convert Latex Inline syntax :@Orgmode:@Pandoc:MathRender:
-DEADLINE: <2026-02-08 Sun> CLOSED: [2026-02-08 Sun 19:02]
+CLOSED: [2026-02-08 Sun 19:02] DEADLINE: <2026-02-08 Sun>
 :PROPERTIES:
-:ID: 5b0b8051-94bb-4202-9261-b3c33d9f53bd
+:ID:       5b0b8051-94bb-4202-9261-b3c33d9f53bd
 :END:
 - *OBJECTIVE:*  Convert =double-dollar-sign= to =single-dollar-sign= using script before piping into =pandoc=
 - *Visit:*  [[id:6281ae01-c59e-4476-9c9d-d81d0c14b4e0][Testing Inline Math Render @Org]]
 ** PEND Change Default SearXNG Instance :@Qutebrowser:
 :PROPERTIES:
-:ID: ec1db4c5-1de3-43db-b5d6-952c30c8817f
+:ID:       ec1db4c5-1de3-43db-b5d6-952c30c8817f
 :END:
 - *OBJECTIVE:*  Change default =searxng= search with on =qutebrowser=
 ** DONE Modularize Kitty Config :@Kitty:
-DEADLINE: <2026-02-10 Tue> CLOSED: [2026-02-11 Wed 19:21]
+CLOSED: [2026-02-11 Wed 19:21] DEADLINE: <2026-02-10 Tue>
 :PROPERTIES:
-:ID: 23608767-82be-4f32-b244-b2aab9e23f3e
+:ID:       23608767-82be-4f32-b244-b2aab9e23f3e
 :END:
 - *OBJECTIVE:*  Make kitty =config= modular instead of single-file
 ** TODO Nvim-orgmode Multiple Agenda :@Nvim:@Orgmode:
 :PROPERTIES:
-:ID: 7981ea28-2765-4574-a79a-d48b54d262c8
+:ID:       7981ea28-2765-4574-a79a-d48b54d262c8
 :END:
 - *OBJECTIVE:*  Allow opening multiple =nvim-orgmode.agenda= sessions
 ** ABRT Initiate Project Org-Notebook :@Orgmode:@Nvim:@Kitty:
-DEADLINE: <2026-02-21 Sat> CLOSED: [2026-02-26 Thu 18:56]
+CLOSED: [2026-02-26 Thu 18:56] DEADLINE: <2026-02-21 Sat>
 :PROPERTIES:
-:ID: cc2c2273-21dd-4ac9-8523-e6e6ffbb77e6
+:ID:       cc2c2273-21dd-4ac9-8523-e6e6ffbb77e6
 :END:
 - *OBJECTIVE:*  Create a =note-book= like session with =kitty=
 - *Reference:*  [[https://sw.kovidgoyal.net/kitty/sessions/][Kitty Session @Doc]]
 - *Tracker:*    [[id:495bb16e-db11-4ee3-b754-2fb9db54dfc8][Executing Tracker Note via Kitty @Issue]]
-** DOIN Nvim Buffer Options :@Nvim:@Orgmode:_Config:
-DEADLINE: <2026-03-23 Mon>
+** DONE Nvim Buffer Options :@Nvim:@Orgmode:_Config:
+CLOSED: [2026-03-23 Mon 21:33] DEADLINE: <2026-03-23 Mon>
 :PROPERTIES:
-:ID: 31d99693-afe8-4a41-b1e3-c6016d8d99e2
+:ID:       31d99693-afe8-4a41-b1e3-c6016d8d99e2
 :END:
 - *OBJECTIVE:*
   + [ ] Set specific buffer options in nvim
