@@ -119,3 +119,12 @@ require("sidekick").setup({
 	},
 })
 #+end_src
+** !IMPLEMENT Qtile Custom and Built-in Hooks :subQtile:
+:PROPERTIES:
+:ID: 68f4414f-404b-45a0-b846-cade3d4ced48
+:END:
+#+name: Desciption
+#+begin_quote markdown
+Search for qtile hooks which fires when a session is resume
+#+end_quote
+
