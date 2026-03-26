@@ -9,10 +9,13 @@
 #+FILETAGS: :typDoc:@Project:PACKAGES:@Nvim:_Snippet:
 #+HTML:<details>
 
-* NEXT Nvim Configurations :typDoc:meta:PACKAGES:@Nvim:
+* WAIT Nvim Configurations :typDoc:meta:PACKAGES:@Nvim:
 #+HTML:</details>
 - *OBJECTIVE:* Custom snippets to boost productivity
 ** DONE Friendly snippet insert date :FriendlySnip:NvimSnippets:
+:PROPERTIES:
+:ID: 878b39d3-8bb6-4d54-a25d-27c2e86540c8
+:END:
 CLOSED: [2025-07-12 Sat 22:20] DEADLINE: <2025-07-12 Sat 22:30>
 - *OBJECTIVE:* /Create note block with today inserted/
 - *[NOTE]* taken on <2025-07-12 22:18>:
@@ -27,7 +30,43 @@ CLOSED: [2025-07-12 Sat 22:20] DEADLINE: <2025-07-12 Sat 22:30>
   + [[https://l.opnxng.com/r/neovim/comments/wi4uf3/how_do_i_insert_current_date_or_time/][Insert today date in friendly snippet @Reddit]]
   + [[https://www.deepanseeralan.com/tech/insert-datetime-vscode-using-snippets/][Insert date and time in vscode @Blog]]
   + [[https://mybyways.com/blog/vs-code-snippet-to-insert-formatted-date-and-time][VScode snippet for date time @Blog]]
-** PEND LuaSnip syntax :LuaSnip:
+** DOIN LuaSnip syntax :LuaSnip:
+:PROPERTIES:
+:ID: 878b39d3-8bb6-4d54-a25d-27c2e86540c8
+:END:
 #+begin_quote markdown
 Writing custom snippets using lua and manage with =LuaSnip=
 #+end_quote
+
+Different types of LuaSnip =node=
+#+name: LuaSnip nodes
+#+begin_src lua
+local ls = require("luasnip")
+local s = ls.snippet
+local sn = ls.snippet_node
+local isn = ls.indent_snippet_node
+local t = ls.text_node
+local i = ls.insert_node
+local f = ls.function_node
+local c = ls.choice_node
+local d = ls.dynamic_node
+local r = ls.restore_node
+local events = require("luasnip.util.events")
+local ai = require("luasnip.nodes.absolute_indexer")
+local opt = require("luasnip.nodes.optional_arg")
+local extras = require("luasnip.extras")
+local l = extras.lambda
+local rep = extras.rep
+local p = extras.partial
+local m = extras.match
+local n = extras.nonempty
+local dl = extras.dynamic_lambda
+local fmt = require("luasnip.extras.fmt").fmt
+local fmta = require("luasnip.extras.fmt").fmta
+local conds = require("luasnip.extras.expand_conditions")
+local postfix = require("luasnip.extras.postfix").postfix
+local types = require("luasnip.util.types")
+local parse = require("luasnip.util.parser").parse_snippet
+local ms = ls.multi_snippet
+local k = require("luasnip.nodes.key_indexer").new_key
+#+end_src

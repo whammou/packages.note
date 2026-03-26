@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: 5637a92f-3b22-4694-9411-f137729157a0
+:ROAM_ORIGIN: f5862e01-e346-40ad-a920-b7ea92203259
+:END:
+#+TITLE: LuaSnip Introduction
+
+#+OPTIONS: title:nil tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
+#+TODO: TODO(t) (e) DOIN(d) PEND(p) OUTL(o) EXPL(x) FDBK(b) WAIT(w) NEXT(n) IDEA(i) | ABRT(a) PRTL(r) RVIW(v) DONE(f)
+#+FILETAGS: :typDoc:meta:subNvim@subLuaSnip:
+#+HTML:<details>
+* LuaSnip Introduction :typDoc:meta:subNvim@subLuaSnip:
+
+#+HTML:</details>
+
