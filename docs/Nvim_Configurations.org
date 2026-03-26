@@ -6,7 +6,7 @@
 
 #+OPTIONS: title:nil tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
 #+TODO: TODO(t) (e) DOIN(d) PEND(p) OUTL(o) EXPL(x) FDBK(b) WAIT(w) NEXT(n) IDEA(i) | ABRT(a) PRTL(r) RVIW(v) DONE(f)
-#+FILETAGS: :typDoc:subProject:PACKAGES:subNvim:_Snippet:
+#+FILETAGS: :typDoc:subProject:PACKAGES:subNvim:opSnippet:
 #+HTML:<details>
 
 * WAIT Nvim Configurations :typDoc:meta:PACKAGES:subNvim:

@@ -10,7 +10,7 @@
 CLOSED: [2025-10-23 Thu 01:55] DEADLINE: <2025-10-23 Thu>
 - *OBJECTIVE:* Seamless workflow with =tmux= on =homelab=
 - *Visit:* [[id:36fece3a-2c38-48ec-bc23-73f11ddb5e13][Initiate tmux on Homelab @Org]]
-** TODO Get gdrive shareable link :subRclone:_Drive:
+** TODO Get gdrive shareable link :subRclone:opDrive:
 :PROPERTIES:
 :ID:       d429546e-1ada-4fff-b364-4a8743a4643c
 :END:
@@ -74,7 +74,7 @@ CLOSED: [2025-11-07 Fri 05:01] DEADLINE: <2025-11-07 Fri>
   + [[https://github.com/dunst-project/dunst/issues/163][Action on click notification @Github-issue]]
   + [[https://github.com/dunst-project/dunst/discussions/1251][Run Script on Mouse Click @Github-issue]]
   + [[https://wiki.archlinux.org/title/Dunst#Actions][Dunst Actions @Archwiki]]
-** ABRT Qutebrowser High Memory Usage :subQutebrowser:_Memory:
+** ABRT Qutebrowser High Memory Usage :subQutebrowser:opMemory:
 CLOSED: [2026-01-17 Sat 12:45]
 - *OBJECTIVE:* Debug =qutebrowser= use too much memory
 - *Reference:*
@@ -237,7 +237,7 @@ CLOSED: [2025-12-25 Thu 18:12] DEADLINE: <2025-12-25 Thu>
   + Invoke with =<leaer>oo=
   + [[shell:lazygit -p ~/dotfiles]]
 - *Reference:* [[https://nvim-orgmode.github.io/configuration#custom-hyperlink-types][Nvim-orgmode custom hyperlinks @Github]]
-** PEND Custom Orgmode Agenda :subOrgmode:_Productivity:
+** PEND Custom Orgmode Agenda :subOrgmode:opProductivity:
 - *OBJECTIVE:* Custom =orgmode-agenda= for productivity
 - [[https://www.youtube.com/embed/-9rpQA6O3aM][Customize orgmode agenda for productivity @Youtube]]
 ** ABRT Learn Hyprland-WM :subHyprland:subWayland:
@@ -322,7 +322,7 @@ CLOSED: [2026-02-26 Thu 18:56] DEADLINE: <2026-02-21 Sat>
 - *OBJECTIVE:*  Create a =note-book= like session with =kitty=
 - *Reference:*  [[https://sw.kovidgoyal.net/kitty/sessions/][Kitty Session @Doc]]
 - *Tracker:*    [[id:495bb16e-db11-4ee3-b754-2fb9db54dfc8][Executing Tracker Note via Kitty @Issue]]
-** DONE Nvim Buffer Options :subNvim:subOrgmode:_Config:
+** DONE Nvim Buffer Options :subNvim:subOrgmode:opConfig:
 CLOSED: [2026-03-23 Mon 21:33] DEADLINE: <2026-03-23 Mon>
 :PROPERTIES:
 :ID:       31d99693-afe8-4a41-b1e3-c6016d8d99e2
