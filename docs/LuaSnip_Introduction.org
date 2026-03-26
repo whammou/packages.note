@@ -11,4 +11,45 @@
 * LuaSnip Introduction :typDoc:meta:subNvim@subLuaSnip:
 
 #+HTML:</details>
+LuaSnip doc that summarizes the official [[https://github.com/L3MON4D3/LuaSnip/blob/master/DOC.md][LuaSnip Doc]] on github
+** Basics :content:
+:PROPERTIES:
+:ID: a09bb82a-7b41-40ab-a05f-bfac3e923cc5
+:END:
+In LuaSnip, snippets are made up of =nodes=. These can contain either
+- static text =textNode=
+- text that can be edited =insertNode=
+- text that can be generated from the contents of other nodes =functionNode=
+- other nodes:
+  + =choiceNode=: allows choosing between two node (which might contain more nodes)
+  + =restoreNode=: store and restore input to nodes
+- or nodes that can be generated based on input =dynamicNode=
+
+Snippets are always created using the =s(trigger:string, node:table)=-function. It creates a snippet that contains the nodes specified in =nodes=, which will be inserted into a buffer if the text before the cursor matches =trigger= when =ls.expand= is called
+
+** Adding Snippets :content:
+:PROPERTIES:
+:ID: c67701f4-452a-421d-a925-e1c46ff02380
+:END:
+The snippets for a given filetype have to be added to LuaSnip via =ls.add.snippet(filtype, snippets)=
+
+#+name: Global snippets
+#+begin_quote markdown
+[!NOTE]
+snippets that should be accessible globally (in all filetypes) have to be added to the special filetype =all=
+#+end_quote
+
+#+begin_src lua
+ls.add_snippets("all", {
+	s("ternary", {
+		-- equivalent to "${1:cond} ? ${2:then} : ${3:else}"
+		i(1, "cond"), t(" ? "), i(2, "then"), t(" : "), i(3, "else")
+	})
+})
+#+end_src
+It is possible to make snippets form on filetype available to another using =ls.filtype_extend=
+** Snippet Insertion :content:
+:PROPERTIES:
+:ID: 4b8a9406-fe58-4cba-a569-639f00af598f
+:END:
 
