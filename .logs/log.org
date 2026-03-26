@@ -4,24 +4,24 @@
 
 * Logs :LOG:OPSYS:PACKAGES:
 - /Store finished tasks/
-** DONE SSH to Github :@Github:
+** DONE SSH to Github :subGithub:
 CLOSED: [2025-01-10 Fri 05:51] DEADLINE: <2025-01-09 Thu 05:00>
 - *Objective:* generate ssh key and successfully pull repos from github
-** DONE Qtile toggle fullscreen floating :@Qtile:
+** DONE Qtile toggle fullscreen floating :subQtile:
 CLOSED: [2025-06-24 Tue 22:44] DEADLINE: <2025-06-24 Tue>
 - *OBJECTIVE:* Toggle between fullscreen and floating window
 - *Issue:* Toggle fullscreen to floating causes qtile to crash
   - *Checkout:* [[https://github.com/whammou/dotfiles/commit/e99f96a1349c58e4954de83477c67dc384b4454d][Fixed toogle fullscreen crash @Commit]]
-** DONE Update yazi plugins :@Yazi:
+** DONE Update yazi plugins :subYazi:
 CLOSED: [2025-03-23 Sun 14:56] DEADLINE: <2025-03-23 Sun 20:00>
 - /Update yazi plugins:/
   - [X] parent-arrows.lua 
   - [X] checkout plugsin [[https://yazi-rs.github.io/docs/resources/][list]]
-** DONE Faster navigate files :@Nvim:@Yazi:
+** DONE Faster navigate files :subNvim:subYazi:
 CLOSED: [2025-06-01 Sun 01:31]
 - *Objective:* /navigate faster with nvim and yazi/
 - *References:* [[https://www.youtube.com/watch?v=xy9sSVx2cfk#__preview][How I navigate my files @Youtube-preview]]
-** DONE Nvim-lsp :@Nvim:
+** DONE Nvim-lsp :subNvim:
 CLOSED: [2025-05-24 Sat 01:19]
 Nvim supports the Language Server Protocol (LSP), which means it acts as a client to LSP servers and includes a Lua framework `vim.lsp` for building enhanced LSP tools
 - *Run:* ~:help lsp~ for nvim-lsp guide
@@ -31,10 +31,10 @@ The ~Language Server Protocol~ (LSP) is an open, JSON-RPC-based protocol for use
 *** Markup language server
 Generally a good markup language server is texlab
 - *Resources:* [[https://github.com/latex-lsp/texlab][texlab]]
-** DONE Nvim optimization [100%] :@Nvim:
+** DONE Nvim optimization [100%] :subNvim:
 CLOSED: [2025-06-06 Fri 11:08]
 - *Objective:* research ways to optimize nvim and manage new packages
-*** DONE Setup LazyVim :@Nvim:
+*** DONE Setup LazyVim :subNvim:
 CLOSED: [2025-01-24 Fri 21:31] DEADLINE: <2025-01-25 Sat 18:00>
 - *Goal(s):* convert [[~/dotfiles/nvim/.config/nvim/init.vim][init.vim]] to [[~/dotfiles/nvim-lua/.config/nvim/init.lua][init.lua]]
   - Run ~nvim +:help lua_guide"~ for built-in conversion guide from vim script to lua
@@ -95,7 +95,7 @@ CLOSED: [2025-05-24 Sat 01:20]
 CLOSED: [2025-01-15 Wed 21:19] DEADLINE: <2025-01-14 Tue 22:00>
 - *Objective:* successfully switching between different config dir
 - *Resource:* [[https://michaeluloth.com/neovim-switch-configs/][switching config]]
-*** ABRT Disable when file is large [100%] :@Nvim:
+*** ABRT Disable when file is large [100%] :subNvim:
 CLOSED: [2025-06-06 Fri 11:08]
 - *Objective:* /Disable some features when dealing with large files/
 - *References:* [[https://l.opnxng.com/r/neovim/comments/1fy7jln/treesitter_slow_on_big_files_yet_am_i_the_only/][Nvim largefile hack @Reddit]]
@@ -104,7 +104,7 @@ CLOSED: [2025-06-06 Fri 11:08]
 CLOSED: [2025-06-06 Fri 11:08]
 - *Objective:* /Config bigfile-nvim for better typing experience/
 - *References:* [[https://github.com/LunarVim/bigfile.nvim][nvim-bigfile @Github]]
-** DONE Modular Qtile :@Qtile:
+** DONE Modular Qtile :subQtile:
 CLOSED: [2025-03-20 Thu 22:09]
 - *Objective:* successfully modularize ~qtile~ config
 - Config directory: 
@@ -114,7 +114,7 @@ CLOSED: [2025-03-20 Thu 22:09]
   - [x] Scratepad config: /create ~scratepads.py~/
   - [x] Options config: /create ~options.py~/
 - Working-tree dir:
-** DONE Config yazi [100%] :@Yazi:
+** DONE Config yazi [100%] :subYazi:
 CLOSED: [2025-05-22 Thu 06:25]
 - *Objective:* /Better workflow with yazi/
 *** DONE Integration Lazygit :LAZYGIT:
@@ -126,10 +126,10 @@ CLOSED: [2025-05-22 Thu 06:21]
 - *Objective:* separate hotkeys into ~EDIT~ and ~VIEW~:
   - [ ] Bind short-key to open ~EDIT~ such as: images, texts, docs
   - [ ] Bind short-key to open ~VIEW~ - view only for images and texts/docs
-*** DONE Yazi fish integration [0%] :@Yazi:
+*** DONE Yazi fish integration [0%] :subYazi:
 CLOSED: [2025-04-19 Sat 17:49] DEADLINE: <2025-04-19 Sat 17:00>
 - /Open yazi at typed dir in fish shell/
-** DONE Config vim completion [100%] :@Nvim:
+** DONE Config vim completion [100%] :subNvim:
 CLOSED: [2025-05-23 Fri 01:44]
 - *Objective:* successfully replace ~ultil-snip~ with ~blink-nvim~ and ~lua-snip~
 - *Visit:* [[https://a.opnxng.com/exchange/vi.stackexchange.com/questions/41733/how-to-set-up-luasnip-in-neovim-w-lsp-zero][nvim-cmp#external-sources]]
@@ -160,7 +160,7 @@ CLOSED: [2025-03-16 Sun 20:23]
 *** ABRT configure nvim-cmp
 CLOSED: [2025-03-16 Sun 20:23]
 - *Goal(s):* configure ~nvim-cmp~
-** DONE Hacking on with qtile [100%] :@Qtile:
+** DONE Hacking on with qtile [100%] :subQtile:
 CLOSED: [2025-06-23 Mon 21:23]
 - *OBJECTIVE:* /Assign spawn grouping and layouts/
 *** DONE Hooks and custom functions
@@ -242,7 +242,7 @@ CLOSED: [2025-06-08 Sun 05:07] DEADLINE: <2025-05-09 Fri 18:00>
 *** DONE Spawn window from links [100%]
 CLOSED: [2025-06-23 Mon 21:24]
 - *OBJECTIVE:* /Successfully show window in pre-defined layout/
-**** DONE Determine spawn filetype :@Handlr:@Kitty: [100%]
+**** DONE Determine spawn filetype :subHandlr:subKitty: [100%]
 CLOSED: [2025-06-10 Tue 14:59]
 - *OBJECTIVE:* /Determine which program to open a filetype/
   1. [X] Write script to open if text file then ~nvim.desktop~ else fall back to ~xdg-open~
@@ -262,7 +262,7 @@ CLOSED: [2025-06-10 Tue 14:59]
 CLOSED: [2025-06-08 Sun 05:02]
 - /*Objective:* Tell qtile which layout to spawn the window in/
 - *Reference:* [[id:88bbe7c3-ba9a-4bad-adf8-b523dd0c1c26][Spawn layout commands @Orgmode]]
-** DONE Working with rofi [100%] :@Rofi:
+** DONE Working with rofi [100%] :subRofi:
 CLOSED: [2025-06-11 Wed 23:45]
 - *OBJECTIVE:* /Implement rofi to workflow/
 - *Visit:* [[https://davatorium.github.io/rofi/][Rofi official page @Doc-rofi]]
@@ -316,7 +316,7 @@ CLOSED: [2025-04-12 Sat 22:34] DEADLINE: <2025-04-12 Sat 20:00>
 CLOSED: [2025-04-24 Thu 16:50] DEADLINE: <2025-04-24 Thu 20:30>
 - /Create function to edit current token/
 - *Run:* ~bat --color always $arg &| less --color~
-** DONE Media Control :@Rofi:PLAYERCTL:
+** DONE Media Control :subRofi:PLAYERCTL:
 CLOSED: [2025-07-07 Mon 22:22] DEADLINE: <2025-07-07 Mon>
 - *OBJECTIVE:* Pause/playing playing media
 - *[NOTE]* taken on [2025-07-07 22:07]:
@@ -325,15 +325,15 @@ CLOSED: [2025-07-07 Mon 22:22] DEADLINE: <2025-07-07 Mon>
   - [[https://old.reddit.com/r/mpv/comments/sx8o2t/is_there_a_way_to_playpause_multiple_instances_of/][Pause playing media instance @Reddit]]
   - [[https://github.com/altdesktop/playerctl][Playerctl #Github]]
   - [[https://wiki.archlinux.org/title/MPRIS#Playerctl][Setup playerctl @Archwiki]]
-** DONE Nvim folding keybinds :@Nvim:
+** DONE Nvim folding keybinds :subNvim:
 CLOSED: [2025-07-22 Tue 16:18]
 - *OBJECTIVE:* Bind keys to quickly navigate foldings in nvim
-** DONE Nvim indent align :@Nvim:
+** DONE Nvim indent align :subNvim:
 CLOSED: [2025-07-23 Wed 20:15] DEADLINE: <2025-07-23 Wed>
 - *Objective:* /Manage nvim virtual indentaion alignment in plugins:/
   - [X] ~nvim-orgmode~ 
   - [X] ~render-markdown~
-*** DONE Resolve indention conflict :ORGZLY:@Nvim:@Orgmode:
+*** DONE Resolve indention conflict :ORGZLY:subNvim:subOrgmode:
 CLOSED: [2025-07-23 Wed 17:17] DEADLINE: <2025-07-23 Wed>
 - *OBJECTIVE:* Resolve mis-match indention between projects
 -----
@@ -342,7 +342,7 @@ CLOSED: [2025-07-23 Wed 17:17] DEADLINE: <2025-07-23 Wed>
   - Bandage solution is to use =virtual-indentation= on anything that is not code
 -----
 - *Reference:* [[https://old.reddit.com/r/orgmode/comments/igzze6/do_you_hardwrap_lines_in_your_org_files/][Hardwrap vs Softwrap @Reddit]]
-** DONE Media Control :@Rofi:
+** DONE Media Control :subRofi:
 CLOSED: [2025-07-10 Thu 05:40] DEADLINE: <2025-07-07 Mon>
 - *OBJECTIVE:* Pause/playing playing media
 - *Reference:* [[https://old.reddit.com/r/mpv/comments/sx8o2t/is_there_a_way_to_playpause_multiple_instances_of/][Pause playing media instance @Reddit]]
@@ -350,7 +350,7 @@ CLOSED: [2025-07-10 Thu 05:40] DEADLINE: <2025-07-07 Mon>
 CLOSED: [2025-07-19 Sat 22:43]
 - *OBJECTIVE:* Write fish completions for fabric-ai
 - *Reference:* [[https://fishshell.com/docs/current/completions.html][Custom completions @Doc-fish]]
-** DONE Changing filtype on open :@Nvim:@Orgmode:
+** DONE Changing filtype on open :subNvim:subOrgmode:
 CLOSED: [2025-07-23 Wed 19:40] DEADLINE: <2025-07-23 Wed>
 - *OBJECTIVE:* Change =org-roam-node-buffer= to =org=
 -----
@@ -398,7 +398,7 @@ CLOSED: [2025-07-23 Wed 19:36] DEADLINE: <2025-07-23 Wed>
   #+END_SRC
 -----
 - *Reference:* [[https://old.reddit.com/r/neovim/comments/xhtr1p/nvim_autocmd_filetype_option/][nvim autocmd per filetype @Reddit]]
-** DONE Insert file section to buffer :@Nvim:
+** DONE Insert file section to buffer :subNvim:
 CLOSED: [2025-07-18 Fri 14:52] DEADLINE: <2025-07-18 Fri>
 - *OBJECTIVE:* Pull text from a file to current buffer
 - *[NOTE]* taken on <2025-07-18 14:51>:
@@ -430,7 +430,7 @@ CLOSED: [2025-07-19 Sat 22:52] DEADLINE: <2025-07-19 Sat>
 - *Reference:*
   - [[file:/home/whammou/documents/local/ai-output/nvim-read-lines.md][Create a template for prompt @AI]]
   - [[file:/home/whammou/documents/local/ai-output/nvim-chain-command.md][Chain commands in nvim @AI]]
-** DONE Pandoc font settings :@Pandoc:
+** DONE Pandoc font settings :subPandoc:
 CLOSED: [2025-07-23 Wed 21:22] DEADLINE: <2025-07-23 Wed>
 :PROPERTIES:
 :ID:       4d35707a-871b-40e3-a7ba-84300fdc102e
@@ -444,7 +444,7 @@ CLOSED: [2025-07-23 Wed 21:22] DEADLINE: <2025-07-23 Wed>
 - *Reference:*
   - [[https://ao.bloat.cat/exchange/tex.stackexchange.com/questions/234786/how-to-set-a-font-family-with-pandoc][In-depth pandoc font settings @Overflow]]
   - [[file:~/documents/local/ai-output/font-org-pdf.md][Pandoc from orgmode to pdf @Gemini]]
-*** DONE Convert from org font settings :@Orgmode:
+*** DONE Convert from org font settings :subOrgmode:
 CLOSED: [2025-07-23 Wed 21:22]
 - *OBJECTIVE:* Define font-family when converting from =org=
 -----
@@ -455,7 +455,7 @@ CLOSED: [2025-07-23 Wed 21:22]
     #+END_SRC
 -----
 - *Reference:* [[https://old.reddit.com/r/orgmode/comments/lwgwfm/export_to_pdf_cannot_change_font_not_an_academic/][Change font using latex header @Reddit]]
-** DONE Org export formatting :@Orgmode:
+** DONE Org export formatting :subOrgmode:
 CLOSED: [2025-07-23 Wed 21:18]
 - *OBJECTIVE:* Prettify orgmode export format
 *** DONE Org remove tags/state pdf export
@@ -489,7 +489,7 @@ Horizontal rule using =markdown syntax=
   Horizontal rule works but with current custom css it seems to remove the line completely
 -----
 - *Reference:* [[https://orgmode.org/manual/Horizontal-Rules.html][Orgmode horizontal rule @Orgmode-doc]]
-*** DONE Org to pdf format :@Pandoc:
+*** DONE Org to pdf format :subPandoc:
 CLOSED: [2025-07-23 Wed 21:18] DEADLINE: <2025-07-23 Wed>
 :PROPERTIES:
 :ID:       dbd5573d-765a-4c2f-b610-daec56c76ac1
@@ -524,7 +524,7 @@ CLOSED: [2025-07-19 Sat 22:43]
 - *References:*
   - [[https://github.com/danielmiessler/fabric][Fabric @Gtihub]]
   - [[https://www.reddit.com/r/PromptEngineering/][r/PromptEngineering @Reddit]]
-*** ABRT Fzf menu script :@Fzf:
+*** ABRT Fzf menu script :subFzf:
 CLOSED: [2025-07-19 Sat 22:46]
 :PROPERTIES:
 :ID:       36141277-e892-4034-a47e-468c825e188b
@@ -534,7 +534,7 @@ CLOSED: [2025-07-19 Sat 22:46]
   - =Fabric-ai= already provide a completion for =fish-shell=
   - *Checkout:* [[https://github.com/danielmiessler/Fabric#shell-completions][Fabric-ai fish shell completion @Github]]
 - *Reference:* [[https://www.youtube.com/watch?v=qwpK4rqAZwA&t=57#__preview][notekami @Youtube-gotbletu]]
-** DONE Learn git ignore syntax :@Git:
+** DONE Learn git ignore syntax :subGit:
 CLOSED: [2025-07-26 Sat 20:05] DEADLINE: <2025-07-26 Sat>
 - *OBJECTIVE:* Learn =.gitignore= syntax
 - *Reference:*

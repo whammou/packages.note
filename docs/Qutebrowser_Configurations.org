@@ -6,10 +6,10 @@
 
 #+OPTIONS: title:nil tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
 #+TODO: TODO(t) (e) DOIN(d) PEND(p) OUTL(o) EXPL(x) FDBK(b) WAIT(w) NEXT(n) IDEA(i) | ABRT(a) PRTL(r) RVIW(v) DONE(f)
-#+FILETAGS: :typDoc:@Project:PACKAGES:@Qutebrowser:
+#+FILETAGS: :typDoc:subProject:PACKAGES:subQutebrowser:
 #+HTML:<details>
 
-* PRTL Qutebrowser Configurations [77%] :typDoc:meta:PACKAGES:@Qutebrowser:
+* PRTL Qutebrowser Configurations [77%] :typDoc:meta:PACKAGES:subQutebrowser:
 CLOSED: [2025-06-10 Tue 01:04]
 #+HTML:</details>
 - *OBJECTIVE:* implement text to speech to qutebrowser
@@ -27,7 +27,7 @@ CLOSED: [2025-01-28 Tue 03:19]
 CLOSED: [2025-05-04 Sun 08:44]
 - *OBJECTIVE:* /Add qutebrowser start-page/
   - *Visit:* [[https://nimplex.github.io/Minimal-StartPage/][start-page @ Search]]
-** PRTL Qutebrowser with Qtile [100%] :@Qtile:
+** PRTL Qutebrowser with Qtile [100%] :subQtile:
 CLOSED: [2025-05-22 Thu 06:03]
 - *OBJECTIVE:* /Integrate qutebrowser to qtile window manager/
 *** DONE Workaround window-bg

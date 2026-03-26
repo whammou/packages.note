@@ -6,7 +6,7 @@
 
 #+OPTIONS: title:nil tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
 #+TODO: TODO(t) (e) DOIN(d) PEND(p) OUTL(o) EXPL(x) FDBK(b) WAIT(w) NEXT(n) IDEA(i) | ABRT(a) PRTL(r) RVIW(v) DONE(f)
-#+FILETAGS: :typDoc:@Project:PACKAGES:ZETTELKASTEN:ORGROAM:
+#+FILETAGS: :typDoc:subProject:PACKAGES:ZETTELKASTEN:ORGROAM:
 #+HTML:<details>
 
 * Orgroam Implementation of Zettelkasten :typDoc:meta:PACKAGES:ZETTELKASTEN:ORGROAM:

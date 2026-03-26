@@ -5,10 +5,10 @@
 
 #+OPTIONS: title:nil tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
 #+TODO: TODO(t) (e) DOIN(d) PEND(p) OUTL(o) EXPL(x) FDBK(b) WAIT(w) NEXT(n) IDEA(i) | ABRT(a) PRTL(r) RVIW(v) DONE(f)
-#+FILETAGS: :typDoc:meta:PACKAGES:@Fzf:
+#+FILETAGS: :typDoc:meta:PACKAGES:subFzf:
 #+HTML:<details>
 
-* Fzf Configuration :typDoc:meta:PACKAGES:@Fzf:
+* Fzf Configuration :typDoc:meta:PACKAGES:subFzf:
 #+HTML:</details>
 - *Objective:* /Config/ ~fzf~ /theme and function//
 ** DONE Theming fzf
@@ -39,11 +39,11 @@ CLOSED: [2025-06-01 Sun 09:25]
   - [[https://mpov.timmorgan.org/super-simple-clipboard-history-for-linux/][Super simple clipboard history @Blog]]
   - [[https://www.reddit.com/r/archlinux/comments/bg53as/cool_uses_for_dmenurofifzf/][Cool use for rofi/dmenu/fzf @Reddit]]
   - [[https://github.com/spikegrobstein/fzf-menu][fzf-menu @Github]]
-*** DONE Window switcher :@Qtile:@Rofi:
+*** DONE Window switcher :subQtile:subRofi:
 CLOSED: [2025-05-30 Fri 04:33]
 - *Objective:* /Implement rofi like window swticher/
 - *Visit:* [[https://github.com/qtile/qtile/issues/1945][Qtile rofi window swticher @Github-issue]]
-** DONE Adding fzf-nova :@Fzf:
+** DONE Adding fzf-nova :subFzf:
 CLOSED: [2025-05-30 Fri 07:28]
 :PROPERTIES:
 :ID:       231fff19-ca63-4a20-b02d-c6b48800af9d
