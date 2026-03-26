@@ -541,7 +541,7 @@ CLOSED: [2025-12-01 Mon 16:01] DEADLINE: <2025-12-01 Mon 15:50>
 CLOSED: [2025-12-04 Thu 20:46] DEADLINE: <2025-12-04 Thu 18:15>
 - *OBJECTIVE:* Fix =variable= prints incorrect value
 ** NEXT Create a Ntfy Subscription List :@Ntfy:
-DEADLINE: <2026-03-25 Wed>
+DEADLINE: <2026-03-26 Thu>
 :PROPERTIES:
 :ID: 1c56348d-d2c2-4d09-b686-c8e469feff84
 :END:
