@@ -240,7 +240,6 @@ CLOSED: [2026-03-15 Sun 21:25]
 - *OBJECTIVE:*  Simplify the =ntfy-listener= service with =ntfy-client=
 - *Reference:*  [[https://docs.ntfy.sh/subscribe/cli/][Ntfy cli @Doc]]
 ** TODO Config Markdown Theme :subNvim:opPlugin:
-DEADLINE: <2026-03-27 Fri>
 :PROPERTIES:
 :ID: 3e5d5608-abf4-442f-8b36-690f5f80f074
 :END:
