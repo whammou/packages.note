@@ -569,4 +569,12 @@ DEADLINE: <2026-03-04 Wed 22:17> CLOSED: [2026-03-04 Wed 22:58]
 :ID:       7c6738e6-7bd9-42f8-bb1e-23c529dfb057
 :END:
 - *OBJECTIVE:*  Sending =orgmode= notification to =ntfy= server instead of using =dunst=
-
+** TODO Investigate Pandoc Mermaid Filter :subPandoc@Filter:subMermaid:
+:PROPERTIES:
+:ID: 48f6176e-8f4f-4619-8cfa-8afab5295410
+:END:
+- *OBJECTIVE:*  Investigate and measure effort to implement pandoc =filter= for =mermaid=
+- *Reference:*
+  + [[https://stackoverflow.com/questions/79104331/generating-properly-rendered-svgs-from-mermaid-diagrams-in-markdown-for-pandoc-p][Implement mermaid diagram in pandoc markdown @Overflow]]
+  + [[https://github.com/raghur/mermaid-filter?tab=readme-ov-file][Mermaid Markdown Pandoc Filter @Github]]
+    
