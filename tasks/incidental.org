@@ -244,3 +244,8 @@ CLOSED: [2026-03-15 Sun 21:25]
 :ID: 3e5d5608-abf4-442f-8b36-690f5f80f074
 :END:
 - *OBJECTIVE:*  Config =markdown= filetype to match =org=
+** TODO Fix Homelab Samba :subSamba@FileSync:
+:PROPERTIES:
+:ID: f22b8743-c641-4260-8dd0-545734a93654
+:END:
+- *OBJECTIVE:*  Fix homelab samba sync failed
