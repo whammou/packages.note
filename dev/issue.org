@@ -127,4 +127,11 @@ require("sidekick").setup({
 #+begin_quote markdown
 Search for qtile hooks which fires when a session is resume
 #+end_quote
+** OPEN !REFACTOR Parsing Ntfy to Dunstify :subDunst:subNtfy:@Parsing:
+:PROPERTIES:
+:ID: af40e72d-2304-4680-a59f-4d7b8f402c95
+:END:
+#+begin_quote markdown
+Parsing =ntfy= published notifications to be received by =dunstify=
+#+end_quote
 

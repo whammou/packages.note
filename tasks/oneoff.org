@@ -541,6 +541,7 @@ CLOSED: [2025-12-01 Mon 16:01] DEADLINE: <2025-12-01 Mon 15:50>
 CLOSED: [2025-12-04 Thu 20:46] DEADLINE: <2025-12-04 Thu 18:15>
 - *OBJECTIVE:* Fix =variable= prints incorrect value
 ** NEXT Create a Ntfy Subscription List :subNtfy:
+DEADLINE: <2026-04-03 Fri 19:30>
 :PROPERTIES:
 :ID: 1c56348d-d2c2-4d09-b686-c8e469feff84
 :END:
@@ -577,4 +578,9 @@ DEADLINE: <2026-03-04 Wed 22:17> CLOSED: [2026-03-04 Wed 22:58]
 - *Reference:*
   + [[https://stackoverflow.com/questions/79104331/generating-properly-rendered-svgs-from-mermaid-diagrams-in-markdown-for-pandoc-p][Implement mermaid diagram in pandoc markdown @Overflow]]
   + [[https://github.com/raghur/mermaid-filter?tab=readme-ov-file][Mermaid Markdown Pandoc Filter @Github]]
-    
+** TODO [#B] Rewrite Dunst and Ntfy Configs :subNtfy:subDunst:@Parsing:
+:PROPERTIES:
+:ID: fe877f17-f182-446e-9b65-8cace2ea9523
+:END:
+- *OBJECTIVE:*  Parsing =ntfy= notifications to =dunst=
+- /Ticket:/     [[id:af40e72d-2304-4680-a59f-4d7b8f402c95][!REFACTOR Parsing Ntfy to Dunstify @Issue]] 
