@@ -584,3 +584,11 @@ DEADLINE: <2026-03-04 Wed 22:17> CLOSED: [2026-03-04 Wed 22:58]
 :END:
 - *OBJECTIVE:*  Parsing =ntfy= notifications to =dunst=
 - /Ticket:/     [[id:af40e72d-2304-4680-a59f-4d7b8f402c95][!REFACTOR Parsing Ntfy to Dunstify @Issue]] 
+** TODO Update Ntfy-server Request Limit :subNtfy@Config:
+DEADLINE: <2026-04-03 Fri>
+:PROPERTIES:
+:ID: a804118c-379a-430f-b3fd-a686f0d4d8c4
+:END:
+- *OBJECTIVE:*  Increase the request limit for main ntfy instance
+- *Reference:*  [[https://docs.ntfy.sh/config/#rate-limiting][Ntfy Server Rate Limits @Doc]]
+  
