@@ -541,7 +541,7 @@ CLOSED: [2025-12-01 Mon 16:01] DEADLINE: <2025-12-01 Mon 15:50>
 CLOSED: [2025-12-04 Thu 20:46] DEADLINE: <2025-12-04 Thu 18:15>
 - *OBJECTIVE:* Fix =variable= prints incorrect value
 ** NEXT Create a Ntfy Subscription List :subNtfy:
-DEADLINE: <2026-04-03 Fri 19:30>
+DEADLINE: <2026-04-04 Sat 19:30>
 :PROPERTIES:
 :ID: 1c56348d-d2c2-4d09-b686-c8e469feff84
 :END:
@@ -585,7 +585,7 @@ DEADLINE: <2026-03-04 Wed 22:17> CLOSED: [2026-03-04 Wed 22:58]
 - *OBJECTIVE:*  Parsing =ntfy= notifications to =dunst=
 - /Ticket:/     [[id:af40e72d-2304-4680-a59f-4d7b8f402c95][!REFACTOR Parsing Ntfy to Dunstify @Issue]] 
 ** TODO Update Ntfy-server Request Limit :subNtfy@Config:
-DEADLINE: <2026-04-03 Fri>
+DEADLINE: <2026-04-04 Sat>
 :PROPERTIES:
 :ID: a804118c-379a-430f-b3fd-a686f0d4d8c4
 :END:
