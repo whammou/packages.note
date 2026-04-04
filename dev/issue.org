@@ -134,4 +134,11 @@ Search for qtile hooks which fires when a session is resume
 #+begin_quote markdown
 Parsing =ntfy= published notifications to be received by =dunstify=
 #+end_quote
+** OPEN !ISSUE Nginx Forward Opencode Error :subNginx:subOpenCode:
+:PROPERTIES:
+:ID: 127a8129-5b81-4ab2-80ec-9ae71b8bfa81
+:END:
+#+begin_quote markdown
+Nginx forwarding opencode returns timeout error
+#+end_quote
 
