@@ -249,8 +249,8 @@ CLOSED: [2026-03-15 Sun 21:25]
 :ID: f22b8743-c641-4260-8dd0-545734a93654
 :END:
 - *OBJECTIVE:*  Fix homelab samba sync failed
-** TODO [#A] Fix Nginx Forward for Opencode Error :subNginx:subOpenCode:
-DEADLINE: <2026-04-04 Sat>
+** DONE [#A] Fix Nginx Forward for Opencode Error :subNginx:subOpenCode:
+DEADLINE: <2026-04-04 Sat> CLOSED: [2026-04-04 Sat 21:52]
 :PROPERTIES:
 :ID: 72b26f0e-64e1-42c4-aff4-98a14a882371
 :END:

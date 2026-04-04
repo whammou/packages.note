@@ -134,11 +134,22 @@ Search for qtile hooks which fires when a session is resume
 #+begin_quote markdown
 Parsing =ntfy= published notifications to be received by =dunstify=
 #+end_quote
-** OPEN !ISSUE Nginx Forward Opencode Error :subNginx:subOpenCode:
+** DONE !ISSUE Nginx Forward Opencode Error :subNginx:subOpenCode:
+CLOSED: [2026-04-04 Sat 21:51]
 :PROPERTIES:
 :ID: 127a8129-5b81-4ab2-80ec-9ae71b8bfa81
 :END:
+
 #+begin_quote markdown
 Nginx forwarding opencode returns timeout error
 #+end_quote
 
+-----
+# RESOLVED:
+The proxy is missing WebSocket support. Add these to nginx config at domain block in location entry:
+#+begin_src confini
+proxy_http_version 1.1;
+proxy_set_header Upgrade $http_upgrade;
+proxy_set_header Connection "upgrade";
+#+end_src
+-----
