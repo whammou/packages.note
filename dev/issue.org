@@ -153,3 +153,29 @@ proxy_set_header Upgrade $http_upgrade;
 proxy_set_header Connection "upgrade";
 #+end_src
 -----
+** DONE !ISSUE Hitting Ntfy Limits :subNtfy:
+CLOSED: [2026-04-06 Mon 17:27]
+:PROPERTIES:
+:ID: 81118c55-25c2-4aca-8b8d-4f4e999c1094
+:END:
+#+begin_quote markdown
+Request notification from my private =ntfy= instance returns code 429: Too many requests even as admin
+#+end_quote
+
+-----
+#! RESOLVED
+Admin and user share the same IP pools which ntfy uses to limit request sent!
+
+#+name: Ntfy Roles
+#+begin_quote markdown
+[!NOTE]
+Admin and User differ only in what type of permissions they get from managing the server not the polling rate
+#+end_quote
+
+#+begin_src yaml
+visitor-request-limit-burst: 999
+visitor-request-limit-replenish: "1s"
+visitor-request-limit-exempt-hosts: "127.0.0.1"
+#+end_src
+
+-----
