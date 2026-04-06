@@ -540,14 +540,14 @@ CLOSED: [2025-12-01 Mon 16:01] DEADLINE: <2025-12-01 Mon 15:50>
 ** ABRT Bug Fix Orgroam :ORGROAM:
 CLOSED: [2025-12-04 Thu 20:46] DEADLINE: <2025-12-04 Thu 18:15>
 - *OBJECTIVE:* Fix =variable= prints incorrect value
-** NEXT Create a Ntfy Subscription List :subNtfy:
-DEADLINE: <2026-04-06 Mon 19:30>
+** DONE Create a Ntfy Subscription List :subNtfy:
+DEADLINE: <2026-04-06 Mon 19:30> CLOSED: [2026-04-06 Mon 17:34]
 :PROPERTIES:
 :ID: 1c56348d-d2c2-4d09-b686-c8e469feff84
 :END:
 - *OBJECTIVE:* Create an =ntfy= subscription list
-  + [ ] Create =ntfy= directories
-  + [ ] Create =systemd-service= that subscribe to a list of =ntfy= instances
+  + [X] Create =ntfy= directories
+  + [X] Create =systemd-service= that subscribe to a list of =ntfy= instances
 - *Visit:* [[id:1ede1aea-dda4-47c0-9c68-04c5b1ed88dc][Looping Through Content of a File in Bash @Org]]
 ** DONE Optimize Rclone Performance :subRclone:DRIVE:FileSync:
 DEADLINE: <2026-02-12 Thu> CLOSED: [2026-03-17 Tue 04:16]
@@ -584,11 +584,11 @@ DEADLINE: <2026-03-04 Wed 22:17> CLOSED: [2026-03-04 Wed 22:58]
 :END:
 - *OBJECTIVE:*  Parsing =ntfy= notifications to =dunst=
 - /Ticket:/     [[id:af40e72d-2304-4680-a59f-4d7b8f402c95][!REFACTOR Parsing Ntfy to Dunstify @Issue]] 
-** TODO Update Ntfy-server Request Limit :subNtfy@Config:
-DEADLINE: <2026-04-06 Mon>
+** DONE Update Ntfy-server Request Limit :subNtfy@Config:
+DEADLINE: <2026-04-06 Mon> CLOSED: [2026-04-06 Mon 17:27]
 :PROPERTIES:
 :ID: a804118c-379a-430f-b3fd-a686f0d4d8c4
 :END:
 - *OBJECTIVE:*  Increase the request limit for main ntfy instance
 - *Reference:*  [[https://docs.ntfy.sh/config/#rate-limiting][Ntfy Server Rate Limits @Doc]]
-  
+- /Delegate:/   [[id:81118c55-25c2-4aca-8b8d-4f4e999c1094][!ISSUE Hitting Ntfy Limits]]
