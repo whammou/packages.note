@@ -331,8 +331,8 @@ CLOSED: [2026-03-23 Mon 21:33] DEADLINE: <2026-03-23 Mon>
   + [ ] Set specific buffer options in nvim
   + [ ] Orgmode spellings option
 - *Reference:*  [[https://opncd.ai/share/ZnYkdnu2][Set local buffer option @Session]]
-** TODO Ntfy With Systemd Native :subNtfy:subSystemd:
-DEADLINE: <2026-04-09 Thu>
+** DONE Ntfy With Systemd Native :subNtfy:subSystemd:
+DEADLINE: <2026-04-09 Thu> CLOSED: [2026-04-09 Thu 14:52]
 :PROPERTIES:
 :ID: 48dc71ef-ffea-47cd-b2f0-41e91bf3c096
 :END:
