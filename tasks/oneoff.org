@@ -578,7 +578,8 @@ DEADLINE: <2026-03-04 Wed 22:17> CLOSED: [2026-03-04 Wed 22:58]
 - *Reference:*
   + [[https://stackoverflow.com/questions/79104331/generating-properly-rendered-svgs-from-mermaid-diagrams-in-markdown-for-pandoc-p][Implement mermaid diagram in pandoc markdown @Overflow]]
   + [[https://github.com/raghur/mermaid-filter?tab=readme-ov-file][Mermaid Markdown Pandoc Filter @Github]]
-** TODO [#B] Rewrite Dunst and Ntfy Configs :subNtfy:subDunst:@Parsing:
+** DONE [#B] Rewrite Dunst and Ntfy Configs :subNtfy:subDunst:@Parsing:
+CLOSED: [2026-04-09 Thu 15:27]
 :PROPERTIES:
 :ID: fe877f17-f182-446e-9b65-8cace2ea9523
 :END:

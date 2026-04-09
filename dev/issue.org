@@ -127,13 +127,31 @@ require("sidekick").setup({
 #+begin_quote markdown
 Search for qtile hooks which fires when a session is resume
 #+end_quote
-** OPEN !REFACTOR Parsing Ntfy to Dunstify :subDunst:subNtfy:@Parsing:
+** DONE !REFACTOR Parsing Ntfy to Dunstify :subDunst:subNtfy:@Parsing:
+CLOSED: [2026-04-09 Thu 15:27]
 :PROPERTIES:
 :ID: af40e72d-2304-4680-a59f-4d7b8f402c95
 :END:
 #+begin_quote markdown
 Parsing =ntfy= published notifications to be received by =dunstify=
 #+end_quote
+
+-----
+- Note taken on [2026-04-09 15:25]: 
+  Parsing from =ntfy-client= to dunst via ntfy script in config:
+  #+name: ntfy-dunst command:
+  #+begin_src yaml
+  subscribe:
+  - topic: opencode
+    command: |
+      case "$priority" in
+        5|4) urgency="critical" ;;
+        3)   urgency="normal" ;;
+        *)   urgency="low" ;;
+      esac
+      dunstify -a "ntfy" -u "$urgency" "$title" "$message"
+  #+end_src
+-----
 ** DONE !ISSUE Nginx Forward Opencode Error :subNginx:subOpenCode:
 CLOSED: [2026-04-04 Sat 21:51]
 :PROPERTIES:
