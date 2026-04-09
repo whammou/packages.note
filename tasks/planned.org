@@ -332,7 +332,7 @@ CLOSED: [2026-03-23 Mon 21:33] DEADLINE: <2026-03-23 Mon>
   + [ ] Orgmode spellings option
 - *Reference:*  [[https://opncd.ai/share/ZnYkdnu2][Set local buffer option @Session]]
 ** TODO Ntfy With Systemd Native :subNtfy:subSystemd:
-DEADLINE: <2026-04-08 Wed>
+DEADLINE: <2026-04-09 Thu>
 :PROPERTIES:
 :ID: 48dc71ef-ffea-47cd-b2f0-41e91bf3c096
 :END:
