@@ -120,9 +120,9 @@ DEADLINE: <2026-02-01 Sun> CLOSED: [2026-02-01 Sun 21:10]
 :ID:       e8bec13e-f010-46c8-bee9-321002486290
 :END:
 To change color of =background= and =foreground= of a =ly= display manager session \\
-- Edit =/etc/ly/confg.ini= modify =term_reset-cmd=
+- Edit the ly config file in your config directory and modify the term_reset setting
   #+BEGIN_SRC confini
-  term_reset_cmd = /usr/bin/tput reset; echo -en "\e]P0<hex-color>"; echo -en "\e]P7<hex-color>\ec"; clear
+  term_reset_cmd = /usr/bin/tput reset; echo -en "\e]P0XXXXXXX"; echo -en "\e]P7XXXXXXX\ec"; clear
   #+END_SRC
 - Modify systemd Service: =/etc/systemd/system/ly-onedark.service=
   #+BEGIN_SRC systemd
@@ -134,7 +134,7 @@ To change color of =background= and =foreground= of a =ly= display manager sessi
 
   [Service]
   Type=idle
-  ExecStartPre=echo -en "\e]P0<hex-color>"; echo -en "\e]P7<hex-color>\ec"; clear
+  ExecStartPre=echo -en "\e]P0XXXXXXX"; echo -en "\e]P7XXXXXXX\ec"; clear
   ExecStart=/usr/bin/ly-dm
   StandardInput=tty
   TTYPath=/dev/%I
@@ -183,5 +183,26 @@ DEADLINE: <2026-02-09 Mon>
 :PROPERTIES:
 :ID:       6cc07ef1-36d7-40b4-9087-77ef7674096b
 :END:
-/Learn lua scripting with pandoc-filter/ \\
+/Learn lua scripting with pandoc-filter/
+** DONE Fish Done Package :subFishShell@Plugin:
+CLOSED: [2026-04-20 Mon 02:15]
+:PROPERTIES:
+:ID: c44eeb09-f66f-4977-a3b2-1c9f04d77cde
+:END:
+#+name: Description
+#+begin_quote org
+Running a fish command after a long running tasks with configurable settings
+#+end_quote
+
+=fish-done= is a package to detect a long running tasks in fish and send a notification via =notify-send=
+
+#+name: Wayland warn
+#+begin_quote org
+[!WARNING]
+Might not work correctly with system running under =wayland=
+#+end_quote
+
+- Possible workaround: [[https://github.com/franciscolourenco/done/issues/134#issuecomment-1793803813][Notification not showing on wayland due to focused window detection @Github-issue]]
+  
+/Reference:/  [[https://github.com/franciscolourenco/done][Fish done upstream @Github]]
 
