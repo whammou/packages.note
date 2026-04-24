@@ -266,10 +266,12 @@ DEADLINE: <2026-04-14 Tue> CLOSED: [2026-04-14 Tue 17:37]
 - *OBJECTIVE:*  Matching =tasks= with time property in nvim-orgmode
 - *Reference:*  [[https://github.com/nvim-orgmode/orgmode/discussions/862][Match tasks that were closed today @Github-discussion]]
 ** TODO Pandoc Wrap Table :subPandoc:
-DEADLINE: <2026-04-24 Fri>
+DEADLINE: <2026-04-25 Sat>
 :PROPERTIES:
 :ID: b2634b80-a14c-4931-aca6-f855b6a79920
 :END:
 - *OBJECTIVE:*  Research how to wrap tables in pandoc
-- *Reference:*  [[https://stackoverflow.com/questions/25037357/pandoc-long-tablerows-in-markdown-pdf-documents-do-not-get-linewrap][Warp long table @Overflow]]
-
+- /Delegate:/   [[id:967e18ae-23a7-40ad-876d-8cb70f0ffebb][Pandoc Table Wrap @Org]]
+- *Reference:*
+  + [[https://stackoverflow.com/questions/25037357/pandoc-long-tablerows-in-markdown-pdf-documents-do-not-get-linewrap][Warp long table @Overflow]]
+  + [[https://github.com/jgm/pandoc/issues/6669][Table overflow issue @Github-issue]]
