@@ -13,4 +13,4 @@ Pandoc has this weird built-in table package in latex called =longtable= and it 
 
 In order to workaround this issue. A filter is need to calculate and fill in the width of each cells within a table \\
 
-/Check-out:/  [[file:/home/whammou/.local/pandoc/share/filter/table-fix.lua][Table Fix Script]]
+/Check-out:/  [[file:/home/whammou/.local/share/pandoc/filters/table-fix.lua][Table Fix @Script]]
