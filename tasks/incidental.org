@@ -265,8 +265,8 @@ DEADLINE: <2026-04-14 Tue> CLOSED: [2026-04-14 Tue 17:37]
 :END:
 - *OBJECTIVE:*  Matching =tasks= with time property in nvim-orgmode
 - *Reference:*  [[https://github.com/nvim-orgmode/orgmode/discussions/862][Match tasks that were closed today @Github-discussion]]
-** TODO Pandoc Wrap Table :subPandoc:
-DEADLINE: <2026-04-27 Mon>
+** DONE Pandoc Wrap Table :subPandoc:
+DEADLINE: <2026-04-28 Tue> CLOSED: [2026-04-28 Tue 01:17]
 :PROPERTIES:
 :ID: b2634b80-a14c-4931-aca6-f855b6a79920
 :END:

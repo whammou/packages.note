@@ -1,7 +1,8 @@
 #+OPTIONS: todo:t tags:nil tasks:t ^:nil toc:nil
 #+TODO: OPEN(y) (e) PROG(g) INTR(q) NEXT(n) | ABRT(a) DONE(f) CLSD(c)
 * Enhancements List :typDev:catEnhancement:meta:PACKAGES:
-** OPEN Pandoc Table Wrap :subPandoc@Filter:
+** DONE Pandoc Table Wrap :subPandoc@Filter:
+CLOSED: [2026-04-28 Tue 01:20]
 :PROPERTIES:
 :ID: 967e18ae-23a7-40ad-876d-8cb70f0ffebb
 :END:
@@ -11,6 +12,35 @@
 Pandoc has this weird built-in table package in latex called =longtable= and it does not support wrapping table. Instead it creates a table with very long lines
 #+end_quote
 
-In order to workaround this issue. A filter is need to calculate and fill in the width of each cells within a table \\
+In order to workaround this issue. A filter is need to calculate and fill in the width of each cells within a table. To use the script run:
+
+#+name: Run command
+#+begin_src bash
+pandoc --lua-filter=table-fix.lua
+#+end_src
+
+Or adding to config:
+
+#+name: Pandoc Profile Config
+#+begin_src yaml
+template: eisvogel
+
+pdf-engine: xelatex
+
+include-in-header:
+  - ${USERDATA}/eisvogel-tcolorbox.tex
+  - ${USERDATA}/verbatim.tex
+
+filters:
+  - table-fix.lua
+  - verbatim-style.lua
+  - org-html-image.lua
+  - org-admonitions.lua
+  - mermaid-filter
+
+from: org
+to: pdf
+#+end_src
+
 
 /Check-out:/  [[file:/home/whammou/.local/share/pandoc/filters/table-fix.lua][Table Fix @Script]]
