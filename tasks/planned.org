@@ -338,11 +338,17 @@ DEADLINE: <2026-04-09 Thu> CLOSED: [2026-04-09 Thu 14:52]
 :END:
 - *OBJECTIVE:*  Implement a workflow with =ntfy= and =systemd= based on systemd service
 - /Visit:/      [[id:1f723950-33ea-4682-b349-caf30d109401][Systemd Service Extension @Dev]]
-** TODO Setup Nvim Remote :subNvim@Plugin@Remote:
-DEADLINE: <2026-04-28 Tue>
+** PROG Setup Nvim Remote :subNvim@Plugin@Remote:
 :PROPERTIES:
 :ID: 8c4d8db4-5b79-49b8-8b1a-a479aa46672b
 :END:
 - *OBJECTIVE:*  Setting up remote.nvim for remote workflow
 - *Reference:*  [[https://github.com/advaypakhale/remote.nvim][Remote.nvim @Github]]
+*** TODO Nvim Headless Server :subNvim:
+DEADLINE: <2026-04-28 Tue>
+:PROPERTIES:
+:ID: d9c9af5f-77ab-4568-9a5f-0440144d1465
+:END:
+- *OBJECTIVE:*  Host an nvim =headless= server on homelab
+- *Reference:*  [[https://neovim.io/doc/user/news-0.12/][Nvim News 0.12 @Doc]]
   
