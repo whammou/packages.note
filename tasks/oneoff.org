@@ -594,7 +594,8 @@ DEADLINE: <2026-04-06 Mon> CLOSED: [2026-04-06 Mon 17:27]
 - *OBJECTIVE:*  Increase the request limit for main ntfy instance
 - *Reference:*  [[https://docs.ntfy.sh/config/#rate-limiting][Ntfy Server Rate Limits @Doc]]
 - /Delegate:/   [[id:81118c55-25c2-4aca-8b8d-4f4e999c1094][!ISSUE Hitting Ntfy Limits]]
-** TODO Refactor Snippets :subLuaSnip:@Chore:
+** DONE Refactor Snippets :subLuaSnip:@Chore:
+CLOSED: [2026-04-28 Tue 15:19]
 :PROPERTIES:
 :ID: cd0be5d6-627d-48f0-b4ca-6fc487aaa89b
 :END:

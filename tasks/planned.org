@@ -351,4 +351,10 @@ DEADLINE: <2026-04-28 Tue>
 :END:
 - *OBJECTIVE:*  Host an nvim =headless= server on homelab
 - *Reference:*  [[https://neovim.io/doc/user/news-0.12/][Nvim News 0.12 @Doc]]
+** TODO [#C] Opencode Agent Orchestration :subOpenCode@Agent@Orchestration:
+:PROPERTIES:
+:ID: 5bfa442c-5a4e-49d4-9feb-356e96a87d8d
+:END:
+- *OBJECTIVE:*  Research on opencode =agent= orchestration
+- *Reference:*  [[https://dev.to/gc-victor/agent-orchestration-in-opencode-3n4k][Agent orchestration in Opencode @Dev-blog]]
   
