@@ -1,0 +1,15 @@
+* DONE Pandoc Wrap Table :subPandoc:
+DEADLINE: <2026-04-28 Tue> CLOSED: [2026-04-28 Tue 01:17]
+:PROPERTIES:
+:ID: b2634b80-a14c-4931-aca6-f855b6a79920
+:ARCHIVE_TIME: 2026-04-29 Wed 21:28
+:ARCHIVE_FILE: /home/whammou/Journal/topics/packages/tasks/incidental.org
+:ARCHIVE_OLPATH: List of Incidental Tasks
+:ARCHIVE_CATEGORY: incidental
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:*  Research how to wrap tables in pandoc
+- /Delegate:/   [[id:967e18ae-23a7-40ad-876d-8cb70f0ffebb][Pandoc Table Wrap @Org]]
+- *Reference:*
+  + [[https://stackoverflow.com/questions/25037357/pandoc-long-tablerows-in-markdown-pdf-documents-do-not-get-linewrap][Warp long table @Overflow]]
+  + [[https://github.com/jgm/pandoc/issues/6669][Table overflow issue @Github-issue]]
