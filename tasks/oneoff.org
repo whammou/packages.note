@@ -262,19 +262,6 @@ CLOSED: [2026-01-28 Wed 03:52] DEADLINE: <2026-01-28 Wed>
     end
   end
   #+END_SRC
-**** ABRT [#B] Center html Image :subGithub:
-CLOSED: [2026-01-29 Thu 01:45] DEADLINE: <2026-01-29 Thu>
-#+name:LOGBOOK
-#+html:<details><summary>LOGBOOK</summary>
-:LOGBOOK:
-- Note taken on [2026-01-29 Thu 01:45] \\
-  =pandoc= built-in image module =pandoc.image= has not supported ~align=center~ param
-  + *Visit:*  [[https://github.com/Wandmalfarbe/pandoc-latex-template/issues/173][How do I center Image @Github-issue]]
-:END:
-#+html:</details>
-- *OBJECTIVE:*  Center image on =github= and =pandoc=
-- *Reference:*  [[https://stackoverflow.com/questions/54701123/image-centering-with-pandoc-markdown][Centering image in pandoc markdown @Overflow]]
-- *Visit:*      [[id:6cc07ef1-36d7-40b4-9087-77ef7674096b][Pandoc Lua Filter @Org]]
 *** PEND Pandoc Custom Block
 - *OBJECTIVE:*  Getting custom blocks to work with =eisvogel= pandoc template
 - *Reference:*
@@ -540,15 +527,6 @@ CLOSED: [2025-12-01 Mon 16:01] DEADLINE: <2025-12-01 Mon 15:50>
 ** ABRT Bug Fix Orgroam :ORGROAM:
 CLOSED: [2025-12-04 Thu 20:46] DEADLINE: <2025-12-04 Thu 18:15>
 - *OBJECTIVE:* Fix =variable= prints incorrect value
-** DONE Create a Ntfy Subscription List :subNtfy:
-DEADLINE: <2026-04-06 Mon 19:30> CLOSED: [2026-04-06 Mon 17:34]
-:PROPERTIES:
-:ID: 1c56348d-d2c2-4d09-b686-c8e469feff84
-:END:
-- *OBJECTIVE:* Create an =ntfy= subscription list
-  + [X] Create =ntfy= directories
-  + [X] Create =systemd-service= that subscribe to a list of =ntfy= instances
-- *Visit:* [[id:1ede1aea-dda4-47c0-9c68-04c5b1ed88dc][Looping Through Content of a File in Bash @Org]]
 ** DONE Optimize Rclone Performance :subRclone:DRIVE:FileSync:
 DEADLINE: <2026-02-12 Thu> CLOSED: [2026-03-17 Tue 04:16]
 - *OBJECTIVE:*  Optimizing =rclone= performance when syncing with cloud-drives
@@ -570,33 +548,3 @@ DEADLINE: <2026-03-04 Wed 22:17> CLOSED: [2026-03-04 Wed 22:58]
 :ID:       7c6738e6-7bd9-42f8-bb1e-23c529dfb057
 :END:
 - *OBJECTIVE:*  Sending =orgmode= notification to =ntfy= server instead of using =dunst=
-** DONE Investigate Pandoc Mermaid Filter :subPandoc@Filter:subMermaid:
-CLOSED: [2026-04-20 Mon 21:08]
-:PROPERTIES:
-:ID: 48f6176e-8f4f-4619-8cfa-8afab5295410
-:END:
-- *OBJECTIVE:*  Investigate and measure effort to implement pandoc =filter= for =mermaid=
-- *Reference:*
-  + [[https://stackoverflow.com/questions/79104331/generating-properly-rendered-svgs-from-mermaid-diagrams-in-markdown-for-pandoc-p][Implement mermaid diagram in pandoc markdown @Overflow]]
-  + [[https://github.com/raghur/mermaid-filter?tab=readme-ov-file][Mermaid Markdown Pandoc Filter @Github]]
-** DONE [#B] Rewrite Dunst and Ntfy Configs :subNtfy:subDunst:@Parsing:
-CLOSED: [2026-04-09 Thu 15:27]
-:PROPERTIES:
-:ID: fe877f17-f182-446e-9b65-8cace2ea9523
-:END:
-- *OBJECTIVE:*  Parsing =ntfy= notifications to =dunst=
-- /Ticket:/     [[id:af40e72d-2304-4680-a59f-4d7b8f402c95][!REFACTOR Parsing Ntfy to Dunstify @Issue]] 
-** DONE Update Ntfy-server Request Limit :subNtfy@Config:
-DEADLINE: <2026-04-06 Mon> CLOSED: [2026-04-06 Mon 17:27]
-:PROPERTIES:
-:ID: a804118c-379a-430f-b3fd-a686f0d4d8c4
-:END:
-- *OBJECTIVE:*  Increase the request limit for main ntfy instance
-- *Reference:*  [[https://docs.ntfy.sh/config/#rate-limiting][Ntfy Server Rate Limits @Doc]]
-- /Delegate:/   [[id:81118c55-25c2-4aca-8b8d-4f4e999c1094][!ISSUE Hitting Ntfy Limits]]
-** DONE Refactor Snippets :subLuaSnip:@Chore:
-CLOSED: [2026-04-28 Tue 15:19]
-:PROPERTIES:
-:ID: cd0be5d6-627d-48f0-b4ca-6fc487aaa89b
-:END:
-- *OBJECTIVE:*  Refactor =luasnip= snippets into modular modes

@@ -331,13 +331,6 @@ CLOSED: [2026-03-23 Mon 21:33] DEADLINE: <2026-03-23 Mon>
   + [ ] Set specific buffer options in nvim
   + [ ] Orgmode spellings option
 - *Reference:*  [[https://opncd.ai/share/ZnYkdnu2][Set local buffer option @Session]]
-** DONE Ntfy With Systemd Native :subNtfy:subSystemd:
-DEADLINE: <2026-04-09 Thu> CLOSED: [2026-04-09 Thu 14:52]
-:PROPERTIES:
-:ID: 48dc71ef-ffea-47cd-b2f0-41e91bf3c096
-:END:
-- *OBJECTIVE:*  Implement a workflow with =ntfy= and =systemd= based on systemd service
-- /Visit:/      [[id:1f723950-33ea-4682-b349-caf30d109401][Systemd Service Extension @Dev]]
 ** PROG Setup Nvim Remote :subNvim@Plugin@Remote:
 :PROPERTIES:
 :ID: 8c4d8db4-5b79-49b8-8b1a-a479aa46672b

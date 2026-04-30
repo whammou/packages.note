@@ -1,0 +1,12 @@
+* DONE Ntfy With Systemd Native :subNtfy:subSystemd:
+DEADLINE: <2026-04-09 Thu> CLOSED: [2026-04-09 Thu 14:52]
+:PROPERTIES:
+:ID: 48dc71ef-ffea-47cd-b2f0-41e91bf3c096
+:ARCHIVE_TIME: 2026-04-30 Thu 21:15
+:ARCHIVE_FILE: /home/whammou/Journal/topics/packages/tasks/planned.org
+:ARCHIVE_OLPATH: List of Planned Tasks
+:ARCHIVE_CATEGORY: planned
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:*  Implement a workflow with =ntfy= and =systemd= based on systemd service
+- /Visit:/      [[id:1f723950-33ea-4682-b349-caf30d109401][Systemd Service Extension @Dev]]

@@ -13,3 +13,40 @@ DEADLINE: <2026-04-28 Tue> CLOSED: [2026-04-28 Tue 01:17]
 - *Reference:*
   + [[https://stackoverflow.com/questions/25037357/pandoc-long-tablerows-in-markdown-pdf-documents-do-not-get-linewrap][Warp long table @Overflow]]
   + [[https://github.com/jgm/pandoc/issues/6669][Table overflow issue @Github-issue]]
+* DONE [#A] Fix Nginx Forward for Opencode Error :subNginx:subOpenCode:
+DEADLINE: <2026-04-04 Sat> CLOSED: [2026-04-04 Sat 21:52]
+:PROPERTIES:
+:ID: 72b26f0e-64e1-42c4-aff4-98a14a882371
+:ARCHIVE_TIME: 2026-04-30 Thu 21:14
+:ARCHIVE_FILE: /home/whammou/Journal/topics/packages/tasks/incidental.org
+:ARCHIVE_OLPATH: List of Incidental Tasks
+:ARCHIVE_CATEGORY: incidental
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:*  Fix issue with opencode forwarding via =nginx= timeout
+- /Ticket:/     [[id:127a8129-5b81-4ab2-80ec-9ae71b8bfa81][!ISSUE Nginx Forward Opencode Error @Issue]]
+* DONE Refactor ntfy-listener Service :subNtfy:opRefactor:
+CLOSED: [2026-04-06 Mon 17:19]
+:PROPERTIES:
+:ID: 752eb881-6f48-4de1-9670-866ecb50a63a
+:ARCHIVE_TIME: 2026-04-30 Thu 21:14
+:ARCHIVE_FILE: /home/whammou/Journal/topics/packages/tasks/incidental.org
+:ARCHIVE_OLPATH: List of Incidental Tasks
+:ARCHIVE_CATEGORY: incidental
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:*  Simplify the =ntfy-listener= service with =ntfy-client=
+- *Reference:*  [[https://docs.ntfy.sh/subscribe/cli/][Ntfy cli @Doc]]
+* DONE Matching Date in nvim-orgmode :subNvim@Orgmode:
+DEADLINE: <2026-04-14 Tue> CLOSED: [2026-04-14 Tue 17:37]
+:PROPERTIES:
+:ID: b51aae54-06fd-4780-b3ce-6f4e1c41b83f
+:CREATED_ON: 2026-04-14 Tue 17:19
+:ARCHIVE_TIME: 2026-04-30 Thu 21:14
+:ARCHIVE_FILE: /home/whammou/Journal/topics/packages/tasks/incidental.org
+:ARCHIVE_OLPATH: List of Incidental Tasks
+:ARCHIVE_CATEGORY: incidental
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:*  Matching =tasks= with time property in nvim-orgmode
+- *Reference:*  [[https://github.com/nvim-orgmode/orgmode/discussions/862][Match tasks that were closed today @Github-discussion]]
