@@ -338,7 +338,7 @@ CLOSED: [2026-03-23 Mon 21:33] DEADLINE: <2026-03-23 Mon>
 - *OBJECTIVE:*  Setting up remote.nvim for remote workflow
 - *Reference:*  [[https://github.com/advaypakhale/remote.nvim][Remote.nvim @Github]]
 *** TODO Nvim Headless Server :subNvim:
-DEADLINE: <2026-05-02 Sat>
+DEADLINE: <2026-05-03 Sun>
 :PROPERTIES:
 :ID: d9c9af5f-77ab-4568-9a5f-0440144d1465
 :END:
