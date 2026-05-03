@@ -350,4 +350,10 @@ DEADLINE: <2026-05-03 Sun>
 :END:
 - *OBJECTIVE:*  Research on opencode =agent= orchestration
 - *Reference:*  [[https://dev.to/gc-victor/agent-orchestration-in-opencode-3n4k][Agent orchestration in Opencode @Dev-blog]]
-  
+** TODO Remote Opencode :subOpenCode:
+DEADLINE: <2026-05-04 Mon>
+:PROPERTIES:
+:ID: 134d58fe-b8ff-4574-92ad-6f184eb415fc
+:END:
+- *OBJECTIVE:*  How to run headless opencode remote on my setup
+- *Reference:*   [[https://medium.com/@michael.hannecke/how-to-run-opencode-remotely-on-a-mac-using-vs-code-and-ssh-498e62ce6683][How to run opencode remotely @Blog]]
