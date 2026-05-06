@@ -1,3 +1,14 @@
 #+OPTIONS: todo:t tags:nil tasks:t ^:nil toc:nil
 #+TODO: OPEN(y) (e) PROG(g) INTR(q) NEXT(n) | ABRT(a) DONE(f) CLSD(c)
 * Enhancements List :typDev:catEnhancement:meta:PACKAGES:
+** OPEN Remote Workspace :subWorkflow@Remote:
+:PROPERTIES:
+:ID: f2003a39-72eb-40b7-a832-b209c8cf9cff
+:END:
+
+#+name: Description
+#+begin_quote org
+Emulate the same environment as current remote machine on work station to deal with remote jobs such as =opencode= running commands
+#+end_quote
+
+/Checkout:/ [[id:58910689-be05-4304-8b9b-7d2c03fee002][Managing Dotfiles with Chezmoi]]

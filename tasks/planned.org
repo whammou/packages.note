@@ -338,7 +338,7 @@ CLOSED: [2026-03-23 Mon 21:33] DEADLINE: <2026-03-23 Mon>
 - *OBJECTIVE:*  Setting up remote.nvim for remote workflow
 - *Reference:*  [[https://github.com/advaypakhale/remote.nvim][Remote.nvim @Github]]
 *** TODO Nvim Headless Server :subNvim:
-DEADLINE: <2026-05-03 Sun>
+DEADLINE: <2026-05-06 Wed>
 :PROPERTIES:
 :ID: d9c9af5f-77ab-4568-9a5f-0440144d1465
 :END:
@@ -351,9 +351,10 @@ DEADLINE: <2026-05-03 Sun>
 - *OBJECTIVE:*  Research on opencode =agent= orchestration
 - *Reference:*  [[https://dev.to/gc-victor/agent-orchestration-in-opencode-3n4k][Agent orchestration in Opencode @Dev-blog]]
 ** TODO Remote Opencode :subOpenCode:
-DEADLINE: <2026-05-04 Mon>
+DEADLINE: <2026-05-06 Wed>
 :PROPERTIES:
 :ID: 134d58fe-b8ff-4574-92ad-6f184eb415fc
 :END:
 - *OBJECTIVE:*  How to run headless opencode remote on my setup
-- *Reference:*   [[https://medium.com/@michael.hannecke/how-to-run-opencode-remotely-on-a-mac-using-vs-code-and-ssh-498e62ce6683][How to run opencode remotely @Blog]]
+- /Delegate:/   [[id:f2003a39-72eb-40b7-a832-b209c8cf9cff][Remote Workspace]]
+- *Reference:*  [[https://medium.com/@michael.hannecke/how-to-run-opencode-remotely-on-a-mac-using-vs-code-and-ssh-498e62ce6683][How to run opencode remotely @Blog]]
