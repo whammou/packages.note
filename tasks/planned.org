@@ -360,7 +360,7 @@ DEADLINE: <2026-05-06 Wed> CLOSED: [2026-05-06 Wed 21:28]
 - *OBJECTIVE:*  Research on opencode =agent= orchestration
 - *Reference:*  [[https://dev.to/gc-victor/agent-orchestration-in-opencode-3n4k][Agent orchestration in Opencode @Dev-blog]]
 ** TODO Remote Opencode :subOpenCode:
-DEADLINE: <2026-05-06 Wed> SCHEDULED: <2026-05-06 Wed 21:42>
+ SCHEDULED: <2026-05-07 Thu 21:42>
 :PROPERTIES:
 :ID: 134d58fe-b8ff-4574-92ad-6f184eb415fc
 :END:
