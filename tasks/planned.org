@@ -377,7 +377,7 @@ SCHEDULED: <2026-05-11 Mon 18:00> CLOSED: [2026-05-11 Mon 19:11]
 #+html:<summary>LOGBOOK</summary>
 :LOGBOOK:
 - Note taken on [2026-05-11 Mon 19:13] \\
-  This feature is actually a qutebrowser built-in without the need to install any extra packages. Checkout commit whammou/dotfiles@e875a547b392
+  This feature is actually a qutebrowser built-in without the need to install any extra packages. Checkout commit [[whammou/dotfiles@e875a547b392]]
 :END:
 #+html:</details>
 - *OBJECTIVE:*  Use nvim to input texts into =qutebrowser=
