@@ -368,7 +368,7 @@ DEADLINE: <2026-05-06 Wed> CLOSED: [2026-05-06 Wed 21:28]
 - /Delegate:/   [[id:f2003a39-72eb-40b7-a832-b209c8cf9cff][Remote Workspace @Org]]
 - *Reference:*  [[https://medium.com/@michael.hannecke/how-to-run-opencode-remotely-on-a-mac-using-vs-code-and-ssh-498e62ce6683][How to run opencode remotely @Blog]]
 ** TODO Neovim as Qutebrowser Text Editor :subNvim:subQutebrowser:
-SCHEDULED: <2026-05-09 Sat 18:00>
+SCHEDULED: <2026-05-11 Mon 18:00>
 :PROPERTIES:
 :ID: 02871fdc-1e5d-44d5-b29f-2c61decd165b
 :END:
