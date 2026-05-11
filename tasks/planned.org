@@ -213,13 +213,21 @@ CLOSED: [2025-11-20 Thu 21:22] DEADLINE: <2025-11-20 Thu 21:30>
 ** PEND Tmux URL Hint :subTmux:
 - *OBJECTIVE:* Hint and open =URL= with =tmux=
 - *Reference:* [[https://dev.to/tomoviktor/best-way-to-open-urls-in-your-terminal-via-tmux-595b][Hint and open URL with Tmux @Blog]]
-** TODO Learn Scripting with Rofi :subRofi:
+** PROG Learn Scripting with Rofi :subRofi:
+SCHEDULED: <2026-05-11 Mon>
 :PROPERTIES:
 :ID:       b4d95356-ad0b-4d28-8d01-efe6a2262752
 :END:
 - *OBJECTIVE:*  Learn how to write scripts for =rofi=
 - *Reference:*  [[https://davatorium.github.io/rofi/current/rofi-script.5/][Rofi Scripting documentation @Blog]]
 - *Check-out:*  [[id:e88ddffd-71b2-41c2-b1e7-6309f8600812][Scripting with Rofi @Org]]
+*** TODO Learn Rofi Config :subRofi@Config:
+SCHEDULED: <2026-05-11 Mon>
+:PROPERTIES:
+:ID: 945c86c9-9065-4e76-838f-83699e0297d9
+:END:
+- *OBJECTIVE:*  Learn to config =rofi=
+- *Reference:*  [[https://github.com/davatorium/rofi/blob/next/CONFIG.md][Rofi config @Github]]
 ** PEND Learn qutebrowser Scripting :subQutebrowser:
 - *OBJECTIVE:* Learn =qutebrowser= scripting for better automation
 - *Visit:* [[id:1939461d-8332-40a0-95a4-0e725465ad94][Qutebrowser Scripting @Org]]
