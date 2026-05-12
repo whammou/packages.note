@@ -214,7 +214,7 @@ CLOSED: [2025-11-20 Thu 21:22] DEADLINE: <2025-11-20 Thu 21:30>
 - *OBJECTIVE:* Hint and open =URL= with =tmux=
 - *Reference:* [[https://dev.to/tomoviktor/best-way-to-open-urls-in-your-terminal-via-tmux-595b][Hint and open URL with Tmux @Blog]]
 ** PROG Learn Scripting with Rofi :subRofi:
-SCHEDULED: <2026-05-11 Mon>
+SCHEDULED: <2026-05-12 Tue>
 :PROPERTIES:
 :ID:       b4d95356-ad0b-4d28-8d01-efe6a2262752
 :END:
@@ -222,7 +222,7 @@ SCHEDULED: <2026-05-11 Mon>
 - *Reference:*  [[https://davatorium.github.io/rofi/current/rofi-script.5/][Rofi Scripting documentation @Blog]]
 - *Check-out:*  [[id:e88ddffd-71b2-41c2-b1e7-6309f8600812][Scripting with Rofi @Org]]
 *** TODO Learn Rofi Config :subRofi@Config:
-SCHEDULED: <2026-05-11 Mon>
+SCHEDULED: <2026-05-12 Tue>
 :PROPERTIES:
 :ID: 945c86c9-9065-4e76-838f-83699e0297d9
 :END:
@@ -396,3 +396,11 @@ SCHEDULED: <2026-05-11 Mon> CLOSED: [2026-05-11 Mon 19:11]
 :ID: ef549190-39dc-4627-b5ef-3329424e5741
 :END:
 - *OBJECTIVE:*  Add edit text keybinding
+** TODO Managing fzf Config :subFzf@Config:
+SCHEDULED: <2026-05-12 Tue> DEADLINE: <2026-05-13 Wed>
+:PROPERTIES:
+:ID: 22b64191-09ab-4524-93a4-8bb965cfd6b2
+:END:
+- *OBJECTIVE:*  How to manage fzf config across different UI
+- *Reference:*  [[https://www.reddit.com/r/commandline/comments/10mfm5b/a_practical_guide_to_fzf_building_a_file_explorer/][Pratical guide to fzf @Reddit]]
+  
