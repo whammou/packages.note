@@ -214,7 +214,7 @@ CLOSED: [2025-11-20 Thu 21:22] DEADLINE: <2025-11-20 Thu 21:30>
 - *OBJECTIVE:* Hint and open =URL= with =tmux=
 - *Reference:* [[https://dev.to/tomoviktor/best-way-to-open-urls-in-your-terminal-via-tmux-595b][Hint and open URL with Tmux @Blog]]
 ** PROG Learn Scripting with Rofi :subRofi:
-SCHEDULED: <2026-05-12 Tue>
+SCHEDULED: <2026-05-13 Wed>
 :PROPERTIES:
 :ID:       b4d95356-ad0b-4d28-8d01-efe6a2262752
 :END:
@@ -222,7 +222,7 @@ SCHEDULED: <2026-05-12 Tue>
 - *Reference:*  [[https://davatorium.github.io/rofi/current/rofi-script.5/][Rofi Scripting documentation @Blog]]
 - *Check-out:*  [[id:e88ddffd-71b2-41c2-b1e7-6309f8600812][Scripting with Rofi @Org]]
 *** TODO Learn Rofi Config :subRofi@Config:
-SCHEDULED: <2026-05-12 Tue>
+SCHEDULED: <2026-05-13 Wed>
 :PROPERTIES:
 :ID: 945c86c9-9065-4e76-838f-83699e0297d9
 :END:
@@ -397,7 +397,7 @@ SCHEDULED: <2026-05-11 Mon> CLOSED: [2026-05-11 Mon 19:11]
 :END:
 - *OBJECTIVE:*  Add edit text keybinding
 ** TODO Managing fzf Config :subFzf@Config:
-SCHEDULED: <2026-05-12 Tue> DEADLINE: <2026-05-13 Wed>
+SCHEDULED: <2026-05-13 Wed> DEADLINE: <2026-05-13 Wed>
 :PROPERTIES:
 :ID: 22b64191-09ab-4524-93a4-8bb965cfd6b2
 :END:
