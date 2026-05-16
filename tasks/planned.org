@@ -403,4 +403,9 @@ SCHEDULED: <2026-05-15 Fri> DEADLINE: <2026-05-15 Fri>
 :END:
 - *OBJECTIVE:*  How to manage fzf config across different UI
 - *Reference:*  [[https://www.reddit.com/r/commandline/comments/10mfm5b/a_practical_guide_to_fzf_building_a_file_explorer/][Pratical guide to fzf @Reddit]]
-  
+** TODO Improve Neomutt Config :subNemutt@Config:
+SCHEDULED: <2026-05-16 Sat>
+:PROPERTIES:
+:ID: 7a9a7ba1-30d9-42d7-a696-5e5cb032c28b
+:END:
+- *OBJECTIVE:*  Config neomutt workflow for emails
