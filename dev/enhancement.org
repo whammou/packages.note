@@ -12,3 +12,13 @@ Emulate the same environment as current remote machine on work station to deal w
 #+end_quote
 
 /Checkout:/ [[id:58910689-be05-4304-8b9b-7d2c03fee002][Managing Dotfiles with Chezmoi]]
+** OPEN Configure WireGuard VPN :subWireGuard:
+:PROPERTIES:
+:ID: c9c7fb4d-e56d-45ae-8c56-2e402cc1d623
+:END:
+
+#+name: Description
+#+begin_quote org
+Configure =wireguard= vpn for home network and bypassing NAT blocking in public network. Also enhance security
+#+end_quote
+
