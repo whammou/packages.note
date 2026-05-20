@@ -560,3 +560,9 @@ SCHEDULED: <2026-05-17 Sun 12:00>
 :ID: e9f463e1-cec1-4311-9052-d92f2684adb7
 :END:
 - *OBJECTIVE:*  Check quota cool down
+** TODO Qtile Float Focus To Front :subQtile@Hook:
+SCHEDULED: <2026-05-20 Wed>
+:PROPERTIES:
+:ID: abb525f6-efa8-4a4b-859b-3c6d9295f2cd
+:END:
+- *OBJECTIVE:*  Create a hook to auto =bring-to-front= on floating window focus
