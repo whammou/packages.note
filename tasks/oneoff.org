@@ -493,9 +493,9 @@ CLOSED: [2025-10-07 Tue 23:27] DEADLINE: <2025-10-07 Tue>
 CLOSED: [2025-11-16 Sun 21:13] DEADLINE: <2025-11-16 Sun 21:00>
 - *OBJECTIVE:* Update colorscheme of =qtile= to match =nvim= and =kitty=
 ** DONE Orgmode Uniform Keybinds :subNvim:subOrgmode:subQtile:
-DEADLINE: <2026-03-05 Thu 00:39> CLOSED: [2026-03-05 Thu 00:47]
+CLOSED: [2026-03-05 Thu 00:47] DEADLINE: <2026-03-05 Thu 00:39>
 :PROPERTIES:
-:ID: bf11fb15-6d2f-4643-afc8-643ac329c65b
+:ID:       bf11fb15-6d2f-4643-afc8-643ac329c65b
 :END:
 #+name:LOGBOOK
 #+html:<details><summary>LOGBOOK</summary>
@@ -528,13 +528,13 @@ CLOSED: [2025-12-01 Mon 16:01] DEADLINE: <2025-12-01 Mon 15:50>
 CLOSED: [2025-12-04 Thu 20:46] DEADLINE: <2025-12-04 Thu 18:15>
 - *OBJECTIVE:* Fix =variable= prints incorrect value
 ** DONE Optimize Rclone Performance :subRclone:DRIVE:FileSync:
-DEADLINE: <2026-02-12 Thu> CLOSED: [2026-03-17 Tue 04:16]
+CLOSED: [2026-03-17 Tue 04:16] DEADLINE: <2026-02-12 Thu>
 - *OBJECTIVE:*  Optimizing =rclone= performance when syncing with cloud-drives
 *** ABRT Rclone Systemd Service :subSystemd:
-DEADLINE: <2026-02-12 Thu> CLOSED: [2026-03-17 Tue 04:16]
+CLOSED: [2026-03-17 Tue 04:16] DEADLINE: <2026-02-12 Thu>
 - *OBJECTIVE:*  Mount drives using systemd services
 ** DONE Config Opencode.nvim
-DEADLINE: <2026-02-11 Wed> CLOSED: [2026-03-17 Tue 04:16]
+CLOSED: [2026-03-17 Tue 04:16] DEADLINE: <2026-02-11 Wed>
 :PROPERTIES:
 :ID:       6f2f9641-6482-4a34-a6e9-18901984a901
 :END:
@@ -543,7 +543,7 @@ DEADLINE: <2026-02-11 Wed> CLOSED: [2026-03-17 Tue 04:16]
   + [ ]  Adding extra =function=
 - *Reference:*  [[https://github.com/nickjvandyke/opencode.nvim][Opencode.nvim @Github]]
 ** DONE Testing Orgmode Ntfy Notification :subNvim:subOrgmode:
-DEADLINE: <2026-03-04 Wed 22:17> CLOSED: [2026-03-04 Wed 22:58]
+CLOSED: [2026-03-04 Wed 22:58] DEADLINE: <2026-03-04 Wed 22:17>
 :PROPERTIES:
 :ID:       7c6738e6-7bd9-42f8-bb1e-23c529dfb057
 :END:
@@ -551,18 +551,18 @@ DEADLINE: <2026-03-04 Wed 22:17> CLOSED: [2026-03-04 Wed 22:58]
 ** TODO Modify Opencode Keybindings :subOpenCode@Config:
 SCHEDULED: <2026-05-17 Sun>
 :PROPERTIES:
-:ID: ca62c03d-e3f8-4e3b-b9bd-105049ffeaf2
+:ID:       ca62c03d-e3f8-4e3b-b9bd-105049ffeaf2
 :END:
 - *OBJECTIVE:*  Update workflow with opencode =keybindings=
-** TODO Opencode Check Agent Quota :subOpenCode:
-SCHEDULED: <2026-05-17 Sun 12:00>
+** DONE Opencode Check Agent Quota :subOpenCode:
+CLOSED: [2026-05-24 Sun 17:47] SCHEDULED: <2026-05-17 Sun 12:00>
 :PROPERTIES:
-:ID: e9f463e1-cec1-4311-9052-d92f2684adb7
+:ID:       e9f463e1-cec1-4311-9052-d92f2684adb7
 :END:
 - *OBJECTIVE:*  Check quota cool down
 ** TODO Qtile Float Focus To Front :subQtile@Hook:
 SCHEDULED: <2026-05-20 Wed>
 :PROPERTIES:
-:ID: abb525f6-efa8-4a4b-859b-3c6d9295f2cd
+:ID:       abb525f6-efa8-4a4b-859b-3c6d9295f2cd
 :END:
 - *OBJECTIVE:*  Create a hook to auto =bring-to-front= on floating window focus
