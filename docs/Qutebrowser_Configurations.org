@@ -4,17 +4,12 @@
 :END:
 #+TITLE: Qutebrowser Configurations
 
-#+OPTIONS: title:nil tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
+#+OPTIONS: title:t tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
 #+TODO: TODO(t) (e) DOIN(d) PROG(g) PEND(p) OUTL(o) EXPL(x) FDBK(b) WAIT(w) NEXT(n) IDEA(i) | ABRT(a) PRTL(r) RVIW(v) DONE(f)
 #+FILETAGS: :typDoc:subProject:PACKAGES:subQutebrowser:
-#+HTML:<details>
-
-* PRTL Qutebrowser Configurations [77%] :typDoc:meta:PACKAGES:subQutebrowser:
-CLOSED: [2025-06-10 Tue 01:04]
-#+HTML:</details>
 - *OBJECTIVE:* implement text to speech to qutebrowser
   - *Visit:* [[https://redlib.seasi.dev/r/qutebrowser/comments/w4pv2v/configpy_ideas/][Qutebrowser tts config idea @ Reddit]]
-** DONE Rebind set-mark function
+* DONE [#A] Rebind set-mark function
 CLOSED: [2025-01-28 Tue 03:19]
 - *OBJECTIVE:* rebind set-mark func to match vim
 - Note taken on [2025-05-06 Tue 21:43] \\
@@ -23,14 +18,14 @@ CLOSED: [2025-01-28 Tue 03:19]
     #+BEGIN_SRC: python
     config.bind('m', 'mode-enter set_mark')
     #+END_SRC
-** DONE Qutebrowser start-page
+* DONE [#A] Qutebrowser start-page
 CLOSED: [2025-05-04 Sun 08:44]
 - *OBJECTIVE:* /Add qutebrowser start-page/
   - *Visit:* [[https://nimplex.github.io/Minimal-StartPage/][start-page @ Search]]
-** PRTL Qutebrowser with Qtile [100%] :subQtile:
+* PRTL [#A] Qutebrowser with Qtile [100%] :subQtile:
 CLOSED: [2025-05-22 Thu 06:03]
 - *OBJECTIVE:* /Integrate qutebrowser to qtile window manager/
-*** DONE Workaround window-bg
+** DONE Workaround window-bg
 CLOSED: [2025-05-07 Wed 12:28]
 :PROPERTIES:
 :ID:       7a4c8a36-bc6b-4050-9448-a2aa9403ad16
@@ -43,7 +38,7 @@ Workaround ~qutebrowser~ using ~xdotool~ to detect invisible ~windows~ and take 
 - *OBJECTIVE:* /Run new window in background (prevent focus stealing)/
   - *Visit:* [[https://github.com/qutebrowser/qutebrowser/issues/3819][Qutebrowser new window in background @ Github]]
   - *Visit:* [[https://stackoverflow.com/questions/9117507/linux-unix-command-to-determine-if-process-is-running][Determine if qutebrowser is running @ Overflow]]
-**** DONE Qutebrowser daemon mode
+*** DONE Qutebrowser daemon mode
 CLOSED: [2025-08-01 Fri 05:24] DEADLINE: <2025-04-21 Mon 22:00>
 :LOGBOOK:
 :END:
@@ -69,14 +64,14 @@ CLOSED: [2025-08-01 Fri 05:24] DEADLINE: <2025-04-21 Mon 22:00>
 -----
 - *Visit:* [[https://gist.github.com/knatsakis/8cf329853330893cd2d7fa3dbd5692b0][Qutebrowse-daemon script @ Github]]
 - *Checkout:* [[Workaround window-bg][[BUG] Workaround daemon next window focus bug @ Org]]
-*** PRTL Spawn layout commands
+** PRTL Spawn layout commands
 CLOSED: [2025-05-21 Wed 23:28] DEADLINE: <2025-05-21 Wed 22:15>
 :PROPERTIES:
 :ID:       88bbe7c3-ba9a-4bad-adf8-b523dd0c1c26
 :END:
 - *OBJECTIVE:* /Create script to let qtile manage spawn position of new window/
   - *Run:* ~$ qtile cmd-obj -o layout -f spawn_split -a "qb 'URL'" "x"~ 
-**** DONE Qtile spawn script
+*** DONE Qtile spawn script
 CLOSED: [2025-05-21 Wed 23:28]
 - [X] *OBJECTIVE:* /Create script to let qtile manage spawn tab of new window/ [100%]
   - [X] Create ~script~
@@ -85,36 +80,36 @@ CLOSED: [2025-05-21 Wed 23:28]
       - *Solution:* [[https://github.com/qtile/qtile/issues/2433][Implement using python script for bash @Github-issue]]
   - [X] Create alias
   - [X] Crreate keybinds
-** DONE Hardware Acceleration
+* DONE [#A] Hardware Acceleration
 CLOSED: [2025-04-18 Fri 14:16] DEADLINE: <2025-04-16 Wed 16:00>
 - *OBJECTIVE:* /Enable hardware acceleration/
 - *Visit:* [[https://wiki.archlinux.org/title/Hardware_video_acceleration][Hardware acceleration doc @ Archwiki]]
 - *References:* [[https://l.opnxng.com/r/qutebrowser/comments/s60a78/what_chromium_flags_do_you_use/][chromium flags @Reddit]]
-** DONE Create new-instance
+* DONE [#A] Create new-instance
 CLOSED: [2025-06-05 Thu 05:02]
 - [X] *OBJECTIVE:* /Setup qutebrowser-profiles for better session managements/ [100%]
   +- [X] *Run:* ~qutebrowser-profile --new --load "profile"~+
   - [X] *Run:* ~qutebrowser --basedir=<base-dir> --config-py=path/to/config~
     - *Complication:* New window with the same base dir failed to open in ~qtile-scratchpad~
     - *Solution:* [[https://github.com/whammou/dotfiles/commit/d894e08216b9e78ddb27f76b7a5e4367ee88ea7e][Workaround qtile not spawning window in scratchpad @Commit]]
-** DONE Yazi as file chooser
+* DONE [#A] Yazi as file chooser
 CLOSED: [2025-06-10 Tue 01:04]
 - /*Objective:* Launch yazi as qutebrowser file chooser/
 - *Checkout:* [[https://github.com/whammou/dotfiles/commit/30eabb566bf99855b962062abb685109482f9ef7][Set yazi as default file picker @Commit]]
 - *Reference:* [[https://www.youtube.com/watch?v=ce2NOmTBWfo#__preview][Ranger as qutebrowser file chooser @Youtube]]
-** PEND Userscripts
+* PEND [#A] Userscripts
 CLOSED: [2025-05-30 Fri 06:06]
 - *OBJECTIVE:* /Learn to write userscripts in qutebrowser/
   - *References:*
     - [[https://github.com/hiway/python-qutescript][python-qutescript @Github]]
     - [[qute://help/settings.html#bindings.commands][Settings references @Qutebrowser-doc]]
     - [[qute://help/configuring.html][Keybinds and configuring @Qutebrowser-doc]]
-** DONE Qutebrowser modular configs
+* DONE [#A] Qutebrowser modular configs
 CLOSED: [2025-06-28 Sat 22:38]
 - *Objective:* /Re-write qutebrowser and make it modular/
   - *File:* [[file:~/.config/qutebrowser/][config @Directory]]
   - *Checkout:* [[https://github.com/whammou/dotfiles/commit/8f1d1a0c68f3c7f3de95d91896047db420495bfa][Modularize qutebrowser config @Commit]]
 - *References:* [[https://qutebrowser.org/doc/help/commands.html][Documentation @Qutebrowser]]
-** PEND Change highlight colors using patch
+* PEND [#A] Change highlight colors using patch
 - /*Objective:* Change chromium default highlight colors/
 - *Reference:* [[https://github.com/qutebrowser/qutebrowser/discussions/5978][Change highlight colors with system patch @Github-issue]]

@@ -3,14 +3,10 @@
 :END:
 #+TITLE: Managing Dotfiles Across Machines
 
-#+OPTIONS: title:nil tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
+#+OPTIONS: title:t tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
 #+TODO: TODO(t) (e) DOIN(d) PROG(g) PEND(p) OUTL(o) EXPL(x) FDBK(b) WAIT(w) NEXT(n) IDEA(i) | ABRT(a) PRTL(r) RVIW(v) DONE(f)
 #+FILETAGS: :typDoc:meta:DOTFILES:
-#+HTML:<details>
-
-* Managing Dotfiles Across Machines :typDoc:meta:DOTFILES:
-#+HTML:</details>
-** DOIN Managing Dotfiles with Chezmoi :subChezmoi:
+* DOIN [#A] Managing Dotfiles with Chezmoi :subChezmoi:
 DEADLINE: <2026-02-09 Mon>
 :PROPERTIES:
 :ID: 58910689-be05-4304-8b9b-7d2c03fee002
@@ -19,7 +15,7 @@ DEADLINE: <2026-02-09 Mon>
 /Reference:/
 - [[https://www.chezmoi.io/user-guide/frequently-asked-questions/usage/][Chezmoi]]
 - [[https://natelandau.com/managing-dotfiles-with-chezmoi/][Managing dotfiles with chezmoi @Blog]]
-*** Chezmoi Concepts
+** Chezmoi Concepts
 :PROPERTIES:
 :ID: c5fec865-4f66-485f-a22b-189dc25fee2e
 :END:
@@ -35,14 +31,14 @@ Chezmoi computes the target state for the current machine and then updates the d
 - The /config file/ contains machine specific data. By default it is =HOME/.config/chezmoi/chezmoi.toml=
 - The /target state/ is the desired state of the destination directory. It is computed from the source state, the config file, and the destination state. The target state includes regular files and directories, and may also include symbolic links, script to be run, and targets to be removed
 - The /working tree/ is the git working tree. Normally it is the same as the source directory, but an be a parent of the source directory
-**** OUTL Managing Outside of HOME
+*** OUTL Managing Outside of HOME
 :PROPERTIES:
 :ID: 6c8020bc-3705-4f3d-b4c6-053c19f14b76
 :END:
 
 /Managing files that live outside of the/ =HOME= /dir/ \\
 /Reference:/  [[https://www.chezmoi.io/user-guide/frequently-asked-questions/design/#can-i-use-chezmoi-to-manage-files-outside-my-home-directory][Manage Files outside of HOME @Doc]]
-**** Manage Machine-to-Machine Differences
+*** Manage Machine-to-Machine Differences
 :PROPERTIES:
 :ID: 4fdaa869-576b-4ef3-8249-25c7e78f66bf
 :END:
@@ -50,7 +46,7 @@ Chezmoi computes the target state for the current machine and then updates the d
 #+BEGIN_QUOTE
 My primary goal of using =chezmoi= is to be able to manage config files across multiple machines. I want to keep much configuration the same across these machines, but also need machine-specific configurations for emails address and credentials. Chezmoi achieves this by using =text/template= for the source state where needed
 #+END_QUOTE
-***** Chezmoi Template
+**** Chezmoi Template
 :PROPERTIES:
 :ID: f7099a94-12b3-4ee1-abd6-ae6036d9d74d
 :END:
@@ -76,7 +72,7 @@ Whereas on a work machine, it might be:
 #+END_SRC
 
 /Reference:/  [[https://www.chezmoi.io/user-guide/templating/#template-data][Chezmoi templating @Doc]]
-****** Create a Template
+***** Create a Template
 :PROPERTIES:
 :ID: 87e04cec-9432-44a0-bb88-04371aca78c6
 :END:
@@ -97,7 +93,7 @@ Then, add =HOME/.gitconfig= to chezmoi using the =--template= flag to turn it in
 #+BEGIN_SRC sh
 chezmoi add --template ~/.config/
 #+END_SRC
-****** Edit a Template
+***** Edit a Template
 :PROPERTIES:
 :ID: 30772298-6704-488b-8c39-f70c84fb3eb7
 :END:
@@ -118,7 +114,7 @@ Edit the file so it looks like:
 For a full list of variable, run: =chezmoi data=
 #+END_QUOTE
 
-***** Interacting with Password-Managers
+**** Interacting with Password-Managers
 :PROPERTIES:
 :ID: 391def47-e522-4a6e-b1ff-a829cb472206
 :END:
@@ -142,7 +138,7 @@ If, after executing the template, the file contents are empty, the target file w
 #+END_QUOTE
 
 /Visit:/  [[id:0f64b514-3287-45bc-af26-363516cb076e][Password Manager Integration @Org]]
-***** Ignore Files on Different Machines
+**** Ignore Files on Different Machines
 :PROPERTIES:
 :ID: 3fa1eb5a-c00c-4535-ba40-2d3236dc36fe
 :END:
@@ -166,7 +162,7 @@ The use of =ne= /(not equal)/ is deliberate. What we want to achieve is "only in
 #+END_QUOTE
 
 /Reference:/  [[https://www.chezmoi.io/user-guide/manage-machine-to-machine-differences/#use-templates][Ignore files on different machines @Doc]]
-**** OUTL Password Manager Integration
+*** OUTL Password Manager Integration
 :PROPERTIES:
 :ID: 0f64b514-3287-45bc-af26-363516cb076e
 :END:

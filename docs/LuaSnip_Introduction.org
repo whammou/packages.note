@@ -4,15 +4,11 @@
 :END:
 #+TITLE: LuaSnip Introduction
 
-#+OPTIONS: title:nil tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
+#+OPTIONS: title:t tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
 #+TODO: TODO(t) (e) DOIN(d) PROG(g) PEND(p) OUTL(o) EXPL(x) FDBK(b) WAIT(w) NEXT(n) IDEA(i) | ABRT(a) PRTL(r) RVIW(v) DONE(f)
 #+FILETAGS: :typDoc:meta:subNvim@subLuaSnip:
-#+HTML:<details>
-* LuaSnip Introduction :typDoc:meta:subNvim@subLuaSnip:
-
-#+HTML:</details>
 LuaSnip doc that summarizes the official [[https://github.com/L3MON4D3/LuaSnip/blob/master/DOC.md][LuaSnip Doc]] on github
-** Basics :content:
+* [#A] Basics :content:
 :PROPERTIES:
 :ID: a09bb82a-7b41-40ab-a05f-bfac3e923cc5
 :END:
@@ -27,7 +23,7 @@ In LuaSnip, snippets are made up of =nodes=. These can contain either
 
 Snippets are always created using the =s(trigger:string, node:table)=-function. It creates a snippet that contains the nodes specified in =nodes=, which will be inserted into a buffer if the text before the cursor matches =trigger= when =ls.expand= is called
 
-** Adding Snippets :content:
+* [#A] Adding Snippets :content:
 :PROPERTIES:
 :ID: c67701f4-452a-421d-a925-e1c46ff02380
 :END:
@@ -48,7 +44,7 @@ ls.add_snippets("all", {
 })
 #+end_src
 It is possible to make snippets form on filetype available to another using =ls.filtype_extend=
-** Snippet Insertion :content:
+* [#A] Snippet Insertion :content:
 :PROPERTIES:
 :ID: 4b8a9406-fe58-4cba-a569-639f00af598f
 :END:

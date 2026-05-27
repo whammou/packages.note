@@ -4,40 +4,36 @@
 :END:
 #+TITLE: A Guide to Git
 
-#+OPTIONS: title:nil tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
+#+OPTIONS: title:t tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
 #+TODO: TODO(t) (e) DOIN(d) PROG(g) PEND(p) OUTL(o) EXPL(x) FDBK(b) WAIT(w) NEXT(n) IDEA(i) | ABRT(a) PRTL(r) RVIW(v) DONE(f)
 #+FILETAGS: :typDoc:subProject:PACKAGES:subGit:
-#+HTML:<details>
-
-* A Guide to Git :typDoc:meta:PACKAGES:subGit:
-#+HTML:</details>
 - *OBJECTIVE:* /Improve workflow with nvim, fugitive, lazygit/
 - *References:*
   - [[https://youtu.be/vtFXMni91Q4#__preview][Fugitive workflow @Youtube-preview]]
   - [[https://www.youtube.com/watch?v=G3NJzFX6XhY#__preview][Config your git @Youtube]]
-** Git Operations
+* [#A] Git Operations
 /Understand the fundamentals of the git tool/
-*** Git config
+** Git config
 There are two locations a git config file can exist:
 - *Local* git repo: in the repo itself (and ignored by ~.gitignore~)
 - *Global* exist outside of the repo e.g. [[file:/home/whammou/.gitconfig][gitconfig]]
-*** Git merge vs re-base vs squashing :gitmerge:gitrebase:gtsquash:
+** Git merge vs re-base vs squashing :gitmerge:gitrebase:gtsquash:
 There are different strategies to merge two ~branches~:
 - *Merging -* Merge and ties together the ~history~ of both ~branches~
 - *Re-basing -* Merge the ~commits~ of a branch to the *tip* of ~main~ and then performs a ~fast-forward-merge~
   + *Fast-forward -* =merge= and move the pointer of the target branch forward to the latest commit of the course branch /avoiding the need to create a merge commit/
 - *Squashing -* Squeeze all the ~commits~ of ~feature branch~ into one single ~commit~ and merge it with ~main~
-*** Git commit vs stash :gitcommit:gitstash:
+** Git commit vs stash :gitcommit:gitstash:
 Visit:* [[https://paulapivat.com/technical_notes/example_tech/git_stash/][Git Stash vs Git Commit]]
-** Write better commit messages
+* [#A] Write better commit messages
 - *Goal(s):* Write better and more comprehensive commit messages
 - *Stumble upon:* [[https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/]]
-*** The Anatomy of a Commit Message
+** The Anatomy of a Commit Message
 - *Basic:*
   =git commit -m <message>=
 - *Detailed:*
   =git commit -m <title> -m <description>=
-*** 5 Steps to write a better commit message
+** 5 Steps to write a better commit message
 - Note taken on [2024-09-21 Sat 21:37] \\
   To come up with thoughtful commits consider the following: 
   - Why have I made these changes?
@@ -55,7 +51,7 @@ Visit:* [[https://paulapivat.com/technical_notes/example_tech/git_stash/][Git St
    The first line should ideally be no longer than 50 chars, and the body should be restricted to 72 chars
 5. *Content:*
    Be direct, try to eliminate fillers words and phrases in theses sentences (*Example:* though, maybe, I think, kind of), Think like a journalist
-*** Conventional Commits
+** Conventional Commits
 Conventional Commit is a formatting convention that provides as set of rules to formulate a consistent commit message structure like so:
 
 #+NAME: Conventional Commit structure
@@ -104,22 +100,22 @@ Closes D2IQ-12345
 
 - *NOTE*
   The ensure that these committing conventions remain consistent across developers, commit message linting can be configured before changes are able to be pushed up. [[https://commitizen-tools.github.io/commitizen/][Commitizen]] is a great tool to enforce standards, sync up semantic versioning, along with other helpful features
-** Clean commit history
+* [#A] Clean commit history
 - *OBJECTIVE:* Clean up git commit history
 - *Reference:* [[https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History][Git tools rewrite history @Doc-git]]
-** OUTL Storing secrets in git
+* OUTL [#A] Storing secrets in git
 :PROPERTIES:
 :ID: ccac12ba-197b-4bfc-a022-fdc074922ee2
 :END:
 - *OBJECTIVE:* Learn how to securely store secrets in git
 - *Reference:* [[https://dev.to/wiresurfer/manage-sensitive-api-keys-in-public-dotfiles-using-pgp-and-sops-5mn][Manage Crendential in Public Dotfiles @Blog-dev]]
-*** Encryption System
+** Encryption System
 /What is an encryption system/ \\
 /=gpg= explain/
-*** Encryption Manager
+** Encryption Manager
 /What is an encryption manager/ \\
 /Check-out:/ [[https://github.com/getsops/sops][Getsops @Github-repo]]
-** DONE Managing A Nested Git Project :subGit:MANAGEMENT:
+* DONE [#A] Managing A Nested Git Project :subGit:MANAGEMENT:
 DEADLINE: <2025-10-06 Mon> CLOSED: [2025-10-06 Mon 17:42]
 :PROPERTIES:
 :ID: 0ac3ce98-9f59-468f-acfd-c494c879986b
@@ -131,7 +127,7 @@ For an open-source organization, it can be tricky to achieve single-source =docu
 [[https://opensource.com/article/20/5/git-submodules-subtrees]]
 #+html:</details>
 - *Reference:* [[https://ao.bloat.cat/exchange/stackoverflow.com/questions/35534766/how-to-create-submodule-in-existing-repo][How to create a nested project @Overflow]]
-*** DONE Git Submodules Approach
+** DONE Git Submodules Approach
 DEADLINE: <2025-10-06 Mon> CLOSED: [2025-10-06 Mon 17:42]
 :PROPERTIES:
 :ID: 35ff8cc5-522d-423e-b9e1-0d4e067e737b
@@ -146,7 +142,7 @@ DEADLINE: <2025-10-06 Mon> CLOSED: [2025-10-06 Mon 17:42]
 [!WARNING]
 =submodules= are pointer to s specific commit meaning having too many layers of them can obstruct workflow as you will have to update each =submodule= along with its new pointers
 #+END_QUOTE
-**** DONE Clone and Load Submodules
+*** DONE Clone and Load Submodules
 DEADLINE: <2025-10-06 Mon> CLOSED: [2025-10-06 Mon 17:50]
 Downloading =submodules= sequentially can be a tedious task, so =clone= and =submodule update= will support the =--jobs= or =-j= parameter
 
@@ -155,7 +151,7 @@ Downloading =submodules= sequentially can be a tedious task, so =clone= and =sub
 git submodule update --init --recursive -j8
 git clone --recursive --jobs 8 <URL to git repo>
 #+END_SRC
-**** DONE Add Submodules
+*** DONE Add Submodules
 DEADLINE: <2025-10-06 Mon> CLOSED: [2025-10-06 Mon 17:58]
 - To add a child repository to parent repository:
   #+BEGIN_SRC bash
@@ -169,20 +165,20 @@ DEADLINE: <2025-10-06 Mon> CLOSED: [2025-10-06 Mon 17:58]
   #+BEGIN_SRC bash
   git submodule init
   #+END_SRC
-**** DONE Remove a Submodule
+*** DONE Remove a Submodule
 DEADLINE: <2025-10-06 Mon> CLOSED: [2025-10-06 Mon 23:13]
 Merely deleting a child project manually won't remove the child project from the parent repository as it is staged. To delete a /child repository/ run:
 #+BEGIN_SRC bash
 git rm -rf submodule
 #+END_SRC
-**** DONE Pull submodules
+*** DONE Pull submodules
 DEADLINE: <2025-10-06 Mon> CLOSED: [2025-10-06 Mon 23:06]
 Before building or running the /parent repository/, you have to make sure that the child /dependencies/ are up to date
 + To pull all changes in submodules:
   #+BEGIN_SRC bash
     git submodule update --remote
   #+END_SRC
-**** DONE Make Changes to Submodules
+*** DONE Make Changes to Submodules
 DEADLINE: <2025-10-06 Mon> CLOSED: [2025-10-07 Tue 02:57]
 :PROPERTIES:
 :ID: 0d065ce6-e02a-4dce-b7a5-29a1910d0e9c
@@ -218,7 +214,7 @@ As mentioned above =submodules= are pointer to a specific =commit= of a /reposit
 [!NOTE]
 Git support running command for each initialized /child repository/ using =git submodule foreach <command>=. However this run =commands= in sequence thus takes up a lot of time to finish all commands on every =submodules=. In stead running =commands= in parallel might take more overhead but less time
 #+END_QUOTE
-*** DONE Symlinks Approach
+** DONE Symlinks Approach
 DEADLINE: <2025-10-06 Mon> CLOSED: [2025-10-06 Mon 23:35]
 Managing a /nested project/ can be a tedious tasks. Especially when the =child-repo= contains different =child-repos=. This create a layer of index to different pointer to maintain when making changes to any =child-repo=. Thus instead of create a nested level, use =symlink= to create a list of local pointer the stay fixed even when a =child-repo= is changed
 #+BEGIN_SRC bash

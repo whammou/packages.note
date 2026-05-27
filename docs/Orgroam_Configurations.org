@@ -4,19 +4,12 @@
 :END:
 #+TITLE: Orgroam Configurations
 
-#+OPTIONS: title:nil tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
+#+OPTIONS: title:t tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
 #+TODO: TODO(t) (e) DOIN(d) PROG(g) PEND(p) OUTL(o) EXPL(x) FDBK(b) WAIT(w) NEXT(n) IDEA(i) | ABRT(a) PRTL(r) RVIW(v) DONE(f)
 #+FILETAGS: :typDoc:subProject:PACKAGES:ORGROAM:
-#+HTML:<details>
-
-* Orgroam Configurations :typDoc:meta:PACKAGES:ORGROAM:
-:PROPERTIES:
-:ID:       4c2571b3-e416-48c0-bf7d-4d93af0ce820
-:END:
-#+HTML:</details>
 - *OBJECTIVE:* Develop a notetaking workflow in orgroam
 - *Reference:* [[https://github.com/chipsenkbeil/org-roam.nvim][Orgroam-nvim @Github]]
-** Orgroam Built-in UID System
+* [#A] Orgroam Built-in UID System
 :PROPERTIES:
 :ID:       bc6b5a2e-214b-4e04-a8e7-f6444bebc3c5
 :END:

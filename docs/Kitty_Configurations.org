@@ -4,14 +4,9 @@
 :END:
 #+TITLE: Kitty Configurations
 
-#+OPTIONS: title:nil tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
+#+OPTIONS: title:t tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
 #+TODO: TODO(t) (e) DOIN(d) PROG(g) PEND(p) OUTL(o) EXPL(x) FDBK(b) WAIT(w) NEXT(n) IDEA(i) | ABRT(a) PRTL(r) RVIW(v) DONE(f)
 #+FILETAGS: :typDoc:subProject:PACKAGES:subKitty:
-#+HTML:<details>
-
-* PRTL Kitty Configurations [66%] :typDoc:meta:PACKAGES:subKitty:
-CLOSED: [2025-06-08 Sun 05:17] DEADLINE: <2025-06-08 Sun>
-#+HTML:</details>
 :PROPERTIES:
 :ID:       19cf96c7-877d-4504-b6fd-1db0310af1a6
 :END:

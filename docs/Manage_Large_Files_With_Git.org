@@ -3,15 +3,11 @@
 :END:
 #+TITLE: Manage Large Files With Git
 
-#+OPTIONS: title:nil tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
+#+OPTIONS: title:t tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
 #+TODO: TODO(t) (e) DOIN(d) PROG(g) PEND(p) OUTL(o) EXPL(x) FDBK(b) WAIT(w) NEXT(n) IDEA(i) | ABRT(a) PRTL(r) RVIW(v) DONE(f)
 #+FILETAGS: :typDoc:meta:PACKAGES:subGit:MANAGEMENT:
-#+HTML:<details>
-
-* Manage Large Files With Git :typDoc:meta:PACKAGES:subGit:MANAGEMENT:
-#+HTML:</details>
 Manage /large files/ with =git= is not practical however it is essential for some =repositories= to content /large files./ Having a way to manage /large-files/ within =repo= is a useful in many cases
-** DONE Managing Large Files with Git-Annex
+* DONE [#A] Managing Large Files with Git-Annex
 CLOSED: [2025-09-17 Wed 06:17]
 
 #+NAME:What is Git-annex
@@ -26,5 +22,5 @@ git-annex, wikipedia [fn:1]
 - A separated =git= branch logs the location of every file
 - Thus /user/ con clone a git annex repository and then decide for every file whether to make it locally available
 
-* Footnotes
+Footnotes
 [fn:1] [[https://en.wikipedia.org/wiki/Git-annex]]
