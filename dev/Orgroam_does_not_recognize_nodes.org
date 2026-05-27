@@ -1,14 +1,13 @@
 :PROPERTIES:
 :ID: 94eaf3ce-0865-4161-ac3b-1cba44b480d8
 :END:
-#+TITLE: Orgroam does not recognize nodes
+#+FILETAGS: :typDev:catIssue:subOrgmode:ORGROAM:
 
 #+OPTIONS: todo:t tags:nil tasks:t ^:nil toc:nil
 #+TODO: OPEN(y) (e) PROG(g) INTR(q) NEXT(n) | ABRT(a) DONE(f) CLSD(c)
-#+FILETAGS: :typDev:catIssue:meta:subOrgmode:ORGROAM:
+#+FILETAGS: :typDev:catIssue:subOrgmode:ORGROAM:
 #+HTML:<details>
 
-* DONE Orgroam does not recognize nodes :typDev:catIssue:meta:subOrgmode:ORGROAM:
 CLOSED: [2026-02-17 Tue 02:44]
 #+HTML:</details>
 Fixing =org-roam= issue that sometimes does not recognize some nodes \\

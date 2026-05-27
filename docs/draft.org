@@ -3,17 +3,7 @@
 #+TODO: TODO(t) (e) DOIN(d) PROG(g) PEND(p) OUTL(o) EXPL(x) FDBK(b) WAIT(w) NEXT(n) IDEA(i) | ABRT(a) PRTL(r) RVIW(v) DONE(f)
 #+OPTIONS: title:nil tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
 #+FILETAGS: :typDoc:catDraft:PACKAGES:
-#+HTML:<details>
-
-* Document Drafts :typDoc:catDraft:PACKAGES:meta:
-#+HTML:</details>
-
-#+NAME:Warning Message
-#+BEGIN_QUOTE
-[!WARNING]
-Draft items are subjected to change and refile!
-#+END_QUOTE
-** OUTL Fzf Scripting :SCRIPTING:subFzf:
+* OUTL Fzf Scripting :SCRIPTING:subFzf:
 :PROPERTIES:
 :ID:       0635a10c-d33b-457f-b2eb-8d91480684bd
 :END:
@@ -21,16 +11,16 @@ Draft items are subjected to change and refile!
 *Checkout:*
 + [[https://seb.jambor.dev/posts/improving-shell-workflows-with-fzf/https://seb.jambor.dev/posts/improving-shell-workflows-with-fzf/][Improving workflow with fzf @Blog]]
 + [[https://github.com/beauwilliams/awesome-fzf][A semi-complete List of Fzf @Github]]
-** OUTL Git Revert a pushed commit
+* OUTL Git Revert a pushed commit
 DEADLINE: <2026-02-09 Mon>
 /How to revert a pushed commit on public or private branch/
 - *Visit:* [[https://www.youtube.com/watch?v=H2DuJNWbqLw][How to revert a pushed commit @Youtube]]
 - *Goes-to:* [[id:0d065ce6-e02a-4dce-b7a5-29a1910d0e9c][Make Changes to Submodules @Org]]
-** OUTL Command Multiple Git Repositories :subGit:
+* OUTL Command Multiple Git Repositories :subGit:
 DEADLINE: <2026-02-09 Mon>
 /Run git commands in parallel in multiple repositories/
 - *Goes-to:* [[id:0d065ce6-e02a-4dce-b7a5-29a1910d0e9c][Make Changes to Submodules @Org]]
-** DONE Initiate tmux on Homelab :subServer:subTmux:subSsh:
+* DONE Initiate tmux on Homelab :subServer:subTmux:subSsh:
 CLOSED: [2025-10-23 Thu 02:01] DEADLINE: <2025-10-23 Thu>
 :PROPERTIES:
 :ID:       36fece3a-2c38-48ec-bc23-73f11ddb5e13
@@ -59,10 +49,10 @@ def ssh_session(session_range):
         )
     return session_bind
 #+END_SRC
-** OUTL Git Rebase vs Merge :subGit:
+* OUTL Git Rebase vs Merge :subGit:
 /Difference between git rebasing and merging/ \\
 /*checkout:*/ [[https://www.geeksforgeeks.org/git/git-difference-between-merging-and-rebasing/][Git rebasing vs merging @G4g]]
-** OUTL Ntfy Notifications :subNtfy:subNotification:NotificationSync:
+* OUTL Ntfy Notifications :subNtfy:subNotification:NotificationSync:
 *Installation*
   - Use =paru= to get =ntfy= from =AUR=
   - #+NAME: Install ntfy via commandline
@@ -77,44 +67,44 @@ def ssh_session(session_range):
     systemctl enable ntfy.service
     #+END_SRC
 -----
-*** OUTL Running ntfy On Archlinux :ARCH:
+** OUTL Running ntfy On Archlinux :ARCH:
 /How to receive =ntfy-notification= on =archlinux=/ \\
 /*Check-out:*/ [[https://github.com/ronilaukkarinen/ntfy-linux-receiver-service/][ntfy-listener systemd service @Github]]
-** OUTL Pull ntfy notifications :subNtfy:NotificationSync:
+* OUTL Pull ntfy notifications :subNtfy:NotificationSync:
 DEADLINE: <2026-02-09 Mon>
 /Pull =ntfy= notifications when system connection went down/
 - *Check-out:* [[id:b6113f7d-9ec6-49df-80ff-2c0d7546475f][Run Service on Network Change @Org]]
 - *Reference:* [[https://docs.ntfy.sh/subscribe/api/#advanced-features][Pull cached messages @Ntfy-doc]]
-** OUTL Dunst Write and Run Script :subDunst:NotificationSync:
+* OUTL Dunst Write and Run Script :subDunst:NotificationSync:
 DEADLINE: <2026-02-09 Mon>
 /How to write and run script in =dunst=/
-** OUTL Git Automation :subGit:FileSync:
+* OUTL Git Automation :subGit:FileSync:
 /Automate sync process with head repo/
-** OUTL Nvim Advanced Configuration :subNvim:NvimConfig:
+* OUTL Nvim Advanced Configuration :subNvim:NvimConfig:
 =neovim= advanced implementations using lua and =lazyvim= configurations structure
-*** Lazyvim Plugin Structure
+** Lazyvim Plugin Structure
 optimal way to place your plugins in =lazyvim=
 - /Reference:/ [[https://lazy.folke.io/usage/structuring][Lazyvim Plugin Structure @Lazyvim-blog]]
-*** Nvim Reload
+** Nvim Reload
 How to reload =nvim= without restarting or spawning new instances
 - /Reference:/ [[file:/home/whammou/Workspace/nvim-restart/nvim-restart.ai.org][Restart Nvim Function @Gemini]]
-** OUTL Running Script File Event :FileSync:
+* OUTL Running Script File Event :FileSync:
 DEADLINE: <2026-02-09 Mon>
 /Run custom script on file modification event/ \\
 /Check-out:/ [[id:c4b5759c-1794-4797-b1ae-adc28bb1aa2a][Nvim Multiple Instances @Org]]
-** OUTL Scripting with Rofi :subRofi:
+* OUTL Scripting with Rofi :subRofi:
 DEADLINE: <2026-02-09 Mon>
 :PROPERTIES:
 :ID:       e88ddffd-71b2-41c2-b1e7-6309f8600812
 :END:
 /How to write script with =rofi=/
-** OUTL Qutebrowser Scripting :subQutebrowser:
+* OUTL Qutebrowser Scripting :subQutebrowser:
 :PROPERTIES:
 :ID:       1939461d-8332-40a0-95a4-0e725465ad94
 :END:
 /How to write =scripts= in =qutebrowser=/
 /Check-out:/ [[https://qutebrowser.org/doc/userscripts.html][Qutebrowser User Script @Doc]]
-** DONE Ly-dm background color :LYDM:DISPLAYMANAGER:
+* DONE Ly-dm background color :LYDM:DISPLAYMANAGER:
 DEADLINE: <2026-02-01 Sun> CLOSED: [2026-02-01 Sun 21:10]
 :PROPERTIES:
 :ID:       e8bec13e-f010-46c8-bee9-321002486290
@@ -145,7 +135,7 @@ To change color of =background= and =foreground= of a =ly= display manager sessi
   WantedBy=multi-user.target
   #+END_SRC
 /Check-out:/ [[https://gist.github.com/jessedavidd/dd3b3a6a4b922d611006d194e82e7103][How to change background color of lydm @Github]]
-** EXPL Modify Pandoc Parser Behaviour :subPandoc:
+* EXPL Modify Pandoc Parser Behaviour :subPandoc:
 :PROPERTIES:
 :ID:       f396b1ce-b2ba-466f-adf4-469395d94117
 :END:
@@ -159,7 +149,7 @@ Pandoc is structured as a set of /readers/, which translates various input forma
 
 /Documentation on learning pandoc-lua-filter/ \\
 /Reference:/  [[https://pandoc.org/lua-filters.html][Pandoc lua filter @Pandoc-documentation]]
-*** OUTL Pandoc Logging
+** OUTL Pandoc Logging
 Pandoc does provide option =pandoc -t native= as a way to explore pandoc AST \\
 
 #+BEGIN_SRC bash
@@ -178,13 +168,13 @@ echo -e "1. *foo*\n2. bar" | pandoc -t native #input
 
 /This library provides pandoc-aware functions for dumping and logging lua objects/ \\
 /Reference:/  [[https://github.com/pandoc-ext/logging][Pandoc Lua Logging @Github]]
-*** OUTL Pandoc Lua Filter :LUA:
+** OUTL Pandoc Lua Filter :LUA:
 DEADLINE: <2026-02-09 Mon>
 :PROPERTIES:
 :ID:       6cc07ef1-36d7-40b4-9087-77ef7674096b
 :END:
 /Learn lua scripting with pandoc-filter/
-** DONE Fish Done Package :subFishShell@Plugin:
+* DONE Fish Done Package :subFishShell@Plugin:
 CLOSED: [2026-04-20 Mon 02:15]
 :PROPERTIES:
 :ID: c44eeb09-f66f-4977-a3b2-1c9f04d77cde
