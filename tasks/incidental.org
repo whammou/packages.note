@@ -1,23 +1,22 @@
 #+TODO: TODO(t) (e) DOIN(d) PROG(g) PEND(p) OUTL(o) EXPL(x) FDBK(b) WAIT(w) NEXT(n) IDEA(i) | ABRT(a) PRTL(r) RVIW(v) DONE(f)
 #+OPTIONS: todo:t tags:nil tasks:t ^:nil toc:nil
-#+TITLE: Packages Incidental Tasks
+#+FILETAGS: :typTask:catIncidental:PACKAGES:
 
-* List of Incidental Tasks :typTask:catIncidental:PACKAGES:meta:
-** PEND Get transcript from Teams :TEAMS:
+* PEND Get transcript from Teams :TEAMS:
 - *OBJECTIVE:* Get transcript from Teams meeting
 - *Reference:* [[https://learn.microsoft.com/en-us/microsoftteams/platform/graph-api/meeting-transcripts/overview-transcripts][Get transcript via teams API @Doc-MS_teams]]
-** PEND Switching to emacs :subEmacs:
+* PEND Switching to emacs :subEmacs:
 - *OBJECTIVE:* Switching from nvim to emacs
 - *Reference:*
   - [[https://old.reddit.com/r/emacs/comments/qocwo1/from_vim_to_emacs/][From vim to emacs @Reddit]]
   - [[https://psakalo.substack.com/p/my-take-on-neovim-vs-emacs-vs-vs][Compare vim emacs vs vscode @Blog]]
-*** Checkout Doom-Emacs
+** Checkout Doom-Emacs
 - *OBJECTIVE:* Take a look at =doom-emacs= distribution
 - *Reference:* [[https://github.com/doomemacs/doomemacs][Doom-Emacs Git Host @Github]]
-** PEND Nvim Citation :subNvim:ZETTELKASTEN:
+* PEND Nvim Citation :subNvim:ZETTELKASTEN:
 - *OBJECTIVE:* Citation with =nvim= and =zettelkasten=
 - [[https://github.com/jghauser/papis.nvim][Papis Citation Manager @Github]]
-** DONE Debug Using Minimal Init :subNvim:DEBUG:subOrgmode:
+* DONE Debug Using Minimal Init :subNvim:DEBUG:subOrgmode:
 CLOSED: [2025-09-08 Mon 03:57] DEADLINE: <2025-09-09 Tue>
 :PROPERTIES:
 :ID:       2da88bc1-47e2-4a81-bedf-758cbdfdafbe
@@ -29,7 +28,7 @@ CLOSED: [2025-09-08 Mon 03:57] DEADLINE: <2025-09-09 Tue>
 - *[NOTE]* taken on [2025-09-06 02:03]: \\
   Completion bug detect on commit [[https://github.com/nvim-orgmode/orgmode/commit/aaa327a7430df359b336d82ad387f896077ee2d2][Adding fuzzy completion @Commit]]
 -----
-** DONE Conflict nvim-orgmode and blink :subNvim:subOrgmode:
+* DONE Conflict nvim-orgmode and blink :subNvim:subOrgmode:
 CLOSED: [2025-09-06 Sat 17:55] DEADLINE: <2025-09-06 Sat>
 :PROPERTIES:
 :ID:       0022f0cf-b051-4752-aa0e-9d5aafe4274e
@@ -40,7 +39,7 @@ CLOSED: [2025-09-06 Sat 17:55] DEADLINE: <2025-09-06 Sat>
   Issue is none related to current bug, rather it is about =insert= mode =completions=
 -----
 - *Reference:* [[https://github.com/nvim-orgmode/orgmode/pull/1010][fix: fuzzy autocompletion with blink @Github-issue]]
-** DONE Issue on org-store-link :subGithub:subOrgmode:
+* DONE Issue on org-store-link :subGithub:subOrgmode:
 CLOSED: [2025-09-08 Mon 03:57] DEADLINE: <2025-09-09 Tue>
 - *OBJECTIVE:* Create issue on org_store_link completion does not return headlines after latest commit
 -----
@@ -48,7 +47,7 @@ CLOSED: [2025-09-08 Mon 03:57] DEADLINE: <2025-09-09 Tue>
   Run =nvim-orgmode= plugin using [[id:2da88bc1-47e2-4a81-bedf-758cbdfdafbe][Minimal Config]] provided on =github=
 -----
 - *Checkout:* [[id:0022f0cf-b051-4752-aa0e-9d5aafe4274e][Conflict nvim-orgmode and blink @Org]] ([[file:/system/packages/tasks/incidental.org#feedback-debug-using-minimal-init][view on Github]])
-** ABRT Report Qtile Bug :subQtile:
+* ABRT Report Qtile Bug :subQtile:
 CLOSED: [2025-11-28 Fri 04:24]
 - *OBJECTIVE:* Report qtile =dropdown= not in windows id
 -----
@@ -92,7 +91,7 @@ CLOSED: [2025-11-28 Fri 04:24]
   index = self.focus_history.index(win)
   #+END_SRC
 -----
-** DONE Conflict ssh tmux nerdfont :subSsh:subTmux:
+* DONE Conflict ssh tmux nerdfont :subSsh:subTmux:
 CLOSED: [2025-10-20 Mon 00:15] DEADLINE: <2025-10-20 Mon>
 - *OBJECTIVE:* Solve conflicting packages when =ssh= with =tmux= and =nerdfont=
 - -----
@@ -103,7 +102,7 @@ CLOSED: [2025-10-20 Mon 00:15] DEADLINE: <2025-10-20 Mon>
   #+END_SRC
 -----
 - *Reference:* [[https://bbs.archlinux.org/viewtopic.php?id=286286][ssh tmux and nerdfont conflicting @Archforum]]
-** DONE Workaround yt-dlp Forbidden Error :YTDLP:
+* DONE Workaround yt-dlp Forbidden Error :YTDLP:
 DEADLINE: <2026-01-16 Fri> CLOSED: [2026-01-16 Fri 22:01]
 #+name:LOGBOOK
 #+html:<details><summary>LOGBOOK</summary>
@@ -118,11 +117,11 @@ DEADLINE: <2026-01-16 Fri> CLOSED: [2026-01-16 Fri 22:01]
 #+html:</details>
 - *OBJECTIVE:*  Workaround =yt-dlp= not downloading video with arg =--cookie=
 - *Reference:*  [[https://github.com/yt-dlp/yt-dlp/issues/15569][ytdlp stopped working through error 403 @Github-issue]]
-** DONE Nvim Terminal Scroll :subNvim:
+* DONE Nvim Terminal Scroll :subNvim:
 DEADLINE: <2026-01-24 Sat> CLOSED: [2026-01-24 Sat 17:15]
 - *OBJECTIVE:*  How to scroll in =neovim= terminal
 - *Reference:*  [[https://neovim.io/doc/user/terminal.html][Terminal Normal Mode @Nvim-doc]]
-*** DONE Nvim Terminal Normal Mode
+** DONE Nvim Terminal Normal Mode
 DEADLINE: <2026-01-24 Sat> CLOSED: [2026-01-24 Sat 20:33]
 :PROPERTIES:
 :ID: 6d88cb50-f38e-4a72-a621-571238bd11a7
@@ -134,7 +133,7 @@ DEADLINE: <2026-01-24 Sat> CLOSED: [2026-01-24 Sat 20:33]
 - *OBJECTIVE:*  Return to =normal= mode in =neovim=
 - *Reference:*  [[https://neovim.io/doc/user/terminal.html#terminal-input][Neovim Terminal Input @Nvim-doc]]
 
-**** DONE Nvim Execute Command in Normal Mode
+*** DONE Nvim Execute Command in Normal Mode
 DEADLINE: <2026-01-24 Sat> CLOSED: [2026-01-24 Sat 20:33]
 -----
 - Note taken on [2026-01-24 17:14]: \\
@@ -150,7 +149,7 @@ DEADLINE: <2026-01-24 Sat> CLOSED: [2026-01-24 Sat 20:33]
 -----
 - *OBJECTIVE:*  Execute commands in =normal= mode /(e.g., Exit nvim terminal)/
 - *Reference:*  [[https://neovim.io/doc/user/terminal.html#terminal-input][Nvim Terminal @Nvim-doc]]
-** DONE Get Free Model with OpenRouter :subOpenCode:
+* DONE Get Free Model with OpenRouter :subOpenCode:
 DEADLINE: <2026-03-07 Sat> CLOSED: [2026-03-07 Sat 12:11]
 :PROPERTIES:
 :ID: e76564d2-8079-44aa-8cd4-d1741e6a73f7
@@ -170,7 +169,7 @@ DEADLINE: <2026-03-07 Sat> CLOSED: [2026-03-07 Sat 12:11]
 - *Reference:*
   + [[https://openrouter.ai/collections/free-models][OpenRouter Free models collection @Blog]]
   + [[https://github.com/cheahjs/free-llm-api-resources][Free LLM API resources @Github]]
-** DONE Nvim yazi split window :subNvim:subYazi:
+* DONE Nvim yazi split window :subNvim:subYazi:
 DEADLINE: <2026-02-04 Wed> CLOSED: [2026-02-04 Wed 07:20]
 #+name:LOGBOOK
 #+html:<details><summary>LOGBOOK</summary>
@@ -181,7 +180,7 @@ DEADLINE: <2026-02-04 Wed> CLOSED: [2026-02-04 Wed 07:20]
 #+html:</details>
 - *OBJECTIVE:*  Change =yazi.nvim= window into split window
 - *Reference:*  [[https://github.com/mikavilpas/yazi.nvim/pull/1410][Allow settings window properites with hook @Github-issue]]
-** DONE Fix Roam Config :subOrgmode:ORGROAM:
+* DONE Fix Roam Config :subOrgmode:ORGROAM:
 DEADLINE: <2026-02-15 Sun> CLOSED: [2026-02-21 Sat 20:37]
 :PROPERTIES:
 :ID: 6c13dbc5-9371-41d0-9dd0-b934ccdd4fe6
@@ -189,7 +188,7 @@ DEADLINE: <2026-02-15 Sun> CLOSED: [2026-02-21 Sat 20:37]
 - *OBJECTIVE:*  Fixing =orgroam= does not recognize some notes
 - *Tracker:*    [[id:94eaf3ce-0865-4161-ac3b-1cba44b480d8][Orgroam does not recognize nodes @Issue]]
 - *Reference:*  [[https://github.com/chipsenkbeil/org-roam.nvim][Orgroam.nvim @Github]]
-** DONE Create Issue on Latest nvim-orgmode Bug
+* DONE Create Issue on Latest nvim-orgmode Bug
 DEADLINE: <2026-02-18 Wed> CLOSED: [2026-02-18 Wed 19:47]
 :PROPERTIES:
 :ID: 43c3fa26-b2a3-44ba-9a1d-4c91c84c4da0
@@ -219,13 +218,13 @@ DEADLINE: <2026-02-18 Wed> CLOSED: [2026-02-18 Wed 19:47]
     end,
   #+END_SRC
 -----
-** DONE Adjust Nvim Notification Timeout :subNvim:
+* DONE Adjust Nvim Notification Timeout :subNvim:
 DEADLINE: <2026-02-21 Sat> CLOSED: [2026-03-09 Mon 04:25]
 :PROPERTIES:
 :ID: a6d4011c-1d83-4d23-8205-bbde8054dbfd
 :END:
 - *OBJECTIVE:*  Adjust nvim =notification= timeout
-** DONE Ntfy Receive Order :subNtfy:
+* DONE Ntfy Receive Order :subNtfy:
 CLOSED: [2026-03-15 Sun 21:25]
 :PROPERTIES:
 :ID: a8669211-e8f7-47f7-98f3-7ce16237d1a8
@@ -233,12 +232,12 @@ CLOSED: [2026-03-15 Sun 21:25]
 - *OBJECTIVE:*  Receiving =ntfy= notification following specific order default/reverse
 - *Tracker:*    [[id:80c594f7-22ee-4fe7-b758-6474d80f0f94][Notification Receiving Order @Issue]]
 - *Reference:*  [[https://docs.ntfy.sh/subscribe/api/#fetch-cached-messages][Fetch cached message @Ntfy-doc]]
-** TODO Config Markdown Theme :subNvim:opPlugin:
+* TODO Config Markdown Theme :subNvim:opPlugin:
 :PROPERTIES:
 :ID: 3e5d5608-abf4-442f-8b36-690f5f80f074
 :END:
 - *OBJECTIVE:*  Config =markdown= filetype to match =org=
-** TODO Fix Homelab Samba :subSamba@FileSync:
+* TODO Fix Homelab Samba :subSamba@FileSync:
 :PROPERTIES:
 :ID: f22b8743-c641-4260-8dd0-545734a93654
 :END:
