@@ -565,3 +565,10 @@ SCHEDULED: <2026-05-26 Tue> CLOSED: [2026-05-26 Tue 04:55]
 :ID:       abb525f6-efa8-4a4b-859b-3c6d9295f2cd
 :END:
 - *OBJECTIVE:*  Create a hook to auto =bring-to-front= on floating window focus
+* TODO Systemd NPM Service :subSystemd:subNPM:
+:PROPERTIES:
+:ID: 913048d5-7554-492e-9ed1-fcf591a4e191
+:END:
+- *OBJECTIVE:*  How to run npm in a systemd service
+- /Delegate:/   [[id:2b1bd424-ef43-4f2b-8b80-6c7dac4ba9ff][Service Drop-in Override @Org]]
+  
