@@ -195,4 +195,11 @@ Might not work correctly with system running under =wayland=
 - Possible workaround: [[https://github.com/franciscolourenco/done/issues/134#issuecomment-1793803813][Notification not showing on wayland due to focused window detection @Github-issue]]
   
 /Reference:/  [[https://github.com/franciscolourenco/done][Fish done upstream @Github]]
-
+* TODO Learn NPM Package Manager :subNPM:
+:PROPERTIES:
+:ID: 0d8cf166-a81b-4d99-8b65-d8dadf022581
+:END:
+- *OBJECTIVE:*
+  + [ ]  What is =NPM=?
+  + [ ]  How to manage =npm= packages on =archlinux=
+- *Reference:*  [[https://nodejs.org/learn/getting-started/an-introduction-to-the-npm-package-manager][Introduction to npm package manager @Blog]]
