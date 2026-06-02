@@ -21,4 +21,14 @@ Emulate the same environment as current remote machine on work station to deal w
 #+begin_quote org
 Configure =wireguard= vpn for home network and bypassing NAT blocking in public network. Also enhance security
 #+end_quote
+* OPEN Plaintext Mail Management :subMail@Workflow:
+:PROPERTIES:
+:ID: 1fcbea49-43b6-4376-90be-50c0209b0b79
+:END:
 
+#+name: Description
+#+begin_quote org
+How to effective work with plaintext email. Note down the whole workflow
+#+end_quote
+
+/Docs:/  [[id:987b841e-623e-4b40-9387-c3870883d966][Plaintext email workflow @Doc]]

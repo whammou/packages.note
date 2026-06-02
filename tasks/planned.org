@@ -213,7 +213,7 @@ CLOSED: [2025-11-20 Thu 21:22] DEADLINE: <2025-11-20 Thu 21:30>
 - *OBJECTIVE:* Hint and open =URL= with =tmux=
 - *Reference:* [[https://dev.to/tomoviktor/best-way-to-open-urls-in-your-terminal-via-tmux-595b][Hint and open URL with Tmux @Blog]]
 * PROG Learn Scripting with Rofi :subRofi:
-SCHEDULED: <2026-05-15 Fri>
+SCHEDULED: <2026-06-03 Wed>
 :PROPERTIES:
 :ID:       b4d95356-ad0b-4d28-8d01-efe6a2262752
 :END:
@@ -221,7 +221,7 @@ SCHEDULED: <2026-05-15 Fri>
 - *Reference:*  [[https://davatorium.github.io/rofi/current/rofi-script.5/][Rofi Scripting documentation @Blog]]
 - *Check-out:*  [[id:e88ddffd-71b2-41c2-b1e7-6309f8600812][Scripting with Rofi @Org]]
 ** TODO Learn Rofi Config :subRofi@Config:
-SCHEDULED: <2026-05-15 Fri>
+SCHEDULED: <2026-06-03 Wed>
 :PROPERTIES:
 :ID: 945c86c9-9065-4e76-838f-83699e0297d9
 :END:
@@ -396,7 +396,7 @@ SCHEDULED: <2026-05-11 Mon> CLOSED: [2026-05-11 Mon 19:11]
 :END:
 - *OBJECTIVE:*  Add edit text keybinding
 * TODO Managing fzf Config :subFzf@Config:
-SCHEDULED: <2026-05-15 Fri> DEADLINE: <2026-05-15 Fri>
+SCHEDULED: <2026-06-03 Wed>
 :PROPERTIES:
 :ID: 22b64191-09ab-4524-93a4-8bb965cfd6b2
 :END:
@@ -408,3 +408,10 @@ SCHEDULED: <2026-05-16 Sat> CLOSED: [2026-05-17 Sun 03:16]
 :ID: 7a9a7ba1-30d9-42d7-a696-5e5cb032c28b
 :END:
 - *OBJECTIVE:*  Config neomutt workflow for emails
+* Improve Plain-text Mail Workflow
+:PROPERTIES:
+:ID: 09479056-0038-438f-ab15-57b400fe8a25
+:END:
+- *OBJECTIVE:*  Workflow with emails
+- /Delegate:/   [[id:1fcbea49-43b6-4376-90be-50c0209b0b79][Plaintext Mail Management @Org]]
+  
