@@ -414,4 +414,8 @@ SCHEDULED: <2026-05-16 Sat> CLOSED: [2026-05-17 Sun 03:16]
 :END:
 - *OBJECTIVE:*  Workflow with emails
 - /Delegate:/   [[id:1fcbea49-43b6-4376-90be-50c0209b0b79][Plaintext Mail Management @Org]]
-  
+* Config Qtile Default Add Mode :subQtile@QtileBonsai:
+:PROPERTIES:
+:ID: 1ced4d71-78cc-4427-842c-7f1e4142355d
+:END:
+- *OBJECTIVE:*  Change the default spawn 
