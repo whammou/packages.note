@@ -1,6 +1,10 @@
+:PROPERTIES:
+:ID: 00000000-0000-0000-0000-000000000000
+:END:
+
 #+OPTIONS: todo:t tags:nil tasks:t ^:nil toc:nil
 #+TODO: OPEN(y) (e) PROG(g) INTR(q) NEXT(n) | ABRT(a) DONE(f) CLSD(c)
-#+FILETAGS: :typDev:catEnhancement:PACKAGES:
+#+FILETAGS: :PACKAGES:typDev:catEnhancement:
 * OPEN Remote Workspace :subWorkflow@Remote:
 :PROPERTIES:
 :ID: f2003a39-72eb-40b7-a832-b209c8cf9cff
