@@ -6,10 +6,7 @@
 
 #+OPTIONS: title:t tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
 #+TODO: TODO(t) (e) DOIN(d) PROG(g) PEND(p) OUTL(o) EXPL(x) FDBK(b) WAIT(w) NEXT(n) IDEA(i) | ABRT(a) PRTL(r) RVIW(v) DONE(f)
-#+FILETAGS: :typDoc:subProject:PACKAGES:subKitty:
-:PROPERTIES:
-:ID:       19cf96c7-877d-4504-b6fd-1db0310af1a6
-:END:
+#+FILETAGS: :PACKAGES:typDoc:subProject:subKitty:
 1. [X] *OBJECTIVE:* Find solution to kitty hint returns wrong format
 2. [ ] *OBJECTIVE:* Multiple hintting patterns
 - *Complication:* Regex is never 100% accurate. There are either false positive or not enough matching [50%]
