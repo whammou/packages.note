@@ -1,6 +1,6 @@
-#+TITLE: Package Logs
-#+DESCRIPTION: Description for archive here
-#+OPTIONS: ^:nil
+#+TITLE: Package Log
+#+DESCRIPTION: Logs of finished items
+#+FILETAGS: :PACKAGES:LOG:
 
 * Logs :LOG:OPSYS:PACKAGES:
 - /Store finished tasks/
