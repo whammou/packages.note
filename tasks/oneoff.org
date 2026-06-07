@@ -548,7 +548,7 @@ CLOSED: [2026-03-04 Wed 22:58] DEADLINE: <2026-03-04 Wed 22:17>
 :END:
 - *OBJECTIVE:*  Sending =orgmode= notification to =ntfy= server instead of using =dunst=
 * TODO Modify Opencode Keybindings :subOpenCode@Config:
-SCHEDULED: <2026-06-03 Wed>
+SCHEDULED: <2026-06-07 Sun>
 :PROPERTIES:
 :ID:       ca62c03d-e3f8-4e3b-b9bd-105049ffeaf2
 :END:
