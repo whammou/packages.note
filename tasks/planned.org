@@ -419,3 +419,11 @@ SCHEDULED: <2026-05-16 Sat> CLOSED: [2026-05-17 Sun 03:16]
 :ID: 1ced4d71-78cc-4427-842c-7f1e4142355d
 :END:
 - *OBJECTIVE:*  Change the default spawn 
+* TODO Dunst Ntfy Parser :subDunst:subNtfy:@Parse:
+SCHEDULED: <2026-06-09 Tue>
+:PROPERTIES:
+:ID: 36c08b23-12f0-489a-a58f-cbf7a46c24e9
+:END:
+- *OBJECTIVE:*  Parse =ntfy= to work with =dunst=
+- *Reference:*  
+
