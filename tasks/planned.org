@@ -426,4 +426,10 @@ SCHEDULED: <2026-06-09 Tue>
 :END:
 - *OBJECTIVE:*  Parse =ntfy= to work with =dunst=
 - *Reference:*  
-
+* TODO Nvim LSP for Embed Code :subNvim@LSP:
+SCHEDULED: <2026-06-10 Wed>
+:PROPERTIES:
+:ID: f02e57fb-8fdf-4ddf-b976-cf4a98b28856
+:END:
+- *OBJECTIVE:*  Install and Config =otter.nvim= to run LSP feature inside embedded code block
+- *Reference:*  [[https://github.com/jmbuhr/otter.nvim][Upstream Otter.nvim @Github]]
