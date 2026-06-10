@@ -1,7 +1,3 @@
-:PROPERTIES:
-:ID: 00000000-0000-0000-0000-000000000000
-:END:
-
 #+OPTIONS: todo:t tags:nil tasks:t ^:nil toc:nil
 #+TODO: OPEN(y) (e) PROG(g) INTR(q) NEXT(n) | ABRT(a) DONE(f) CLSD(c)
 #+FILETAGS: :PACKAGES:typDev:catEnhancement:
@@ -36,3 +32,22 @@ How to effective work with plaintext email. Note down the whole workflow
 #+end_quote
 
 /Docs:/  [[id:987b841e-623e-4b40-9387-c3870883d966][Plaintext email workflow @Doc]]
+* OPEN Testing Otter for Orgmode :subNvim@LSP:subOrgmode:
+:PROPERTIES:
+:ID: 09dcfee0-718f-449c-b448-e3aef672ac1e
+:END:
+
+#+begin_quote org
+Testing nvim-orgmode with =otter= to run LSP server on embed code in inside a codeblock
+#+end_quote
+
+#+name: Example
+#+begin_src python
+import numpy as np
+import pylab as plt
+
+x = np.linspace(-10, 10, num=101)
+y = x**2
+plt.plot(x, y)
+plt.show()
+#+end_src

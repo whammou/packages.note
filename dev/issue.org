@@ -1,7 +1,3 @@
-:PROPERTIES:
-:ID: 3461b0ef-e2f7-456f-aaa1-77ecb7cb9685
-:END:
-
 #+OPTIONS: todo:t tags:nil tasks:t ^:nil toc:nil
 #+TODO: OPEN(y) (e) PROG(g) INTR(q) NEXT(n) | ABRT(a) DONE(f) CLSD(c)
 #+FILETAGS: :PACKAGES:typDev:catIssue:
