@@ -433,3 +433,4 @@ SCHEDULED: <2026-06-10 Wed>
 :END:
 - *OBJECTIVE:*  Install and Config =otter.nvim= to run LSP feature inside embedded code block
 - *Reference:*  [[https://github.com/jmbuhr/otter.nvim][Upstream Otter.nvim @Github]]
+- /Delegate:/   
