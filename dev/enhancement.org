@@ -41,13 +41,24 @@ How to effective work with plaintext email. Note down the whole workflow
 Testing nvim-orgmode with =otter= to run LSP server on embed code in inside a codeblock
 #+end_quote
 
-#+name: Example
-#+begin_src python
+#+name: import
+#+begin_src python :tangle no :noweb yes
 import numpy as np
 import pylab as plt
+#+end_src
+
+#+RESULTS: import
+
+#+name: Example
+#+begin_src python :tangle yes :noweb yes
+<<import>>
 
 x = np.linspace(-10, 10, num=101)
 y = x**2
 plt.plot(x, y)
 plt.show()
+# plt.savefig("parabola.png")
+print(f"Plot saved to parabola.png ({x[0]:.0f} to {x[-1]:.0f})")
 #+end_src
+
+#+RESULTS: Example
