@@ -48,17 +48,32 @@ import pylab as plt
 #+end_src
 
 #+RESULTS: import
+: None
 
 #+name: Example
-#+begin_src python :tangle yes :noweb yes
+#+begin_src python :tangle no :noweb yes :results output
 <<import>>
 
 x = np.linspace(-10, 10, num=101)
 y = x**2
+print(f"Plot saved to parabola.png ({x[0]:.0f} to {x[-1]:.0f})")
 plt.plot(x, y)
 plt.show()
 # plt.savefig("parabola.png")
-print(f"Plot saved to parabola.png ({x[0]:.0f} to {x[-1]:.0f})")
 #+end_src
 
 #+RESULTS: Example
+: Plot saved to parabola.png (-10 to 10)
+
+#+name: print
+#+begin_src python :tangle ~/hi.py :noweb yes :results output
+print("Hello World")
+#+end_src
+
+#+RESULTS: print
+: Hello World
+
+** OPEN Adding org-babel Execution
+:PROPERTIES:
+:ID: e868f529-fd09-440c-af87-0432b8225045
+:END:
