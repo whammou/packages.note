@@ -93,6 +93,9 @@ import numpy as np
 import pylab as pyl
 #+end_src
 
+#+RESULTS: import2
+: None
+
 This is a =second= block which does the calculation
 
 #+name: calculation
@@ -101,6 +104,8 @@ x = np.linspace(-10, 10, num=101)
 y = 2*x**2 + 2*x -10
 #+end_src
 
+#+RESULTS: calculation
+
 This is is =third= block which generate and show the graph
 
 #+name: graph
@@ -108,6 +113,8 @@ This is is =third= block which generate and show the graph
 pyl.plot(x, y)
 pyl.show()
 #+end_src
+
+#+RESULTS: graph
 
 Now to combine and execute the whole code
 
