@@ -209,3 +209,11 @@ Might not work correctly with system running under =wayland=
 :END:
 
 /How to compose, manage and send email in plaintext format/
+* OUTL Running and Evaluating Code with Nvim-orgmode-babel
+:PROPERTIES:
+:ID: 679053e6-dfd9-419e-bdbb-a0b981d84466
+:END:
+
+Running and evaluating embed code inside of =org= files
+
+/Feature:/  [[id:e868f529-fd09-440c-af87-0432b8225045][Adding org-babel Execution @Org]]
