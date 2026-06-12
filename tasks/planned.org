@@ -426,8 +426,8 @@ SCHEDULED: <2026-06-09 Tue>
 :END:
 - *OBJECTIVE:*  Parse =ntfy= to work with =dunst=
 - *Reference:*  
-* TODO Nvim LSP for Embed Code :subNvim@LSP:
-SCHEDULED: <2026-06-12 Fri>
+* DONE Nvim LSP for Embed Code :subNvim@LSP:
+SCHEDULED: <2026-06-12 Fri> CLOSED: [2026-06-12 Fri 12:03]
 :PROPERTIES:
 :ID: f02e57fb-8fdf-4ddf-b976-cf4a98b28856
 :END:
