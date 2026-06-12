@@ -183,7 +183,7 @@ end
 
 #+name: bash fragment
 #+begin_src sh
-#!/bin/bash
+#!/bin/env bash
 
 DEVICE_NAME="AT Translated Set 2 keyboard" # <--- **CHANGE THIS**
 

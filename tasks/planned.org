@@ -2,11 +2,22 @@
 #+OPTIONS: todo:t tags:nil tasks:t ^:nil toc:nil
 #+FILETAGS: :PACKAGES:typTask:catPlanned:
 
-* PEND Coding with Nvim vs Emacs :subNvim:subEmacs:subEditor:
+* ABRT Coding with Nvim vs Emacs :subNvim:subEmacs:subEditor:
+CLOSED: [2026-06-12 Fri 12:32]
+:PROPERTIES:
+:ID: d7348775-aa6f-402d-985b-ac04e7a9a891
+:END:
+:LOGBOOK:
+- Note taken on [2026-06-12 Fri 12:32] \\
+  =emacs= is conflicting with current workflow!
+:END:
 - *OBJECTIVE:* Coding experience in =nvim= vs =emacs=
 - *Reference:* [[https://www.reddit.com/r/vim/comments/q3nnrh/convince_me_to_use_vim_over_emacs_and_nano/][nvim vs emacs @Github]]
 * DONE Run tmux on Homelab :subServer:subTmux:
 CLOSED: [2025-10-23 Thu 01:55] DEADLINE: <2025-10-23 Thu>
+:PROPERTIES:
+:ID: eb00db84-a2ff-4258-a873-4e87150aedd7
+:END:
 - *OBJECTIVE:* Seamless workflow with =tmux= on =homelab=
 - *Visit:* [[id:36fece3a-2c38-48ec-bc23-73f11ddb5e13][Initiate tmux on Homelab @Org]]
 * TODO Get gdrive shareable link :subRclone:opDrive:
@@ -434,3 +445,10 @@ SCHEDULED: <2026-06-12 Fri> CLOSED: [2026-06-12 Fri 12:03]
 - *OBJECTIVE:*  Install and Config =otter.nvim= to run LSP feature inside embedded code block
 - *Reference:*  [[https://github.com/jmbuhr/otter.nvim][Upstream Otter.nvim @Github]]
 - /Delegate:/   [[id:09dcfee0-718f-449c-b448-e3aef672ac1e][Testing Otter for Orgmode @Feat]]
+* TODO Markdown Embed Code Workflow :subMarkdown@LSP:
+SCHEDULED: <2026-06-13 Sat>
+:PROPERTIES:
+:ID: 018bbd4f-036a-4e97-9b47-a810c6ccf706
+:END:
+- *OBJECTIVE:*  Config markdown =lsp= workflow to match =nvim-orgmode=
+- *Reference:*  [[id:f02e57fb-8fdf-4ddf-b976-cf4a98b28856][Nvim LSP for Embed Code @Task]]
