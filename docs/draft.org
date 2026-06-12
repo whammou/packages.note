@@ -209,6 +209,11 @@ Might not work correctly with system running under =wayland=
 :END:
 
 /How to compose, manage and send email in plaintext format/
+
+Email in plain text requires multiple packages to work together.
+1. To run script on notification
+2. Syncing between service and local =mailbox=
+3. An interface
 * OUTL [#A] Running and Evaluating Code with Nvim-orgmode-babel :subNvim@Orgmode:
 :PROPERTIES:
 :ID: 679053e6-dfd9-419e-bdbb-a0b981d84466
