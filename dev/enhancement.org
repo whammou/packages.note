@@ -32,7 +32,8 @@ How to effective work with plaintext email. Note down the whole workflow
 #+end_quote
 
 /Docs:/  [[id:987b841e-623e-4b40-9387-c3870883d966][Plaintext email workflow @Doc]]
-* OPEN Testing Otter for Orgmode :subNvim@LSP:subOrgmode:
+* CLSD Testing Otter for Orgmode :subNvim@LSP:subOrgmode:
+CLOSED: [2026-06-12 Fri 11:55]
 :PROPERTIES:
 :ID: 09dcfee0-718f-449c-b448-e3aef672ac1e
 :END:
@@ -73,8 +74,84 @@ print("Hello World")
 #+RESULTS: print
 : Hello World
 
-** OPEN Adding org-babel Execution
+** CLSD Adding org-babel Execution
+SCHEDULED: <2026-06-12 Fri> CLOSED: [2026-06-12 Fri 11:54]
 :PROPERTIES:
 :ID: e868f529-fd09-440c-af87-0432b8225045
 :END:
+Adding executing code block =orgmode-babel.nvim= pair with some modifications
+
+#+name: orgmode-babel.nvim config
+#+begin_src lua :tangle yes
+return {
+  "whammou/orgmode-babel.nvim",
+  lazy = true,
+  ft = { "org" },
+  branch = "feat/cursor-block-execute",
+  dependencies = { "nvim-orgmode/orgmode" },
+  cmd = { "OrgExecute", "OrgTangle" },
+  opts = {
+    langs = { "python", "lua", ... },
+    load_paths = {},
+    extra_evals = {
+      "(setq org-id-track-globally nil)",
+      '(setq org-babel-python-command "/home/whammou/.local/share/sniprun-venv/bin/python")',
+      '(org-babel-make-language-alias "py" "python")',
+    },
+  },
+}
+#+end_src
+
+** OPEN Multiple LSP packages Load
+:PROPERTIES:
+:ID: 0397b579-3ce1-47bf-8e57-9e34374b6596
+:END:
+=otter.nvim= plugin supports enabling =lsp= for code fragment in markup languages such as =orgmode= and =markdown=
+
+#+name: otter.nvim config
+#+begin_src lua
+return {
+  "jmbuhr/otter.nvim",
+  lazy = true,
+  ft = { "org" },
+  dependencies = {
+    "nvim-treesitter/nvim-treesitter",
+  },
+  opts = {
+    lsp = {
+      diagnostic_update_events = { "BufWritePost" },
+    },
+    buffers = {
+      set_filetype = true,
+      write_to_disk = false,
+    },
+    handle_leading_whitespace = true,
+  },
+  config = function(_, opts)
+    require("otter").setup(opts)
+
+    -- Defer activation so orgmode can set up folds first
+    local function activate()
+      vim.schedule(function()
+        require("otter").activate()
+      end)
+    end
+
+    local augroup = vim.api.nvim_create_augroup("otter_org", { clear = true })
+    vim.api.nvim_create_autocmd("FileType", {
+      group = augroup,
+      pattern = "org",
+      callback = activate,
+    })
+
+    -- Activate for the current buffer if already in an org file
+    if vim.bo.filetype == "org" then
+      activate()
+    end
+  end,
+}
+#+end_src
+
+Example with bash and fish =lsp=
+
 
