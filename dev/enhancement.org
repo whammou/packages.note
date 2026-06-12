@@ -83,7 +83,7 @@ Adding executing code block =orgmode-babel.nvim= pair with some modifications
 
 #+name: orgmode-babel.nvim config
 #+begin_src lua :tangle yes
-return {
+{
   "whammou/orgmode-babel.nvim",
   lazy = true,
   ft = { "org" },
