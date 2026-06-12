@@ -209,11 +209,63 @@ Might not work correctly with system running under =wayland=
 :END:
 
 /How to compose, manage and send email in plaintext format/
-* OUTL Running and Evaluating Code with Nvim-orgmode-babel
+* OUTL Running and Evaluating Code with Nvim-orgmode-babel :subNvim@Orgmode:
 :PROPERTIES:
 :ID: 679053e6-dfd9-419e-bdbb-a0b981d84466
 :END:
 
-Running and evaluating embed code inside of =org= files
+#+name: Description
+#+begin_quote org
+Running and evaluating embed code inside of =org= files. Execute embed code in =.org= files using nvim-orgmode plugin =orgmode.babel.nvim=
+#+end_quote
+
+Compares to other code execute plugins =orgmode-babel= comes with an ability to read =noweb= syntax and that becomes much better for documentation e.g.
+
+This is a =first= code block which import necessary libraries
+
+#+name: import2
+#+begin_src python :noweb yes
+import numpy as np
+import pylab as pyl
+#+end_src
+
+#+RESULTS: import2
+: None
+
+This is a =second= block which does the calculation
+
+#+name: calculation
+#+begin_src python :noweb yes
+x = np.linspace(-10, 10, num=101)
+y = 2*x**2 + 2*x -10
+#+end_src
+
+#+RESULTS: calculation
+
+This is is =third= block which generate and show the graph
+
+#+name: graph
+#+begin_src python :noweb yes
+pyl.plot(x, y)
+pyl.show()
+#+end_src
+
+#+RESULTS: graph
+
+Now to combine and execute the whole code
+
+#+name: execute
+#+begin_src python :noweb yes :tangle yes :results output
+<<import2>>
+<<calculation>>
+<<graph>>
+
+print("Graph generated!")
+#+end_src
+
+#+RESULTS: execute
+: Graph generated!
+
+That's it!!!
 
 /Feature:/  [[id:e868f529-fd09-440c-af87-0432b8225045][Adding org-babel Execution @Org]]
