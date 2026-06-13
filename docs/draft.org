@@ -279,6 +279,7 @@ That's it!!!
 :ID: 7b5d66b5-02ab-4e92-bb8c-447c3226c6f9
 :END:
 
+#+name: Description
 #+begin_quote org
 Guide to working with git-annex. Day to day operations and how to manage and git + git annex repo
 #+end_quote
