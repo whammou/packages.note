@@ -460,3 +460,13 @@ SCHEDULED: <2026-06-13 Sat>
 - *OBJECTIVE:*  Managing =assets/= with =git-annex=
 - *Reference:*  [[https://github.com/git-annex-remote-rclone/git-annex-remote-rclone][Git-annex-remote-rclone setup @Github]]
 - /Delegate:/   [[id:4f9fb432-748f-4f16-8fb3-0ba67a3b242f][Managing Assets @Ref]]
+* TODO Bi-directional Git Repo Sync :subGit@Sync:
+SCHEDULED: <2026-06-15 Mon>
+:PROPERTIES:
+:ID: d7307e0c-e134-439e-bfa0-8cf6bda8064b
+:END:
+- *OBJECTIVE:*  Syncing repo bi-directionally /optional: config for multiple repos/
+- *Reference:*  [[https://github.com/colonelpanic8/git-sync-rs][Git-sync-rs upstream @Github]]
+- /Delegate:/   [[id:b42b9f9b-d686-439c-bd76-6082787b0e99][Repo Sync @Org]]
+- /Node:/       [[id:ebbcd95c-3e9a-4ef0-b885-1b5d7f77d22f][Reflow Note Repos @Issue]]
+  
