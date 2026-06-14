@@ -12,28 +12,49 @@
   - [[https://youtu.be/vtFXMni91Q4#__preview][Fugitive workflow @Youtube-preview]]
   - [[https://www.youtube.com/watch?v=G3NJzFX6XhY#__preview][Config your git @Youtube]]
 * [#A] Git Operations
+:PROPERTIES:
+:ID: 56dce774-e44b-4ec7-af2a-559d81a31bae
+:END:
 /Understand the fundamentals of the git tool/
 ** Git config
+:PROPERTIES:
+:ID: 1db4d99b-8476-42af-a809-005f6a1c15c0
+:END:
 There are two locations a git config file can exist:
 - *Local* git repo: in the repo itself (and ignored by ~.gitignore~)
 - *Global* exist outside of the repo e.g. [[file:/home/whammou/.gitconfig][gitconfig]]
 ** Git merge vs re-base vs squashing :gitmerge:gitrebase:gtsquash:
+:PROPERTIES:
+:ID: 7319b7a0-eacc-4691-a196-04789c838932
+:END:
 There are different strategies to merge two ~branches~:
 - *Merging -* Merge and ties together the ~history~ of both ~branches~
 - *Re-basing -* Merge the ~commits~ of a branch to the *tip* of ~main~ and then performs a ~fast-forward-merge~
   + *Fast-forward -* =merge= and move the pointer of the target branch forward to the latest commit of the course branch /avoiding the need to create a merge commit/
 - *Squashing -* Squeeze all the ~commits~ of ~feature branch~ into one single ~commit~ and merge it with ~main~
 ** Git commit vs stash :gitcommit:gitstash:
+:PROPERTIES:
+:ID: 90b9eb73-f924-42d5-91e2-8105c0ced057
+:END:
 Visit:* [[https://paulapivat.com/technical_notes/example_tech/git_stash/][Git Stash vs Git Commit]]
 * [#A] Write better commit messages
+:PROPERTIES:
+:ID: 6b02f648-496a-412f-91d5-a696ba630cfe
+:END:
 - *Goal(s):* Write better and more comprehensive commit messages
 - *Stumble upon:* [[https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/]]
 ** The Anatomy of a Commit Message
+:PROPERTIES:
+:ID: b42844ed-7e4a-4456-a9b3-0b92c4f37239
+:END:
 - *Basic:*
   =git commit -m <message>=
 - *Detailed:*
   =git commit -m <title> -m <description>=
 ** 5 Steps to write a better commit message
+:PROPERTIES:
+:ID: 7e398308-294e-453b-9f4f-d4e620da601b
+:END:
 - Note taken on [2024-09-21 Sat 21:37] \\
   To come up with thoughtful commits consider the following: 
   - Why have I made these changes?
@@ -52,6 +73,9 @@ Visit:* [[https://paulapivat.com/technical_notes/example_tech/git_stash/][Git St
 5. *Content:*
    Be direct, try to eliminate fillers words and phrases in theses sentences (*Example:* though, maybe, I think, kind of), Think like a journalist
 ** Conventional Commits
+:PROPERTIES:
+:ID: 4b84239b-c3e0-4a57-b5f2-ff79858e7965
+:END:
 Conventional Commit is a formatting convention that provides as set of rules to formulate a consistent commit message structure like so:
 
 #+NAME: Conventional Commit structure
@@ -101,6 +125,9 @@ Closes D2IQ-12345
 - *NOTE*
   The ensure that these committing conventions remain consistent across developers, commit message linting can be configured before changes are able to be pushed up. [[https://commitizen-tools.github.io/commitizen/][Commitizen]] is a great tool to enforce standards, sync up semantic versioning, along with other helpful features
 * [#A] Clean commit history
+:PROPERTIES:
+:ID: ab90c295-d571-45db-9e30-009d03f131b9
+:END:
 - *OBJECTIVE:* Clean up git commit history
 - *Reference:* [[https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History][Git tools rewrite history @Doc-git]]
 * OUTL [#A] Storing secrets in git
@@ -110,9 +137,15 @@ Closes D2IQ-12345
 - *OBJECTIVE:* Learn how to securely store secrets in git
 - *Reference:* [[https://dev.to/wiresurfer/manage-sensitive-api-keys-in-public-dotfiles-using-pgp-and-sops-5mn][Manage Crendential in Public Dotfiles @Blog-dev]]
 ** Encryption System
+:PROPERTIES:
+:ID: a4a81320-4912-4f86-8088-38b36f258c76
+:END:
 /What is an encryption system/ \\
 /=gpg= explain/
 ** Encryption Manager
+:PROPERTIES:
+:ID: 99afc957-2f6c-44a9-9744-5d4026434e5d
+:END:
 /What is an encryption manager/ \\
 /Check-out:/ [[https://github.com/getsops/sops][Getsops @Github-repo]]
 * DONE [#A] Managing A Nested Git Project :subGit:MANAGEMENT:
@@ -143,6 +176,9 @@ DEADLINE: <2025-10-06 Mon> CLOSED: [2025-10-06 Mon 17:42]
 =submodules= are pointer to s specific commit meaning having too many layers of them can obstruct workflow as you will have to update each =submodule= along with its new pointers
 #+END_QUOTE
 *** DONE Clone and Load Submodules
+:PROPERTIES:
+:ID: a61b1d07-e643-4052-8e2d-6a59a28754e6
+:END:
 DEADLINE: <2025-10-06 Mon> CLOSED: [2025-10-06 Mon 17:50]
 Downloading =submodules= sequentially can be a tedious task, so =clone= and =submodule update= will support the =--jobs= or =-j= parameter
 
@@ -152,6 +188,9 @@ git submodule update --init --recursive -j8
 git clone --recursive --jobs 8 <URL to git repo>
 #+END_SRC
 *** DONE Add Submodules
+:PROPERTIES:
+:ID: 5c64db58-b0f1-4893-a31d-cecb6adcf17a
+:END:
 DEADLINE: <2025-10-06 Mon> CLOSED: [2025-10-06 Mon 17:58]
 - To add a child repository to parent repository:
   #+BEGIN_SRC bash
@@ -167,12 +206,18 @@ DEADLINE: <2025-10-06 Mon> CLOSED: [2025-10-06 Mon 17:58]
   #+END_SRC
 *** DONE Remove a Submodule
 DEADLINE: <2025-10-06 Mon> CLOSED: [2025-10-06 Mon 23:13]
+:PROPERTIES:
+:ID: 008b2949-fad9-4ad5-99cc-79af50575702
+:END:
 Merely deleting a child project manually won't remove the child project from the parent repository as it is staged. To delete a /child repository/ run:
 #+BEGIN_SRC bash
 git rm -rf submodule
 #+END_SRC
 *** DONE Pull submodules
 DEADLINE: <2025-10-06 Mon> CLOSED: [2025-10-06 Mon 23:06]
+:PROPERTIES:
+:ID: 80157a51-4e42-4a96-85bd-ce735f0a90bd
+:END:
 Before building or running the /parent repository/, you have to make sure that the child /dependencies/ are up to date
 + To pull all changes in submodules:
   #+BEGIN_SRC bash
@@ -216,6 +261,9 @@ Git support running command for each initialized /child repository/ using =git s
 #+END_QUOTE
 ** DONE Symlinks Approach
 DEADLINE: <2025-10-06 Mon> CLOSED: [2025-10-06 Mon 23:35]
+:PROPERTIES:
+:ID: 24375059-08f2-4ea2-9486-74e233c70e99
+:END:
 Managing a /nested project/ can be a tedious tasks. Especially when the =child-repo= contains different =child-repos=. This create a layer of index to different pointer to maintain when making changes to any =child-repo=. Thus instead of create a nested level, use =symlink= to create a list of local pointer the stay fixed even when a =child-repo= is changed
 #+BEGIN_SRC bash
 ln -s absolute/path/to/submodule -t target/dir
