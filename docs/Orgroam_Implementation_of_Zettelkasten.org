@@ -3,7 +3,6 @@
 :ROAM_ORIGIN: e1667d79-80b5-4c16-8f1c-c83a60547108
 :END:
 #+TITLE: Orgroam Implementation of Zettelkasten
-
 #+OPTIONS: title:t tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
 #+TODO: TODO(t) (e) DOIN(d) PROG(g) PEND(p) OUTL(o) EXPL(x) FDBK(b) WAIT(w) NEXT(n) IDEA(i) | ABRT(a) PRTL(r) RVIW(v) DONE(f)
 #+FILETAGS: :topPackages:typDoc:subProject:ZETTELKASTEN:ORGROAM:

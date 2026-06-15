@@ -3,7 +3,6 @@
 :ROAM_ORIGIN: 05a24a12-d82e-476d-a8ab-bb6e9c688b41
 :END:
 #+TITLE: Qutebrowser Configurations
-
 #+OPTIONS: title:t tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
 #+TODO: TODO(t) (e) DOIN(d) PROG(g) PEND(p) OUTL(o) EXPL(x) FDBK(b) WAIT(w) NEXT(n) IDEA(i) | ABRT(a) PRTL(r) RVIW(v) DONE(f)
 #+FILETAGS: :topPackages:typDoc:subProject:subQutebrowser:

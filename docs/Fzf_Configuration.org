@@ -2,7 +2,6 @@
 :ID: a74f83dd-1c45-4530-a7e5-2c7d355e468b
 :END:
 #+TITLE: Fzf Configuration
-
 #+OPTIONS: title:t tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
 #+TODO: TODO(t) (e) DOIN(d) PROG(g) PEND(p) OUTL(o) EXPL(x) FDBK(b) WAIT(w) NEXT(n) IDEA(i) | ABRT(a) PRTL(r) RVIW(v) DONE(f)
 #+FILETAGS: :topPackages:typDoc:meta:subFzf:

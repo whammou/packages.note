@@ -3,7 +3,6 @@
 :ROAM_ORIGIN: 4c2571b3-e416-48c0-bf7d-4d93af0ce820
 :END:
 #+TITLE: A Guide to Git
-
 #+OPTIONS: title:t tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
 #+TODO: TODO(t) (e) DOIN(d) PROG(g) PEND(p) OUTL(o) EXPL(x) FDBK(b) WAIT(w) NEXT(n) IDEA(i) | ABRT(a) PRTL(r) RVIW(v) DONE(f)
 #+FILETAGS: :topPackages:typDoc:subProject:subGit:
