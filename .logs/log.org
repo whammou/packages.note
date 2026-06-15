@@ -1,8 +1,8 @@
 #+TITLE: Package Log
 #+DESCRIPTION: Logs of finished items
-#+FILETAGS: :PACKAGES:LOG:
+#+FILETAGS: :topPackages:LOG:
 
-* Logs :LOG:OPSYS:PACKAGES:
+* Logs :LOG:topOpsys:topPackages:
 - /Store finished tasks/
 ** DONE SSH to Github :subGithub:
 CLOSED: [2025-01-10 Fri 05:51] DEADLINE: <2025-01-09 Thu 05:00>

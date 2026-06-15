@@ -6,7 +6,7 @@
 
 #+OPTIONS: title:t tags:nil todo:nil ^:nil f:t num:t pri:nil toc:t
 #+TODO: TODO(t) (e) DOIN(d) PROG(g) PEND(p) OUTL(o) EXPL(x) FDBK(b) WAIT(w) NEXT(n) IDEA(i) | ABRT(a) PRTL(r) RVIW(v) DONE(f)
-#+FILETAGS: :PACKAGES:typDoc:subProject:ORGROAM:
+#+FILETAGS: :topPackages:typDoc:subProject:ORGROAM:
 - *OBJECTIVE:* Develop a notetaking workflow in orgroam
 - *Reference:* [[https://github.com/chipsenkbeil/org-roam.nvim][Orgroam-nvim @Github]]
 * [#A] Orgroam Built-in UID System
