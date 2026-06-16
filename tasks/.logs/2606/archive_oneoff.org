@@ -420,6 +420,12 @@ CLOSED: [2025-09-30 Tue 21:26] DEADLINE: <2025-09-30 Tue>
 - *Reference:* [[https://github.com/jesseduffield/lazygit/wiki/Custom-Commands-Compendium][Lazygit Custom Commands @Github]]
 * DONE Running git foreach in Parallel :subGit:
 CLOSED: [2025-10-05 Sun 21:36]
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:35
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
 - *OBJECTIVE:* Running =git submodule foreach= in /parallel/ in stead of /serial/ to reduce time effort
 -----
 - *[NOTE]* taken on [2025-10-01 15:35]: \\
@@ -434,3 +440,33 @@ CLOSED: [2025-10-05 Sun 21:36]
       #+END_SRC
 -----
 - *Reference:* [[https://software.codidact.com/posts/289156][Running git submodule in parallel @Codidact]]
+* DONE Config zathura Visibility :ZATHURA:
+CLOSED: [2025-10-02 Thu 07:54]
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:35
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:* Config zathura menu highlight for better visibility
+* DONE Laygit Menu and Keybinds :LAZYGIT:
+CLOSED: [2025-10-03 Fri 22:05] DEADLINE: <2025-10-03 Fri>
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:35
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:* Design a lazygit menu with keybinds with to read output from commands
+- *Reference:* [[https://github.com/jesseduffield/lazygit/blob/master/docs/Custom_Command_Keybindings.md][Lazygit Custom Commands Keybinds @Github]]
+* DONE Search and Replace with Grep :GREP:
+CLOSED: [2025-10-07 Tue 23:27] DEADLINE: <2025-10-07 Tue>
+:PROPERTIES:
+:ID:       cd6ce3f7-b41e-485f-a4f8-b4263929b2b8
+:ARCHIVE_TIME: 2026-06-16 Tue 17:35
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:* Replace /patterns/ using =grep= and =sed=
+- *Reference:* [[https://github.com/BurntSushi/ripgrep/blob/master/FAQ.md#search-and-replace][Ripgrep - Search and Replace @Github]]
