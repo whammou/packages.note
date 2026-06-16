@@ -1,4 +1,5 @@
 #+OPTIONS: todo:t tags:nil tasks:t ^:nil toc:nil
+$
 #+FILETAGS: :typArchive:typTask:catIncidental:
 * DONE Debug Using Minimal Init :subNvim:DEBUG:subOrgmode:
 CLOSED: [2025-09-08 Mon 03:57] DEADLINE: <2025-09-09 Tue>
@@ -231,3 +232,53 @@ CLOSED: [2026-03-15 Sun 21:25]
 - *OBJECTIVE:*  Receiving =ntfy= notification following specific order default/reverse
 - *Tracker:*    [[id:80c594f7-22ee-4fe7-b758-6474d80f0f94][Notification Receiving Order @Issue]]
 - *Reference:*  [[https://docs.ntfy.sh/subscribe/api/#fetch-cached-messages][Fetch cached message @Ntfy-doc]]
+* ABRT Report Qtile Bug :subQtile:
+CLOSED: [2025-11-28 Fri 04:24]
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:39
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/incidental.org
+:ARCHIVE_CATEGORY: incidental
+:ARCHIVE_TODO: ABRT
+:END:
+- *OBJECTIVE:* Report qtile =dropdown= not in windows id
+-----
+- *[NOTE]* taken on [2025-09-06 17:42]: \\
+  Error stamps missing window window id =wid=
+  + Report to qtile Github [[https://github.com/qtile/qtile][qtile @Github]]
+  #+NAME:qtile.log
+  #+BEGIN_SRC python
+  2025-09-06 14:11:20,123 ERROR libqtile manager.py:process_key_event():L492 KB command error move_to_top: No object window in path 'window'
+  2025-09-06 14:11:20,900 ERROR libqtile manager.py:process_key_event():L492 KB command error move_to_top: No object window in path 'window'
+  2025-09-06 14:11:21,049 ERROR libqtile manager.py:process_key_event():L492 KB command error move_to_top: No object window in path 'window'
+  2025-09-06 14:11:25,085 ERROR libqtile manager.py:process_key_event():L492 KB command error set_opacity: No object window in path 'window'
+  2025-09-06 14:11:25,288 ERROR libqtile hook.py:fire():L196 Error in hook client_new
+  Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/libqtile/hook.py", line 194, in fire
+  i(*args, **kwargs)
+  ~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/libqtile/scratchpad.py", line 292, in on_client_new
+  self.dropdowns[name] = DropDownToggler(client, self.name, self._dropdownconfig[name])
+  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/libqtile/scratchpad.py", line 197, in __init__
+  WindowVisibilityToggler.__init__(
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+  self, scratchpad_name, window, ddconfig.on_focus_lost_hide, ddconfig.warp_pointer
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  )
+  ^
+  File "/usr/lib/python3.13/site-packages/libqtile/scratchpad.py", line 67, in __init__
+  self.show()
+  ~~~~~~~~~^^
+  File "/usr/lib/python3.13/site-packages/libqtile/scratchpad.py", line 227, in show
+  WindowVisibilityToggler.show(self)
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/site-packages/libqtile/scratchpad.py", line 122, in show
+  win.togroup()
+  ~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/site-packages/libqtile/backend/x11/window.py", line 2011, in togroup
+  self.group.remove(self)
+  ~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/site-packages/libqtile/group.py", line 278, in remove
+  index = self.focus_history.index(win)
+  #+END_SRC
+-----
