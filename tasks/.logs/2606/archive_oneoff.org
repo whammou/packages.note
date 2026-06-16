@@ -572,3 +572,23 @@ CLOSED: [2026-03-04 Wed 22:58] DEADLINE: <2026-03-04 Wed 22:17>
 :ARCHIVE_TODO: DONE
 :END:
 - *OBJECTIVE:*  Sending =orgmode= notification to =ntfy= server instead of using =dunst=
+* DONE Opencode Check Agent Quota :subOpenCode:
+CLOSED: [2026-05-24 Sun 17:47] SCHEDULED: <2026-05-17 Sun 12:00>
+:PROPERTIES:
+:ID:       e9f463e1-cec1-4311-9052-d92f2684adb7
+:ARCHIVE_TIME: 2026-06-16 Tue 17:35
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:*  Check quota cool down
+* DONE Qtile Float Focus To Front :subQtile@Hook:
+SCHEDULED: <2026-05-26 Tue> CLOSED: [2026-05-26 Tue 04:55]
+:PROPERTIES:
+:ID:       abb525f6-efa8-4a4b-859b-3c6d9295f2cd
+:ARCHIVE_TIME: 2026-06-16 Tue 17:35
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:*  Create a hook to auto =bring-to-front= on floating window focus

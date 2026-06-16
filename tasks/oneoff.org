@@ -205,18 +205,6 @@ SCHEDULED: <2026-06-13 Sat>
 :ID:       ca62c03d-e3f8-4e3b-b9bd-105049ffeaf2
 :END:
 - *OBJECTIVE:*  Update workflow with opencode =keybindings=
-* DONE Opencode Check Agent Quota :subOpenCode:
-CLOSED: [2026-05-24 Sun 17:47] SCHEDULED: <2026-05-17 Sun 12:00>
-:PROPERTIES:
-:ID:       e9f463e1-cec1-4311-9052-d92f2684adb7
-:END:
-- *OBJECTIVE:*  Check quota cool down
-* DONE Qtile Float Focus To Front :subQtile@Hook:
-SCHEDULED: <2026-05-26 Tue> CLOSED: [2026-05-26 Tue 04:55]
-:PROPERTIES:
-:ID:       abb525f6-efa8-4a4b-859b-3c6d9295f2cd
-:END:
-- *OBJECTIVE:*  Create a hook to auto =bring-to-front= on floating window focus
 * TODO Systemd NPM Service :subSystemd:subNPM:
 :PROPERTIES:
 :ID: 913048d5-7554-492e-9ed1-fcf591a4e191

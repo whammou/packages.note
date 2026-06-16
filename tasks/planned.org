@@ -13,13 +13,6 @@ CLOSED: [2026-06-12 Fri 12:32]
 :END:
 - *OBJECTIVE:* Coding experience in =nvim= vs =emacs=
 - *Reference:* [[https://www.reddit.com/r/vim/comments/q3nnrh/convince_me_to_use_vim_over_emacs_and_nano/][nvim vs emacs @Github]]
-* DONE Run tmux on Homelab :subServer:subTmux:
-CLOSED: [2025-10-23 Thu 01:55] DEADLINE: <2025-10-23 Thu>
-:PROPERTIES:
-:ID: eb00db84-a2ff-4258-a873-4e87150aedd7
-:END:
-- *OBJECTIVE:* Seamless workflow with =tmux= on =homelab=
-- *Visit:* [[id:36fece3a-2c38-48ec-bc23-73f11ddb5e13][Initiate tmux on Homelab @Org]]
 * TODO Get gdrive shareable link :subRclone:opDrive:
 :PROPERTIES:
 :ID:       d429546e-1ada-4fff-b364-4a8743a4643c
