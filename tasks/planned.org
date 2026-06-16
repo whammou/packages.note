@@ -156,5 +156,7 @@ SCHEDULED: <2026-06-17 Wed> CLOSED: [2026-06-17 Wed 01:48]
 :END:
 - *OBJECTIVE:*  Syncing repo bi-directionally /optional: config for multiple repos/
 - *Reference:*  [[https://github.com/colonelpanic8/git-sync-rs][Git-sync-rs upstream @Github]]
-- /Delegate:/   [[id:b42b9f9b-d686-439c-bd76-6082787b0e99][Repo Sync @Org]]
+- /Delegate:/
+  + [[id:b42b9f9b-d686-439c-bd76-6082787b0e99][Repo Sync @Org]]
+  + [[id:f812d244-aaa5-49b1-9cca-c46d9474a24b][Automatize_House_Keeping @Docs]]
 - /Node:/       [[id:ebbcd95c-3e9a-4ef0-b885-1b5d7f77d22f][Reflow Note Repos @Issue]]
