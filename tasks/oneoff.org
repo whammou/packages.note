@@ -32,10 +32,6 @@ CLOSED: [2025-07-10 Thu 05:50]
 :ID:       3700b025-3d42-4516-a17d-0eb37366d087
 :END:
 - *OBJECTIVE:* /Config rclone for optimal workflow/
-** ABRT Mount as a systemd service :subSystemd:
-CLOSED: [2025-06-03 Tue 07:45]
-- *OBJECTIVE:* /Running rclone mount as a systemd service/
-- *References:* [[https://rclone.org/commands/rclone_mount/][Rclone mount @Doc-rclone]]
 ** PEND Mount dir menu [0%] :subRofi:
 :PROPERTIES:
 :ID:       657f70b1-56fe-4503-93cb-3a2987f002e8
@@ -110,24 +106,6 @@ CLOSED: [2026-01-28 Wed 03:47] DEADLINE: <2026-01-28 Wed>
 - *Reference:*
   - [[https://github.com/chipsenkbeil/org-roam.nvim/blob/main/DOCS.org#find-nodes-by-tag][Find Node by Tag @Github]]
   - [[https://github.com/chipsenkbeil/org-roam.nvim/discussions/94][Find note by tags discussion @Github-discussion]]
-* ABRT Implement Qutebrowser Prompt :subQutebrowser:
-CLOSED: [2025-08-04 Mon 20:18] DEADLINE: <2025-08-04 Mon>
-- *OBJECTIVE:* Implement qutebrowser prompt
------
-- *[NOTE]* taken on <2025-08-04 05:31>:
-  - To prompt user input use =read=
-    #+NAME: Bash script to prompt for user input
-    #+BEGIN_SRC bash
-    #!/usr/bin/bash
-    
-    read -p "Input: " query
-    _qtile_spawn_split_x "$query"
-    #+END_SRC
------
-- *[NOTE]* taken on <2025-08-04 20:18>:
-  - Using prompt function is counter productive!
------
-- *Reference:* [[https://ryanstutorials.net/bash-scripting-tutorial/bash-input.php][Bash input read @Blog]]
 * PEND Shell Integrations :SHELL:FABRIC:FISH:
 :PROPERTIES:
 :ID:       4af0707d-93ed-4689-b971-15c9ebfebdd8

@@ -592,3 +592,51 @@ SCHEDULED: <2026-05-26 Tue> CLOSED: [2026-05-26 Tue 04:55]
 :ARCHIVE_TODO: DONE
 :END:
 - *OBJECTIVE:*  Create a hook to auto =bring-to-front= on floating window focus
+* ABRT Mount as a systemd service :subSystemd:
+CLOSED: [2025-06-03 Tue 07:45]
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:39
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_OLPATH: Working with rclone [66%]
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: ABRT
+:END:
+- *OBJECTIVE:* /Running rclone mount as a systemd service/
+- *References:* [[https://rclone.org/commands/rclone_mount/][Rclone mount @Doc-rclone]]
+* ABRT Implement Qutebrowser Prompt :subQutebrowser:
+CLOSED: [2025-08-04 Mon 20:18] DEADLINE: <2025-08-04 Mon>
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:39
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: ABRT
+:END:
+- *OBJECTIVE:* Implement qutebrowser prompt
+-----
+- *[NOTE]* taken on <2025-08-04 05:31>:
+  - To prompt user input use =read=
+    #+NAME: Bash script to prompt for user input
+    #+BEGIN_SRC bash
+    #!/usr/bin/bash
+    
+    read -p "Input: " query
+    _qtile_spawn_split_x "$query"
+    #+END_SRC
+-----
+- *[NOTE]* taken on <2025-08-04 20:18>:
+  - Using prompt function is counter productive!
+-----
+- *Reference:* [[https://ryanstutorials.net/bash-scripting-tutorial/bash-input.php][Bash input read @Blog]]
+* ABRT Testing Org-Babel :PYTHON:TEST:subOrgmode:
+CLOSED: [2025-08-31 Sun 20:51]
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:39
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: ABRT
+:END:
+#+BEGIN_SRC python :RESULTS output
+print("Hello World")
+#+END_SRC
+
+#+HTML:<details>
