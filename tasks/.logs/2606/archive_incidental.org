@@ -16,3 +16,70 @@ CLOSED: [2025-09-08 Mon 03:57] DEADLINE: <2025-09-09 Tue>
 - *[NOTE]* taken on [2025-09-06 02:03]: \\
   Completion bug detect on commit [[https://github.com/nvim-orgmode/orgmode/commit/aaa327a7430df359b336d82ad387f896077ee2d2][Adding fuzzy completion @Commit]]
 -----
+* DONE Conflict nvim-orgmode and blink :subNvim:subOrgmode:
+CLOSED: [2025-09-06 Sat 17:55] DEADLINE: <2025-09-06 Sat>
+:PROPERTIES:
+:ID:       0022f0cf-b051-4752-aa0e-9d5aafe4274e
+:ARCHIVE_TIME: 2026-06-16 Tue 17:32
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/incidental.org
+:ARCHIVE_CATEGORY: incidental
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:* Analyze the conflicts between blink and orgmode. Determine if it related to current issue with =org_insert_link= completion
+-----
+- *[NOTE]* taken on [2025-09-06 17:55]: \\
+  Issue is none related to current bug, rather it is about =insert= mode =completions=
+-----
+- *Reference:* [[https://github.com/nvim-orgmode/orgmode/pull/1010][fix: fuzzy autocompletion with blink @Github-issue]]
+* DONE Issue on org-store-link :subGithub:subOrgmode:
+CLOSED: [2025-09-08 Mon 03:57] DEADLINE: <2025-09-09 Tue>
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:32
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/incidental.org
+:ARCHIVE_CATEGORY: incidental
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:* Create issue on org_store_link completion does not return headlines after latest commit
+-----
+- *[NOTE]* taken on [2025-09-06 18:08]: \\
+  Run =nvim-orgmode= plugin using [[id:2da88bc1-47e2-4a81-bedf-758cbdfdafbe][Minimal Config]] provided on =github=
+-----
+- *Checkout:* [[id:0022f0cf-b051-4752-aa0e-9d5aafe4274e][Conflict nvim-orgmode and blink @Org]] ([[file:/system/packages/tasks/incidental.org#feedback-debug-using-minimal-init][view on Github]])
+* DONE Conflict ssh tmux nerdfont :subSsh:subTmux:
+CLOSED: [2025-10-20 Mon 00:15] DEADLINE: <2025-10-20 Mon>
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:32
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/incidental.org
+:ARCHIVE_CATEGORY: incidental
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:* Solve conflicting packages when =ssh= with =tmux= and =nerdfont=
+- -----
+- Note taken on [2025-10-20 00:13]: \\
+  Running this =scrip= solved the problem
+  #+BEGIN_SRC bash
+  ssh whammou@homelab -o RemoteCommand=none exec $SHELL -lc 'tmux new -A -s $1'
+  #+END_SRC
+-----
+- *Reference:* [[https://bbs.archlinux.org/viewtopic.php?id=286286][ssh tmux and nerdfont conflicting @Archforum]]
+* DONE Workaround yt-dlp Forbidden Error :YTDLP:
+DEADLINE: <2026-01-16 Fri> CLOSED: [2026-01-16 Fri 22:01]
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:32
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/incidental.org
+:ARCHIVE_CATEGORY: incidental
+:ARCHIVE_TODO: DONE
+:END:
+#+name:LOGBOOK
+#+html:<details><summary>LOGBOOK</summary>
+:LOGBOOK:
+- Note taken on [2026-01-16 Fri 21:57] \\
+  As off to day [2026-01-16 Fri] =yt-dlp= stopped working and through error htttp 403 forbidden
+  - Workaround involves installing =deno=
+  - Remove =--cookie= flag
+  Check this issue again next week <2026-01-23 Fri>
+  
+:END:
+#+html:</details>
+- *OBJECTIVE:*  Workaround =yt-dlp= not downloading video with arg =--cookie=
+- *Reference:*  [[https://github.com/yt-dlp/yt-dlp/issues/15569][ytdlp stopped working through error 403 @Github-issue]]
