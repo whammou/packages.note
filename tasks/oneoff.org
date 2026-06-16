@@ -143,24 +143,6 @@ CLOSED: [2025-08-04 Mon 20:18] DEADLINE: <2025-08-04 Mon>
 * RVIW Update Orgmode Notification Parameters :subOrgmode:subNotification:
 CLOSED: [2025-11-20 Thu 08:26]
 + *OBJECTIVE:* Modify =orgmode.cron_job= parameters by writting a standalone file
-* DONE Nvim Open New Buffer :subNvim:subOrgmode:
-CLOSED: [2025-09-06 Sat 18:06] DEADLINE: <2025-09-06 Sat>
-- *OBJECTIVE:* Open org capture and agenda in =new-buffer=
------
-- *[NOTE]* taken on [2025-09-06 18:06]: \\
-  Using ~win_split_mode = "tabnew"~ to open capture buffers in a new tab with neovim
------
-** DONE Manually Open Config File
-CLOSED: [2025-11-19 Wed 08:35]
-#+name:LOGBOOK
-#+html:<details><summary>LOGBOOK</summary>
-:LOGBOOK:
-- Note taken on [2025-11-19 Wed 08:32] \\
-  Update /set-up/ by calling part of =setup= function in =partials/=
-:END:
-#+html:</details>
-- *OBJECTIVE:* Tell nvim to open a =config= file independent to =init= (/manually/)
-- *Check-out:* [[id:62b8fb19-df46-4e5b-8bef-dde3dba80329][Re-structuring Nvim-orgmode Configuration @Org]] 
 * ABRT Testing Org-Babel :PYTHON:TEST:subOrgmode:
 CLOSED: [2025-08-31 Sun 20:51]
 #+BEGIN_SRC python :RESULTS output
@@ -168,14 +150,6 @@ print("Hello World")
 #+END_SRC
 
 #+HTML:<details>
-* DONE Test Warning Message :subGithub:subOrgmode:
-CLOSED: [2025-08-31 Sun 22:54]
-#+HTML:</details>
-#+NAME:Warning Message
-#+BEGIN_QUOTE
-[!WARNING]
-Draft items are subjected to refile!
-#+END_QUOTE
 * ABRT Using Zotero with Qutebrowser :subQutebrowser:CITATIONS:ZOTERO:
 CLOSED: [2025-09-07 Sun 17:58] DEADLINE: <2025-09-07 Sun>
 - *OBJECTIVE:* Using =zotero= in conjunction with =qutebrowser=
@@ -185,9 +159,6 @@ CLOSED: [2025-09-07 Sun 17:58] DEADLINE: <2025-09-07 Sun>
   + *Checkout:* [[id:a348064e-f0ba-4aa6-970a-8e63a1aa9dba][Citation Rendering]]
 -----
 - *Reference:* [[https://github.com/parchd-1/qutebrowser-zotero][Qutebrowser-Zotero @Github]]
-* DONE Overhaul Nvim UI Elements :subNvim:
-CLOSED: [2025-11-19 Wed 08:35]
-- *OBJECTIVE:* Re-config nvim ui elements border from =rounded= to =single= or =none=
 * PEND Setup Git-Annex :subGit:
 :PROPERTIES:
 :ID:       46113c10-28b3-4477-93f4-d22d50c941ff

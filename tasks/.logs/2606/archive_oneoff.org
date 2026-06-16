@@ -349,3 +349,50 @@ CLOSED: [2025-08-23 Sat 21:27] DEADLINE: <2025-08-23 Sat>
 :END:
 + *OBJECTIVE:* Test orgroam capture to sub-headline format
 + *Reference:* [[https://github.com/chipsenkbeil/org-roam.nvim/blob/main/DOCS.org#templates-1][Orgroam capture template @Github-doc]]
+* DONE Nvim Open New Buffer :subNvim:subOrgmode:
+CLOSED: [2025-09-06 Sat 18:06] DEADLINE: <2025-09-06 Sat>
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:34
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:* Open org capture and agenda in =new-buffer=
+-----
+- *[NOTE]* taken on [2025-09-06 18:06]: \\
+  Using ~win_split_mode = "tabnew"~ to open capture buffers in a new tab with neovim
+-----
+** DONE Manually Open Config File
+CLOSED: [2025-11-19 Wed 08:35]
+#+name:LOGBOOK
+#+html:<details><summary>LOGBOOK</summary>
+:LOGBOOK:
+- Note taken on [2025-11-19 Wed 08:32] \\
+  Update /set-up/ by calling part of =setup= function in =partials/=
+:END:
+#+html:</details>
+- *OBJECTIVE:* Tell nvim to open a =config= file independent to =init= (/manually/)
+- *Check-out:* [[id:62b8fb19-df46-4e5b-8bef-dde3dba80329][Re-structuring Nvim-orgmode Configuration @Org]] 
+* DONE Test Warning Message :subGithub:subOrgmode:
+CLOSED: [2025-08-31 Sun 22:54]
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:34
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
+#+HTML:</details>
+#+NAME:Warning Message
+#+BEGIN_QUOTE
+[!WARNING]
+Draft items are subjected to refile!
+#+END_QUOTE
+* DONE Overhaul Nvim UI Elements :subNvim:
+CLOSED: [2025-11-19 Wed 08:35]
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:34
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:* Re-config nvim ui elements border from =rounded= to =single= or =none=
