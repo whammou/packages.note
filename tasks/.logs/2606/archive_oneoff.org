@@ -10,3 +10,72 @@ CLOSED: [2025-09-06 Sat 14:31]
 :END:
 - *OBJECTIVE:* Create a custom qtile widget
 - *Reference:* [[https://docs.qtile.org/en/latest/manual/howto/widget.html][Create a qtile widget @Doc-qtile]]
+* DONE Config Orgroam Extension [100%] :ORGROAM:
+CLOSED: [2025-08-07 Thu 21:01]
+:PROPERTIES:
+:ID:       ca2cbb16-4d86-419e-a1f6-9a48640ce323
+:ARCHIVE_TIME: 2026-06-16 Tue 17:33
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_OLPATH: Implement Zettelkasten [100%]
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:* [[id:1902d6da-cad7-4fd8-9de5-001ede5334e1][Implementation of orgroam]] to manage zettelkasten vault
+- *Reference:*
+  - [[https://www.youtube.com/watch?v=AyhPmypHDEw#__preview][Getting started with orgroam @Youtube]]
+  - [[https://github.com/chipsenkbeil/org-roam.nvim][Org-roam nvim plugin @Github]]
+  - [[https://l.opnxng.com/r/emacs/comments/u10j69/org_mode_how_do_you_keep_your_daily_agenda_to_a/][How do you keep your daily agenda @Reddit]]
+  - [[https://www.youtube.com/watch?v=-TpWahIzueg#__preview][Orgroam zettelkasten @Youtube]]
+  - [[https://yannherklotz.com/zettelkasten/][Zettelkasten in orgmode @Blog]]
+  - [[https://www.youtube.com/embed/-TpWahIzueg?start=49m16s#__preview][Apply zettelkasten correctly in orgroam @Youtube]]
+** DONE Config Orgroam UID system
+CLOSED: [2025-07-24 Thu 16:13] DEADLINE: <2025-07-24 Thu>
+:PROPERTIES:
+:ID:       ebb8b3dc-b038-4844-b1e7-025f7d684250
+:END:
+- *OBJECTIVE:* Learn about [[id:bc6b5a2e-214b-4e04-a8e7-f6444bebc3c5][Orgroam Built-in UID System @Org]] and filename
+** DONE Filename generating
+CLOSED: [2025-08-07 Thu 21:01]
+- *OBJECTIVE:* Genrating filanme for each node
+-----
+- *[NOTE]* taken on <2025-08-07 20:59>:
+  - Filename follows =alphanumerical= method or Luhmann's original method e.g =1.1=, =1.1a=, =1.2=, =1.2b=
+  - Developing a method for auto filename generating
+-----
+* DONE Implement Zettelkasten-Orgroam ID system
+CLOSED: [2025-07-26 Sat 01:57] DEADLINE: <2025-07-26 Sat>
+:PROPERTIES:
+:ID:       f1360cc5-099f-457d-a2cf-45e4ccedd4e6
+:ARCHIVE_TIME: 2026-06-16 Tue 17:33
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_OLPATH: Implement Zettelkasten [100%]
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:* Implement an [[id:9f057f7e-6a65-448a-b19d-784ecb100a46][UUID System]] that works with zettelkasten vault and orgroam
+-----
+- *[NOTE]* taken on <2025-07-25 22:56>:
+  - Implemented folgezettel =index system= independent to =orgroam UUID system=
+    a. *Index system* provide context for human to interact with orgroam
+    b. *Orgroam UUID system* provides machine automation and navigate within orgroam
+-----
+- *Reference:* [[https://forum.zettelkasten.de/discussion/2433/id-for-notes-time-stamp-id-is-useless][ID system discussion @Forum-zettelkasten]]
+** DONE Edit capture filename :subOrgmode:
+CLOSED: [2025-07-04 Fri 05:22] DEADLINE: <2025-06-30 Mon 22:50>
+:LOGBOOK:
+CLOCK: [2025-06-30 Mon 22:49]--[2025-07-01 Tue 00:11] => 1:22
+:END:
+- *OBJECTIVE:* Custom orgroam capture target name
+- *Reference:* [[https://github.com/chipsenkbeil/org-roam.nvim/blob/main/DOCS.org#capture-node][Capture API in nvim-orgroam @Github]]
+* DONE Change snack.nvim border style :subNvim:
+CLOSED: [2025-11-19 Wed 08:31]
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:33
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:* Replace rounded border style in snack.nvim with static style for more aesthetic
+- *Reference:* 
+  - [[http://www.lazyvim.org/plugins][Lazyvim core plugins @Doc-lazyvim]]
+  - [[https://github.com/LazyVim/LazyVim/issues/1942#issuecomment-1793438952][Changing border with nvim-lspconfig @Github-issue]]
