@@ -301,3 +301,39 @@ SCHEDULED: <2026-06-12 Fri> CLOSED: [2026-06-12 Fri 12:03]
 - *OBJECTIVE:*  Install and Config =otter.nvim= to run LSP feature inside embedded code block
 - *Reference:*  [[https://github.com/jmbuhr/otter.nvim][Upstream Otter.nvim @Github]]
 - /Delegate:/   [[id:09dcfee0-718f-449c-b448-e3aef672ac1e][Testing Otter for Orgmode @Feat]]
+* ABRT Coding with Nvim vs Emacs :subNvim:subEmacs:subEditor:
+CLOSED: [2026-06-12 Fri 12:32]
+:PROPERTIES:
+:ID: d7348775-aa6f-402d-985b-ac04e7a9a891
+:ARCHIVE_TIME: 2026-06-16 Tue 17:39
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/planned.org
+:ARCHIVE_CATEGORY: planned
+:ARCHIVE_TODO: ABRT
+:END:
+:LOGBOOK:
+- Note taken on [2026-06-12 Fri 12:32] \\
+  =emacs= is conflicting with current workflow!
+:END:
+- *OBJECTIVE:* Coding experience in =nvim= vs =emacs=
+- *Reference:* [[https://www.reddit.com/r/vim/comments/q3nnrh/convince_me_to_use_vim_over_emacs_and_nano/][nvim vs emacs @Github]]
+* TODO Get gdrive shareable link :subRclone:opDrive:
+:PROPERTIES:
+:ID:       d429546e-1ada-4fff-b364-4a8743a4643c
+:ARCHIVE_TIME: 2026-06-16 Tue 17:39
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/planned.org
+:ARCHIVE_CATEGORY: planned
+:ARCHIVE_TODO: TODO
+:END:
+- *OBJECTIVE:* Get =sharable-link= of an gdrive =item=
+* ABRT Qutebrowser High Memory Usage :subQutebrowser:opMemory:
+CLOSED: [2026-01-17 Sat 12:45]
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:39
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/planned.org
+:ARCHIVE_CATEGORY: planned
+:ARCHIVE_TODO: ABRT
+:END:
+- *OBJECTIVE:* Debug =qutebrowser= use too much memory
+- *Reference:*
+  + [[https://github.com/qutebrowser/qutebrowser/issues/1204][High memory usage @Github]]
+  + [[https://github.com/qutebrowser/qutebrowser/issues/1476][Qutebrowser high memory usge @Github]]

@@ -155,9 +155,6 @@ CLOSED: [2025-11-19 Wed 00:47] DEADLINE: <2025-11-19 Wed 18:00>
 * PEND Config Rustdesk :RUSTDESK:
 - *OBJECTIVE:* Config =rustdesk= for every desktop
 - *Reference:* [[https://github.com/rustdesk/rustdesk][Rustdesk main repo @Github]]
-* ABRT Bug Fix Orgroam :ORGROAM:
-CLOSED: [2025-12-04 Thu 20:46] DEADLINE: <2025-12-04 Thu 18:15>
-- *OBJECTIVE:* Fix =variable= prints incorrect value
 * TODO Modify Opencode Keybindings :subOpenCode@Config:
 SCHEDULED: <2026-06-13 Sat>
 :PROPERTIES:
