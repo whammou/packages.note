@@ -76,30 +76,6 @@ CLOSED: [2025-07-26 Sat 18:38] DEADLINE: <2025-07-26 Sat>
   - Systen handle mpv as image viewer change [[https://github.com/whammou/dotfiles/commit/49a4c8239170eea468ed6fca9611d88efe7de257][hanldr mpv mime type change]]
 -----
 - *Reference:* [[https://github.com/mpv-player/mpv/issues/7983][Use mpv as image viewer @Github-discussion]]
-* DONE Orgroam zettelkasten template :ORGROAM:ZETTELKASTEN:
-CLOSED: [2025-07-28 Mon 21:17] DEADLINE: <2025-07-28 Mon>
-- *OBJECTIVE:* Create zettelkasten template in orgroam
------
-- *[NOTE]* taken on <2025-07-28 21:06>:
-  - Updated zettelkasten =template= in [[https://github.com/whammou/dotfiles/commit/ab9de07c5237919dd04031babb80cef5c4b5b728][Updated zettelkasten templates @Commit]]
-  - Using snippets as headers =generator=
------
-* DONE Change image url syntax :OGRMODE:
-CLOSED: [2025-07-28 Mon 16:53] DEADLINE: <2025-07-28 Mon>
-- *OBJECTIVE:* Change images syntax from pure html to org-html
------
-- *[NOTE]* taken on <2025-07-27 22:24>:
-  - Each url syntax has pros and cons its really hard to rely on one syntax only
-  - *See also:* [[id:582a05fc-a519-4197-b638-191224c322b3][Pandoc orgmode html image @Org]]
------
-- *Reference:* [[https://ao.bloat.cat/exchange/stackoverflow.com/questions/11670654/how-to-resize-images-in-org-mode][Resize image in orgmode @Oveflow]]
-* DONE Image manipulate from terminal :IMAGEMAGICK:
-CLOSED: [2025-07-28 Mon 22:10] DEADLINE: <2025-07-28 Mon>
-:PROPERTIES:
-:ID:       6fff52f0-e06e-4d64-a521-584bb19902fa
-:END:
-- *OBJECTIVE:* Quickly manipulate images from terminal
-- *Reference:* [[https://ao.bloat.cat/exchange/askubuntu.com/questions/271776/how-to-resize-an-image-through-the-terminal][Resize images from terminal @Overflow]]
 * PRTL [#A] Pandoc Embedded html Image :subPandoc:subOrgmode:
 CLOSED: [2026-01-28 Wed 03:47] DEADLINE: <2026-01-28 Wed>
 :PROPERTIES:
