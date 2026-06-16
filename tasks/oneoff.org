@@ -172,12 +172,6 @@ CLOSED: [2025-09-07 Sun 17:58] DEADLINE: <2025-09-07 Sun>
   + [[https://www.youtube.com/watch?v=p0eVyhv2rbk#__preview][Manage Large File with Git @Youtube-DT]]
   + [[https://github.com/emanuele/git-annex_tutorial][Git-annex Tutorial @Github]]
 - *Checkout:* [[id:0838bd36-ab3e-4c82-8bd4-66a73acb00ae][Manage Large Files With Git @Org-doc]]
-* DONE Manage Long Config Files :subNvim:opCleanup:
-CLOSED: [2025-11-19 Wed 08:31]
-- *OBJECTIVE:* How to manage long =nvim= /config files/ and /plugin lists/
-- *Reference:*
-  + [[https://old.reddit.com/r/neovim/comments/1g6ls56/how_do_you_manage_very_long_initlua_configs_and/][Manage Very Long Configs @Reddit]]
-  + [[file:/home/whammou/documents/local/ai-output/nvim-long-configs.org][Long Config Files Guide @File]]
 * PEND Remove Filter Config :MPV:
 - *OBJECTIVE:* Remove filter from specific =profile= in =mpv= config
 * PRTL Nvim Reload :subNvim:
@@ -199,10 +193,6 @@ CLOSED: [2026-02-03 Tue 07:33]
 - *Reference:* [[https://github.com/hoclun-rigsep/org-sort][sorting headlines script @Github]]
 * PEND Config yazi UI :subYazi:
 - *OBJECTIVE:* Re-config broken yazi UI
-* DONE Config Lazygit Submodules :LAZYGIT:
-CLOSED: [2025-09-30 Tue 21:26] DEADLINE: <2025-09-30 Tue>
-- *OBJECTIVE:* Config =lazygit= to work with =git submodules=
-- *Reference:* [[https://github.com/jesseduffield/lazygit/wiki/Custom-Commands-Compendium][Lazygit Custom Commands @Github]]
 * DONE Running git foreach in Parallel :subGit:
 CLOSED: [2025-10-05 Sun 21:36]
 - *OBJECTIVE:* Running =git submodule foreach= in /parallel/ in stead of /serial/ to reduce time effort

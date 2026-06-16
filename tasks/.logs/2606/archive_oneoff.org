@@ -396,3 +396,41 @@ CLOSED: [2025-11-19 Wed 08:35]
 :ARCHIVE_TODO: DONE
 :END:
 - *OBJECTIVE:* Re-config nvim ui elements border from =rounded= to =single= or =none=
+* DONE Manage Long Config Files :subNvim:opCleanup:
+CLOSED: [2025-11-19 Wed 08:31]
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:34
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:* How to manage long =nvim= /config files/ and /plugin lists/
+- *Reference:*
+  + [[https://old.reddit.com/r/neovim/comments/1g6ls56/how_do_you_manage_very_long_initlua_configs_and/][Manage Very Long Configs @Reddit]]
+  + [[file:/home/whammou/documents/local/ai-output/nvim-long-configs.org][Long Config Files Guide @File]]
+* DONE Config Lazygit Submodules :LAZYGIT:
+CLOSED: [2025-09-30 Tue 21:26] DEADLINE: <2025-09-30 Tue>
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:35
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:* Config =lazygit= to work with =git submodules=
+- *Reference:* [[https://github.com/jesseduffield/lazygit/wiki/Custom-Commands-Compendium][Lazygit Custom Commands @Github]]
+* DONE Running git foreach in Parallel :subGit:
+CLOSED: [2025-10-05 Sun 21:36]
+- *OBJECTIVE:* Running =git submodule foreach= in /parallel/ in stead of /serial/ to reduce time effort
+-----
+- *[NOTE]* taken on [2025-10-01 15:35]: \\
+  /fetching/, /pulling/, /pushing/ in parallel may not save the resources or time. With that said, combine git =commands= with =xargs= to launch many instances of git in parallel
+  #+BEGIN_SRC bash
+  git submodule foreach pwd \
+    | xargs -I{} --max-procs=8 git -C {} pull
+  #+END_SRC
+    + Replace =git submodule foreach= with =ls= or =find= to speed up the process even more
+      #+BEGIN_SRC bash
+      find .modules/ -maxdepth 1 -mindepth 1 -type d | xargs -I{} --max-procs=16 git -C {} fetch --verbose
+      #+END_SRC
+-----
+- *Reference:* [[https://software.codidact.com/posts/289156][Running git submodule in parallel @Codidact]]
