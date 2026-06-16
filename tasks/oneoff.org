@@ -156,7 +156,7 @@ CLOSED: [2025-11-19 Wed 00:47] DEADLINE: <2025-11-19 Wed 18:00>
 - *OBJECTIVE:* Config =rustdesk= for every desktop
 - *Reference:* [[https://github.com/rustdesk/rustdesk][Rustdesk main repo @Github]]
 * TODO Modify Opencode Keybindings :subOpenCode@Config:
-SCHEDULED: <2026-06-13 Sat>
+SCHEDULED: <2026-06-16 Tue>
 :PROPERTIES:
 :ID:       ca62c03d-e3f8-4e3b-b9bd-105049ffeaf2
 :END:

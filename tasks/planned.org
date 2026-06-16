@@ -150,7 +150,7 @@ SCHEDULED: <2026-06-13 Sat>
 - *Reference:*  [[https://github.com/git-annex-remote-rclone/git-annex-remote-rclone][Git-annex-remote-rclone setup @Github]]
 - /Delegate:/   [[id:4f9fb432-748f-4f16-8fb3-0ba67a3b242f][Managing Assets @Ref]]
 * TODO Bi-directional Git Repo Sync :subGit@Sync:
-SCHEDULED: <2026-06-15 Mon>
+SCHEDULED: <2026-06-16 Tue>
 :PROPERTIES:
 :ID: d7307e0c-e134-439e-bfa0-8cf6bda8064b
 :END:
