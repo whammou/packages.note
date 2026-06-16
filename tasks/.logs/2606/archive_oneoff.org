@@ -150,3 +150,29 @@ CLOSED: [2025-01-10 Fri 02:27]
   response = model.generate_content("Explain how AI works")
   print(response.text)
   #+END_SRC
+* DONE Nvim solve loop declare issue :subNvim:
+CLOSED: [2025-11-19 Wed 08:32]
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:33
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_OLPATH: Open nvim with org-mode API
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:* Solve loop issue when declare BufType nvim
+* DONE Separate mpv profiles
+CLOSED: [2025-08-12 Tue 12:50] DEADLINE: <2025-08-12 Tue>
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:34
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_OLPATH: Create mpv image profile
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:* Separate mpv profiles base on filetype
+-----
+- *[NOTE]* taken on [2025-08-12 19:54]: \\
+  Separate mpv profiles and and scripting
+  - *Checkout:* [[https://github.com/whammou/dotfiles/commit/54af259f0909344cf858c0a1b25238d63fa3ff58][Update mpv profiles @Commit]]
+-----
+- *Reference:* [[https://ao.bloat.cat/exchange/unix.stackexchange.com/questions/730927/load-scripts-in-another-folder][Load scripts in another directory @Overflow]]

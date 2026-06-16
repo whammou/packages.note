@@ -54,32 +54,6 @@ CLOSED: [2025-07-10 Thu 05:48]
 - *Resource:*
   - [[https://www.reddit.com/r/ChatGPT/comments/1akynsv/any_free_alternatives_to_open_ai_api/][Google AI Studio @Google-studio]]
   - [[https://ai.google.dev/docs][Google AI docs @Google-dev]]
-** DONE Working with Google AI :GEMINI:
-CLOSED: [2025-05-28 Wed 03:24]
-- *Goal(s):* create workspace with [[https://pypi.org/project/google-generativeai/][google-generativeai sdk @Pypi]]
-- *Resources:*
-  - [[https://github.com/google-gemini/cookbook][Cookbook @Github]]
-  - [[https://ai.google.dev][Documentation @Google-dev]]
-*** DONE Requesting API
-CLOSED: [2025-01-10 Fri 02:28]
-- *Goal(s):* successfully obtain working API for Google Gemini
-- *Resource:* [[https://console.cloud.google.com/apis/credentials?pli=1&inv=1&invt=AbmaIA][Google cloud console]]
-  - Obtain working API through google cloud console
-  - NOTE: only 1 API per project
-- *Note:* looking up for platform free tier limitation
-**** DONE Making request via script
-CLOSED: [2025-01-10 Fri 02:27]
-- *Goal(s):* make request from terminal to Gemini
-- *Note:* use the [[https://ai.google.dev/api/generate-content#method:-models.generatecontent][=generateContent=]] to make request to Gemini API
-  #+NAME: Make request to Gemini API
-  #+BEGIN_SRC python
-  import google.generativeai as genai
-  
-  genai.configure(api_key="YOUR_API_KEY")
-  model = genai.GenerativeModel("gemini-1.5-flash")
-  response = model.generate_content("Explain how AI works")
-  print(response.text)
-  #+END_SRC
 * PEND Specify pandoc convert :subPandoc:
 - *OBJECTIVE:* Convert specific part of a document with =pandoc=
 - *Reference:*
@@ -91,9 +65,6 @@ CLOSED: [2025-07-31 Thu 20:54] DEADLINE: <2025-07-31 Thu>
 - *Reference:*
   - [[https://nvim-orgmode.github.io/#api-docs][Nvim-orgmode API @Doc-nvim-orgmode]]
   - [[https://github.com/nvim-orgmode/orgmode/discussions/845][How to open nvim in orgmode capture @Github-discussion]]
-** DONE Nvim solve loop declare issue :subNvim:
-CLOSED: [2025-11-19 Wed 08:32]
-- *OBJECTIVE:* Solve loop issue when declare BufType nvim
 * PRTL Create mpv image profile :MPV:
 CLOSED: [2025-07-26 Sat 18:38] DEADLINE: <2025-07-26 Sat>
 - *OBJECTIVE:*
@@ -105,15 +76,6 @@ CLOSED: [2025-07-26 Sat 18:38] DEADLINE: <2025-07-26 Sat>
   - Systen handle mpv as image viewer change [[https://github.com/whammou/dotfiles/commit/49a4c8239170eea468ed6fca9611d88efe7de257][hanldr mpv mime type change]]
 -----
 - *Reference:* [[https://github.com/mpv-player/mpv/issues/7983][Use mpv as image viewer @Github-discussion]]
-** DONE Separate mpv profiles
-CLOSED: [2025-08-12 Tue 12:50] DEADLINE: <2025-08-12 Tue>
-- *OBJECTIVE:* Separate mpv profiles base on filetype
------
-- *[NOTE]* taken on [2025-08-12 19:54]: \\
-  Separate mpv profiles and and scripting
-  - *Checkout:* [[https://github.com/whammou/dotfiles/commit/54af259f0909344cf858c0a1b25238d63fa3ff58][Update mpv profiles @Commit]]
------
-- *Reference:* [[https://ao.bloat.cat/exchange/unix.stackexchange.com/questions/730927/load-scripts-in-another-folder][Load scripts in another directory @Overflow]]
 * DONE Orgroam zettelkasten template :ORGROAM:ZETTELKASTEN:
 CLOSED: [2025-07-28 Mon 21:17] DEADLINE: <2025-07-28 Mon>
 - *OBJECTIVE:* Create zettelkasten template in orgroam
