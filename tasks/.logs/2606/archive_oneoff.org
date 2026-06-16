@@ -470,3 +470,29 @@ CLOSED: [2025-10-07 Tue 23:27] DEADLINE: <2025-10-07 Tue>
 :END:
 - *OBJECTIVE:* Replace /patterns/ using =grep= and =sed=
 - *Reference:* [[https://github.com/BurntSushi/ripgrep/blob/master/FAQ.md#search-and-replace][Ripgrep - Search and Replace @Github]]
+* DONE Update Qtile Colorscheme :subQtile:
+CLOSED: [2025-11-16 Sun 21:13] DEADLINE: <2025-11-16 Sun 21:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:35
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:* Update colorscheme of =qtile= to match =nvim= and =kitty=
+* DONE Orgmode Uniform Keybinds :subNvim:subOrgmode:subQtile:
+CLOSED: [2026-03-05 Thu 00:47] DEADLINE: <2026-03-05 Thu 00:39>
+:PROPERTIES:
+:ID:       bf11fb15-6d2f-4643-afc8-643ac329c65b
+:ARCHIVE_TIME: 2026-06-16 Tue 17:35
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
+#+name:LOGBOOK
+#+html:<details><summary>LOGBOOK</summary>
+:LOGBOOK:
+- Note taken on [2026-01-13 Tue 17:22] \\
+  Uniform keybind as in =desktop= vs inside =neovim=
+:END:
+#+html:</details>
+- *OBJECTIVE:* Create a passable keybinds between =nvim= =orgmode= and =qtile=

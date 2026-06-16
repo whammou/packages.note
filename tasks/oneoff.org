@@ -196,29 +196,6 @@ CLOSED: [2026-02-03 Tue 07:33]
 * PEND Config Rustdesk :RUSTDESK:
 - *OBJECTIVE:* Config =rustdesk= for every desktop
 - *Reference:* [[https://github.com/rustdesk/rustdesk][Rustdesk main repo @Github]]
-* DONE Search and Replace with Grep :GREP:
-CLOSED: [2025-10-07 Tue 23:27] DEADLINE: <2025-10-07 Tue>
-:PROPERTIES:
-:ID:       cd6ce3f7-b41e-485f-a4f8-b4263929b2b8
-:END:
-- *OBJECTIVE:* Replace /patterns/ using =grep= and =sed=
-- *Reference:* [[https://github.com/BurntSushi/ripgrep/blob/master/FAQ.md#search-and-replace][Ripgrep - Search and Replace @Github]]
-* DONE Update Qtile Colorscheme :subQtile:
-CLOSED: [2025-11-16 Sun 21:13] DEADLINE: <2025-11-16 Sun 21:00>
-- *OBJECTIVE:* Update colorscheme of =qtile= to match =nvim= and =kitty=
-* DONE Orgmode Uniform Keybinds :subNvim:subOrgmode:subQtile:
-CLOSED: [2026-03-05 Thu 00:47] DEADLINE: <2026-03-05 Thu 00:39>
-:PROPERTIES:
-:ID:       bf11fb15-6d2f-4643-afc8-643ac329c65b
-:END:
-#+name:LOGBOOK
-#+html:<details><summary>LOGBOOK</summary>
-:LOGBOOK:
-- Note taken on [2026-01-13 Tue 17:22] \\
-  Uniform keybind as in =desktop= vs inside =neovim=
-:END:
-#+html:</details>
-- *OBJECTIVE:* Create a passable keybinds between =nvim= =orgmode= and =qtile=
 * DONE Orgmode Agenda Format :subNvim:subOrgmode:
 CLOSED: [2025-11-20 Thu 11:08] DEADLINE: <2025-11-20 Thu 18:00>
 - *OBJECTIVE:* Modify agenda format
