@@ -60,14 +60,6 @@ CLOSED: [2025-11-28 Fri 04:24]
   index = self.focus_history.index(win)
   #+END_SRC
 -----
-* DONE Ntfy Receive Order :subNtfy:
-CLOSED: [2026-03-15 Sun 21:25]
-:PROPERTIES:
-:ID: a8669211-e8f7-47f7-98f3-7ce16237d1a8
-:END:
-- *OBJECTIVE:*  Receiving =ntfy= notification following specific order default/reverse
-- *Tracker:*    [[id:80c594f7-22ee-4fe7-b758-6474d80f0f94][Notification Receiving Order @Issue]]
-- *Reference:*  [[https://docs.ntfy.sh/subscribe/api/#fetch-cached-messages][Fetch cached message @Ntfy-doc]]
 * TODO Config Markdown Theme :subNvim:opPlugin:
 :PROPERTIES:
 :ID: 3e5d5608-abf4-442f-8b36-690f5f80f074
