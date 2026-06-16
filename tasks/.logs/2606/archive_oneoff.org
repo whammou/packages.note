@@ -1,0 +1,12 @@
+#+OPTIONS: todo:t tags:nil tasks:t ^:nil toc:nil
+#+FILETAGS: :typArchive:typTask:catOneoff:
+* DONE Create qtile widget :subQtile:
+CLOSED: [2025-09-06 Sat 14:31]
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:33
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:* Create a custom qtile widget
+- *Reference:* [[https://docs.qtile.org/en/latest/manual/howto/widget.html][Create a qtile widget @Doc-qtile]]
