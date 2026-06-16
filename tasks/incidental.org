@@ -60,12 +60,6 @@ CLOSED: [2025-11-28 Fri 04:24]
   index = self.focus_history.index(win)
   #+END_SRC
 -----
-* DONE Adjust Nvim Notification Timeout :subNvim:
-DEADLINE: <2026-02-21 Sat> CLOSED: [2026-03-09 Mon 04:25]
-:PROPERTIES:
-:ID: a6d4011c-1d83-4d23-8205-bbde8054dbfd
-:END:
-- *OBJECTIVE:*  Adjust nvim =notification= timeout
 * DONE Ntfy Receive Order :subNtfy:
 CLOSED: [2026-03-15 Sun 21:25]
 :PROPERTIES:
