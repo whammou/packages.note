@@ -255,3 +255,16 @@ CLOSED: [2025-07-29 Tue 17:20] DEADLINE: <2025-07-29 Tue>
   - *Checkout:* [[https://github.com/whammou/dotfiles/commit/0b8b83081d67c076783031d74e22e525336f1fd2][Update org_get_name function @Commit]]
 -----
 - *Reference:* [[file:~/documents/local/ai-output/nvim_get_name.md][Nvim Get Name Recursively @Gemini]]
+* DONE Nvim-orgmode capture menu :subNvim:OGRMODE:
+CLOSED: [2025-09-06 Sat 20:15]
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:34
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:* Create nvim-orgmode capture menu
+-----
+- *[NOTE]* taken on [2025-09-06 20:14]: \\
+  Implementation of capture menu using =vim.ui= natively and provided with =orgmode.nvim=
+-----

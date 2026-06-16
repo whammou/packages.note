@@ -105,13 +105,6 @@ CLOSED: [2026-01-28 Wed 03:47] DEADLINE: <2026-01-28 Wed>
   + [[https://github.com/Wandmalfarbe/pandoc-latex-template/blob/master/examples/boxes-with-pandoc-latex-environment-and-awesomebox/document.md][Boxes with pandoc latex environment @Github]]
 * PEND Open completion in qutebrowser :subQutebrowser:
 - *OBJECTIVE:* Implement open =completion= in qutebrowser commands
-* DONE Nvim-orgmode capture menu :subNvim:OGRMODE:
-CLOSED: [2025-09-06 Sat 20:15]
-- *OBJECTIVE:* Create nvim-orgmode capture menu
------
-- *[NOTE]* taken on [2025-09-06 20:14]: \\
-  Implementation of capture menu using =vim.ui= natively and provided with =orgmode.nvim=
------
 * PEND Orgroam Custom Node Insert :ORGROAM:
 - *OBJECTIVE:* Orgroam filter node by tags
 - *Reference:*
