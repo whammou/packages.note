@@ -27,13 +27,6 @@
   + [[https://stackoverflow.com/questions/56851561/how-to-automate-git-history-squash-by-date][Squash commit by date @Overflow]]
 ** PEND Git Squash Weekly Commits
 - *OBJECTIVE:* Squash every commit done within the week into a =weekly-commit=
-* ABRT Nvim Reload :subNvim:
-CLOSED: [2025-11-14 Fri 08:58] DEADLINE: <2025-11-13 Thu 22:40>
-- *OBJECTIVE:* Reload nvim along with plugins
-- *Reference:* [[https://www.reddit.com/r/neovim/comments/15gihnd/neat_trick_for_restarting_neovim_fast_when_using/][Restart nvim @Reddit]]
-* ABRT Create Issue on Org Reload :subNvim:subOrgmode:
-CLOSED: [2025-12-05 Fri 20:31] DEADLINE: <2025-12-05 Fri 00:45>
-- *OBJECTIVE:* Create a =nvim-orgmode.git= issue on =org reload= does not include new /changes/ made by another =nvim= instance
 * PEND Notification Format :subDunst:subNotification:
 - *OBJECTIVE:* Format plain-text notifications with =pango= markup
 ** PEND Format Orgmode Notification :subOrgmode:
