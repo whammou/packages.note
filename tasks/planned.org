@@ -103,42 +103,12 @@ Moving files from =~/dotfiles= will affect the config dir. Best solution is to i
 :ID:       7981ea28-2765-4574-a79a-d48b54d262c8
 :END:
 - *OBJECTIVE:*  Allow opening multiple =nvim-orgmode.agenda= sessions
-* ABRT Setup Nvim Remote :subNvim@Plugin@Remote:
-CLOSED: [2026-05-06 Wed 21:28]
-:PROPERTIES:
-:ID: 8c4d8db4-5b79-49b8-8b1a-a479aa46672b
-:END:
-- *OBJECTIVE:*  Setting up remote.nvim for remote workflow
-- *Reference:*  [[https://github.com/advaypakhale/remote.nvim][Remote.nvim @Github]]
-** ABRT Nvim Headless Server :subNvim:
-DEADLINE: <2026-05-06 Wed> CLOSED: [2026-05-06 Wed 21:28]
-:PROPERTIES:
-:ID: d9c9af5f-77ab-4568-9a5f-0440144d1465
-:END:
-#+name:LOGBOOK
-#+html:<details>
-#+html:<summary>LOGBOOK</summary>
-:LOGBOOK:
-- Note taken on [2026-05-06 Wed 21:30] \\
-  Nvim does not have a server like that of VSCode instead have to setup manually. Better to set up editing files via ssh than create another nvim server!
-:END:
-#+html:</details>
-- *OBJECTIVE:*  Host an nvim =headless= server on homelab
-- *Reference:*  [[https://neovim.io/doc/user/news-0.12/][Nvim News 0.12 @Doc]]
 * TODO [#C] Opencode Agent Orchestration :subOpenCode@Agent@Orchestration:
 :PROPERTIES:
 :ID: 5bfa442c-5a4e-49d4-9feb-356e96a87d8d
 :END:
 - *OBJECTIVE:*  Research on opencode =agent= orchestration
 - *Reference:*  [[https://dev.to/gc-victor/agent-orchestration-in-opencode-3n4k][Agent orchestration in Opencode @Dev-blog]]
-* ABRT Remote Opencode :subOpenCode:
- SCHEDULED: <2026-05-07 Thu 21:42> CLOSED: [2026-05-11 Mon 03:03]
-:PROPERTIES:
-:ID: 134d58fe-b8ff-4574-92ad-6f184eb415fc
-:END:
-- *OBJECTIVE:*  How to run headless opencode remote on my setup
-- /Delegate:/   [[id:f2003a39-72eb-40b7-a832-b209c8cf9cff][Remote Workspace @Org]]
-- *Reference:*  [[https://medium.com/@michael.hannecke/how-to-run-opencode-remotely-on-a-mac-using-vs-code-and-ssh-498e62ce6683][How to run opencode remotely @Blog]]
 * TODO Managing fzf Config :subFzf@Config:
 SCHEDULED: <2026-06-13 Sat>
 :PROPERTIES:

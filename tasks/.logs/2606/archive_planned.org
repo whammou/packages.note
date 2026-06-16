@@ -395,3 +395,41 @@ CLOSED: [2026-02-26 Thu 18:56] DEADLINE: <2026-02-21 Sat>
 - *OBJECTIVE:*  Create a =note-book= like session with =kitty=
 - *Reference:*  [[https://sw.kovidgoyal.net/kitty/sessions/][Kitty Session @Doc]]
 - *Tracker:*    [[id:495bb16e-db11-4ee3-b754-2fb9db54dfc8][Executing Tracker Note via Kitty @Issue]]
+* ABRT Setup Nvim Remote :subNvim@Plugin@Remote:
+CLOSED: [2026-05-06 Wed 21:28]
+:PROPERTIES:
+:ID: 8c4d8db4-5b79-49b8-8b1a-a479aa46672b
+:ARCHIVE_TIME: 2026-06-16 Tue 17:40
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/planned.org
+:ARCHIVE_CATEGORY: planned
+:ARCHIVE_TODO: ABRT
+:END:
+- *OBJECTIVE:*  Setting up remote.nvim for remote workflow
+- *Reference:*  [[https://github.com/advaypakhale/remote.nvim][Remote.nvim @Github]]
+** ABRT Nvim Headless Server :subNvim:
+DEADLINE: <2026-05-06 Wed> CLOSED: [2026-05-06 Wed 21:28]
+:PROPERTIES:
+:ID: d9c9af5f-77ab-4568-9a5f-0440144d1465
+:END:
+#+name:LOGBOOK
+#+html:<details>
+#+html:<summary>LOGBOOK</summary>
+:LOGBOOK:
+- Note taken on [2026-05-06 Wed 21:30] \\
+  Nvim does not have a server like that of VSCode instead have to setup manually. Better to set up editing files via ssh than create another nvim server!
+:END:
+#+html:</details>
+- *OBJECTIVE:*  Host an nvim =headless= server on homelab
+- *Reference:*  [[https://neovim.io/doc/user/news-0.12/][Nvim News 0.12 @Doc]]
+* ABRT Remote Opencode :subOpenCode:
+ SCHEDULED: <2026-05-07 Thu 21:42> CLOSED: [2026-05-11 Mon 03:03]
+:PROPERTIES:
+:ID: 134d58fe-b8ff-4574-92ad-6f184eb415fc
+:ARCHIVE_TIME: 2026-06-16 Tue 17:40
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/planned.org
+:ARCHIVE_CATEGORY: planned
+:ARCHIVE_TODO: ABRT
+:END:
+- *OBJECTIVE:*  How to run headless opencode remote on my setup
+- /Delegate:/   [[id:f2003a39-72eb-40b7-a832-b209c8cf9cff][Remote Workspace @Org]]
+- *Reference:*  [[https://medium.com/@michael.hannecke/how-to-run-opencode-remotely-on-a-mac-using-vs-code-and-ssh-498e62ce6683][How to run opencode remotely @Blog]]
