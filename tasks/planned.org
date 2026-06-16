@@ -30,53 +30,6 @@ CLOSED: [2026-06-12 Fri 12:32]
 :END:
 - *OBJECTIVE:* Self-host the =ntfy= server
 - *Reference:* [[https://docs.ntfy.sh/install/][Ntfy.sh install @Blog]]
-* DONE Script for ntfy :subNtfy:subDunst:NotificationSync:
-CLOSED: [2025-11-07 Fri 21:28] DEADLINE: <2025-11-07 Fri>
-- *OBJECTIVE:* Some cool =scripts= for =ntfy= server
-- *Reference:* [[https://docs.ntfy.sh/examples/][Cool ntfy example @Blog]]
-** DONE Clipboard Forward with ntfy
-CLOSED: [2025-11-07 Fri 05:01] DEADLINE: <2025-11-07 Fri>
-- *OBJECTIVE:* Forward =clipboard= between machines
-- *Check-out:* [[id:4ea4c71e-c2c7-47c5-9e4d-65e203aaf725][Learn Dunst Scripting @Org]]
-*** DONE Clipboard Content Filter
-CLOSED: [2025-11-09 Sun 01:28] DEADLINE: <2025-11-09 Sun>
-#+name:LOGBOOK
-#+html:<details><summary>LOGBOOK</summary>
-:LOGBOOK:
-- Note taken on [2025-11-09 Sun 01:27] \\
-  Broad cast =clipboard= to =topic= and let =hosts= choose to whether to sync with it
-:END:
-#+html:</details>
-- *OBJECTIVE:* Add content filter on both =linux= and =android= for fine-tune purpose
-** DONE Call Interaction With Ntfy :MACRODROID:
-CLOSED: [2025-11-08 Sat 16:25] DEADLINE: <2025-11-08 Sat>
-- *OBJECTIVE:* Call interaction between =linux= and =android= using =dunst script= and =macrodroid=
-- *Check-out:* [[https://github.com/whammou/dotfiles/commit/4e95cdd8bd9434977d0d6d1b5164ce31e1641cb3][Dunst call forwarding @Commit]]
-** DONE Ssh Login Alert :subSsh:
-CLOSED: [2025-11-05 Wed 01:35] DEADLINE: <2025-11-05 Wed>
-- *OBJECTIVE:* Alert notification when login =ssh=
-#+name:LOGBOOK
-#+html:<details><summary>LOGBOOK</summary>
-:LOGBOOK:
-- Note taken on [2025-11-05 Wed 01:40] \\
-  - *Check-out:* [[https://github.com/whammou/dotfiles/commit/ee882edbf1d3d13d71958aa72ad2a9af98911607][Ssh login attempt notification @Commit]]
-:END:
-#+html:</details>
-- *Reference:* [[https://docs.ntfy.sh/examples/#ssh-login-alerts][Shh login Alert @Ntfy-doc]]
-** DONE Notification for Long Running Tasks
-CLOSED: [2025-11-05 Wed 00:28] DEADLINE: <2025-11-05 Wed>
-- *OBJECTIVE:* Send a notification indicate task has completed through =ntfy=
-- *Reference:* [[https://github.com/fish-shell/fish-shell/issues/7786][Notification on completion of long running task @Githu-issue]]
-* DONE Learn Dunst Scripting :subDunst:
-CLOSED: [2025-11-07 Fri 05:01] DEADLINE: <2025-11-07 Fri>
-:PROPERTIES:
-:ID:       4ea4c71e-c2c7-47c5-9e4d-65e203aaf725
-:END:
-- *OBJECTIVE:* Learn dunst scripting
-- *Reference:*
-  + [[https://github.com/dunst-project/dunst/issues/163][Action on click notification @Github-issue]]
-  + [[https://github.com/dunst-project/dunst/discussions/1251][Run Script on Mouse Click @Github-issue]]
-  + [[https://wiki.archlinux.org/title/Dunst#Actions][Dunst Actions @Archwiki]]
 * ABRT Qutebrowser High Memory Usage :subQutebrowser:opMemory:
 CLOSED: [2026-01-17 Sat 12:45]
 - *OBJECTIVE:* Debug =qutebrowser= use too much memory
@@ -94,52 +47,12 @@ CLOSED: [2026-01-17 Sat 12:45]
 - *References:*
   + [[https://www.reddit.com/r/git/comments/xvz4he/automating_git_tasks_best_practices/][Automation with git @Reddit]]
   + [[https://stackoverflow.com/questions/56851561/how-to-automate-git-history-squash-by-date][Squash commit by date @Overflow]]
-** DONE Git Commit Hourly
-CLOSED: [2025-11-27 Thu 02:53] DEADLINE: <2025-11-27 Thu>
-:PROPERTIES:
-:ID:       865d441c-cf38-489d-9144-237aaecfcd6d
-:END:
-#+name:LOGBOOK
-#+html:<details><summary>LOGBOOK</summary>
-:LOGBOOK:
-- Note taken on [2025-11-27 Thu 02:50] \\
-  Script to commit every files and =untracked= files: [[https://github.com/whammou/notes.note/commit/f8e5cebd624fcacbd04cf9a8a6ef36dc2e123b5d][auto-commit script @commit]]
-  + Running this script hourly via =cron= or =systemd= to commit hourly
-:END:
-#+html:</details>
-- *OBJECTIVE:* Git auto commit hourly /(optional: git push hourly)/
 ** PEND Git Squash Weekly Commits
 - *OBJECTIVE:* Squash every commit done within the week into a =weekly-commit=
 * ABRT Nvim Reload :subNvim:
 CLOSED: [2025-11-14 Fri 08:58] DEADLINE: <2025-11-13 Thu 22:40>
 - *OBJECTIVE:* Reload nvim along with plugins
 - *Reference:* [[https://www.reddit.com/r/neovim/comments/15gihnd/neat_trick_for_restarting_neovim_fast_when_using/][Restart nvim @Reddit]]
-* DONE Re-structuring Nvim-orgmode Configuration :subNvim:subOrgmode:NvimConfig:
-CLOSED: [2025-11-18 Tue 08:14] DEADLINE: <2025-11-18 Tue 23:45>
-:PROPERTIES:
-:ID:       62b8fb19-df46-4e5b-8bef-dde3dba80329
-:END:
-- *OBJECTIVE:* Restructuring nvim =config/= and =plugin/=
-- *Reference:* [[https://www.lazyvim.org/configuration][Lazyvim Configuration @Lazyvim-doc]]
-** DONE Structuring Orgmode Config
-CLOSED: [2025-11-18 Tue 08:14] DEADLINE: <2025-11-18 Tue 21:15>
-- *OBJECTIVE:* Structuring plugin config
-#+name:LOGBOOK
-#+html:<details><summary>LOGBOOK</summary>
-:LOGBOOK:
-:END:
-#+html:</details>
-*** DONE Create Orgmode Environment
-CLOSED: [2025-11-18 Tue 08:13] DEADLINE: <2025-11-18 Tue 22:20>
-- *OBJECTIVE:* Create an =shared= orgmode =environment=
-** DONE Structuring Orgmode Plugin
-CLOSED: [2025-11-18 Tue 08:14] DEADLINE: <2025-11-18 Tue 21:15>
-- *OBJECTIVE:* Structuring plugin =spec=
-#+name:LOGBOOK
-#+html:<details><summary>LOGBOOK</summary>
-:LOGBOOK:
-:END:
-#+html:</details>
 * DONE Nvim Multiple Instances :subNvim:FileSync:
 CLOSED: [2025-11-19 Wed 05:45] DEADLINE: <2025-11-19 Wed 19:00>
 - *Objective:* /Connect to running/ ~nvim-server~ /apply to/ ~orgmode~
