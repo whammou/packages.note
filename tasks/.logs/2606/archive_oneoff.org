@@ -216,3 +216,42 @@ CLOSED: [2025-07-28 Mon 22:10] DEADLINE: <2025-07-28 Mon>
 :END:
 - *OBJECTIVE:* Quickly manipulate images from terminal
 - *Reference:* [[https://ao.bloat.cat/exchange/askubuntu.com/questions/271776/how-to-resize-an-image-through-the-terminal][Resize images from terminal @Overflow]]
+* DONE Pandoc Orgmode with Embedded html Image :HTML:
+CLOSED: [2026-01-28 Wed 03:52] DEADLINE: <2026-01-28 Wed>
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:34
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_OLPATH: Pandoc Embedded html Image
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:*  Converting embedded =html= image similar to =wallyqs/org-ruby= parser
+  #+NAME:Convert html to image
+  #+BEGIN_SRC lua
+  function RawBlock(rawblock)
+    if rawblock.format:match("html") then
+      local srcPattern = '<img%ssrc="([^"]+)".*/>'
+      local scalePattern = "<img.*:%s?(%d+%%).*/>"
+      local src = string.match(rawblock.text, srcPattern)
+      local scale = string.match(rawblock.text, scalePattern)
+      if src then
+        return pandoc.Para(pandoc.Image({}, src, nil, { width = scale }))
+      end
+    end
+  end
+  #+END_SRC
+* DONE Orgmode template completion :subOrgmode:subNvim:
+CLOSED: [2025-07-29 Tue 17:20] DEADLINE: <2025-07-29 Tue>
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:34
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:* Write script for capture directory completion
+-----
+- *[NOTE]* taken on <2025-07-29 17:23>:
+  - Successfully implemented get path recursively
+  - *Checkout:* [[https://github.com/whammou/dotfiles/commit/0b8b83081d67c076783031d74e22e525336f1fd2][Update org_get_name function @Commit]]
+-----
+- *Reference:* [[file:~/documents/local/ai-output/nvim_get_name.md][Nvim Get Name Recursively @Gemini]]
