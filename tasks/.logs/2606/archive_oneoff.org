@@ -517,3 +517,29 @@ CLOSED: [2025-11-26 Wed 03:16] DEADLINE: <2025-11-26 Wed 19:45>
 CLOCK: [2025-11-25 Tue 19:45]--[2025-11-26 Wed 03:15] => 7:30
 :END:
 - *OBJECTIVE:* Re-config =rofi= theme to match =nvim=
+* DONE Nvim Toggle Zoom Mode :subNvim:subOrgmode:
+CLOSED: [2025-11-25 Tue 19:21] DEADLINE: <2025-11-25 Tue 19:21>
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:35
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:* Toggle =zoom= mode when entering =orgagenda= buffer
+* DONE Fix ly-dm Color Incorrect :LYDM:
+CLOSED: [2025-12-01 Mon 16:01] DEADLINE: <2025-12-01 Mon 15:50>
+:PROPERTIES:
+:ID:       06e6bf89-1415-4112-be3e-b2e12fad13d1
+:ARCHIVE_TIME: 2026-06-16 Tue 17:35
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:* Fix ly-dm displays incorrect background color
+- *Visit:* [[id:e8bec13e-f010-46c8-bee9-321002486290][Ly-dm background color @Org]]
+* DONE Optimize Rclone Performance :subRclone:DRIVE:FileSync:
+CLOSED: [2026-03-17 Tue 04:16] DEADLINE: <2026-02-12 Thu>
+- *OBJECTIVE:*  Optimizing =rclone= performance when syncing with cloud-drives
+** ABRT Rclone Systemd Service :subSystemd:
+CLOSED: [2026-03-17 Tue 04:16] DEADLINE: <2026-02-12 Thu>
+- *OBJECTIVE:*  Mount drives using systemd services

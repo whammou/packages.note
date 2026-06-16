@@ -196,16 +196,6 @@ CLOSED: [2026-02-03 Tue 07:33]
 * PEND Config Rustdesk :RUSTDESK:
 - *OBJECTIVE:* Config =rustdesk= for every desktop
 - *Reference:* [[https://github.com/rustdesk/rustdesk][Rustdesk main repo @Github]]
-* DONE Nvim Toggle Zoom Mode :subNvim:subOrgmode:
-CLOSED: [2025-11-25 Tue 19:21] DEADLINE: <2025-11-25 Tue 19:21>
-- *OBJECTIVE:* Toggle =zoom= mode when entering =orgagenda= buffer
-* DONE Fix ly-dm Color Incorrect :LYDM:
-CLOSED: [2025-12-01 Mon 16:01] DEADLINE: <2025-12-01 Mon 15:50>
-:PROPERTIES:
-:ID:       06e6bf89-1415-4112-be3e-b2e12fad13d1
-:END:
-- *OBJECTIVE:* Fix ly-dm displays incorrect background color
-- *Visit:* [[id:e8bec13e-f010-46c8-bee9-321002486290][Ly-dm background color @Org]]
 * ABRT Bug Fix Orgroam :ORGROAM:
 CLOSED: [2025-12-04 Thu 20:46] DEADLINE: <2025-12-04 Thu 18:15>
 - *OBJECTIVE:* Fix =variable= prints incorrect value
