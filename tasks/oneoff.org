@@ -199,27 +199,6 @@ CLOSED: [2026-02-03 Tue 07:33]
 * ABRT Bug Fix Orgroam :ORGROAM:
 CLOSED: [2025-12-04 Thu 20:46] DEADLINE: <2025-12-04 Thu 18:15>
 - *OBJECTIVE:* Fix =variable= prints incorrect value
-* DONE Optimize Rclone Performance :subRclone:DRIVE:FileSync:
-CLOSED: [2026-03-17 Tue 04:16] DEADLINE: <2026-02-12 Thu>
-- *OBJECTIVE:*  Optimizing =rclone= performance when syncing with cloud-drives
-** ABRT Rclone Systemd Service :subSystemd:
-CLOSED: [2026-03-17 Tue 04:16] DEADLINE: <2026-02-12 Thu>
-- *OBJECTIVE:*  Mount drives using systemd services
-* DONE Config Opencode.nvim
-CLOSED: [2026-03-17 Tue 04:16] DEADLINE: <2026-02-11 Wed>
-:PROPERTIES:
-:ID:       6f2f9641-6482-4a34-a6e9-18901984a901
-:END:
-- *OBJECTIVE:*
-  + [ ]  Modify keybindings
-  + [ ]  Adding extra =function=
-- *Reference:*  [[https://github.com/nickjvandyke/opencode.nvim][Opencode.nvim @Github]]
-* DONE Testing Orgmode Ntfy Notification :subNvim:subOrgmode:
-CLOSED: [2026-03-04 Wed 22:58] DEADLINE: <2026-03-04 Wed 22:17>
-:PROPERTIES:
-:ID:       7c6738e6-7bd9-42f8-bb1e-23c529dfb057
-:END:
-- *OBJECTIVE:*  Sending =orgmode= notification to =ntfy= server instead of using =dunst=
 * TODO Modify Opencode Keybindings :subOpenCode@Config:
 SCHEDULED: <2026-06-13 Sat>
 :PROPERTIES:
