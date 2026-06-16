@@ -191,27 +191,6 @@ DEADLINE: <2026-05-06 Wed> CLOSED: [2026-05-06 Wed 21:28]
 - *OBJECTIVE:*  How to run headless opencode remote on my setup
 - /Delegate:/   [[id:f2003a39-72eb-40b7-a832-b209c8cf9cff][Remote Workspace @Org]]
 - *Reference:*  [[https://medium.com/@michael.hannecke/how-to-run-opencode-remotely-on-a-mac-using-vs-code-and-ssh-498e62ce6683][How to run opencode remotely @Blog]]
-* DONE Neovim as Qutebrowser Text Editor :subNvim:subQutebrowser:
-SCHEDULED: <2026-05-11 Mon 18:00> CLOSED: [2026-05-11 Mon 19:11]
-:PROPERTIES:
-:ID: 02871fdc-1e5d-44d5-b29f-2c61decd165b
-:END:
-#+name:LOGBOOK
-#+html:<details>
-#+html:<summary>LOGBOOK</summary>
-:LOGBOOK:
-- Note taken on [2026-05-11 Mon 19:13] \\
-  This feature is actually a qutebrowser built-in without the need to install any extra packages. Checkout commit [[whammou/dotfiles@e875a547b392]]
-:END:
-#+html:</details>
-- *OBJECTIVE:*  Use nvim to input texts into =qutebrowser=
-- *Reference:*  [[https://github.com/qutebrowser/qutebrowser/discussions/8374][Using neovim as the text editor of browser text inputs @Github]]
-** DONE Adding edit-text URL keybinds
-SCHEDULED: <2026-05-11 Mon> CLOSED: [2026-05-11 Mon 19:11]
-:PROPERTIES:
-:ID: ef549190-39dc-4627-b5ef-3329424e5741
-:END:
-- *OBJECTIVE:*  Add edit text keybinding
 * TODO Managing fzf Config :subFzf@Config:
 SCHEDULED: <2026-06-13 Sat>
 :PROPERTIES:
@@ -219,12 +198,6 @@ SCHEDULED: <2026-06-13 Sat>
 :END:
 - *OBJECTIVE:*  How to manage fzf config across different UI
 - *Reference:*  [[https://www.reddit.com/r/commandline/comments/10mfm5b/a_practical_guide_to_fzf_building_a_file_explorer/][Pratical guide to fzf @Reddit]]
-* DONE Improve Neomutt Config :subNemutt@Config:
-SCHEDULED: <2026-05-16 Sat> CLOSED: [2026-05-17 Sun 03:16]
-:PROPERTIES:
-:ID: 7a9a7ba1-30d9-42d7-a696-5e5cb032c28b
-:END:
-- *OBJECTIVE:*  Config neomutt workflow for emails
 * Improve Plain-text Mail Workflow
 :PROPERTIES:
 :ID: 09479056-0038-438f-ab15-57b400fe8a25
@@ -243,14 +216,6 @@ SCHEDULED: <2026-06-14 Sun>
 :END:
 - *OBJECTIVE:*  Parse =ntfy= to work with =dunst=
 - *Reference:*  
-* DONE Nvim LSP for Embed Code :subNvim@LSP:
-SCHEDULED: <2026-06-12 Fri> CLOSED: [2026-06-12 Fri 12:03]
-:PROPERTIES:
-:ID: f02e57fb-8fdf-4ddf-b976-cf4a98b28856
-:END:
-- *OBJECTIVE:*  Install and Config =otter.nvim= to run LSP feature inside embedded code block
-- *Reference:*  [[https://github.com/jmbuhr/otter.nvim][Upstream Otter.nvim @Github]]
-- /Delegate:/   [[id:09dcfee0-718f-449c-b448-e3aef672ac1e][Testing Otter for Orgmode @Feat]]
 * TODO Markdown Embed Code Workflow :subMarkdown@LSP:
 SCHEDULED: <2026-06-13 Sat>
 :PROPERTIES:

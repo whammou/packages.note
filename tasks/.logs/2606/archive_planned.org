@@ -254,3 +254,50 @@ CLOSED: [2026-03-23 Mon 21:33] DEADLINE: <2026-03-23 Mon>
   + [ ] Set specific buffer options in nvim
   + [ ] Orgmode spellings option
 - *Reference:*  [[https://opncd.ai/share/ZnYkdnu2][Set local buffer option @Session]]
+* DONE Neovim as Qutebrowser Text Editor :subNvim:subQutebrowser:
+SCHEDULED: <2026-05-11 Mon 18:00> CLOSED: [2026-05-11 Mon 19:11]
+:PROPERTIES:
+:ID: 02871fdc-1e5d-44d5-b29f-2c61decd165b
+:ARCHIVE_TIME: 2026-06-16 Tue 17:37
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/planned.org
+:ARCHIVE_CATEGORY: planned
+:ARCHIVE_TODO: DONE
+:END:
+#+name:LOGBOOK
+#+html:<details>
+#+html:<summary>LOGBOOK</summary>
+:LOGBOOK:
+- Note taken on [2026-05-11 Mon 19:13] \\
+  This feature is actually a qutebrowser built-in without the need to install any extra packages. Checkout commit [[whammou/dotfiles@e875a547b392]]
+:END:
+#+html:</details>
+- *OBJECTIVE:*  Use nvim to input texts into =qutebrowser=
+- *Reference:*  [[https://github.com/qutebrowser/qutebrowser/discussions/8374][Using neovim as the text editor of browser text inputs @Github]]
+** DONE Adding edit-text URL keybinds
+SCHEDULED: <2026-05-11 Mon> CLOSED: [2026-05-11 Mon 19:11]
+:PROPERTIES:
+:ID: ef549190-39dc-4627-b5ef-3329424e5741
+:END:
+- *OBJECTIVE:*  Add edit text keybinding
+* DONE Improve Neomutt Config :subNemutt@Config:
+SCHEDULED: <2026-05-16 Sat> CLOSED: [2026-05-17 Sun 03:16]
+:PROPERTIES:
+:ID: 7a9a7ba1-30d9-42d7-a696-5e5cb032c28b
+:ARCHIVE_TIME: 2026-06-16 Tue 17:37
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/planned.org
+:ARCHIVE_CATEGORY: planned
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:*  Config neomutt workflow for emails
+* DONE Nvim LSP for Embed Code :subNvim@LSP:
+SCHEDULED: <2026-06-12 Fri> CLOSED: [2026-06-12 Fri 12:03]
+:PROPERTIES:
+:ID: f02e57fb-8fdf-4ddf-b976-cf4a98b28856
+:ARCHIVE_TIME: 2026-06-16 Tue 17:37
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/planned.org
+:ARCHIVE_CATEGORY: planned
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:*  Install and Config =otter.nvim= to run LSP feature inside embedded code block
+- *Reference:*  [[https://github.com/jmbuhr/otter.nvim][Upstream Otter.nvim @Github]]
+- /Delegate:/   [[id:09dcfee0-718f-449c-b448-e3aef672ac1e][Testing Otter for Orgmode @Feat]]
