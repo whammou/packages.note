@@ -640,3 +640,27 @@ print("Hello World")
 #+END_SRC
 
 #+HTML:<details>
+* ABRT Using Zotero with Qutebrowser :subQutebrowser:CITATIONS:ZOTERO:
+CLOSED: [2025-09-07 Sun 17:58] DEADLINE: <2025-09-07 Sun>
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:39
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: ABRT
+:END:
+- *OBJECTIVE:* Using =zotero= in conjunction with =qutebrowser=
+-----
+- *[NOTE]* taken on [2025-09-07 17:59]: \\
+  Github does not parse citations format via =.bib=. This is not what I used qutebrowser-zotero for
+  + *Checkout:* [[id:a348064e-f0ba-4aa6-970a-8e63a1aa9dba][Citation Rendering]]
+-----
+- *Reference:* [[https://github.com/parchd-1/qutebrowser-zotero][Qutebrowser-Zotero @Github]]
+* ABRT Config blink.cmp for Org :subOrgmode:subNvim:
+CLOSED: [2026-02-03 Tue 07:33]
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:39
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: ABRT
+:END:
+- *OBJECTIVE:* Config =blink.cmp= to suggest =org-property= in =cmdline=
