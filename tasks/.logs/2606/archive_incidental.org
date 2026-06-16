@@ -83,3 +83,77 @@ DEADLINE: <2026-01-16 Fri> CLOSED: [2026-01-16 Fri 22:01]
 #+html:</details>
 - *OBJECTIVE:*  Workaround =yt-dlp= not downloading video with arg =--cookie=
 - *Reference:*  [[https://github.com/yt-dlp/yt-dlp/issues/15569][ytdlp stopped working through error 403 @Github-issue]]
+* DONE Nvim Terminal Scroll :subNvim:
+DEADLINE: <2026-01-24 Sat> CLOSED: [2026-01-24 Sat 17:15]
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:32
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/incidental.org
+:ARCHIVE_CATEGORY: incidental
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:*  How to scroll in =neovim= terminal
+- *Reference:*  [[https://neovim.io/doc/user/terminal.html][Terminal Normal Mode @Nvim-doc]]
+** DONE Nvim Terminal Normal Mode
+DEADLINE: <2026-01-24 Sat> CLOSED: [2026-01-24 Sat 20:33]
+:PROPERTIES:
+:ID: 6d88cb50-f38e-4a72-a621-571238bd11a7
+:END:
+-----
+- Note taken on [2026-01-24 20:34]: \\
+  To Enter =normal= mode in =neovim=, input =<C-\><C-r>=
+-----
+- *OBJECTIVE:*  Return to =normal= mode in =neovim=
+- *Reference:*  [[https://neovim.io/doc/user/terminal.html#terminal-input][Neovim Terminal Input @Nvim-doc]]
+
+*** DONE Nvim Execute Command in Normal Mode
+DEADLINE: <2026-01-24 Sat> CLOSED: [2026-01-24 Sat 20:33]
+-----
+- Note taken on [2026-01-24 17:14]: \\
+  To run a command in =terminal= mode simple add =t= in the =mode= param \\
+  #+BEGIN_SRC lua
+  -- Custom keybindings for window navigation
+  for i = 1, 9 do
+    vim.keymap.set({ "n", "t" }, "<leader>" .. i, function()
+      vim.api.nvim_set_current_win(vim.api.nvim_list_wins()[i])
+    end, { desc = "which_key_ignore" })
+  end
+  #+END_SRC
+-----
+- *OBJECTIVE:*  Execute commands in =normal= mode /(e.g., Exit nvim terminal)/
+- *Reference:*  [[https://neovim.io/doc/user/terminal.html#terminal-input][Nvim Terminal @Nvim-doc]]
+* DONE Get Free Model with OpenRouter :subOpenCode:
+DEADLINE: <2026-03-07 Sat> CLOSED: [2026-03-07 Sat 12:11]
+:PROPERTIES:
+:ID: e76564d2-8079-44aa-8cd4-d1741e6a73f7
+:ARCHIVE_TIME: 2026-06-16 Tue 17:32
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/incidental.org
+:ARCHIVE_CATEGORY: incidental
+:ARCHIVE_TODO: DONE
+:END:
+#+name:LOGBOOK
+#+html:<details><summary>LOGBOOK</summary>
+:LOGBOOK:
+- Note taken on [2026-03-07 Sat 12:07] \\
+  =openrouter= is actually an "unified interface" for =LLMs=
+  - There are other "providers" that also offer an =interface=
+  - e.g. *Cerebras*, *Google AI Studio*, *HuggingFace*, *Vercel AI Gateway*, ...
+  - =opencode= offer an API to connect to other provider platforms
+  
+:END:
+#+html:</details>
+- *OBJECTIVE:*  Experiment with free models on =openrouter=
+- *Reference:*
+  + [[https://openrouter.ai/collections/free-models][OpenRouter Free models collection @Blog]]
+  + [[https://github.com/cheahjs/free-llm-api-resources][Free LLM API resources @Github]]
+* DONE Nvim yazi split window :subNvim:subYazi:
+$
+DEADLINE: <2026-02-04 Wed> CLOSED: [2026-02-04 Wed 07:20]
+#+name:LOGBOOK
+#+html:<details><summary>LOGBOOK</summary>
+:LOGBOOK:
+- Note taken on [2026-02-04 Wed 07:20] \\
+  Currently =yazi.nvim= window still has to be a floating window according to /reference/
+:END:
+#+html:</details>
+- *OBJECTIVE:*  Change =yazi.nvim= window into split window
+- *Reference:*  [[https://github.com/mikavilpas/yazi.nvim/pull/1410][Allow settings window properites with hook @Github-issue]]
