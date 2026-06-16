@@ -63,17 +63,6 @@ SCHEDULED: <2026-06-13 Sat>
 * PEND Custom Orgmode Agenda :subOrgmode:opProductivity:
 - *OBJECTIVE:* Custom =orgmode-agenda= for productivity
 - [[https://www.youtube.com/embed/-9rpQA6O3aM][Customize orgmode agenda for productivity @Youtube]]
-* ABRT Learn Hyprland-WM :subHyprland:subWayland:
-CLOSED: [2026-02-04 Wed 05:51]
-#+name:LOGBOOK
-#+html:<details><summary>LOGBOOK</summary>
-:LOGBOOK:
-- Note taken on [2026-02-04 Wed 05:51] \\
-  =qtile= is more hackable in my case
-:END:
-#+html:</details>
-- *OBJECTIVE:* learn to config the =hyprland= window manager
-- *Reference:* [[https://wiki.hypr.land/Configuring/Monitors/][Hyprland Wiki @Blog]]
 * TODO Configuring Chezmoi :subChezmoi:
 - *OBJECTIVE:*  Backing up my =dotfiles= with =chezmoi= /(moving on from stow)/
 - *Reference:*  [[https://www.chezmoi.io/#what-does-chezmoi-do][Chezmoi Documentation @Blog]]
@@ -104,10 +93,6 @@ Moving files from =~/dotfiles= will affect the config dir. Best solution is to i
 - *Reference:*
   + [[https://github.com/folke/snacks.nvim/blob/main/docs/terminal.md#edgy-integration][Edgy nvim integrate with Snacks terminal @Github]]
   + [[https://github.com/folke/edgy.nvim][Edgy.nvim @Github]]
-* ABRT Integrate Yazelix :subYazi:subNvim:
-CLOSED: [2026-02-04 Wed 06:32]
-- *OBJECTIVE:*  Integrate =yazi= as =nvim= file manager
-- *Reference:*  [[https://github.com/luccahuguet/yazelix][Yazelix upstream @Github]]
 * PEND Change Default SearXNG Instance :subQutebrowser:
 :PROPERTIES:
 :ID:       ec1db4c5-1de3-43db-b5d6-952c30c8817f
@@ -118,14 +103,6 @@ CLOSED: [2026-02-04 Wed 06:32]
 :ID:       7981ea28-2765-4574-a79a-d48b54d262c8
 :END:
 - *OBJECTIVE:*  Allow opening multiple =nvim-orgmode.agenda= sessions
-* ABRT Initiate Project Org-Notebook :subOrgmode:subNvim:subKitty:
-CLOSED: [2026-02-26 Thu 18:56] DEADLINE: <2026-02-21 Sat>
-:PROPERTIES:
-:ID:       cc2c2273-21dd-4ac9-8523-e6e6ffbb77e6
-:END:
-- *OBJECTIVE:*  Create a =note-book= like session with =kitty=
-- *Reference:*  [[https://sw.kovidgoyal.net/kitty/sessions/][Kitty Session @Doc]]
-- *Tracker:*    [[id:495bb16e-db11-4ee3-b754-2fb9db54dfc8][Executing Tracker Note via Kitty @Issue]]
 * ABRT Setup Nvim Remote :subNvim@Plugin@Remote:
 CLOSED: [2026-05-06 Wed 21:28]
 :PROPERTIES:
