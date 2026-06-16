@@ -110,18 +110,6 @@ CLOSED: [2026-01-28 Wed 03:47] DEADLINE: <2026-01-28 Wed>
 - *Reference:*
   - [[https://github.com/chipsenkbeil/org-roam.nvim/blob/main/DOCS.org#find-nodes-by-tag][Find Node by Tag @Github]]
   - [[https://github.com/chipsenkbeil/org-roam.nvim/discussions/94][Find note by tags discussion @Github-discussion]]
-* DONE Use neovim as manpager :subNvim:MAN:
-CLOSED: [2025-08-04 Mon 20:37] DEADLINE: <2025-08-04 Mon>
-- *OBJECTIVE:* Set =neovim= main man reader
------
-- *[NOTE]* taken on <2025-08-04 20:34>:
-  - To use =neovim= as =manpager=
-    1. Set =$MANPAGER= to ="nvim +Man!"=
-    2. Set shell variable in this =fish-shell= using =set -Ux MANPAGER "nvim +Man!"=
-    3. (optional) Set ~$MANWIDTH=999~ to disable =man= hardwrap
-       * Use nvim =softwrap=: run /nvim +Man! +'set wrap'/
------
-- *Reference:* [[https://www.youtube.com/embed/1V5ewUKIM1I?start=6m34s#__preview][Video Man Pages @Youtube]]
 * ABRT Implement Qutebrowser Prompt :subQutebrowser:
 CLOSED: [2025-08-04 Mon 20:18] DEADLINE: <2025-08-04 Mon>
 - *OBJECTIVE:* Implement qutebrowser prompt
@@ -140,12 +128,6 @@ CLOSED: [2025-08-04 Mon 20:18] DEADLINE: <2025-08-04 Mon>
   - Using prompt function is counter productive!
 -----
 - *Reference:* [[https://ryanstutorials.net/bash-scripting-tutorial/bash-input.php][Bash input read @Blog]]
-* DONE Completion From Another Command :FISH:
-CLOSED: [2025-08-23 Sat 00:23] DEADLINE: <2025-08-23 Sat>
-- *OBJECTIVE:* Get wrapped command autocompletion
-- *Reference:*
-  - [[https://ao.bloat.cat/exchange/stackoverflow.com/questions/38936716/using-the-bash-autocompletion-of-another-command][Bash wrap command autocompletion @Overflow]]
-  - [[https://fishshell.com/docs/current/cmds/complete.html][Wrapped command autocompletion @Fish-doc]]
 * PEND Shell Integrations :SHELL:FABRIC:FISH:
 :PROPERTIES:
 :ID:       4af0707d-93ed-4689-b971-15c9ebfebdd8
@@ -158,12 +140,6 @@ CLOSED: [2025-08-23 Sat 00:23] DEADLINE: <2025-08-23 Sat>
 - *Visit:*
   - [[id:90a03e2c-edb3-4afd-8252-462b6d912cbe][Improve kitty worflow @Orgmode]]
   - [[id:f0e11344-5210-4709-b5df-f6de28e7ee7a:topNote:*Function fzf][Fzf menu @Orgmode]]
-** DONE Integrate with fabric and kitty :FABRIC:subKitty:
-CLOSED: [2025-08-07 Thu 05:33]
-- *Idea:* Implement printing outputs for fabric
-- *Visit:*
-  - [[id:90a03e2c-edb3-4afd-8252-462b6d912cbe][Improve kitty worflow @Orgmode]]
-  - [[id:4af0707d-93ed-4689-b971-15c9ebfebdd8][Shell Integrations @Orgmode]]
 * DONE Nvim integration :subNvim:FABRIC:
 CLOSED: [2025-09-06 Sat 17:52]
 - *OBJECTIVE:*
