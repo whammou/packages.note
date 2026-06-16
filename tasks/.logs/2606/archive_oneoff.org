@@ -79,3 +79,74 @@ CLOSED: [2025-11-19 Wed 08:31]
 - *Reference:* 
   - [[http://www.lazyvim.org/plugins][Lazyvim core plugins @Doc-lazyvim]]
   - [[https://github.com/LazyVim/LazyVim/issues/1942#issuecomment-1793438952][Changing border with nvim-lspconfig @Github-issue]]
+* DONE Workaround rclone cache mode
+CLOSED: [2025-06-03 Tue 07:43]
+:PROPERTIES:
+:ID:       b1c36c41-af26-452e-9bca-002fc835cc5f
+:ARCHIVE_TIME: 2026-06-16 Tue 17:33
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_OLPATH: Working with rclone [66%]
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:* /Cache mode takes a lot of space, workaround this issue/
+- *Checkout:* [[https://forum.rclone.org/t/why-arent-cache-rclone-files-being-removed/28948/8][Vfs cache explain @Forum-rclone]]
+- *References:* [[https://l.opnxng.com/r/rclone/comments/xnbhsx/rclone_mount_with_vfs_cache_mode_full_is_using_up/][Cache mode using up space @Reddit]]
+* DONE Disable blink.cmp for orgroam menu :subNvim:BLINK:ORGROAM:
+CLOSED: [2025-11-19 Wed 08:31]
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:33
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:* Disable completion in orgroam buffer
+- *[NOTE]* taken on [2025-06-25 22:33]:
+  #+NAME: Disable completion nvim-cmp
+  #+BEGIN_SRC lua
+  require('nvim-cmp').setup({
+  enabled = function()
+  local buftype = vim.api.nvim_get_option_value("buftype", { buf = 0 })
+  if buftype == "nofile" then
+  return false
+  end
+  -- ... handling other conditions
+  end
+  })
+  #+END_SRC
+- *Reference:*
+  - [[https://github.com/chipsenkbeil/org-roam.nvim/blob/8369398de7c343732eea89f834b1bc71f1f110da/DOCS.org#disable-nvim-cmp-completion-in-select-buffer][Disable completion in orgroam buffer @Github]]
+  - [[https://cmp.saghen.dev/configuration/general#general][Blink.cmp general options @Doc]]
+* DONE Working with Google AI :GEMINI:
+CLOSED: [2025-05-28 Wed 03:24]
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:33
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_OLPATH: Integrating AI [25%]
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
+- *Goal(s):* create workspace with [[https://pypi.org/project/google-generativeai/][google-generativeai sdk @Pypi]]
+- *Resources:*
+  - [[https://github.com/google-gemini/cookbook][Cookbook @Github]]
+  - [[https://ai.google.dev][Documentation @Google-dev]]
+** DONE Requesting API
+CLOSED: [2025-01-10 Fri 02:28]
+- *Goal(s):* successfully obtain working API for Google Gemini
+- *Resource:* [[https://console.cloud.google.com/apis/credentials?pli=1&inv=1&invt=AbmaIA][Google cloud console]]
+  - Obtain working API through google cloud console
+  - NOTE: only 1 API per project
+- *Note:* looking up for platform free tier limitation
+*** DONE Making request via script
+CLOSED: [2025-01-10 Fri 02:27]
+- *Goal(s):* make request from terminal to Gemini
+- *Note:* use the [[https://ai.google.dev/api/generate-content#method:-models.generatecontent][=generateContent=]] to make request to Gemini API
+  #+NAME: Make request to Gemini API
+  #+BEGIN_SRC python
+  import google.generativeai as genai
+  
+  genai.configure(api_key="YOUR_API_KEY")
+  model = genai.GenerativeModel("gemini-1.5-flash")
+  response = model.generate_content("Explain how AI works")
+  print(response.text)
+  #+END_SRC
