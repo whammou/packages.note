@@ -196,15 +196,6 @@ CLOSED: [2026-02-03 Tue 07:33]
 * PEND Config Rustdesk :RUSTDESK:
 - *OBJECTIVE:* Config =rustdesk= for every desktop
 - *Reference:* [[https://github.com/rustdesk/rustdesk][Rustdesk main repo @Github]]
-* DONE Orgmode Agenda Format :subNvim:subOrgmode:
-CLOSED: [2025-11-20 Thu 11:08] DEADLINE: <2025-11-20 Thu 18:00>
-- *OBJECTIVE:* Modify agenda format
-* DONE Update rofi theme :subRofi:
-CLOSED: [2025-11-26 Wed 03:16] DEADLINE: <2025-11-26 Wed 19:45>
-:LOGBOOK:
-CLOCK: [2025-11-25 Tue 19:45]--[2025-11-26 Wed 03:15] => 7:30
-:END:
-- *OBJECTIVE:* Re-config =rofi= theme to match =nvim=
 * DONE Nvim Toggle Zoom Mode :subNvim:subOrgmode:
 CLOSED: [2025-11-25 Tue 19:21] DEADLINE: <2025-11-25 Tue 19:21>
 - *OBJECTIVE:* Toggle =zoom= mode when entering =orgagenda= buffer

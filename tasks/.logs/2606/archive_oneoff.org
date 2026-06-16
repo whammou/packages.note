@@ -496,3 +496,24 @@ CLOSED: [2026-03-05 Thu 00:47] DEADLINE: <2026-03-05 Thu 00:39>
 :END:
 #+html:</details>
 - *OBJECTIVE:* Create a passable keybinds between =nvim= =orgmode= and =qtile=
+* DONE Orgmode Agenda Format :subNvim:subOrgmode:
+CLOSED: [2025-11-20 Thu 11:08] DEADLINE: <2025-11-20 Thu 18:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:35
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
+- *OBJECTIVE:* Modify agenda format
+* DONE Update rofi theme :subRofi:
+CLOSED: [2025-11-26 Wed 03:16] DEADLINE: <2025-11-26 Wed 19:45>
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-06-16 Tue 17:35
+:ARCHIVE_FILE: /home/whammou/.local/share/orgmode/packages/tasks/oneoff.org
+:ARCHIVE_CATEGORY: oneoff
+:ARCHIVE_TODO: DONE
+:END:
+:LOGBOOK:
+CLOCK: [2025-11-25 Tue 19:45]--[2025-11-26 Wed 03:15] => 7:30
+:END:
+- *OBJECTIVE:* Re-config =rofi= theme to match =nvim=
