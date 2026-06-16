@@ -16,18 +16,6 @@
 * PEND Nvim Citation :subNvim:ZETTELKASTEN:
 - *OBJECTIVE:* Citation with =nvim= and =zettelkasten=
 - [[https://github.com/jghauser/papis.nvim][Papis Citation Manager @Github]]
-* DONE Debug Using Minimal Init :subNvim:DEBUG:subOrgmode:
-CLOSED: [2025-09-08 Mon 03:57] DEADLINE: <2025-09-09 Tue>
-:PROPERTIES:
-:ID:       2da88bc1-47e2-4a81-bedf-758cbdfdafbe
-:END:
-- *OBJECTIVE:* Debug orgmode using minimal config
-  + [X] Run minimal config
-  + [X] Test =org_inser_link= auto-completion
------
-- *[NOTE]* taken on [2025-09-06 02:03]: \\
-  Completion bug detect on commit [[https://github.com/nvim-orgmode/orgmode/commit/aaa327a7430df359b336d82ad387f896077ee2d2][Adding fuzzy completion @Commit]]
------
 * DONE Conflict nvim-orgmode and blink :subNvim:subOrgmode:
 CLOSED: [2025-09-06 Sat 17:55] DEADLINE: <2025-09-06 Sat>
 :PROPERTIES:
