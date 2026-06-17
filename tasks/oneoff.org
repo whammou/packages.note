@@ -176,6 +176,7 @@ SCHEDULED: <2026-06-17 Wed>
 - *Reference:*  [[https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams][Creating Diagram @Github]]
   #+name: Map render
   #+begin_src geojson
+  {
   "type": "FeatureCollection",
   "features": [
     {
@@ -198,4 +199,5 @@ SCHEDULED: <2026-06-17 Wed>
       }
     }
   ]
+  }
   #+end_src
