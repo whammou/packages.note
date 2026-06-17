@@ -11,6 +11,8 @@ An example of using =nvim-orgmode= babel and tangle feature
 <<headline2block>> print("Headline1")
 #+END_SRC
 
+#+RESULTS:
+
 #+name: headline2block
 #+BEGIN_SRC lua :tangle yes :results output
 print("Headline2")
