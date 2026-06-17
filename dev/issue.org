@@ -7,17 +7,17 @@
 :END:
 An example of using =nvim-orgmode= babel and tangle feature
 
-#+BEGIN_SRC lua :tangle yes :noweb yes
+#+BEGIN_SRC lua :tangle yes :noweb yes :result output
 <<headline2block>> print("Headline1")
 #+END_SRC
 
 #+name: headline2block
-#+BEGIN_SRC lua :tangle yes
+#+BEGIN_SRC lua :tangle yes :results output
 print("Headline2")
 #+END_SRC
 
 #+name: headline3block
-#+BEGIN_SRC lua :tangle no
+#+BEGIN_SRC lua :tangle no :results output
 print("Headline3")
 #+END_SRC
 * DONE Opencode Workflow :subOpenCode:AI:
