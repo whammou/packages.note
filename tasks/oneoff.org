@@ -167,11 +167,18 @@ SCHEDULED: <2026-06-17 Wed>
 :END:
 - *OBJECTIVE:*  How to run npm in a systemd service
 - /Delegate:/   [[id:2b1bd424-ef43-4f2b-8b80-6c7dac4ba9ff][Service Drop-in Override @Org]]
-* TODO Testing More Github Render :subMermaid@Diagram:
-SCHEDULED: <2026-06-17 Wed>
+* ABRT Testing More Github Render :subMermaid@Diagram:
+SCHEDULED: <2026-06-17 Wed> CLOSED: [2026-06-17 Wed 12:18]
 :PROPERTIES:
 :ID: 84f6d28a-8bcf-437b-9122-4fede2424aa3
 :END:
+#+name:LOGBOOK
+#+html:<details>
+#+html:<summary>LOGBOOK</summary>
+:LOGBOOK:
+Does not support built in parser. Getting clunky and complicated
+:END:
+#+html:</details>
 - *OBJECTIVE:*  Testing =geojson= and =topojson= renderer on *github*
 - *Reference:*  [[https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams][Creating Diagram @Github]]
   #+name: Map render
