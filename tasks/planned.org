@@ -160,3 +160,12 @@ SCHEDULED: <2026-06-17 Wed> CLOSED: [2026-06-17 Wed 01:48]
   + [[id:b42b9f9b-d686-439c-bd76-6082787b0e99][Repo Sync @Org]]
   + [[id:1c195ab5-5250-4992-ab7a-57c29c5f3c66][Bi-directional Syncing @Docs]]
 - /Node:/       [[id:ebbcd95c-3e9a-4ef0-b885-1b5d7f77d22f][Reflow Note Repos @Issue]]
+* TODO Managing Contacts :subKhard:
+SCHEDULED: <2026-06-18 Thu>
+:PROPERTIES:
+:ID: 12ac7e50-8892-4e66-b183-f195c806450c
+:END:
+- *OBJECTIVE:*  Managing contacts across platform with self-hosted =khard= instances
+- *Reference:*  [[https://github.com/Kozea/Radicale][Radicale contacts manager server @Github]]
+- /Delegate:/   [[id:ad1eccc7-19a0-433f-9d83-19af21ea77c9][Personal Contacts Management @Enhancement]]
+
