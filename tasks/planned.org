@@ -135,14 +135,14 @@ SCHEDULED: <2026-06-18 Thu>
 - *OBJECTIVE:*  Parse =ntfy= to work with =dunst=
 - *Reference:*  
 * TODO Markdown Embed Code Workflow :subMarkdown@LSP:
-SCHEDULED: <2026-06-17 Wed>
+SCHEDULED: <2026-06-18 Thu>
 :PROPERTIES:
 :ID: 018bbd4f-036a-4e97-9b47-a810c6ccf706
 :END:
 - *OBJECTIVE:*  Config markdown =lsp= workflow to match =nvim-orgmode=
 - *Reference:*  [[id:f02e57fb-8fdf-4ddf-b976-cf4a98b28856][Nvim LSP for Embed Code @Task]]
 * TODO Managing Assets with Git-annex :subGit@Annex:
-SCHEDULED: <2026-06-17 Wed>
+SCHEDULED: <2026-06-18 Thu>
 :PROPERTIES:
 :ID: 189028cc-bc9c-478c-8338-2765fc1197cb
 :END:
