@@ -202,4 +202,13 @@ else
   qtile cmd-obj -o widget textbox_1 -f update -a "󰧺 "
 fi
 #+end_src
+* OPEN Personal Contacts Management :subKhard@Config:
+:PROPERTIES:
+:ID: ad1eccc7-19a0-433f-9d83-19af21ea77c9
+:END:
+
+#+name: Description
+#+begin_quote org
+Managing email and phone accounts cross platform is tricky because every platform uses different kind of format. *Radicale* is =davcal=, =davmail=, manager that attempts to solve this problem
+#+end_quote
 
