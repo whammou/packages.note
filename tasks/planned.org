@@ -35,7 +35,7 @@
 - *OBJECTIVE:* Hint and open =URL= with =tmux=
 - *Reference:* [[https://dev.to/tomoviktor/best-way-to-open-urls-in-your-terminal-via-tmux-595b][Hint and open URL with Tmux @Blog]]
 * PROG Learn Scripting with Rofi :subRofi:
-SCHEDULED: <2026-06-17 Wed>
+SCHEDULED: <2026-06-18 Thu>
 :PROPERTIES:
 :ID:       b4d95356-ad0b-4d28-8d01-efe6a2262752
 :END:
