@@ -43,7 +43,7 @@ SCHEDULED: <2026-06-18 Thu>
 - *Reference:*  [[https://davatorium.github.io/rofi/current/rofi-script.5/][Rofi Scripting documentation @Blog]]
 - *Check-out:*  [[id:e88ddffd-71b2-41c2-b1e7-6309f8600812][Scripting with Rofi @Org]]
 ** TODO Learn Rofi Config :subRofi@Config:
-SCHEDULED: <2026-06-17 Wed>
+SCHEDULED: <2026-06-18 Thu>
 :PROPERTIES:
 :ID: 945c86c9-9065-4e76-838f-83699e0297d9
 :END:
@@ -110,7 +110,7 @@ Moving files from =~/dotfiles= will affect the config dir. Best solution is to i
 - *OBJECTIVE:*  Research on opencode =agent= orchestration
 - *Reference:*  [[https://dev.to/gc-victor/agent-orchestration-in-opencode-3n4k][Agent orchestration in Opencode @Dev-blog]]
 * TODO Managing fzf Config :subFzf@Config:
-SCHEDULED: <2026-06-17 Wed>
+SCHEDULED: <2026-06-18 Thu>
 :PROPERTIES:
 :ID: 22b64191-09ab-4524-93a4-8bb965cfd6b2
 :END:
@@ -128,7 +128,7 @@ SCHEDULED: <2026-06-17 Wed>
 :END:
 - *OBJECTIVE:*  Change the default spawn 
 * TODO Dunst Ntfy Parser :subDunst:subNtfy:@Parse:
-SCHEDULED: <2026-06-17 Wed>
+SCHEDULED: <2026-06-18 Thu>
 :PROPERTIES:
 :ID: 36c08b23-12f0-489a-a58f-cbf7a46c24e9
 :END:
