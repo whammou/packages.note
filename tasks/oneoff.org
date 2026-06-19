@@ -26,13 +26,14 @@
 - *OBJECTIVE:* Create a persist session for orgmode notes/
 - *Complication:* nvim does not allow edit if multiple session are running
 - *Reference:* [[https://ryan.himmelwright.net/post/scripting-tmux-workspaces/][Scripting tmux workspace @Blog]]
-* PRTL Working with rclone [66%] :subRclone:
+* PRTL Working with rclone [100%] :subRclone:
 CLOSED: [2025-07-10 Thu 05:50]
 :PROPERTIES:
 :ID:       3700b025-3d42-4516-a17d-0eb37366d087
 :END:
 - *OBJECTIVE:* /Config rclone for optimal workflow/
-** PEND Mount dir menu [0%] :subRofi:
+** DONE Mount dir menu [0%] :subRofi:
+SCHEDULED: <2026-06-20 Sat> CLOSED: [2026-06-20 Sat 02:20]
 :PROPERTIES:
 :ID:       657f70b1-56fe-4503-93cb-3a2987f002e8
 :END:
@@ -42,6 +43,34 @@ CLOSED: [2025-07-10 Thu 05:50]
   - [[file:=/.config/qtile/settings/widgets.py][widgets.py @Qtile-config]]
   - [[file:=/dotfiles/scripts/rofi-mount][rofi-mount @Rofi-script]]
 - *References:* [[https://l.opnxng.com/r/archlinux/comments/15mz7rj/bash_script_to_mountunmount_rclone_affiliated/?tl=zh-hant][Script mount/umount rclone mount points @Reddit]]
+
+-----
+
+#+name: Workflow
+#+begin_src mermaid
+flowchart TD
+    A["rofi -dmenu -p Accounts<br/>User picks a remote"] --> B{"mount | grep $ACCOUNT?<br/>Already mounted?"}
+    
+    B -->|Yes → Unmount| C["fusermount3 -u ~/Share/$ACCOUNT<br/>Graceful unmount"]
+
+    C --> D{"fusermount3 -u<br/>succeeded?"}
+    D -->|Yes| E["rm -rf ~/.cache/rclone/$ACCOUNT<br/>Clear cache"]
+    D -->|No| F["pkill -SIGINT -f rclone.*mount<br/>SIGINT → graceful shutdown<br/>sleep 2"]
+    F --> G["fusermount3 -u ~/Share/$ACCOUNT<br/>Retry unmount"]
+    G --> H{"Succeeded?"}
+    H -->|Yes| E
+    H -->|No| I["fusermount3 -uz ~/Share/$ACCOUNT<br/>Lazy unmount (detach now, cleanup later)<br/>pkill -SIGTERM rclone.*mount"]
+    I --> E
+
+    E --> J["qtile cmd-obj update textbox_$INDEX → ''<br/>Clear bar icon"]
+
+    B -->|No → Mount| K["mkdir -p ~/.cache/rclone/logs<br/>Ensure log directory exists"]
+    K --> L["rclone mount --daemon<br/>gdrive: ~/Share/gdrive"]
+    L --> M{"rclone mount<br/>exit code 0?"}
+    M -->|Yes| N["qtile cmd-obj update textbox_$INDEX → ICON<br/>Show bar icon"]
+    M -->|No| O["notify-send 'rclone mount failed!'"]
+#+end_src
+
 *** PEND Change icons in qtile bar accordingly
 - *Complication:* Icons for mulitple clouds
 * PRTL Integrating AI [25%] :AI:
