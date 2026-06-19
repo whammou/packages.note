@@ -282,4 +282,14 @@ That's it!!!
 #+begin_quote org
 Guide to working with git-annex. Day to day operations and how to manage and git + git annex repo
 #+end_quote
+* OUTL How to Use Git Work-tree :subGit:subGit@Command:
+:PROPERTIES:
+:ID: d686ce2b-c59d-449b-a7ca-011a4e63ebca
+:END:
 
+#+name: What is git-work-tree
+#+begin_quote org
+Git =worktree= is a built-in feature that allows you to have multiple branches checkout out simultaneously in separate directories, all linked to a single repository
+#+end_quote
+
+/Reference:/ [[https://www.youtube.com/watch?v=2uEqYw-N8uE][Git's Best and Most Unknown Feature @Youtube]]
