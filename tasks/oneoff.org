@@ -237,3 +237,9 @@ Does not support built in parser. Getting clunky and complicated
     ]
   }
   #+end_src
+* TODO Enable Libreoffice Dark Mode :subLibreoffice@Config:
+SCHEDULED: <2026-06-21 Sun>
+:PROPERTIES:
+:ID: 927038be-08c1-4b07-8ccb-4d07f02b5c8e
+:END:
+- *OBJECTIVE:*  Enable darkmode for libreoffice
