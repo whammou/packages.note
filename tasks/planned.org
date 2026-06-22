@@ -14,13 +14,13 @@
 :END:
 - *OBJECTIVE:* Self-host the =ntfy= server
 - *Reference:* [[https://docs.ntfy.sh/install/][Ntfy.sh install @Blog]]
-* EXPL Local Repos Sync :subGit:FileSync:FileSync:
+* EXPL Local Repos Sync :subGit:subFileSync:FileSync:
 :PROPERTIES:
 :ID:       038b7433-7aa0-425f-a718-0b1ef8fbc11f
 :END:
 - *OBJECTIVE:* Keep =repo= on different =machines= up-to-date on changes
 - *Reference:* [[https://linuxize.com/post/how-to-use-rsync-for-local-and-remote-data-transfer-and-synchronization/][Rsync command on linux @Bloc]]
-* WAIT Git automation :subGit:FileSync:
+* WAIT Git automation :subGit:subFileSync:
 - *OBJECTIVE:* /Automate tasks with git/
 - *References:*
   + [[https://www.reddit.com/r/git/comments/xvz4he/automating_git_tasks_best_practices/][Automation with git @Reddit]]

@@ -537,7 +537,7 @@ CLOSED: [2025-12-01 Mon 16:01] DEADLINE: <2025-12-01 Mon 15:50>
 :END:
 - *OBJECTIVE:* Fix ly-dm displays incorrect background color
 - *Visit:* [[id:e8bec13e-f010-46c8-bee9-321002486290][Ly-dm background color @Org]]
-* DONE Optimize Rclone Performance :subRclone:DRIVE:FileSync:
+* DONE Optimize Rclone Performance :subRclone:DRIVE:subFileSync:
 CLOSED: [2026-03-17 Tue 04:16] DEADLINE: <2026-02-12 Thu>
 :PROPERTIES:
 :ARCHIVE_TIME: 2026-06-16 Tue 17:35

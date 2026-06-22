@@ -117,7 +117,7 @@ CLOSED: [2025-11-18 Tue 08:14] DEADLINE: <2025-11-18 Tue 21:15>
 :LOGBOOK:
 :END:
 #+html:</details>
-* DONE Nvim Multiple Instances :subNvim:FileSync:
+* DONE Nvim Multiple Instances :subNvim:subFileSync:
 CLOSED: [2025-11-19 Wed 05:45] DEADLINE: <2025-11-19 Wed 19:00>
 :PROPERTIES:
 :ARCHIVE_TIME: 2026-06-16 Tue 17:37

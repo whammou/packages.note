@@ -77,8 +77,17 @@ DEADLINE: <2026-02-09 Mon>
 * OUTL [#A] Dunst Write and Run Script :subDunst:NotificationSync:
 DEADLINE: <2026-02-09 Mon>
 /How to write and run script in =dunst=/
-* OUTL [#A] Git Automation :subGit:FileSync:
-/Automate sync process with head repo/
+* DONE [#A] Git Automation :subGit:subFileSync:
+CLOSED: [2026-06-22 Mon 16:43]
+:PROPERTIES:
+:ID: fdbe644c-f315-4ba0-aee9-fc464c52e121
+:END:
+
+#+begin_quote Description
+Automate sync process with head repo
+#+end_quote
+
+Automatic git repo sync is handled via =git-sync-rs= /(cargo package)/
 * OUTL [#A] Nvim Advanced Configuration :subNvim:NvimConfig:
 =neovim= advanced implementations using lua and =lazyvim= configurations structure
 ** Lazyvim Plugin Structure
@@ -87,9 +96,19 @@ optimal way to place your plugins in =lazyvim=
 ** Nvim Reload
 How to reload =nvim= without restarting or spawning new instances
 - /Reference:/ [[file:/home/whammou/Workspace/nvim-restart/nvim-restart.ai.org][Restart Nvim Function @Gemini]]
-* OUTL [#A] Running Script File Event :FileSync:
-DEADLINE: <2026-02-09 Mon>
-/Run custom script on file modification event/ \\
+* DONE [#A] Running Script File Event :subFileSync:
+DEADLINE: <2026-02-09 Mon> CLOSED: [2026-06-22 Mon 16:44]
+:PROPERTIES:
+:ID: 959091b8-bac1-48f2-9b22-ccb8aeef816a
+:END:
+
+#+name: Description
+#+begin_quote org
+Run custom script on file modification event
+#+end_quote
+
+=git-sync-rs= support =watch= mode which does exactly as the script would do and package already exist -> no implementation needed
+
 /Check-out:/ [[id:c4b5759c-1794-4797-b1ae-adc28bb1aa2a][Nvim Multiple Instances @Org]]
 * OUTL [#A] Scripting with Rofi :subRofi:
 DEADLINE: <2026-02-09 Mon>
@@ -282,7 +301,7 @@ That's it!!!
 #+begin_quote org
 Guide to working with git-annex. Day to day operations and how to manage and git + git annex repo
 #+end_quote
-* OUTL How to Use Git Work-tree :subGit:subGit@Command:
+* OUTL [#A] How to Use Git Work-tree :subGit:subGit@Command:
 :PROPERTIES:
 :ID: d686ce2b-c59d-449b-a7ca-011a4e63ebca
 :END:
