@@ -10,10 +10,11 @@ CLOSED: [2026-06-24 Wed 02:52]
 
 #+name: pre-headline 2
 #+BEGIN_SRC lua :tangle no :noweb yes :result output
-<<headline2block>> print("Headline1")
+<<headline2block>>
+print("Headline1")
 #+END_SRC
 
-#+RESULTS:
+#+RESULTS: pre-headline 2
 
 #+name: headline2block
 #+BEGIN_SRC lua :tangle headlineb2block.lua :results output
