@@ -249,3 +249,9 @@ SCHEDULED: <2026-06-21 Sun> CLOSED: [2026-06-21 Sun 21:05]
 [!NOTE]
 =libreoffice= is backed up with the matching theme with qutebrowser css. To install theme use stow like usual
 #+end_quote
+* OUTL Update Neomutt Notification :subNeomutt@Config:
+SCHEDULED: <2026-06-27 Sat>
+:PROPERTIES:
+:ID: 28ded629-ad68-4c70-9450-2d3121dda87c
+:END:
+- *OBJECTIVE:*  Update neomutt notification with mailbox name output
