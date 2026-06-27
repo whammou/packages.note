@@ -123,7 +123,7 @@ require("sidekick").setup({
 	},
 })
 #+end_src
-* !IMPLEMENT Qtile Custom and Built-in Hooks :subQtile:
+* OPEN !IMPLEMENT Qtile Custom and Built-in Hooks :subQtile:
 :PROPERTIES:
 :ID: 68f4414f-404b-45a0-b846-cade3d4ced48
 :END:
@@ -131,3 +131,89 @@ require("sidekick").setup({
 #+begin_quote markdown
 Search for qtile hooks which fires when a session is resume
 #+end_quote
+* OPEN Notification Dispatch :subDunst:
+:PROPERTIES:
+:ID: d3867936-c592-4079-a114-7b0ac7b66ded
+:END:
+
+#+name: Description
+#+begin_quote org
+Dispatch notifications into two streams:
+- =raw= - uses for scripting /(requires exact format)/
+- =display= uses for displaying notification /(comes with enrich format)/
+#+end_quote
+
+#+name: Current Flow
+#+begin_src mermaid
+flowchart TD
+    EXT["📨 External notification arrives<br/>dunstify, notify-send, ntfy-app"]
+    EXT --> RAW
+
+    subgraph RAW ["1. Raw Notification Catch (suppressed)"]
+        RAW_RULE["[raw-notification]<br/>appname='.*' | format=''"]
+        SCRIPT["notification-format script"]
+        LOOP{"appname starts with dis+?"}
+        HANDLED{"category = raw.handled?"}
+        ENRICH["Enrich body: bold first colon label"]
+        FORWARD["Forward: urgency, progress, stack_tag"]
+        RESEND["dunstify -a 'dis+$APP' -c 'ntfy-display' ..."]
+    end
+
+    RAW_RULE -->|suppresses display| SCRIPT
+    SCRIPT --> LOOP
+    LOOP -->|yes → exit| EXIT1["❌ Skip (loop prevention)"]
+    LOOP -->|no| HANDLED
+    HANDLED -->|yes → exit| EXIT2["❌ Skip (specific handler)"]
+    HANDLED -->|no| ENRICH
+    ENRICH --> FORWARD
+    FORWARD --> RESEND
+
+    RESEND --> DISPLAY
+
+    subgraph SPECIFIC ["Specific Scripts (bypass general enrichment)"]
+        CALL["[call] → call-action<br/>dunstify -c call.request<br/>+ accept/reject buttons"]
+        CLOCK["[clock] → clock-format<br/>dunstify -c reminder"]
+        CLIP["[clipboard] → clipboard-action<br/>dunstify -A yank"]
+        ORG["[orgmode-update-flag] → webdav-sync"]
+    end
+
+    HANDLED -.->|triggers| SPECIFIC
+
+    subgraph DISPLAY ["2. Display Notification Routing (appname=dis+)"]
+        PASS["[display-pass]<br/>appname=^dis+ | format='%s\\n%b'"]
+        CAT_RULES["Category Rules<br/>(match ntfy-display, call.request, etc.)"]
+        SUM_RULES["Summary Rules<br/>(appname=^dis+ AND summary match)"]
+        SYS["[system-display]<br/>appname=^dis+System$<br/>→ volume/brightness<br/>gray, timeout=3"]
+        SOUND["[sound]<br/>appname=^dis+<br/>→ sound-dispatcher"]
+    end
+
+    DISPLAY --> SHOW
+
+    PASS -->|base format| CAT_RULES
+    CAT_RULES -->|override with rich format| SUM_RULES
+    SUM_RULES -->|override for specific apps| SYS
+    SYS -->|override for System| SOUND
+    SOUND -->|play sound based on summary| SHOW["📺 Notification Displayed<br/>Rich format + Progress bar + Sound"]
+
+    subgraph CAT_RULES_DETAIL ["Category Rules (override order)"]
+        NTFY["[ntfy-default]<br/>category=ntfy-display<br/>→   blue"]
+        MEDIA["[ntfy-media]<br/>category=ntfy-display<br/>summary=SimpMusic|...<br/>→ 󰨜  yellow"]
+        CONV["[conversation]<br/>category=ntfy-display<br/>summary=Beeper$|Zalo$<br/>→ 󰭻  purple"]
+        MAIL["[mail]<br/>category=ntfy-display<br/>summary=Spark<br/>→   orange"]
+        CALLACT["[call-action]<br/>category=call.request<br/>→ 󰏷  blue"]
+    end
+
+    subgraph SUM_RULES_DETAIL ["Summary Rules (appname=^dis+ filter)"]
+        LOCALM["[localMail]<br/>summary=Neomutt<br/>→   orange"]
+        MPV["[mpv]<br/>summary=Mpv<br/>→ 󰨜  yellow"]
+        TERM["[terminal]<br/>summary=RemoteSession|Terminal<br/>→   green"]
+        CLIPD["[clipboard-action]<br/>summary=Clipboard<br/>→ 󰛈  blue"]
+    end
+
+    style RAW fill:#1a1a2e,stroke:#e94560,color:#eee
+    style DISPLAY fill:#16213e,stroke:#0f3460,color:#eee
+    style SPECIFIC fill:#1a1a2e,stroke:#e94560,color:#eee
+    style SHOW fill:#0f3460,stroke:#e94560,color:#eee
+    style EXT fill:#16213e,stroke:#e94560,color:#eee
+#+end_src
+
