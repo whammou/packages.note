@@ -143,153 +143,40 @@ Dispatch notifications into two streams:
 - =display= uses for displaying notification /(comes with enrich format)/
 #+end_quote
 
-#+name: Current Flow
+#+name: Matching Flow
 #+begin_src mermaid
-flowchart TD
-    EXT["📨 External notification arrives<br/>dunstify, notify-send, ntfy-app"]
-    EXT --> RAW
+graph LR
+  RAW["Raw Notification"] --> RAW_RULE["[raw-notification]
+appname = .*
+────────────────
+format = '' → suppress notification
+Runs notification-format script"]
 
-    subgraph RAW ["1. Raw Notification Catch (suppressed)"]
-        RAW_RULE["[raw-notification]<br/>appname='.*' | format=''"]
-        SCRIPT["notification-format script"]
-        LOOP{"appname starts with dis+?"}
-        HANDLED{"category = raw.handled?"}
-        ENRICH["Enrich body: bold first colon label"]
-        FORWARD["Forward: urgency, progress, stack_tag"]
-        RESEND["dunstify -a 'dis+$APP' -c 'ntfy-display' ..."]
-    end
+  RAW_RULE --> SCRIPT{"notification-format
+────────────────
+display-* prefix? → exit 0 (loop guard)
+raw.handled category? → exit 0
+Otherwise → dunstify -a 'display-$APP'"}
 
-    RAW_RULE -->|suppresses display| SCRIPT
-    SCRIPT --> LOOP
-    LOOP -->|yes → exit| EXIT1["❌ Skip (loop prevention)"]
-    LOOP -->|no| HANDLED
-    HANDLED -->|yes → exit| EXIT2["❌ Skip (specific handler)"]
-    HANDLED -->|no| ENRICH
-    ENRICH --> FORWARD
-    FORWARD --> RESEND
+  SCRIPT -- "re-sent with display- prefix" --> DISPLAY_PASS["[display-pass]
+appname = ^display-
+────────────────
+Ensures display- notifications show
+format = '%s\n%b', transient, timeout=10"]
 
-    RESEND --> DISPLAY
+  DISPLAY_PASS --> SPECIFIC{"More specific rules match
+on appname + summary + body"}
 
-    subgraph SPECIFIC ["Specific Scripts (bypass general enrichment)"]
-        CALL["[call] → call-action<br/>dunstify -c call.request<br/>+ accept/reject buttons"]
-        CLOCK["[clock] → clock-format<br/>dunstify -c reminder"]
-        CLIP["[clipboard] → clipboard-action<br/>dunstify -A yank"]
-        ORG["[orgmode-update-flag] → webdav-sync"]
-    end
-
-    HANDLED -.->|triggers| SPECIFIC
-
-    subgraph DISPLAY ["2. Display Notification Routing (appname=dis+)"]
-        PASS["[display-pass]<br/>appname=^dis+ | format='%s\\n%b'"]
-        CAT_RULES["Category Rules<br/>(match ntfy-display, call.request, etc.)"]
-        SUM_RULES["Summary Rules<br/>(appname=^dis+ AND summary match)"]
-        SYS["[system-display]<br/>appname=^dis+System$<br/>→ volume/brightness<br/>gray, timeout=3"]
-        SOUND["[sound]<br/>appname=^dis+<br/>→ sound-dispatcher"]
-    end
-
-    DISPLAY --> SHOW
-
-    PASS -->|base format| CAT_RULES
-    CAT_RULES -->|override with rich format| SUM_RULES
-    SUM_RULES -->|override for specific apps| SYS
-    SYS -->|override for System| SOUND
-    SOUND -->|play sound based on summary| SHOW["📺 Notification Displayed<br/>Rich format + Progress bar + Sound"]
-
-    subgraph CAT_RULES_DETAIL ["Category Rules (override order)"]
-        NTFY["[ntfy-default]<br/>category=ntfy-display<br/>→   blue"]
-        MEDIA["[ntfy-media]<br/>category=ntfy-display<br/>summary=SimpMusic|...<br/>→ 󰨜  yellow"]
-        CONV["[conversation]<br/>category=ntfy-display<br/>summary=Beeper$|Zalo$<br/>→ 󰭻  purple"]
-        MAIL["[mail]<br/>category=ntfy-display<br/>summary=Spark<br/>→   orange"]
-        CALLACT["[call-action]<br/>category=call.request<br/>→ 󰏷  blue"]
-    end
-
-    subgraph SUM_RULES_DETAIL ["Summary Rules (appname=^dis+ filter)"]
-        LOCALM["[localMail]<br/>summary=Neomutt<br/>→   orange"]
-        MPV["[mpv]<br/>summary=Mpv<br/>→ 󰨜  yellow"]
-        TERM["[terminal]<br/>summary=RemoteSession|Terminal<br/>→   green"]
-        CLIPD["[clipboard-action]<br/>summary=Clipboard<br/>→ 󰛈  blue"]
-    end
-
-    style RAW fill:#1a1a2e,stroke:#e94560,color:#eee
-    style DISPLAY fill:#16213e,stroke:#0f3460,color:#eee
-    style SPECIFIC fill:#1a1a2e,stroke:#e94560,color:#eee
-    style SHOW fill:#0f3460,stroke:#e94560,color:#eee
-    style EXT fill:#16213e,stroke:#e94560,color:#eee
+  SPECIFIC --> SUPPRESS["Suppress + Delegate
+format = '' + set_category = raw.handled
+→ Run handler script (call, clock, clipboard, etc.)"]
+  SPECIFIC --> FORMAT["Rich Themed Notifications
+~15 rules matching appname|summary
+→ Color + icon per app type"]
+  SPECIFIC --> CATEGORY["Category-Based Rules
+[call-action] category=call.request
+[call-accept-format] category=call.accept.notification"]
+  SPECIFIC --> SIDECAR["Sidecar Rules
+[sound] → play notification sound
+[fish] → non-transient"]
 #+end_src
-
-#+name: New Flow
-#+begin_src mermaid
-flowchart TD
-    EXT["📨 External notification arrives<br/>dunstify, notify-send, ntfy-app<br/>appname=X, summary, body, urgency, hints"]
-    EXT --> RAW
-
-    subgraph RAW ["1. Raw Notification (suppressed)"]
-        RAW_RULE["[raw-notification]<br/>appname='.*' | format=''"]
-        SCRIPT["notification-format script"]
-        LOOP{"appname starts with dis+?"}
-        HANDLED{"category = raw.handled?"}
-        ENRICH["Enrich body: bold first colon label"]
-        FORWARD["Forward: urgency (-u)<br/>progress (-h int:value)<br/>stack_tag (-h x-dunst-stack-tag)"]
-        RESEND["dunstify -a 'dis+$APP'<br/>-u LOW|NORMAL|CRITICAL<br/>-h int:value<br/>-h x-dunst-stack-tag<br/>'$summary' '$enrichedBody'"]
-    end
-
-    RAW_RULE -->|suppresses display| SCRIPT
-    SCRIPT --> LOOP
-    LOOP -->|"yes (already dis+X)"| EXIT1["❌ Skip - loop prevention"]
-    LOOP -->|no| HANDLED
-    HANDLED -->|"yes (specific script handles it)"| EXIT2["❌ Skip - handled by call/clock/clipboard/orgmode"]
-    HANDLED -->|no| ENRICH
-    ENRICH --> FORWARD
-    FORWARD --> RESEND
-
-    RESEND --> DISPLAY
-
-    subgraph SPECIFIC ["Specific Scripts (bypass general enrichment)"]
-        direction LR
-        C["[call] → call-action<br/>dunstify -c call.request<br/>+accept/reject buttons"]
-        CLK["[clock] → clock-format<br/>dunstify -c reminder"]
-        CLP["[clipboard] → clipboard-action<br/>dunstify -A yank"]
-        ORG["[orgmode-update-flag] →<br/>webdav-sync"]
-    end
-
-    HANDLED -.->|triggers| SPECIFIC
-
-    subgraph DISPLAY ["2. Display Notification Routing (appname=dis+X)"]
-        PASS["[display-pass]<br/>appname=^dis+ | format='%s\\n%b'"]
-        CAT_RULES["Summary-based rules<br/>(all use appname=^dis+)"]
-        SYS["[system-display]<br/>appname=^dis+System$<br/>→ volume/brightness<br/>gray, timeout=3, history_ignore"]
-        SOUND["[sound]<br/>appname=^dis+<br/>→ sound-dispatcher"]
-    end
-
-    PASS -->|base fallback format| CAT_RULES
-    CAT_RULES -->|override with rich format| SYS
-    SYS -->|override for System| SOUND
-    SOUND -->|play sound by summary| SHOW["📺 Notification Displayed<br/>Rich format + Progress bar + Sound"]
-
-    subgraph CAT_RULES_DETAIL ["Display Rules (match appname=^dis+)"]
-        NTFY["[ntfy-default]<br/>appname=^dis+ntfy$<br/>→   blue"]
-        MEDIA["[ntfy-media]<br/>summary=SimpMusic\|NewPipe\|...<br/>→ 󰨜  yellow"]
-        CONV["[conversation]<br/>summary=Beeper$\|Zalo$<br/>→ 󰭻  purple"]
-        MAIL["[mail]<br/>summary=Spark<br/>→   orange"]
-        CALLACT["[call-action]<br/>category=call.request<br/>→ 󰏷  blue"]
-        REM["[reminder]<br/>summary=^(Orgmode\|Reminder)$<br/>→ 󰕪  cyan"]
-        OPEN["[opencode]<br/>summary=OpenCode<br/>→   green"]
-        AI["[ai-conversation]<br/>summary=Fabric$<br/>→ 󰧑  purple"]
-        TERR["[terminal-warning]<br/>summary=Remote Warning<br/>→   yellow"]
-        UPD["[update]<br/>summary=Google Play Store<br/>→ 󰚰  green"]
-    end
-
-    subgraph LOCAL_RULES ["Local-specific (appname=^dis+)"]
-        LOCALM["[localMail]<br/>summary=Neomutt<br/>→   orange"]
-        MPV["[mpv]<br/>summary=Mpv<br/>→ 󰨜  yellow"]
-        TERM["[terminal]<br/>summary=RemoteSession\|Terminal<br/>→   green"]
-        CLIPD["[clipboard-action]<br/>summary=Clipboard<br/>→ 󰛈  blue"]
-    end
-
-    style RAW fill:#1a1a2e,stroke:#e94560,color:#eee
-    style DISPLAY fill:#16213e,stroke:#0f3460,color:#eee
-    style SPECIFIC fill:#1a1a2e,stroke:#e94560,color:#eee
-    style SHOW fill:#0f3460,stroke:#e94560,color:#eee
-    style EXT fill:#16213e,stroke:#e94560,color:#eee
-#+end_src
-
