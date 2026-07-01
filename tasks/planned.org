@@ -168,4 +168,14 @@ SCHEDULED: <2026-07-01 Wed>
 - *OBJECTIVE:*  Managing contacts across platform with self-hosted =khard= instances
 - *Reference:*  [[https://github.com/Kozea/Radicale][Radicale contacts manager server @Github]]
 - /Delegate:/   [[id:ad1eccc7-19a0-433f-9d83-19af21ea77c9][Personal Contacts Management @Enhancement]]
+* PEND Make Webdav Secured :subWebdav@Security:
+:PROPERTIES:
+:ID: ddb3793b-5dea-4311-ba04-c65be3127990
+:END:
+
+- *OBJECTIVE:*  How to make sharing files via webdav secure
+- *Reference:*
+  + [[https://multilogin.com/glossary/proxy-management/][Proxy Management @Multilogin]]
+  + [[https://www.cloudflare.com/learning/cdn/glossary/reverse-proxy/][Reverse Proxy @Cloudflare]]
+- /Delegate/  [[id:259ed465-87ce-4373-ac2e-96e21baec17f][Webdav Secured File Sharing @internal]]
 
