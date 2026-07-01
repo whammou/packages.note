@@ -180,3 +180,13 @@ format = '' + set_category = raw.handled
 [sound] → play notification sound
 [fish] → non-transient"]
 #+end_src
+* OPEN Webdav Secured File Sharing :subWebdav@Security:
+:PROPERTIES:
+:ID: 259ed465-87ce-4373-ac2e-96e21baec17f
+:END:
+
+#+name: Description
+#+begin_quote org
+How to securely share files via webdav. Files should also be accessible by another machine but with less risk
+#+end_quote
+
