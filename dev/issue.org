@@ -191,5 +191,5 @@ How to securely share files via webdav. Files should also be accessible by anoth
 #+end_quote
 
 Sharing =webdav= with login-authenticate is ideal for this workflow:
-- Files are shareable and reachable with across devices
-
+- Files are shareable and reachable with across devices /(with authentication method)/
+- Able to share files with via public instances
