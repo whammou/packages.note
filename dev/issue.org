@@ -190,3 +190,6 @@ format = '' + set_category = raw.handled
 How to securely share files via webdav. Files should also be accessible by another machine but with less risk
 #+end_quote
 
+Sharing =webdav= with login-authenticate is ideal for this workflow:
+- Files are shareable and reachable with across devices
+
