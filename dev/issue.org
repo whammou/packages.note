@@ -193,3 +193,17 @@ How to securely share files via webdav. Files should also be accessible by anoth
 Sharing =webdav= with login-authenticate is ideal for this workflow:
 - Files are shareable and reachable with across devices /(with authentication method)/
 - Able to share files with via public instances
+* OPEN User Agent Base Redirect :subNginx:
+:PROPERTIES:
+:ID: 1383a194-6b3e-4195-82e4-484999a043ae
+:END:
+
+#+name: Description
+#+begin_quote org
+Redirect incoming traffic to another server base on browser's =user-agent=
+#+end_quote
+
+#+name: Testing render
+#+begin_html html
+<img src="https://drive.whammou.dedyn.io/Journal/assets/balance-sheet.png" style="width:50%;"/>
+#+end_html
