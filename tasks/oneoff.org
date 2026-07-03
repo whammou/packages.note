@@ -255,8 +255,8 @@ SCHEDULED: <2026-06-27 Sat> CLOSED: [2026-06-27 Sat 17:28]
 :ID: 28ded629-ad68-4c70-9450-2d3121dda87c
 :END:
 - *OBJECTIVE:*  Update neomutt notification with mailbox name output
-* TODO Testing Github Camo User Agent Redirect :subNginx:
-SCHEDULED: <2026-07-04 Sat>
+* DONE Testing Github Camo User Agent Redirect :subNginx:
+SCHEDULED: <2026-07-04 Sat> CLOSED: [2026-07-04 Sat 04:26]
 :PROPERTIES:
 :ID: 9922d436-2764-43b4-8597-d21ccfc789a3
 :END:
