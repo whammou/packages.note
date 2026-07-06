@@ -215,3 +215,14 @@ Redirect incoming traffic to another server base on browser's =user-agent=
 #+end_html
 
 Test renders works with correct agent matching
+* OPEN Open Viewer at Specific Page :subZathura:
+:PROPERTIES:
+:ID: ed3f6eb4-8f2c-4715-9af7-ab2b0ae5a633
+:END:
+
+#+name: Description
+#+begin_quote org
+How to open document files at designated page e.g document.pdf#page=4 /(open document)/ at page 4
+#+end_quote
+
+Example URL: [[https://drive.whammou.dedyn.io/01-projects/03-liennha-onboard-and-training/03-products/01-dental-chairs/Stern%20Weber/s200/s200-manual.pdf#page=10][Open Manual at page 10]]

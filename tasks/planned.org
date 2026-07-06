@@ -185,4 +185,4 @@ SCHEDULED: <2026-07-06 Mon>
 :END:
 - *OBJECTIVE:*  Opening files at a specific spot /(or range)/
 - *Reference:*  [[https://www.google.com/search?q=zathura+default+view&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jnxvATrUU2Yg9dwuUGnsUHcA8ltRxGSueAm4xbJB7-U9Vk4K2G3aCoTcvC5pL-W3BefkCVPpGn8iTUjYkWJML68uLFgDbatdBtrEzEqYtg9mw56OqisjtLxRIXcbjp4Xhz8JSDqiCMMcWgfwvOZV38vZdSKuQ&aep=10&ntc=1&mstk=AUtExfCf2lazNPYKOXzsQllhTqIbTcTO5-Nj1nAjQk4_-dfz6jUyEGh4pepgJVtJKhqydNTIL1AdscUR--chjYSCV2avrdE5BP3_QmfXREUuhR-X-NkJAu7hE-_LLyn_iae1ZRk0P0c1Y1odunxgk5K_HR4BsCYySEk00JLR0H5htj6bm7z0E5sAF4NQXUrmXKEEyklPmG3yNT8I8dS9f69HUT_pnV1OMbFY-vNKLrotfG_9CcEL8YQF5wDcu4BhMk04c93pejrddvAs4w&aioh=3&csuir=1&mtid=PztLaoOjCNKSseMPyID26Ao&atvm=2][Open File Conversation @Gemini]]
-
+- /Delegate:/   [[id:ed3f6eb4-8f2c-4715-9af7-ab2b0ae5a633][Open Viewer at Specific Page @issue]]
