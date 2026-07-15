@@ -131,6 +131,79 @@ require("sidekick").setup({
 #+begin_quote markdown
 Search for qtile hooks which fires when a session is resume
 #+end_quote
+
+#+name: Flow
+#+begin_src mermaid
+sequenceDiagram
+    participant User
+    participant Q as Qtile Core
+    participant B as Bonsai Layout
+    participant H as Hooks (layouts.py)
+    participant F as Floating State
+
+    rect rgb(30, 30, 50)
+    Note over User,F: WINDOW KILL CHAIN
+    User->>Q: lazy.window.kill()
+    Q->>Q: Group.remove(win)
+    Q->>Q: hook.fire("group_window_remove")
+    Q->>Q: Compute previous_win (focus_history[-2])
+    alt win is tiling
+        Q->>B: Bonsai.remove(win)
+        B->>B: _tree.remove(pane) → next_focus_pane
+        B->>B: _focused_window = None
+        B->>Q: group.focus(T_parent) [sync]
+        Q->>H: on_client_focus(T_parent)
+        H->>F: show_floating_win(T_parent) [no-op, tiling]
+        H-->>H: _last_focused = T_parent
+        B-->>Q: returns next_focus_pane.window
+    end
+    Q->>Q: nextfocus = previous_win or nextfocus or ...
+    Q->>Q: group.focus(nextfocus) [sync]
+    Q->>H: on_client_focus(nextfocus)
+    H->>F: show_floating_win(nextfocus)
+    F-->>User: floating window appears (if any)
+    Q->>H: client_killed(win)
+    alt win is floating
+        H-->>H: return early — no interference
+    else win is tiling
+        H->>Q: call_soon(restore) [deferred]
+        Note over Q,H: ... event loop iteration ...
+        Q->>H: restore() runs
+        alt qtile already resolved focus
+            H-->>H: group.current_window ≠ win → return
+        else genuine fallback needed
+            H->>Q: group.focus(last_focused_window)
+            Q->>H: on_client_focus(target)
+            H->>F: show/hide based on target type
+        end
+    end
+    end
+
+    rect rgb(30, 50, 30)
+    Note over User,F: WINDOW SPAWN CHAIN
+    User->>B: Bonsai.spawn(program)
+    B->>B: _pending_float = true / add_client()
+    B->>Q: Group.add(win)
+    Q->>H: hook.fire("group_window_add") → maintain_focus
+    H->>H: _suppress_floating_hide = true (if prev was floating)
+    H->>Q: call_soon(restore_focus(prev)) [deferred]
+    H->>Q: call_soon(restore_tree_view) [deferred, if prev floating]
+    Q->>B: Bonsai.add_client(win)
+    alt _pending_float
+        B->>B: window.enable_floating(), group.mark_floating()
+    else normal tiling
+        B->>B: tree.insert(pane)
+    end
+    Q->>Q: group.focus(win) [if can_steal_focus]
+    Note over Q,H: ... event loop iteration ...
+    Q->>H: restore_focus(prev) runs
+    H->>Q: group.focus(prev)
+    Q->>H: on_client_focus(prev)
+    H->>F: hide_floating_win(new) [if floating and not suppressed]
+    H-->>H: _last_focused = prev
+    end
+#+end_src
+
 * OPEN Notification Dispatch :subDunst:
 :PROPERTIES:
 :ID: d3867936-c592-4079-a114-7b0ac7b66ded
