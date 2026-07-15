@@ -35,7 +35,7 @@
 - *OBJECTIVE:* Hint and open =URL= with =tmux=
 - *Reference:* [[https://dev.to/tomoviktor/best-way-to-open-urls-in-your-terminal-via-tmux-595b][Hint and open URL with Tmux @Blog]]
 * PROG Learn Scripting with Rofi :subRofi:
-SCHEDULED: <2026-07-13 Mon>
+SCHEDULED: <2026-07-17 Fri>
 :PROPERTIES:
 :ID:       b4d95356-ad0b-4d28-8d01-efe6a2262752
 :END:
@@ -43,7 +43,7 @@ SCHEDULED: <2026-07-13 Mon>
 - *Reference:*  [[https://davatorium.github.io/rofi/current/rofi-script.5/][Rofi Scripting documentation @Blog]]
 - *Check-out:*  [[id:e88ddffd-71b2-41c2-b1e7-6309f8600812][Scripting with Rofi @Org]]
 ** TODO Learn Rofi Config :subRofi@Config:
-SCHEDULED: <2026-07-13 Mon>
+SCHEDULED: <2026-07-17 Fri>
 :PROPERTIES:
 :ID: 945c86c9-9065-4e76-838f-83699e0297d9
 :END:
@@ -110,7 +110,7 @@ Moving files from =~/dotfiles= will affect the config dir. Best solution is to i
 - *OBJECTIVE:*  Research on opencode =agent= orchestration
 - *Reference:*  [[https://dev.to/gc-victor/agent-orchestration-in-opencode-3n4k][Agent orchestration in Opencode @Dev-blog]]
 * TODO Managing fzf Config :subFzf@Config:
-SCHEDULED: <2026-07-13 Mon>
+SCHEDULED: <2026-07-17 Fri>
 :PROPERTIES:
 :ID: 22b64191-09ab-4524-93a4-8bb965cfd6b2
 :END:
@@ -128,14 +128,14 @@ SCHEDULED: <2026-07-13 Mon>
 :END:
 - *OBJECTIVE:*  Change the default spawn 
 * TODO Dunst Ntfy Parser :subDunst:subNtfy:@Parse:
-SCHEDULED: <2026-07-13 Mon>
+SCHEDULED: <2026-07-17 Fri>
 :PROPERTIES:
 :ID: 36c08b23-12f0-489a-a58f-cbf7a46c24e9
 :END:
 - *OBJECTIVE:*  Parse =ntfy= to work with =dunst=
 - *Reference:*  
 * TODO Markdown Embed Code Workflow :subMarkdown@LSP:
-SCHEDULED: <2026-07-12 Sun>
+SCHEDULED: <2026-07-16 Thu>
 :PROPERTIES:
 :ID: 018bbd4f-036a-4e97-9b47-a810c6ccf706
 :END:
@@ -161,7 +161,7 @@ SCHEDULED: <2026-06-17 Wed> CLOSED: [2026-06-17 Wed 01:48]
   + [[id:1c195ab5-5250-4992-ab7a-57c29c5f3c66][Bi-directional Syncing @Docs]]
 - /Node:/       [[id:ebbcd95c-3e9a-4ef0-b885-1b5d7f77d22f][Reflow Note Repos @Issue]]
 * TODO Managing Contacts :subKhard:
-SCHEDULED: <2026-07-12 Sun>
+SCHEDULED: <2026-07-16 Thu>
 :PROPERTIES:
 :ID: 12ac7e50-8892-4e66-b183-f195c806450c
 :END:
@@ -179,7 +179,7 @@ SCHEDULED: <2026-07-12 Sun>
   + [[https://www.cloudflare.com/learning/cdn/glossary/reverse-proxy/][Reverse Proxy @Cloudflare]]
 - /Delegate/  [[id:259ed465-87ce-4373-ac2e-96e21baec17f][Webdav Secured File Sharing @internal]]
 * TODO Opening Files at Specific Spot :subHandlr:
-SCHEDULED: <2026-07-12 Sun>
+SCHEDULED: <2026-07-16 Thu>
 :PROPERTIES:
 :ID: b1b34e5f-adb1-46a0-8e27-4bcfdd3e5744
 :END:
