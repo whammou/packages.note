@@ -178,8 +178,8 @@ SCHEDULED: <2026-07-23 Thu>
   + [[https://multilogin.com/glossary/proxy-management/][Proxy Management @Multilogin]]
   + [[https://www.cloudflare.com/learning/cdn/glossary/reverse-proxy/][Reverse Proxy @Cloudflare]]
 - /Delegate/  [[id:259ed465-87ce-4373-ac2e-96e21baec17f][Webdav Secured File Sharing @internal]]
-* TODO Opening Files at Specific Spot :subHandlr:
-SCHEDULED: <2026-07-23 Thu>
+* DONE Opening Files at Specific Spot :subHandlr:
+SCHEDULED: <2026-07-23 Thu> CLOSED: [2026-07-22 Wed 20:16]
 :PROPERTIES:
 :ID: b1b34e5f-adb1-46a0-8e27-4bcfdd3e5744
 :END:

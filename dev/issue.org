@@ -298,4 +298,4 @@ Test renders works with correct agent matching
 How to open document files at designated page e.g document.pdf#page=4 /(open document)/ at page 4
 #+end_quote
 
-Example URL: [[https://drive.whammou.dedyn.io/01-projects/03-liennha-onboard-and-training/03-products/01-dental-chairs/Stern%20Weber/s200/s200-manual.pdf#page=10][Open Manual at page 10]]
+Example URL: [[https://drive.whammou.dedyn.io/01-projects/03-liennha-onboard-and-training/03-products/01-dental-chairs/stern-weber/Overview.docx#page=1][Open Manual at page 10]]
