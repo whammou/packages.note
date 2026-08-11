@@ -133,7 +133,7 @@ SCHEDULED: <2026-08-11 Tue>
 :ID: 36c08b23-12f0-489a-a58f-cbf7a46c24e9
 :END:
 - *OBJECTIVE:*  Parse =ntfy= to work with =dunst=
-- *Reference:*  
+- *Reference:*  [[id:5bd5c898-39d2-4490-b111-b8d4c54a4c91][Dunst Handle For Notification with Separate Flow @Task]]
 * TODO Markdown Embed Code Workflow :subMarkdown@LSP:
 SCHEDULED: <2026-08-12 Wed>
 :PROPERTIES:
