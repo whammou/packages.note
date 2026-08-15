@@ -110,7 +110,7 @@ Moving files from =~/dotfiles= will affect the config dir. Best solution is to i
 - *OBJECTIVE:*  Research on opencode =agent= orchestration
 - *Reference:*  [[https://dev.to/gc-victor/agent-orchestration-in-opencode-3n4k][Agent orchestration in Opencode @Dev-blog]]
 * TODO Managing fzf Config :subFzf@Config:
-SCHEDULED: <2026-08-12 Wed>
+SCHEDULED: <2026-08-15 Sat>
 :PROPERTIES:
 :ID: 22b64191-09ab-4524-93a4-8bb965cfd6b2
 :END:
@@ -129,14 +129,14 @@ SCHEDULED: <2026-08-12 Wed> CLOSED: [2026-08-12 Wed 15:57]
 :END:
 - *OBJECTIVE:*  Change the default spawn layout
 * TODO Dunst Ntfy Parser :subDunst:subNtfy:@Parse:
-SCHEDULED: <2026-08-12 Wed>
+SCHEDULED: <2026-08-15 Sat>
 :PROPERTIES:
 :ID: 36c08b23-12f0-489a-a58f-cbf7a46c24e9
 :END:
 - *OBJECTIVE:*  Parse =ntfy= to work with =dunst=
 - *Reference:*  [[id:5bd5c898-39d2-4490-b111-b8d4c54a4c91][Dunst Handle For Notification with Separate Flow @Task]]
 * TODO Markdown Embed Code Workflow :subMarkdown@LSP:
-SCHEDULED: <2026-08-13 Thu>
+SCHEDULED: <2026-08-15 Sat>
 :PROPERTIES:
 :ID: 018bbd4f-036a-4e97-9b47-a810c6ccf706
 :END:
@@ -162,7 +162,7 @@ SCHEDULED: <2026-06-17 Wed> CLOSED: [2026-06-17 Wed 01:48]
   + [[id:1c195ab5-5250-4992-ab7a-57c29c5f3c66][Bi-directional Syncing @Docs]]
 - /Node:/       [[id:ebbcd95c-3e9a-4ef0-b885-1b5d7f77d22f][Reflow Note Repos @Issue]]
 * TODO Managing Contacts :subKhard:
-SCHEDULED: <2026-08-13 Thu>
+SCHEDULED: <2026-08-15 Sat>
 :PROPERTIES:
 :ID: 12ac7e50-8892-4e66-b183-f195c806450c
 :END:
