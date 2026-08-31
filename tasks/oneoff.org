@@ -263,7 +263,7 @@ SCHEDULED: <2026-07-04 Sat> CLOSED: [2026-07-04 Sat 04:26]
 - *OBJECTIVE:*  Redirect github =camo= for unauthenticated assets
 - /Delegate:/   [[id:1383a194-6b3e-4195-82e4-484999a043ae][User Agent Base Redirect @Org]]
 * TODO Nvim-orgmode Maintenance :subNvim@Orgmode:
-SCHEDULED: <2026-08-28 Fri>
+SCHEDULED: <2026-08-31 Mon>
 :PROPERTIES:
 :ID: d803fbab-8739-49ed-ae8c-5c8c359de4d4
 :END:
