@@ -268,3 +268,21 @@ SCHEDULED: <2026-09-22 Tue>
 :ID: d803fbab-8739-49ed-ae8c-5c8c359de4d4
 :END:
 - *OBJECTIVE:*  Maintenance current nvim-orgmode build to match upstream changes
+* TODO Add wlr-which-key Menu Entries :subWlrWhichKey:
+SCHEDULED: <2026-09-22 Tue>
+:PROPERTIES:
+:ID: 22135c60-aa41-44d4-b5c5-7d53785abe5a
+:END:
+- *OBJECTIVE:*  Menu entries for =wlr-which-key=
+* TODO Improve Smart-Bonsai :subQtile:
+SCHEDULED: <2026-09-22 Tue>
+:PROPERTIES:
+:ID: 7016abfb-a31e-4e74-a20b-38da47a53425
+:END:
+- *OBJECTIVE:*  Exclude =bonsai-tab= from qtile-smart-bonsai
+* TODO Neo-tree Not Picking Up Git Repo :subNvim@NeoTree:
+SCHEDULED: <2026-09-22 Tue>
+:PROPERTIES:
+:ID: 228ff96d-4152-4464-aa05-0ee9565b69fe
+:END:
+- *OBJECTIVE:*  Neo-tree not picking up git repo
