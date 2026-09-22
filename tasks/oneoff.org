@@ -268,8 +268,8 @@ SCHEDULED: <2026-09-22 Tue>
 :ID: d803fbab-8739-49ed-ae8c-5c8c359de4d4
 :END:
 - *OBJECTIVE:*  Maintenance current nvim-orgmode build to match upstream changes
-* TODO Add wlr-which-key Menu Entries :subWlrWhichKey:
-SCHEDULED: <2026-09-22 Tue>
+* DONE Add wlr-which-key Menu Entries :subWlrWhichKey:
+SCHEDULED: <2026-09-22 Tue> CLOSED: [2026-09-22 Tue 20:36]
 :PROPERTIES:
 :ID: 22135c60-aa41-44d4-b5c5-7d53785abe5a
 :END:
