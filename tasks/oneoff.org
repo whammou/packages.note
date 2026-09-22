@@ -274,8 +274,8 @@ SCHEDULED: <2026-09-22 Tue>
 :ID: 22135c60-aa41-44d4-b5c5-7d53785abe5a
 :END:
 - *OBJECTIVE:*  Menu entries for =wlr-which-key=
-* TODO Improve Smart-Bonsai :subQtile:
-SCHEDULED: <2026-09-22 Tue>
+* DONE Improve Smart-Bonsai :subQtile:
+SCHEDULED: <2026-09-22 Tue> CLOSED: [2026-09-22 Tue 14:49]
 :PROPERTIES:
 :ID: 7016abfb-a31e-4e74-a20b-38da47a53425
 :END:
@@ -286,3 +286,9 @@ SCHEDULED: <2026-09-22 Tue> CLOSED: [2026-09-22 Tue 13:55]
 :ID: 228ff96d-4152-4464-aa05-0ee9565b69fe
 :END:
 - *OBJECTIVE:*  Neo-tree not picking up git repo
+* TODO Refactor Qtile-bonsai Layout :subQtile@Refactor:
+SCHEDULED: <2026-09-22 Tue>
+:PROPERTIES:
+:ID: d68469ad-95fa-45aa-85f2-7f5d2eb25297
+:END:
+- *OBJECTIVE:*  Refactor =layout= configs into a more comprehensive structure
