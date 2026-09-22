@@ -280,8 +280,8 @@ SCHEDULED: <2026-09-22 Tue>
 :ID: 7016abfb-a31e-4e74-a20b-38da47a53425
 :END:
 - *OBJECTIVE:*  Exclude =bonsai-tab= from qtile-smart-bonsai
-* TODO Neo-tree Not Picking Up Git Repo :subNvim@NeoTree:
-SCHEDULED: <2026-09-22 Tue>
+* DONE Neo-tree Not Picking Up Git Repo :subNvim@NeoTree:
+SCHEDULED: <2026-09-22 Tue> CLOSED: [2026-09-22 Tue 13:55]
 :PROPERTIES:
 :ID: 228ff96d-4152-4464-aa05-0ee9565b69fe
 :END:
