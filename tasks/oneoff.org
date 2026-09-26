@@ -298,3 +298,9 @@ SCHEDULED: <2026-09-23 Wed> CLOSED: [2026-09-23 Wed 17:32]
 :ID: 80ed40a7-6b70-43b4-96bf-d6cc768ad6dd
 :END:
 - *OBJECTIVE:*  Navigate floating window key using back and ford
+* TODO Orgmode Agenda and Keybinds :subOrgmode@Keybind:sub@Orgmode@Agenda:
+SCHEDULED: <2026-09-27 Sun>
+:PROPERTIES:
+:ID: d61dbe27-f196-4867-a564-3fc38b48ef7c
+:END:
+- *OBJECTIVE:*  Update =orgmode-agenda= and match =wlr-which-key=
