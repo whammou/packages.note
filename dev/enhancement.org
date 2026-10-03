@@ -217,4 +217,19 @@ fi
 #+begin_quote org
 Managing email and phone accounts cross platform is tricky because every platform uses different kind of format. *Radicale* is =davcal=, =davmail=, manager that attempts to solve this problem
 #+end_quote
+* OPEN Dunst Do-not-Disturb :subDunst@DND:
+:PROPERTIES:
+:ID: 91c5895a-7a28-48d4-b2ce-50826d3f0506
+:END:
 
+#+begin_quote Description
+Implement the new =do-not-disturb= into notifications dispatcher
+#+end_quote
+* OPEN Expose Dispatch Entry Point :subDunst@Dispatch:
+:PROPERTIES:
+:ID: 0001a1f8-6da2-430f-92e8-ec388e7c6e77
+:END:
+
+#+begin_quote Description
+Expose entry point for =dispatch.dunst=
+#+end_quote
