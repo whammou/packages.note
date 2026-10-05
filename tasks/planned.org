@@ -194,7 +194,7 @@ SCHEDULED: <2026-10-06 Tue>
 :END:
 - *OBJECTIVE:*  Create a master control panel to spawn and control apps
 * TODO Implement Do-not-Disturb Mode :subDunst@DND:
-SCHEDULED: <2026-10-06 Tue>
+SCHEDULED: <2026-10-05 Mon>
 :PROPERTIES:
 :ID: 93e7b4f9-7dd9-4c16-ac32-8e8febca75f2
 :END:
