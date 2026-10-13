@@ -206,9 +206,16 @@ SCHEDULED: <2026-10-13 Tue>
 :END:
 - *OBJECTIVE:*  Expose entry point to config for dunst dispatcher
 - /Delegate:/   [[id:0001a1f8-6da2-430f-92e8-ec388e7c6e77][Expose Dispatch Entry Point]]
-* TODO Qtile Focus Steal Exempt :subQtile@Hook:
-SCHEDULED: <2026-10-13 Tue>
+* DONE Qtile Focus Steal Exempt :subQtile@Hook:
+SCHEDULED: <2026-10-13 Tue> CLOSED: [2026-10-13 Tue 17:38]
 :PROPERTIES:
 :ID: ca25fbbe-8e8d-4850-999b-8b511b1bfa66
 :END:
 - *OBJECTIVE:*  Allow some windows to steal focus
+* TODO Revert to Using Bash :subBash@Shell:
+SCHEDULED: <2026-10-13 Tue>
+:PROPERTIES:
+:ID: 97adc6b5-a03c-4516-b7df-1ffeaf7fbecd
+:END:
+- *OBJECTIVE:*  Revert to using =bash= instead of =fish= for system unification
+- *Reference:*  [[https://www.google.com/search?q=bach+vi+mode&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VstEKsVDqPorK0Gahnm2nq-aQnTz_mBV-EZYISbLc-S3LQBbMYAGT8xXTqdTxRg04zS3ruzpNYXVbY3kOqiLf6gKylA7jMY8dv-DKwIq8XO-j9YgESc_f9qCQ4UXKY-MZO-2wWpO890Tbtf-c6wiTAE-vmgI8zGrzut_8wSdcJdmKLnBw&aep=10&ntc=1&sxsrf=APpeQntVdjT8mi3jgU2_hPBx6YvHd0Duag%3A1791887240379&mstk=AUtExfD1piGbSjpGkmnmODfETZ_0bKf37_YpcexBg1NXxLMtyUfvd-CcSSKXCHuOVzvT9RQdwbUT0lXu1Hx9ZN9W3Qpsklx-wwmq_kZ1kDwjJ7gWK6KqArY_UW7ZipM4gM4YT1oLFyVExd1-jzJ43cLx7MWfu7a8ZCyIO7rOKlNy3QOi0Rh6Nsm6EQ0XBZaB2zh0KhTRCzi7V3QpiIIqyRbM2vPDjlCy2FWfT0c9GrzMkITLAxcgoPkAQDdwpmM3cAGB1HZbzqZdCTPhus4HHA8RdpkyLN5ysbTWvicSsRG9UhQlcz9LKb_qwS8j8HSQam28dqD2tV93OzJNog&aioh=3&csuir=1&mtid=nAfOauqVJoLo4-EPmoufgQo&udm=50][Fish vs Bash @Gemini]]
