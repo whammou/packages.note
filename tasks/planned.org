@@ -162,7 +162,7 @@ SCHEDULED: <2026-06-17 Wed> CLOSED: [2026-06-17 Wed 01:48]
   + [[id:1c195ab5-5250-4992-ab7a-57c29c5f3c66][Bi-directional Syncing @Docs]]
 - /Node:/       [[id:ebbcd95c-3e9a-4ef0-b885-1b5d7f77d22f][Reflow Note Repos @Issue]]
 * TODO Managing Contacts :subKhard:
-SCHEDULED: <2026-11-13 Fri>
+SCHEDULED: <2026-11-15 Sun>
 :PROPERTIES:
 :ID: 12ac7e50-8892-4e66-b183-f195c806450c
 :END:
@@ -194,7 +194,7 @@ SCHEDULED: <2026-11-14 Sat>
 :END:
 - *OBJECTIVE:*  Create a master control panel to spawn and control apps
 * TODO Implement Do-not-Disturb Mode :subDunst@DND:
-SCHEDULED: <2026-11-13 Fri>
+SCHEDULED: <2026-11-13 Fri 11:00-12:00>
 :PROPERTIES:
 :ID: 93e7b4f9-7dd9-4c16-ac32-8e8febca75f2
 :END:
@@ -213,7 +213,7 @@ SCHEDULED: <2026-10-13 Tue> CLOSED: [2026-10-13 Tue 17:38]
 :END:
 - *OBJECTIVE:*  Allow some windows to steal focus
 * TODO Revert to Using Bash :subBash@Shell:
-SCHEDULED: <2026-11-13 Fri>
+SCHEDULED: <2026-11-13 Fri 10:57-13:00>
 :PROPERTIES:
 :ID: 97adc6b5-a03c-4516-b7df-1ffeaf7fbecd
 :END:
