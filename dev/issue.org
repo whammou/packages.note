@@ -299,3 +299,13 @@ How to open document files at designated page e.g document.pdf#page=4 /(open doc
 #+end_quote
 
 Example URL: [[https://drive.whammou.dedyn.io/01-projects/03-liennha-onboard-and-training/03-products/01-dental-chairs/stern-weber/Overview.docx#page=1][Open Manual at page 10]]
+* OPEN Nvim-orgmode Table Render :subOrgmode:
+:PROPERTIES:
+:ID: 6b3120b8-91b6-465b-a102-1c6eb34685ee
+:END:
+
+#+name: Description
+#+begin_quote org
+Continue on writing a script to render table in =orgmode= like with =markdown=
+#+end_quote
+

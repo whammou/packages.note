@@ -233,3 +233,13 @@ Implement the new =do-not-disturb= into notifications dispatcher
 #+begin_quote Description
 Expose entry point for =dispatch.dunst=
 #+end_quote
+* OPEN Orgmode-ical Sync Past Event :subOrgmode@Agenda:
+:PROPERTIES:
+:ID: 600d8982-0e5e-4091-b024-8430b1c22d4f
+:END:
+
+#+name: Description
+#+begin_quote org
+Sync event when time change and in the past
+#+end_quote
+
