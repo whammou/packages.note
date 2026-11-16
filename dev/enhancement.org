@@ -1,11 +1,11 @@
 #+OPTIONS: todo:t tags:nil tasks:t ^:nil toc:nil
 #+TODO: OPEN(y) (e) PROG(g) INTR(q) NEXT(n) | ABRT(a) DONE(f) CLSD(c)
 #+FILETAGS: :topPackages:typDev:catEnhancement:
+
 * OPEN Remote Workspace :subWorkflow@Remote:
 :PROPERTIES:
-:ID: f2003a39-72eb-40b7-a832-b209c8cf9cff
+:ID:       f2003a39-72eb-40b7-a832-b209c8cf9cff
 :END:
-
 #+name: Description
 #+begin_quote org
 Emulate the same environment as current remote machine on work station to deal with remote jobs such as =opencode= running commands
@@ -14,18 +14,16 @@ Emulate the same environment as current remote machine on work station to deal w
 /Checkout:/ [[id:58910689-be05-4304-8b9b-7d2c03fee002][Managing Dotfiles with Chezmoi]]
 * OPEN Configure WireGuard VPN :subWireGuard:
 :PROPERTIES:
-:ID: c9c7fb4d-e56d-45ae-8c56-2e402cc1d623
+:ID:       c9c7fb4d-e56d-45ae-8c56-2e402cc1d623
 :END:
-
 #+name: Description
 #+begin_quote org
 Configure =wireguard= vpn for home network and bypassing NAT blocking in public network. Also enhance security
 #+end_quote
 * OPEN Plaintext Mail Management :subMail@Workflow:
 :PROPERTIES:
-:ID: 1fcbea49-43b6-4376-90be-50c0209b0b79
+:ID:       1fcbea49-43b6-4376-90be-50c0209b0b79
 :END:
-
 #+name: Description
 #+begin_quote org
 How to effective work with plaintext email. Note down the whole workflow
@@ -35,9 +33,8 @@ How to effective work with plaintext email. Note down the whole workflow
 * DONE Testing Otter for Orgmode :subNvim@Otter:
 CLOSED: [2026-06-12 Fri 11:55]
 :PROPERTIES:
-:ID: 09dcfee0-718f-449c-b448-e3aef672ac1e
+:ID:       09dcfee0-718f-449c-b448-e3aef672ac1e
 :END:
-
 #+begin_quote org
 Testing nvim-orgmode with =otter= to run LSP server on embed code in inside a codeblock
 #+end_quote
@@ -73,11 +70,10 @@ print("Hello World")
 
 #+RESULTS: print
 : Hello World
-
 ** DONE Adding org-babel Code Execution :subOrgmode@Babel@Execution:
-SCHEDULED: <2026-06-12 Fri> CLOSED: [2026-06-12 Fri 11:54]
+CLOSED: [2026-06-12 Fri 11:54] SCHEDULED: <2026-06-12 Fri>
 :PROPERTIES:
-:ID: e868f529-fd09-440c-af87-0432b8225045
+:ID:       e868f529-fd09-440c-af87-0432b8225045
 :END:
 Adding executing code block =orgmode-babel.nvim= pair with some modifications
 
@@ -107,11 +103,10 @@ Adding executing code block =orgmode-babel.nvim= pair with some modifications
 [!NOTE]
 Visit [[id:09dcfee0-718f-449c-b448-e3aef672ac1e][Testing Otter for Orgmode @internal]] and execute example code complete picture
 #+end_quote
-
 ** DONE Multiple LSP packages Load :subNvim@LSP@EmbedCodes:
 CLOSED: [2026-06-12 Fri 12:03]
 :PROPERTIES:
-:ID: 0397b579-3ce1-47bf-8e57-9e34374b6596
+:ID:       0397b579-3ce1-47bf-8e57-9e34374b6596
 :END:
 =otter.nvim= plugin supports enabling =lsp= for code fragment in markup languages such as =orgmode= and =markdown=
 
@@ -210,36 +205,32 @@ fi
 #+end_src
 * OPEN Personal Contacts Management :subKhard@Config:
 :PROPERTIES:
-:ID: ad1eccc7-19a0-433f-9d83-19af21ea77c9
+:ID:       ad1eccc7-19a0-433f-9d83-19af21ea77c9
 :END:
-
 #+name: Description
 #+begin_quote org
 Managing email and phone accounts cross platform is tricky because every platform uses different kind of format. *Radicale* is =davcal=, =davmail=, manager that attempts to solve this problem
 #+end_quote
 * OPEN Dunst Do-not-Disturb :subDunst@DND:
 :PROPERTIES:
-:ID: 91c5895a-7a28-48d4-b2ce-50826d3f0506
+:ID:       91c5895a-7a28-48d4-b2ce-50826d3f0506
 :END:
-
 #+begin_quote Description
 Implement the new =do-not-disturb= into notifications dispatcher
 #+end_quote
 * OPEN Expose Dispatch Entry Point :subDunst@Dispatch:
 :PROPERTIES:
-:ID: 0001a1f8-6da2-430f-92e8-ec388e7c6e77
+:ID:       0001a1f8-6da2-430f-92e8-ec388e7c6e77
 :END:
-
 #+begin_quote Description
 Expose entry point for =dispatch.dunst=
 #+end_quote
-* OPEN Orgmode-ical Sync Past Event :subOrgmode@Agenda:
+* DONE Orgmode-ical Sync Past Event :subOrgmode@Agenda:
+CLOSED: [2026-11-16 Mon 10:55]
 :PROPERTIES:
-:ID: 600d8982-0e5e-4091-b024-8430b1c22d4f
+:ID:       600d8982-0e5e-4091-b024-8430b1c22d4f
 :END:
-
 #+name: Description
 #+begin_quote org
 Sync event when time change and in the past
 #+end_quote
-
