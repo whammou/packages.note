@@ -12,3 +12,70 @@ SCHEDULED: <2026-08-20 Thu>
 Create a keybinding workflow that is less conflicting with =keyd=. Ideally, use qtile =KeyChord= to lessen the need of regular keys. Also use more special keys rather e.g. =Tab=
 #+end_quote
 
+* OPEN Qtile Refactor :subQtile@Refactor:
+:PROPERTIES:
+:ID: 77ef4faf-9ada-4f2e-90f6-93a806366aa6
+:END:
+
+#+name: Description
+#+begin_quote org
+Refactor =qtile= config into a more manageable flow with user-friendly format
+#+end_quote
+
+- *Keybindings*: keybindings are delegated to =wlr-which-key= instead of native =qtile= keybinds
+
+#+name: Calling wlr-which-key
+#+begin_src python
+  [
+      Key([], "Super_L", lazy.layout.spawn("wlr-which-key"), desc="Spawn"),
+  ]
+#+end_src
+
+#+name: wlr-which-key config example
+#+begin_src yaml
+font: "HasklugNerdFont 13"
+background: "#31353f"
+color: "#abb2bf"
+border: "#98c379"
+separator: "  ➜ "
+border_width: 2
+corner_r: 0
+padding: 10
+rows_per_column: 6
+column_padding: 25
+anchor: bottom
+margin_top: 4
+margin_bottom: 4
+margin_left: 4
+margin_right: 4
+inhibit_compositor_keyboard_shortcuts: true
+auto_kbd_layout: true
+
+menu:
+  # Applications List: {{{{
+  - key: "A"
+    desc: " Applications List"
+    cmd: "rofi -show drun -m -1"
+  # }}}}
+  # Cloud Drives: {{{{
+  - key: "M"
+    desc: " Cloud Drives"
+    cmd: rofi-mount
+  # }}}}
+  # Office Suite: {{{
+  - key: "S"
+    desc: " Office Suite"
+    submenu:
+      # Artcraft Suite: {{{
+      - key: "a"
+        desc: " Artcraft Suite"
+        submenu:
+          - key: "c"
+            desc: " CADcrart"
+            cmd: "cadcraft"
+          - key: "p"
+            desc: " Pdfcrart"
+            cmd: "pdfcraft"
+      # }}}
+#+end_src
+- 
