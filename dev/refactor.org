@@ -22,13 +22,31 @@ Create a keybinding workflow that is less conflicting with =keyd=. Ideally, use 
 Refactor =qtile= config into a more manageable flow with user-friendly format
 #+end_quote
 
-- *Keybindings*: keybindings are delegated to =wlr-which-key= instead of native =qtile= keybinds
+** DONE Qtile wlr-which-key Keybindings
+CLOSED: [2026-11-20 Fri 21:25]
+:PROPERTIES:
+:ID: 0b9b9e6c-c15c-470c-89b2-ac199c7bca16
+:END:
+- *Dependencies:*
+  Requires =wlr-which-key=
+
+#+name: Note Admonition - Description
+#+begin_quote org
+[!NOTE]
+Keybindings are delegated to =wlr-which-key= instead of native =qtile= keybinds
+#+end_quote
+
+#+name: Warning Admonition - Keybinds
+#+begin_quote org
+[!WARNING]
+Using this keybind essentially override other keybinds that depends =mod4= key!
+#+end_quote
 
 #+name: Calling wlr-which-key
 #+begin_src python
-  [
-      Key([], "Super_L", lazy.layout.spawn("wlr-which-key"), desc="Spawn"),
-  ]
+[
+    Key([], "Super_L", lazy.layout.spawn("wlr-which-key"), desc="Spawn"),
+]
 #+end_src
 
 #+name: wlr-which-key config example
@@ -78,4 +96,3 @@ menu:
             cmd: "pdfcraft"
       # }}}
 #+end_src
-- 
