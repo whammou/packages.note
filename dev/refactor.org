@@ -49,7 +49,9 @@ Using this keybind essentially override other keybinds that depends =mod4= key!
 ]
 #+end_src
 
-#+name: wlr-which-key config example
+#+name:Details
+#+html:<details>
+#+html:<summary><b>wlr-which-key config example</b></summary>
 #+begin_src yaml
 font: "HasklugNerdFont 13"
 background: "#31353f"
@@ -96,3 +98,5 @@ menu:
             cmd: "pdfcraft"
       # }}}
 #+end_src
+#+html:</details>
+
